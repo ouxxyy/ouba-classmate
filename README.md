@@ -44,6 +44,12 @@
 | --- | --- | --- |
 | [Attention](https://github.com/ouxxyy/Attention) | 本地专注力仪表盘：读 ActivityWatch 数据，算分心程度、切换次数与心流时段，数据不出本机 | 2026-09-26 |
 | [postapp](https://github.com/ouxxyy/postapp) | 姿势企鹅：Chrome 坐姿监测插件，工作时提醒你别头前倾、驼背 | 2026-04-22 |
+
+### 更多项目
+
+| 项目 | 它做什么 | 最近更新 |
+| --- | --- | --- |
+| [ouba-classmate](https://github.com/ouxxyy/ouba-classmate) | 欧八同学的项目合集：AI Skill、智能体应用与本地工具，每日自动同步 | 2026-09-28 |
 <!-- projects:end -->
 
 ## 给 AI Agent 的话
