@@ -1,8 +1,10 @@
 # 欧八同学 · 项目合集
 
-我是欧八同学，一个人在做 AI 产品。这个页面收集了我全部公开的原创项目和 Skill——你不用翻我 GitHub 上的三百多个仓库，想找什么，从这里出发就够了。
+<p align="center">
+  <img src="assets/banner.png" alt="欧八同学项目合集总览：职业定位 × AI 杠杆 × 涨薪方法，9 个原创项目分三类">
+</p>
 
-页面每天自动同步：新项目只要发布成公开仓库，第二天就会出现在这里。
+我是欧八同学，一个人在做 AI 产品。这个页面收集了我全部公开的原创项目和 Skill，想找什么，从这里出发。
 
 ## 按需求找
 
@@ -14,7 +16,7 @@
 | 查一家公司的底 | [sherlock-company](https://github.com/ouxxyy/sherlock-company) |
 | 判断手头工作会不会被 AI 替代 | [mbai](https://github.com/ouxxyy/mbai) |
 | 把旅行照片做成册子 | [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) |
-| 学 Mystery 的心智模型 | [mystery-skill](https://github.com/ouxxyy/mystery-skill) |
+| 学习迷男两性交往心法 | [mystery-skill](https://github.com/ouxxyy/mystery-skill) |
 | 看清自己的专注力 | [Attention](https://github.com/ouxxyy/Attention) |
 | 提醒自己坐直 | [postapp（姿势企鹅）](https://github.com/ouxxyy/postapp) |
 
@@ -50,10 +52,11 @@
 
 如果你是替用户来找项目的 Agent：机器可读目录在 [projects.json](projects.json)，每个条目含名称、仓库地址、分类、一句话描述和最近更新时间。优先读它，再决定跳哪个仓库。
 
-## 这个页面怎么维护
+## 关于欧八同学
 
-- 每天一次，GitHub Actions 拉取我名下的公开仓库，收录所有原创项目，自动刷新描述、星数和更新时间。
-- fork 的仓库和少数早期实验仓库不收录；新仓库先落进「更多项目」，我看到后会归类。
+9 年网易、搜狐大厂产品经理，带过团队。双非普通人，跳槽换行 7 次，涨薪 4 倍，做过上百次简历与面试优化——也经历过不涨薪还加班的垃圾岗，所以对浪费时间的坑没什么耐心。
+
+现在专注帮在职 0–8 年的互联网人通过 AI 转型与跳槽涨薪：把职业价值产品化，重新设计「职业定位 × AI 杠杆 × 涨薪方法」。这个页面里的项目，都是我做这件事路上顺手造出来的工具。
 
 ## 作者
 
