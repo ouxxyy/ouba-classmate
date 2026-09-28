@@ -1,0 +1,42 @@
+name: update-projects
+
+on:
+  schedule:
+    - cron: "30 22 * * *" # 每天 UTC 22:30 = 北京时间 06:30
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-projects
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Regenerate project index
+        run: python3 scripts/update_projects.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "ouba-sync-bot"
+          git config user.email "actions@github.com"
+          git add README.md projects.json
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: sync project index"
+            git push
+          fi

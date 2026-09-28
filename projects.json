@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-09-28T07:39:31+00:00",
+  "owner": "ouxxyy",
+  "projects": [
+    {
+      "name": "sherlock-company",
+      "url": "https://github.com/ouxxyy/sherlock-company",
+      "description": "Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案",
+      "category": "app",
+      "language": "HTML",
+      "stars": 0,
+      "updated_at": "2026-09-28T07:18:08Z"
+    },
+    {
+      "name": "ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "description": "基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比",
+      "category": "app",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-09-28T07:17:13Z"
+    },
+    {
+      "name": "Attention",
+      "url": "https://github.com/ouxxyy/Attention",
+      "description": "本地专注力仪表盘：读 ActivityWatch 数据，算分心程度、切换次数与心流时段，数据不出本机",
+      "category": "local",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-09-26T15:21:15Z"
+    },
+    {
+      "name": "mbai",
+      "url": "https://github.com/ouxxyy/mbai",
+      "description": "工作任务 AI 不可替代指数：复制 PROMPT.md 到任意 AI 对话即用，也能装成 Agent Skill",
+      "category": "skill",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-09-22T02:30:39Z"
+    },
+    {
+      "name": "jd-resume-match",
+      "url": "https://github.com/ouxxyy/jd-resume-match",
+      "description": "简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡",
+      "category": "skill",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-09-17T06:14:04Z"
+    },
+    {
+      "name": "travel-art-album-skill",
+      "url": "https://github.com/ouxxyy/travel-art-album-skill",
+      "description": "旅行照片艺术化工作流 + 单文件离线翻页相册 Skill",
+      "category": "skill",
+      "language": "JavaScript",
+      "stars": 1,
+      "updated_at": "2026-09-10T10:16:58Z"
+    },
+    {
+      "name": "storyboard-scavenger",
+      "url": "https://github.com/ouxxyy/storyboard-scavenger",
+      "description": "把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表",
+      "category": "skill",
+      "language": "HTML",
+      "stars": 4,
+      "updated_at": "2026-08-21T18:15:31Z"
+    },
+    {
+      "name": "mystery-skill",
+      "url": "https://github.com/ouxxyy/mystery-skill",
+      "description": "Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA",
+      "category": "skill",
+      "language": "",
+      "stars": 1,
+      "updated_at": "2026-08-21T04:32:59Z"
+    },
+    {
+      "name": "postapp",
+      "url": "https://github.com/ouxxyy/postapp",
+      "description": "姿势企鹅：Chrome 坐姿监测插件，工作时提醒你别头前倾、驼背",
+      "category": "local",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-04-22T15:11:50Z"
+    }
+  ]
+}
