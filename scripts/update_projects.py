@@ -26,6 +26,7 @@ END_MARK = "<!-- projects:end -->"
 
 # 不收录的原创仓库（皮肤类、隐私政策托管页、早期实验仓库等）
 EXCLUDE = {
+    "ouba-classmate",
     "codex-luce",
     "posture-penguin-privacy-policy",
     "learn-python",

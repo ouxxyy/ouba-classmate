@@ -1,16 +1,7 @@
 {
-  "generated_at": "2026-09-28T07:40:08+00:00",
+  "generated_at": "2026-09-28T07:41:44+00:00",
   "owner": "ouxxyy",
   "projects": [
-    {
-      "name": "ouba-classmate",
-      "url": "https://github.com/ouxxyy/ouba-classmate",
-      "description": "欧八同学的项目合集：AI Skill、智能体应用与本地工具，每日自动同步",
-      "category": "more",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-09-28T07:39:52Z"
-    },
     {
       "name": "sherlock-company",
       "url": "https://github.com/ouxxyy/sherlock-company",
