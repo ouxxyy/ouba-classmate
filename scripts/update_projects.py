@@ -35,12 +35,13 @@ EXCLUDE = {
 }
 
 CATEGORY_LABELS = {
+    "career": "职场 · 跳槽涨薪",
     "skill": "AI Skill · 装进你的 Agent",
     "app": "智能体应用 · 打开就用",
     "local": "本地工具 · 装在自己电脑",
     "more": "更多项目",
 }
-CATEGORY_ORDER = ["skill", "app", "local", "more"]
+CATEGORY_ORDER = ["career", "skill", "app", "local", "more"]
 
 # 描述为各仓库 README/描述的中文摘编；stars 与更新时间每次从 API 实时刷新
 REPO_META = {
@@ -49,11 +50,11 @@ REPO_META = {
         "desc": "把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表",
     },
     "jd-resume-match": {
-        "category": "skill",
+        "category": "career",
         "desc": "简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡",
     },
     "mbai": {
-        "category": "skill",
+        "category": "career",
         "desc": "工作任务 AI 不可替代指数：复制 PROMPT.md 到任意 AI 对话即用，也能装成 Agent Skill",
     },
     "mystery-skill": {
@@ -65,11 +66,11 @@ REPO_META = {
         "desc": "旅行照片艺术化工作流 + 单文件离线翻页相册 Skill",
     },
     "ai-interviewer": {
-        "category": "app",
+        "category": "career",
         "desc": "基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比",
     },
     "sherlock-company": {
-        "category": "app",
+        "category": "career",
         "desc": "Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案",
     },
     "Attention": {
