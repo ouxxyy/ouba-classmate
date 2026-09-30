@@ -62,6 +62,7 @@
 
 作者全平台同名：**欧八同学**。
 
+- 个人主页 / 联系我：[albertou.redboook.cn](https://albertou.redboook.cn/)
 - 微信公众号：扫码关注
 - 抖音：[搜索“欧八同学”](https://www.douyin.com/search/%E6%AC%A7%E5%85%AB%E5%90%8C%E5%AD%A6)
 - 小红书：[搜索“欧八同学”](https://www.xiaohongshu.com/search_result?keyword=%E6%AC%A7%E5%85%AB%E5%90%8C%E5%AD%A6)
