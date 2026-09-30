@@ -27,8 +27,8 @@
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
-| [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) | 基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比 | 2026-09-29 |
-| [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案 | 2026-09-29 |
+| [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案 | 2026-09-30 |
+| [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) | 基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比 | 2026-09-30 |
 | [mbai](https://github.com/ouxxyy/mbai) | 工作任务 AI 不可替代指数：复制 PROMPT.md 到任意 AI 对话即用，也能装成 Agent Skill | 2026-09-22 |
 | [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | 简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡 | 2026-09-17 |
 

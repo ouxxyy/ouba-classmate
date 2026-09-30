@@ -1,16 +1,7 @@
 {
-  "generated_at": "2026-09-30T01:26:07+00:00",
+  "generated_at": "2026-09-30T08:14:56+00:00",
   "owner": "ouxxyy",
   "projects": [
-    {
-      "name": "ai-interviewer",
-      "url": "https://github.com/ouxxyy/ai-interviewer",
-      "description": "基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比",
-      "category": "career",
-      "language": "TypeScript",
-      "stars": 0,
-      "updated_at": "2026-09-29T17:36:46Z"
-    },
     {
       "name": "sherlock-company",
       "url": "https://github.com/ouxxyy/sherlock-company",
@@ -18,7 +9,16 @@
       "category": "career",
       "language": "HTML",
       "stars": 1,
-      "updated_at": "2026-09-29T13:16:51Z"
+      "updated_at": "2026-09-30T08:14:48Z"
+    },
+    {
+      "name": "ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "description": "基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比",
+      "category": "career",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-09-30T08:14:45Z"
     },
     {
       "name": "mystery-skill",
