@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T02:11:55+00:00",
+  "generated_at": "2026-09-30T01:26:07+00:00",
   "owner": "ouxxyy",
   "projects": [
     {
@@ -9,7 +9,7 @@
       "category": "career",
       "language": "TypeScript",
       "stars": 0,
-      "updated_at": "2026-09-28T22:43:16Z"
+      "updated_at": "2026-09-29T17:36:46Z"
     },
     {
       "name": "sherlock-company",
@@ -17,8 +17,35 @@
       "description": "Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案",
       "category": "career",
       "language": "HTML",
+      "stars": 1,
+      "updated_at": "2026-09-29T13:16:51Z"
+    },
+    {
+      "name": "mystery-skill",
+      "url": "https://github.com/ouxxyy/mystery-skill",
+      "description": "Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA",
+      "category": "skill",
+      "language": "",
+      "stars": 3,
+      "updated_at": "2026-09-29T08:05:42Z"
+    },
+    {
+      "name": "postapp",
+      "url": "https://github.com/ouxxyy/postapp",
+      "description": "姿势企鹅：Chrome 坐姿监测插件，工作时提醒你别头前倾、驼背",
+      "category": "local",
+      "language": "TypeScript",
       "stars": 0,
-      "updated_at": "2026-09-28T07:18:08Z"
+      "updated_at": "2026-09-29T03:17:49Z"
+    },
+    {
+      "name": "storyboard-scavenger",
+      "url": "https://github.com/ouxxyy/storyboard-scavenger",
+      "description": "把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表",
+      "category": "skill",
+      "language": "HTML",
+      "stars": 4,
+      "updated_at": "2026-09-29T03:17:44Z"
     },
     {
       "name": "Attention",
@@ -55,33 +82,6 @@
       "language": "JavaScript",
       "stars": 1,
       "updated_at": "2026-09-10T10:16:58Z"
-    },
-    {
-      "name": "storyboard-scavenger",
-      "url": "https://github.com/ouxxyy/storyboard-scavenger",
-      "description": "把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表",
-      "category": "skill",
-      "language": "HTML",
-      "stars": 4,
-      "updated_at": "2026-08-21T18:15:31Z"
-    },
-    {
-      "name": "mystery-skill",
-      "url": "https://github.com/ouxxyy/mystery-skill",
-      "description": "Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA",
-      "category": "skill",
-      "language": "",
-      "stars": 1,
-      "updated_at": "2026-08-21T04:32:59Z"
-    },
-    {
-      "name": "postapp",
-      "url": "https://github.com/ouxxyy/postapp",
-      "description": "姿势企鹅：Chrome 坐姿监测插件，工作时提醒你别头前倾、驼背",
-      "category": "local",
-      "language": "TypeScript",
-      "stars": 0,
-      "updated_at": "2026-04-22T15:11:50Z"
     }
   ]
 }
