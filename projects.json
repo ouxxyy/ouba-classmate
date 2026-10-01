@@ -1,16 +1,7 @@
 {
-  "generated_at": "2026-09-30T08:14:56+00:00",
+  "generated_at": "2026-10-01T01:26:02+00:00",
   "owner": "ouxxyy",
   "projects": [
-    {
-      "name": "sherlock-company",
-      "url": "https://github.com/ouxxyy/sherlock-company",
-      "description": "Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案",
-      "category": "career",
-      "language": "HTML",
-      "stars": 1,
-      "updated_at": "2026-09-30T08:14:48Z"
-    },
     {
       "name": "ai-interviewer",
       "url": "https://github.com/ouxxyy/ai-interviewer",
@@ -18,16 +9,7 @@
       "category": "career",
       "language": "TypeScript",
       "stars": 0,
-      "updated_at": "2026-09-30T08:14:45Z"
-    },
-    {
-      "name": "mystery-skill",
-      "url": "https://github.com/ouxxyy/mystery-skill",
-      "description": "Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA",
-      "category": "skill",
-      "language": "",
-      "stars": 3,
-      "updated_at": "2026-09-29T08:05:42Z"
+      "updated_at": "2026-09-30T08:56:16Z"
     },
     {
       "name": "postapp",
@@ -36,7 +18,16 @@
       "category": "local",
       "language": "TypeScript",
       "stars": 0,
-      "updated_at": "2026-09-29T03:17:49Z"
+      "updated_at": "2026-09-30T08:15:07Z"
+    },
+    {
+      "name": "mystery-skill",
+      "url": "https://github.com/ouxxyy/mystery-skill",
+      "description": "Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA",
+      "category": "skill",
+      "language": "",
+      "stars": 3,
+      "updated_at": "2026-09-30T08:15:06Z"
     },
     {
       "name": "storyboard-scavenger",
@@ -45,34 +36,7 @@
       "category": "skill",
       "language": "HTML",
       "stars": 4,
-      "updated_at": "2026-09-29T03:17:44Z"
-    },
-    {
-      "name": "Attention",
-      "url": "https://github.com/ouxxyy/Attention",
-      "description": "本地专注力仪表盘：读 ActivityWatch 数据，算分心程度、切换次数与心流时段，数据不出本机",
-      "category": "local",
-      "language": "TypeScript",
-      "stars": 0,
-      "updated_at": "2026-09-26T15:21:15Z"
-    },
-    {
-      "name": "mbai",
-      "url": "https://github.com/ouxxyy/mbai",
-      "description": "工作任务 AI 不可替代指数：复制 PROMPT.md 到任意 AI 对话即用，也能装成 Agent Skill",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-09-22T02:30:39Z"
-    },
-    {
-      "name": "jd-resume-match",
-      "url": "https://github.com/ouxxyy/jd-resume-match",
-      "description": "简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-09-17T06:14:04Z"
+      "updated_at": "2026-09-30T08:15:04Z"
     },
     {
       "name": "travel-art-album-skill",
@@ -81,7 +45,43 @@
       "category": "skill",
       "language": "JavaScript",
       "stars": 1,
-      "updated_at": "2026-09-10T10:16:58Z"
+      "updated_at": "2026-09-30T08:14:59Z"
+    },
+    {
+      "name": "jd-resume-match",
+      "url": "https://github.com/ouxxyy/jd-resume-match",
+      "description": "简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡",
+      "category": "career",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-09-30T08:14:56Z"
+    },
+    {
+      "name": "mbai",
+      "url": "https://github.com/ouxxyy/mbai",
+      "description": "工作任务 AI 不可替代指数：复制 PROMPT.md 到任意 AI 对话即用，也能装成 Agent Skill",
+      "category": "career",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-09-30T08:14:53Z"
+    },
+    {
+      "name": "Attention",
+      "url": "https://github.com/ouxxyy/Attention",
+      "description": "本地专注力仪表盘：读 ActivityWatch 数据，算分心程度、切换次数与心流时段，数据不出本机",
+      "category": "local",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-09-30T08:14:50Z"
+    },
+    {
+      "name": "sherlock-company",
+      "url": "https://github.com/ouxxyy/sherlock-company",
+      "description": "Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案",
+      "category": "career",
+      "language": "HTML",
+      "stars": 1,
+      "updated_at": "2026-09-30T08:14:48Z"
     }
   ]
 }

@@ -27,25 +27,25 @@
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
-| [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案 | 2026-09-30 |
 | [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) | 基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比 | 2026-09-30 |
-| [mbai](https://github.com/ouxxyy/mbai) | 工作任务 AI 不可替代指数：复制 PROMPT.md 到任意 AI 对话即用，也能装成 Agent Skill | 2026-09-22 |
-| [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | 简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡 | 2026-09-17 |
+| [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | 简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡 | 2026-09-30 |
+| [mbai](https://github.com/ouxxyy/mbai) | 工作任务 AI 不可替代指数：复制 PROMPT.md 到任意 AI 对话即用，也能装成 Agent Skill | 2026-09-30 |
+| [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案 | 2026-09-30 |
 
 ### AI Skill · 装进你的 Agent
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
-| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★3 | Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA | 2026-09-29 |
-| [storyboard-scavenger](https://github.com/ouxxyy/storyboard-scavenger) ★4 | 把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表 | 2026-09-29 |
-| [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) ★1 | 旅行照片艺术化工作流 + 单文件离线翻页相册 Skill | 2026-09-10 |
+| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★3 | Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA | 2026-09-30 |
+| [storyboard-scavenger](https://github.com/ouxxyy/storyboard-scavenger) ★4 | 把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表 | 2026-09-30 |
+| [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) ★1 | 旅行照片艺术化工作流 + 单文件离线翻页相册 Skill | 2026-09-30 |
 
 ### 本地工具 · 装在自己电脑
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
-| [postapp](https://github.com/ouxxyy/postapp) | 姿势企鹅：Chrome 坐姿监测插件，工作时提醒你别头前倾、驼背 | 2026-09-29 |
-| [Attention](https://github.com/ouxxyy/Attention) | 本地专注力仪表盘：读 ActivityWatch 数据，算分心程度、切换次数与心流时段，数据不出本机 | 2026-09-26 |
+| [postapp](https://github.com/ouxxyy/postapp) | 姿势企鹅：Chrome 坐姿监测插件，工作时提醒你别头前倾、驼背 | 2026-09-30 |
+| [Attention](https://github.com/ouxxyy/Attention) | 本地专注力仪表盘：读 ActivityWatch 数据，算分心程度、切换次数与心流时段，数据不出本机 | 2026-09-30 |
 <!-- projects:end -->
 
 ## 给 AI Agent 的话
