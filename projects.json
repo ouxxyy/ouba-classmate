@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T01:46:18+00:00",
+  "generated_at": "2026-10-03T01:19:05+00:00",
   "owner": "ouxxyy",
   "projects": [
     {
@@ -9,7 +9,16 @@
       "category": "career",
       "language": "TypeScript",
       "stars": 0,
-      "updated_at": "2026-09-30T08:56:16Z"
+      "updated_at": "2026-10-02T22:54:04Z"
+    },
+    {
+      "name": "jd-resume-match",
+      "url": "https://github.com/ouxxyy/jd-resume-match",
+      "description": "简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡",
+      "category": "career",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-10-02T04:20:10Z"
     },
     {
       "name": "postapp",
@@ -46,15 +55,6 @@
       "language": "JavaScript",
       "stars": 1,
       "updated_at": "2026-09-30T08:14:59Z"
-    },
-    {
-      "name": "jd-resume-match",
-      "url": "https://github.com/ouxxyy/jd-resume-match",
-      "description": "简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-09-30T08:14:56Z"
     },
     {
       "name": "mbai",
