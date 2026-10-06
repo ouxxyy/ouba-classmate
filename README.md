@@ -36,7 +36,7 @@
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
-| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★3 | Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA | 2026-09-30 |
+| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★4 | Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA | 2026-10-05 |
 | [storyboard-scavenger](https://github.com/ouxxyy/storyboard-scavenger) ★4 | 把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表 | 2026-09-30 |
 | [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) ★1 | 旅行照片艺术化工作流 + 单文件离线翻页相册 Skill | 2026-09-30 |
 

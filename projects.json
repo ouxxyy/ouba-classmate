@@ -1,7 +1,16 @@
 {
-  "generated_at": "2026-10-05T01:08:13+00:00",
+  "generated_at": "2026-10-06T02:25:43+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "mystery-skill",
+      "url": "https://github.com/ouxxyy/mystery-skill",
+      "description": "Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA",
+      "category": "skill",
+      "language": "",
+      "stars": 4,
+      "updated_at": "2026-10-05T04:25:49Z"
+    },
     {
       "name": "ai-interviewer",
       "url": "https://github.com/ouxxyy/ai-interviewer",
@@ -28,15 +37,6 @@
       "language": "TypeScript",
       "stars": 0,
       "updated_at": "2026-09-30T08:15:07Z"
-    },
-    {
-      "name": "mystery-skill",
-      "url": "https://github.com/ouxxyy/mystery-skill",
-      "description": "Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA",
-      "category": "skill",
-      "language": "",
-      "stars": 3,
-      "updated_at": "2026-09-30T08:15:06Z"
     },
     {
       "name": "storyboard-scavenger",
