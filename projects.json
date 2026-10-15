@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T01:20:11+00:00",
+  "generated_at": "2026-10-15T00:44:29+00:00",
   "owner": "ouxxyy",
   "projects": [
     {
@@ -8,8 +8,8 @@
       "description": "基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比",
       "category": "career",
       "language": "TypeScript",
-      "stars": 2,
-      "updated_at": "2026-10-13T09:57:34Z"
+      "stars": 3,
+      "updated_at": "2026-10-14T01:52:33Z"
     },
     {
       "name": "mystery-skill",
