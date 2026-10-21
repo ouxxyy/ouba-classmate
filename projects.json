@@ -1,7 +1,16 @@
 {
-  "generated_at": "2026-10-20T01:09:27+00:00",
+  "generated_at": "2026-10-21T00:47:34+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "storyboard-scavenger",
+      "url": "https://github.com/ouxxyy/storyboard-scavenger",
+      "description": "把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表",
+      "category": "skill",
+      "language": "HTML",
+      "stars": 5,
+      "updated_at": "2026-10-20T03:15:54Z"
+    },
     {
       "name": "ai-interviewer",
       "url": "https://github.com/ouxxyy/ai-interviewer",
@@ -37,15 +46,6 @@
       "language": "TypeScript",
       "stars": 0,
       "updated_at": "2026-09-30T08:15:07Z"
-    },
-    {
-      "name": "storyboard-scavenger",
-      "url": "https://github.com/ouxxyy/storyboard-scavenger",
-      "description": "把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表",
-      "category": "skill",
-      "language": "HTML",
-      "stars": 4,
-      "updated_at": "2026-09-30T08:15:04Z"
     },
     {
       "name": "travel-art-album-skill",
