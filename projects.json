@@ -1,96 +1,217 @@
 {
-  "generated_at": "2026-10-22T04:49:52+00:00",
+  "generated_at": "2026-10-22T06:25:42+00:00",
   "owner": "ouxxyy",
   "projects": [
     {
-      "name": "job-search",
-      "url": "https://github.com/ouxxyy/job-search",
-      "description": "输入求职条件，筛选招聘信息并生成带来源证据的 HTML/Excel 岗位清单",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-10-22T04:49:17Z"
-    },
-    {
-      "name": "storyboard-scavenger",
-      "url": "https://github.com/ouxxyy/storyboard-scavenger",
-      "description": "把混乱的创意清理成可拍摄的 AI 视频分镜：输入一堆想法，输出有序的分镜表",
-      "category": "skill",
-      "language": "HTML",
-      "stars": 5,
-      "updated_at": "2026-10-20T03:15:54Z"
-    },
-    {
-      "name": "ai-interviewer",
-      "url": "https://github.com/ouxxyy/ai-interviewer",
-      "description": "基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比",
-      "category": "career",
-      "language": "TypeScript",
-      "stars": 3,
-      "updated_at": "2026-10-14T01:52:33Z"
-    },
-    {
-      "name": "mystery-skill",
-      "url": "https://github.com/ouxxyy/mystery-skill",
-      "description": "Mystery 思维操作系统：从 11 篇著作、10+ 访谈、20+ 外部评论提炼的心智模型、决策启发式与表达 DNA",
-      "category": "skill",
-      "language": "",
-      "stars": 4,
-      "updated_at": "2026-10-05T04:25:49Z"
-    },
-    {
-      "name": "jd-resume-match",
-      "url": "https://github.com/ouxxyy/jd-resume-match",
-      "description": "简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-10-02T04:20:10Z"
-    },
-    {
-      "name": "postapp",
-      "url": "https://github.com/ouxxyy/postapp",
-      "description": "姿势企鹅：Chrome 坐姿监测插件，工作时提醒你别头前倾、驼背",
-      "category": "local",
-      "language": "TypeScript",
-      "stars": 0,
-      "updated_at": "2026-09-30T08:15:07Z"
-    },
-    {
       "name": "travel-art-album-skill",
       "url": "https://github.com/ouxxyy/travel-art-album-skill",
-      "description": "旅行照片艺术化工作流 + 单文件离线翻页相册 Skill",
+      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
       "category": "skill",
       "language": "JavaScript",
       "stars": 1,
-      "updated_at": "2026-09-30T08:14:59Z"
+      "updated_at": "2026-10-22T06:23:20Z",
+      "description_en": "Travel photo album and single-file offline HTML flipbook skill",
+      "keywords": [
+        "旅行照片画册",
+        "离线翻页相册",
+        "照片艺术化",
+        "travel photo album",
+        "offline flipbook"
+      ],
+      "use_cases": [
+        "把旅行照片制作成艺术画册",
+        "离线翻阅相册并用浏览器打印 PDF"
+      ]
     },
     {
       "name": "mbai",
       "url": "https://github.com/ouxxyy/mbai",
-      "description": "工作任务 AI 不可替代指数：复制 PROMPT.md 到任意 AI 对话即用，也能装成 Agent Skill",
+      "description": "工作任务 AI 不可替代指数：任务分析、贡献证据与替代风险自评，非裁员预测",
       "category": "career",
       "language": "Python",
       "stars": 0,
-      "updated_at": "2026-09-30T08:14:53Z"
+      "updated_at": "2026-10-22T06:23:00Z",
+      "description_en": "Task-level AI assessment for career reflection",
+      "keywords": [
+        "AI 替代风险自评",
+        "工作任务分析",
+        "职业规划",
+        "AI task assessment",
+        "career planning"
+      ],
+      "use_cases": [
+        "拆解工作任务中的自动化空间",
+        "梳理个人贡献和职业证据缺口"
+      ]
     },
     {
-      "name": "Attention",
-      "url": "https://github.com/ouxxyy/Attention",
-      "description": "本地专注力仪表盘：读 ActivityWatch 数据，算分心程度、切换次数与心流时段，数据不出本机",
+      "name": "ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "description": "中文语音 AI 面试陪练：基于 JD 与经历追问、引用原话点评、初答重答对比",
+      "category": "career",
+      "language": "TypeScript",
+      "stars": 3,
+      "updated_at": "2026-10-22T06:22:42Z",
+      "description_en": "Chinese voice AI mock interview practice",
+      "keywords": [
+        "AI 面试官",
+        "中文语音模拟面试",
+        "面试陪练",
+        "AI mock interview",
+        "voice interview practice"
+      ],
+      "use_cases": [
+        "练习自我介绍与经历面试",
+        "通过原话点评和重答改进回答"
+      ]
+    },
+    {
+      "name": "mystery-skill",
+      "url": "https://github.com/ouxxyy/mystery-skill",
+      "description": "Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习",
+      "category": "skill",
+      "language": "",
+      "stars": 4,
+      "updated_at": "2026-10-22T06:20:57Z",
+      "description_en": "Mystery Method cognitive framework for personal study",
+      "keywords": [
+        "Mystery 思维模型",
+        "迷男方法分析",
+        "Mystery Method",
+        "Erik von Markovik",
+        "cognitive framework"
+      ],
+      "use_cases": [
+        "研究 Mystery 的认知框架",
+        "分析社交情境与决策边界"
+      ]
+    },
+    {
+      "name": "postapp",
+      "url": "https://github.com/ouxxyy/postapp",
+      "description": "姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件",
       "category": "local",
       "language": "TypeScript",
       "stars": 0,
-      "updated_at": "2026-09-30T08:14:50Z"
+      "updated_at": "2026-10-22T06:20:38Z",
+      "description_en": "Chrome posture reminder extension with on-device pose detection",
+      "keywords": [
+        "Chrome 坐姿提醒",
+        "姿势企鹅",
+        "Posture Penguin",
+        "posture reminder",
+        "Chrome extension"
+      ],
+      "use_cases": [
+        "在电脑前设置坐姿提醒",
+        "查看本地坐姿记录"
+      ]
     },
     {
       "name": "sherlock-company",
       "url": "https://github.com/ouxxyy/sherlock-company",
-      "description": "Offer 前的公司证据调查智能体：已证实/有线索/说法冲突/还不知道四态报告 + 离线 HTML 侦探档案",
+      "description": "入职前公司证据调查：区分已证实、线索、冲突与未知，输出核实清单和离线 HTML 档案",
       "category": "career",
       "language": "HTML",
       "stars": 1,
-      "updated_at": "2026-09-30T08:14:48Z"
+      "updated_at": "2026-10-22T06:20:19Z",
+      "description_en": "Pre-offer employer research with evidence boundaries",
+      "keywords": [
+        "入职前查公司",
+        "Offer 公司调查",
+        "公司证据调查",
+        "employer research",
+        "company research"
+      ],
+      "use_cases": [
+        "接受 Offer 前核查公司信息",
+        "整理冲突证据与待核验问题"
+      ]
+    },
+    {
+      "name": "jd-resume-match",
+      "url": "https://github.com/ouxxyy/jd-resume-match",
+      "description": "简历与 JD 匹配及简历优化：证据引用、可复算评分、结构建议与离线 HTML 报告",
+      "category": "career",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-10-22T06:20:00Z",
+      "description_en": "Evidence-based resume and job-description matching and review",
+      "keywords": [
+        "简历 JD 匹配",
+        "简历优化",
+        "证据匹配",
+        "resume matching",
+        "resume review"
+      ],
+      "use_cases": [
+        "对照岗位要求查简历证据缺口",
+        "调整简历结构与经历表达"
+      ]
+    },
+    {
+      "name": "Attention",
+      "url": "https://github.com/ouxxyy/Attention",
+      "description": "ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析",
+      "category": "local",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-10-22T06:19:39Z",
+      "description_en": "Local ActivityWatch dashboard for focus and context switching",
+      "keywords": [
+        "ActivityWatch 仪表盘",
+        "专注力分析",
+        "任务切换",
+        "ActivityWatch dashboard",
+        "context switching"
+      ],
+      "use_cases": [
+        "查看一天的专注与分心模式",
+        "分析任务切换和持续专注时段"
+      ]
+    },
+    {
+      "name": "storyboard-scavenger",
+      "url": "https://github.com/ouxxyy/storyboard-scavenger",
+      "description": "AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜",
+      "category": "skill",
+      "language": "HTML",
+      "stars": 5,
+      "updated_at": "2026-10-22T06:19:20Z",
+      "description_en": "AI video storyboard and prompt-writing skill for Kling and Seedance",
+      "keywords": [
+        "AI 视频分镜",
+        "可灵提示词",
+        "即梦分镜",
+        "AI video storyboard",
+        "Kling",
+        "Seedance"
+      ],
+      "use_cases": [
+        "把创意拆成逐镜头提示词",
+        "规划多个镜头的环境与运镜"
+      ]
+    },
+    {
+      "name": "job-search",
+      "url": "https://github.com/ouxxyy/job-search",
+      "description": "求职岗位筛选 Agent Skill：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单",
+      "category": "career",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-10-22T04:49:17Z",
+      "description_en": "Job search Agent Skill with source-backed job lists",
+      "keywords": [
+        "求职岗位筛选",
+        "招聘信息整理",
+        "岗位清单",
+        "job search agent",
+        "job shortlist"
+      ],
+      "use_cases": [
+        "按岗位城市薪资筛选招聘信息",
+        "保存带来源证据的岗位清单"
+      ]
     }
   ]
 }
