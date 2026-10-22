@@ -45,7 +45,7 @@ CATEGORY_ORDER = ["career", "skill", "app", "local", "more"]
 
 # 描述为各仓库 README/描述的中文摘编；stars 与更新时间每次从 API 实时刷新
 REPO_META = {
-    "job-scout": {
+    "job-search": {
         "category": "career",
         "desc": "输入求职条件，筛选招聘信息并生成带来源证据的 HTML/Excel 岗位清单",
     },

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-22T02:14:54+00:00",
+  "generated_at": "2026-10-22T04:49:29+00:00",
   "owner": "ouxxyy",
   "projects": [
     {
-      "name": "job-scout",
-      "url": "https://github.com/ouxxyy/job-scout",
+      "name": "job-search",
+      "url": "https://github.com/ouxxyy/job-search",
       "description": "输入求职条件，筛选招聘信息并生成带来源证据的 HTML/Excel 岗位清单",
       "category": "career",
       "language": "Python",
       "stars": 0,
-      "updated_at": "2026-10-22T02:08:17Z"
+      "updated_at": "2026-10-22T04:49:15Z"
     },
     {
       "name": "storyboard-scavenger",

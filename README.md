@@ -11,7 +11,7 @@
 | 你想做什么 | 去这里 |
 | --- | --- |
 | 判断手头工作会不会被 AI 替代 | [mbai](https://github.com/ouxxyy/mbai) |
-| 按条件找岗位、整理投递短名单 | [job-scout](https://github.com/ouxxyy/job-scout) |
+| 按条件找岗位、整理投递短名单 | [job-search](https://github.com/ouxxyy/job-search) |
 | 改简历、对着 JD 打分 | [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) |
 | 练面试 | [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) |
 | 查一家公司的底 | [sherlock-company](https://github.com/ouxxyy/sherlock-company) |
@@ -28,7 +28,7 @@
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
-| [job-scout](https://github.com/ouxxyy/job-scout) | 输入求职条件，筛选招聘信息并生成带来源证据的 HTML/Excel 岗位清单 | 2026-10-22 |
+| [job-search](https://github.com/ouxxyy/job-search) | 输入求职条件，筛选招聘信息并生成带来源证据的 HTML/Excel 岗位清单 | 2026-10-22 |
 | [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) ★3 | 基于 JD 与经历的中文语音 AI 面试陪练：逐题五维点评、原话引用、初答重答对比 | 2026-10-14 |
 | [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | 简历 vs JD 匹配度打分器：可复算评分、原文证据引用、HTML 体检单与脱敏分享卡 | 2026-10-02 |
 | [mbai](https://github.com/ouxxyy/mbai) | 工作任务 AI 不可替代指数：复制 PROMPT.md 到任意 AI 对话即用，也能装成 Agent Skill | 2026-09-30 |
