@@ -1,7 +1,113 @@
 {
-  "generated_at": "2026-10-24T00:57:21+00:00",
+  "generated_at": "2026-10-24T13:06:20+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "Attention",
+      "url": "https://github.com/ouxxyy/Attention",
+      "description": "ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析",
+      "category": "local",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-10-24T13:06:01Z",
+      "description_en": "Local ActivityWatch dashboard for focus and context switching",
+      "keywords": [
+        "ActivityWatch 仪表盘",
+        "专注力分析",
+        "任务切换",
+        "ActivityWatch dashboard",
+        "context switching"
+      ],
+      "use_cases": [
+        "查看一天的专注与分心模式",
+        "分析任务切换和持续专注时段"
+      ]
+    },
+    {
+      "name": "travel-art-album-skill",
+      "url": "https://github.com/ouxxyy/travel-art-album-skill",
+      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
+      "category": "skill",
+      "language": "JavaScript",
+      "stars": 1,
+      "updated_at": "2026-10-24T13:05:58Z",
+      "description_en": "Travel photo album and single-file offline HTML flipbook skill",
+      "keywords": [
+        "旅行照片画册",
+        "离线翻页相册",
+        "照片艺术化",
+        "travel photo album",
+        "offline flipbook"
+      ],
+      "use_cases": [
+        "把旅行照片制作成艺术画册",
+        "离线翻阅相册并用浏览器打印 PDF"
+      ]
+    },
+    {
+      "name": "storyboard-scavenger",
+      "url": "https://github.com/ouxxyy/storyboard-scavenger",
+      "description": "AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜",
+      "category": "skill",
+      "language": "HTML",
+      "stars": 5,
+      "updated_at": "2026-10-24T13:05:55Z",
+      "description_en": "AI video storyboard and prompt-writing skill for Kling and Seedance",
+      "keywords": [
+        "AI 视频分镜",
+        "可灵提示词",
+        "即梦分镜",
+        "AI video storyboard",
+        "Kling",
+        "Seedance"
+      ],
+      "use_cases": [
+        "把创意拆成逐镜头提示词",
+        "规划多个镜头的环境与运镜"
+      ]
+    },
+    {
+      "name": "postapp",
+      "url": "https://github.com/ouxxyy/postapp",
+      "description": "姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件",
+      "category": "local",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-10-24T13:05:49Z",
+      "description_en": "Chrome posture reminder extension with on-device pose detection",
+      "keywords": [
+        "Chrome 坐姿提醒",
+        "姿势企鹅",
+        "Posture Penguin",
+        "posture reminder",
+        "Chrome extension"
+      ],
+      "use_cases": [
+        "在电脑前设置坐姿提醒",
+        "查看本地坐姿记录"
+      ]
+    },
+    {
+      "name": "mystery-skill",
+      "url": "https://github.com/ouxxyy/mystery-skill",
+      "description": "Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习",
+      "category": "skill",
+      "language": "",
+      "stars": 10,
+      "updated_at": "2026-10-24T13:05:47Z",
+      "description_en": "Mystery Method cognitive framework for personal study",
+      "keywords": [
+        "Mystery 思维模型",
+        "迷男方法分析",
+        "Mystery Method",
+        "Erik von Markovik",
+        "cognitive framework"
+      ],
+      "use_cases": [
+        "研究 Mystery 的认知框架",
+        "分析社交情境与决策边界"
+      ]
+    },
     {
       "name": "mbai",
       "url": "https://github.com/ouxxyy/mbai",
@@ -9,7 +115,7 @@
       "category": "career",
       "language": "Python",
       "stars": 1,
-      "updated_at": "2026-10-23T12:49:14Z",
+      "updated_at": "2026-10-24T13:05:44Z",
       "description_en": "Task-level AI assessment for career reflection",
       "keywords": [
         "AI 替代风险自评",
@@ -30,7 +136,7 @@
       "category": "career",
       "language": "Python",
       "stars": 0,
-      "updated_at": "2026-10-23T11:47:13Z",
+      "updated_at": "2026-10-24T13:05:41Z",
       "description_en": "Job search Agent Skill with source-backed job lists",
       "keywords": [
         "求职岗位筛选",
@@ -45,118 +151,13 @@
       ]
     },
     {
-      "name": "mystery-skill",
-      "url": "https://github.com/ouxxyy/mystery-skill",
-      "description": "Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习",
-      "category": "skill",
-      "language": "",
-      "stars": 9,
-      "updated_at": "2026-10-23T09:22:26Z",
-      "description_en": "Mystery Method cognitive framework for personal study",
-      "keywords": [
-        "Mystery 思维模型",
-        "迷男方法分析",
-        "Mystery Method",
-        "Erik von Markovik",
-        "cognitive framework"
-      ],
-      "use_cases": [
-        "研究 Mystery 的认知框架",
-        "分析社交情境与决策边界"
-      ]
-    },
-    {
-      "name": "travel-art-album-skill",
-      "url": "https://github.com/ouxxyy/travel-art-album-skill",
-      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
-      "category": "skill",
-      "language": "JavaScript",
-      "stars": 1,
-      "updated_at": "2026-10-22T06:23:20Z",
-      "description_en": "Travel photo album and single-file offline HTML flipbook skill",
-      "keywords": [
-        "旅行照片画册",
-        "离线翻页相册",
-        "照片艺术化",
-        "travel photo album",
-        "offline flipbook"
-      ],
-      "use_cases": [
-        "把旅行照片制作成艺术画册",
-        "离线翻阅相册并用浏览器打印 PDF"
-      ]
-    },
-    {
-      "name": "ai-interviewer",
-      "url": "https://github.com/ouxxyy/ai-interviewer",
-      "description": "中文语音 AI 面试陪练：基于 JD 与经历追问、引用原话点评、初答重答对比",
-      "category": "career",
-      "language": "TypeScript",
-      "stars": 3,
-      "updated_at": "2026-10-22T06:22:42Z",
-      "description_en": "Chinese voice AI mock interview practice",
-      "keywords": [
-        "AI 面试官",
-        "中文语音模拟面试",
-        "面试陪练",
-        "AI mock interview",
-        "voice interview practice"
-      ],
-      "use_cases": [
-        "练习自我介绍与经历面试",
-        "通过原话点评和重答改进回答"
-      ]
-    },
-    {
-      "name": "postapp",
-      "url": "https://github.com/ouxxyy/postapp",
-      "description": "姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件",
-      "category": "local",
-      "language": "TypeScript",
-      "stars": 0,
-      "updated_at": "2026-10-22T06:20:38Z",
-      "description_en": "Chrome posture reminder extension with on-device pose detection",
-      "keywords": [
-        "Chrome 坐姿提醒",
-        "姿势企鹅",
-        "Posture Penguin",
-        "posture reminder",
-        "Chrome extension"
-      ],
-      "use_cases": [
-        "在电脑前设置坐姿提醒",
-        "查看本地坐姿记录"
-      ]
-    },
-    {
-      "name": "sherlock-company",
-      "url": "https://github.com/ouxxyy/sherlock-company",
-      "description": "入职前公司证据调查：区分已证实、线索、冲突与未知，输出核实清单和离线 HTML 档案",
-      "category": "career",
-      "language": "HTML",
-      "stars": 1,
-      "updated_at": "2026-10-22T06:20:19Z",
-      "description_en": "Pre-offer employer research with evidence boundaries",
-      "keywords": [
-        "入职前查公司",
-        "Offer 公司调查",
-        "公司证据调查",
-        "employer research",
-        "company research"
-      ],
-      "use_cases": [
-        "接受 Offer 前核查公司信息",
-        "整理冲突证据与待核验问题"
-      ]
-    },
-    {
       "name": "jd-resume-match",
       "url": "https://github.com/ouxxyy/jd-resume-match",
       "description": "简历与 JD 匹配及简历优化：证据引用、可复算评分、结构建议与离线 HTML 报告",
       "category": "career",
       "language": "Python",
       "stars": 0,
-      "updated_at": "2026-10-22T06:20:00Z",
+      "updated_at": "2026-10-24T13:05:37Z",
       "description_en": "Evidence-based resume and job-description matching and review",
       "keywords": [
         "简历 JD 匹配",
@@ -171,46 +172,45 @@
       ]
     },
     {
-      "name": "Attention",
-      "url": "https://github.com/ouxxyy/Attention",
-      "description": "ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析",
-      "category": "local",
+      "name": "ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "description": "中文语音 AI 面试陪练：基于 JD 与经历追问、引用原话点评、初答重答对比",
+      "category": "career",
       "language": "TypeScript",
-      "stars": 0,
-      "updated_at": "2026-10-22T06:19:39Z",
-      "description_en": "Local ActivityWatch dashboard for focus and context switching",
+      "stars": 3,
+      "updated_at": "2026-10-24T13:05:34Z",
+      "description_en": "Chinese voice AI mock interview practice",
       "keywords": [
-        "ActivityWatch 仪表盘",
-        "专注力分析",
-        "任务切换",
-        "ActivityWatch dashboard",
-        "context switching"
+        "AI 面试官",
+        "中文语音模拟面试",
+        "面试陪练",
+        "AI mock interview",
+        "voice interview practice"
       ],
       "use_cases": [
-        "查看一天的专注与分心模式",
-        "分析任务切换和持续专注时段"
+        "练习自我介绍与经历面试",
+        "通过原话点评和重答改进回答"
       ]
     },
     {
-      "name": "storyboard-scavenger",
-      "url": "https://github.com/ouxxyy/storyboard-scavenger",
-      "description": "AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜",
-      "category": "skill",
+      "name": "sherlock-company",
+      "url": "https://github.com/ouxxyy/sherlock-company",
+      "description": "入职前公司证据调查：区分已证实、线索、冲突与未知，输出核实清单和离线 HTML 档案",
+      "category": "career",
       "language": "HTML",
-      "stars": 5,
-      "updated_at": "2026-10-22T06:19:20Z",
-      "description_en": "AI video storyboard and prompt-writing skill for Kling and Seedance",
+      "stars": 1,
+      "updated_at": "2026-10-24T12:53:25Z",
+      "description_en": "Pre-offer employer research with evidence boundaries",
       "keywords": [
-        "AI 视频分镜",
-        "可灵提示词",
-        "即梦分镜",
-        "AI video storyboard",
-        "Kling",
-        "Seedance"
+        "入职前查公司",
+        "Offer 公司调查",
+        "公司证据调查",
+        "employer research",
+        "company research"
       ],
       "use_cases": [
-        "把创意拆成逐镜头提示词",
-        "规划多个镜头的环境与运镜"
+        "接受 Offer 前核查公司信息",
+        "整理冲突证据与待核验问题"
       ]
     }
   ]
