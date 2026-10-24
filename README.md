@@ -28,18 +28,18 @@
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
-| [mbai](https://github.com/ouxxyy/mbai) | 工作任务 AI 不可替代指数：任务分析、贡献证据与替代风险自评，非裁员预测 | 2026-10-22 |
+| [mbai](https://github.com/ouxxyy/mbai) ★1 | 工作任务 AI 不可替代指数：任务分析、贡献证据与替代风险自评，非裁员预测 | 2026-10-23 |
+| [job-search](https://github.com/ouxxyy/job-search) | 求职岗位筛选 Agent Skill：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单 | 2026-10-23 |
 | [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) ★3 | 中文语音 AI 面试陪练：基于 JD 与经历追问、引用原话点评、初答重答对比 | 2026-10-22 |
 | [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | 入职前公司证据调查：区分已证实、线索、冲突与未知，输出核实清单和离线 HTML 档案 | 2026-10-22 |
 | [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | 简历与 JD 匹配及简历优化：证据引用、可复算评分、结构建议与离线 HTML 报告 | 2026-10-22 |
-| [job-search](https://github.com/ouxxyy/job-search) | 求职岗位筛选 Agent Skill：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单 | 2026-10-22 |
 
 ### AI Skill · 装进你的 Agent
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
+| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★9 | Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习 | 2026-10-23 |
 | [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) ★1 | 旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册 | 2026-10-22 |
-| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★4 | Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习 | 2026-10-22 |
 | [storyboard-scavenger](https://github.com/ouxxyy/storyboard-scavenger) ★5 | AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜 | 2026-10-22 |
 
 ### 本地工具 · 装在自己电脑
