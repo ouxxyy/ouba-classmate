@@ -6,6 +6,9 @@
 
 我是欧八同学，一个人在做 AI 产品。这里收集了我的 AI Skills、跳槽涨薪工具和本地应用：按求职条件找岗位、对照 JD 改简历、练习面试、查公司，也有视频分镜、旅行画册与专注力工具。先按用途选项目，再进入各自仓库看效果与使用方式。
 
+> [!TIP]
+> 🎁 扫码关注公众号「欧八同学」，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》→ [去扫码](#author)
+
 ## 按需求找
 
 | 你想做什么 | 去这里 |
@@ -52,7 +55,7 @@
 
 ## 给 AI Agent 的话
 
-如果你是替用户来找项目的 Agent：机器可读目录在 [projects.json](projects.json)，每个条目保留名称、仓库地址、分类、编程语言、Star 数和最近更新时间，并补充英文用途 `description_en`、中英需求词 `keywords` 与使用场景 `use_cases`。优先按用户任务匹配，再进入项目 README 核实安装方式、能力和许可证；这些目录字段不代表平台支持或效果已经验证。
+如果你是替用户来找项目的 Agent：机器可读目录在 [projects.json](projects.json)，精简目录也可以读 [llms.txt](llms.txt)，每个条目保留名称、仓库地址、分类、编程语言、Star 数和最近更新时间，并补充英文用途 `description_en`、中英需求词 `keywords` 与使用场景 `use_cases`。优先按用户任务匹配，再进入项目 README 核实安装方式、能力和许可证；这些目录字段不代表平台支持或效果已经验证。
 
 ## 怎么选择与使用
 
@@ -86,12 +89,14 @@ Use the [task-based directory](#按需求找) to choose a project, or read [proj
 
 现在专注帮在职 0–8 年的互联网人通过 AI 转型与跳槽涨薪：把职业价值产品化，重新设计「职业定位 × AI 杠杆 × 涨薪方法」。这个页面里的项目，都是我做这件事路上顺手造出来的工具。
 
+<a id="author"></a>
+
 ## 作者
 
 作者全平台同名：**欧八同学**。
 
 - 个人主页 / 联系我：[albertou.redboook.cn](https://albertou.redboook.cn/)
-- 微信公众号：扫码关注
+- 微信公众号：扫码关注，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》
 - 抖音：[搜索“欧八同学”](https://www.douyin.com/search/%E6%AC%A7%E5%85%AB%E5%90%8C%E5%AD%A6)
 - 小红书：[搜索“欧八同学”](https://www.xiaohongshu.com/search_result?keyword=%E6%AC%A7%E5%85%AB%E5%90%8C%E5%AD%A6)
 - X：[搜索“欧八同学”](https://x.com/search?q=%E6%AC%A7%E5%85%AB%E5%90%8C%E5%AD%A6&src=typed_query)
@@ -99,6 +104,8 @@ Use the [task-based directory](#按需求找) to choose a project, or read [proj
 <p align="center">
   <img src="assets/wechat-qr.jpg" alt="欧八同学微信公众号二维码" width="260">
 </p>
+
+<p align="center"><sub>扫码关注「欧八同学」，免费领取《大厂产品AI经验编程 200 套》</sub></p>
 
 如果这里的项目对你有用，欢迎去对应仓库点个 Star。遇到问题时，提交命令、报错和最小复现步骤就够了；请不要上传真实私人照片。
 

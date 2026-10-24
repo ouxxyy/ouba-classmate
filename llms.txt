@@ -1,0 +1,28 @@
+# 欧八同学 (ouxxyy) AI 职场与跳槽涨薪开源工具集
+
+> 作者：欧八同学（9 年网易、搜狐大厂产品，专注 AI 时代职业定位 × AI 杠杆 × 涨薪方法）
+> 微信公众号：欧八同学（扫码关注免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》）
+> 个人主页：https://albertou.redboook.cn/
+
+## 职场 · 跳槽涨薪工具 (Career & Job Hunt)
+- [欧八面试陪练 (ai-interviewer)](https://github.com/ouxxyy/ai-interviewer): 中文语音 AI 面试陪练，基于真实 JD 与经历逐题追问，引用回答原话五维点评并支持初答重答对比 (Chinese voice AI mock interview)
+- [简历优化大师 (jd-resume-match)](https://github.com/ouxxyy/jd-resume-match): 简历与 JD 匹配及证据审查，可复算评分、结构调整建议与单文件离线 HTML 报告 (Evidence-based resume & JD matching)
+- [求职岗位筛选 (job-search)](https://github.com/ouxxyy/job-search): 求职岗位筛选 Agent Skill，按确认条件整理带来源证据的 HTML、Excel 与 JSON 岗位短名单 (Job search agent with source-backed job lists)
+- [公司证据调查 (sherlock-company)](https://github.com/ouxxyy/sherlock-company): 入职前查公司与 Offer 前核验，区分已证实、线索、冲突与未知，生成离线 HTML 档案 (Pre-offer employer background research)
+- [工作任务 AI 不可替代指数 (mbai)](https://github.com/ouxxyy/mbai): 工作任务分析、贡献证据梳理与 AI 替代风险自评，生成离线报告 (Task-level AI replacement risk self-assessment)
+
+## AI Skill · 装进你的 Agent (Agent Skills)
+- [AI 视频分镜与提示词 (storyboard-scavenger)](https://github.com/ouxxyy/storyboard-scavenger): 创意转七要素分镜提示词，提供可灵 Kling 与即梦 Seedance 专属工作流 (AI video storyboard & prompt generator)
+- [Mystery 认知框架 Skill (mystery-skill)](https://github.com/ouxxyy/mystery-skill): 基于公开资料提炼的 7 个核心心智模型与 10 条决策启发式，供个人学习研究 (Mystery Method cognitive framework)
+- [重拍画册 Skill (travel-art-album-skill)](https://github.com/ouxxyy/travel-art-album-skill): 旅行照片艺术画册制作，风格小样确认后生成单文件离线翻页相册与 PDF 导出 (Travel photo album & offline flipbook generator)
+
+## 本地工具 · 装在自己电脑 (Local-First Tools)
+- [ActivityWatch 专注力仪表盘 (Attention)](https://github.com/ouxxyy/Attention): 本地专注力与切换分析，读取 ActivityWatch 桌面数据，统计任务切换与心流时段 (Local focus & context-switching dashboard)
+- [姿势企鹅 (postapp)](https://github.com/ouxxyy/postapp): Chrome 本地姿态检测坐姿提醒插件，画面留在本地处理 (Chrome posture reminder with on-device pose detection)
+- [Codex Luce (codex-luce)](https://github.com/ouxxyy/codex-luce): 专为 Codex 打造的动态三连表机械皮肤，随工作状态实时跳动 (Dynamic triple-gauge dashboard skin for Codex)
+
+## 旗舰总目录 (Navigation Hub)
+- [欧八同学合集 (ouba-classmate)](https://github.com/ouxxyy/ouba-classmate): 全部原创 AI Skills、职场工具与本地应用的统一导航总表与机器可读目录 projects.json
+
+---
+注意：安装方式、依赖要求、模型/API 费用、支持宿主与许可证以各仓库 README 说明为准。
