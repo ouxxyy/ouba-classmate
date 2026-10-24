@@ -85,7 +85,7 @@ Use the [task-based directory](#按需求找) to choose a project, or read [proj
 
 ## 关于欧八同学
 
-9 年网易、搜狐大厂产品经理，带过团队。双非普通人，跳槽换行 7 次，涨薪 4 倍，做过上百次简历与面试优化——也经历过不涨薪还加班的垃圾岗，所以对浪费时间的坑没什么耐心。
+9 年网易、搜狐大厂产品经理，带过团队。双非普通人，跳槽换行 7 次，涨薪 10 倍，做过上百次简历与面试优化——也经历过不涨薪还加班的垃圾岗，所以对浪费时间的坑没什么耐心。
 
 现在专注帮在职 0–8 年的互联网人通过 AI 转型与跳槽涨薪：把职业价值产品化，重新设计「职业定位 × AI 杠杆 × 涨薪方法」。这个页面里的项目，都是我做这件事路上顺手造出来的工具。
 
@@ -96,7 +96,7 @@ Use the [task-based directory](#按需求找) to choose a project, or read [proj
 作者全平台同名：**欧八同学**。
 
 - 个人主页 / 联系我：[albertou.redboook.cn](https://albertou.redboook.cn/)
-- 微信公众号：扫码关注，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》
+- 微信公众号：扫码关注，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》
 - 抖音：[搜索“欧八同学”](https://www.douyin.com/search/%E6%AC%A7%E5%85%AB%E5%90%8C%E5%AD%A6)
 - 小红书：[搜索“欧八同学”](https://www.xiaohongshu.com/search_result?keyword=%E6%AC%A7%E5%85%AB%E5%90%8C%E5%AD%A6)
 - X：[搜索“欧八同学”](https://x.com/search?q=%E6%AC%A7%E5%85%AB%E5%90%8C%E5%AD%A6&src=typed_query)
