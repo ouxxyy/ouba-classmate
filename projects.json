@@ -1,7 +1,71 @@
 {
-  "generated_at": "2026-10-24T13:13:55+00:00",
+  "generated_at": "2026-10-25T00:27:16+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "postapp",
+      "url": "https://github.com/ouxxyy/postapp",
+      "description": "姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件",
+      "category": "local",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-10-24T13:14:02Z",
+      "description_en": "Chrome posture reminder extension with on-device pose detection",
+      "keywords": [
+        "Chrome 坐姿提醒",
+        "姿势企鹅",
+        "Posture Penguin",
+        "posture reminder",
+        "Chrome extension"
+      ],
+      "use_cases": [
+        "在电脑前设置坐姿提醒",
+        "查看本地坐姿记录"
+      ]
+    },
+    {
+      "name": "travel-art-album-skill",
+      "url": "https://github.com/ouxxyy/travel-art-album-skill",
+      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
+      "category": "skill",
+      "language": "JavaScript",
+      "stars": 1,
+      "updated_at": "2026-10-24T13:13:56Z",
+      "description_en": "Travel photo album and single-file offline HTML flipbook skill",
+      "keywords": [
+        "旅行照片画册",
+        "离线翻页相册",
+        "照片艺术化",
+        "travel photo album",
+        "offline flipbook"
+      ],
+      "use_cases": [
+        "把旅行照片制作成艺术画册",
+        "离线翻阅相册并用浏览器打印 PDF"
+      ]
+    },
+    {
+      "name": "storyboard-scavenger",
+      "url": "https://github.com/ouxxyy/storyboard-scavenger",
+      "description": "AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜",
+      "category": "skill",
+      "language": "HTML",
+      "stars": 5,
+      "updated_at": "2026-10-24T13:13:53Z",
+      "description_en": "AI video storyboard and prompt-writing skill for Kling and Seedance",
+      "keywords": [
+        "AI 视频分镜",
+        "可灵提示词",
+        "即梦分镜",
+        "AI video storyboard",
+        "Kling",
+        "Seedance"
+      ],
+      "use_cases": [
+        "把创意拆成逐镜头提示词",
+        "规划多个镜头的环境与运镜"
+      ]
+    },
     {
       "name": "mbai",
       "url": "https://github.com/ouxxyy/mbai",
@@ -108,48 +172,6 @@
       ]
     },
     {
-      "name": "postapp",
-      "url": "https://github.com/ouxxyy/postapp",
-      "description": "姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件",
-      "category": "local",
-      "language": "TypeScript",
-      "stars": 0,
-      "updated_at": "2026-10-24T13:08:39Z",
-      "description_en": "Chrome posture reminder extension with on-device pose detection",
-      "keywords": [
-        "Chrome 坐姿提醒",
-        "姿势企鹅",
-        "Posture Penguin",
-        "posture reminder",
-        "Chrome extension"
-      ],
-      "use_cases": [
-        "在电脑前设置坐姿提醒",
-        "查看本地坐姿记录"
-      ]
-    },
-    {
-      "name": "travel-art-album-skill",
-      "url": "https://github.com/ouxxyy/travel-art-album-skill",
-      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
-      "category": "skill",
-      "language": "JavaScript",
-      "stars": 1,
-      "updated_at": "2026-10-24T13:08:37Z",
-      "description_en": "Travel photo album and single-file offline HTML flipbook skill",
-      "keywords": [
-        "旅行照片画册",
-        "离线翻页相册",
-        "照片艺术化",
-        "travel photo album",
-        "offline flipbook"
-      ],
-      "use_cases": [
-        "把旅行照片制作成艺术画册",
-        "离线翻阅相册并用浏览器打印 PDF"
-      ]
-    },
-    {
       "name": "mystery-skill",
       "url": "https://github.com/ouxxyy/mystery-skill",
       "description": "Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习",
@@ -168,28 +190,6 @@
       "use_cases": [
         "研究 Mystery 的认知框架",
         "分析社交情境与决策边界"
-      ]
-    },
-    {
-      "name": "storyboard-scavenger",
-      "url": "https://github.com/ouxxyy/storyboard-scavenger",
-      "description": "AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜",
-      "category": "skill",
-      "language": "HTML",
-      "stars": 5,
-      "updated_at": "2026-10-24T13:08:32Z",
-      "description_en": "AI video storyboard and prompt-writing skill for Kling and Seedance",
-      "keywords": [
-        "AI 视频分镜",
-        "可灵提示词",
-        "即梦分镜",
-        "AI video storyboard",
-        "Kling",
-        "Seedance"
-      ],
-      "use_cases": [
-        "把创意拆成逐镜头提示词",
-        "规划多个镜头的环境与运镜"
       ]
     },
     {

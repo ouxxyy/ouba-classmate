@@ -42,15 +42,15 @@
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
 | [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) ★1 | 旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册 | 2026-10-24 |
-| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★10 | Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习 | 2026-10-24 |
 | [storyboard-scavenger](https://github.com/ouxxyy/storyboard-scavenger) ★5 | AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜 | 2026-10-24 |
+| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★10 | Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习 | 2026-10-24 |
 
 ### 本地工具 · 装在自己电脑
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
-| [Attention](https://github.com/ouxxyy/Attention) | ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析 | 2026-10-24 |
 | [postapp](https://github.com/ouxxyy/postapp) | 姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件 | 2026-10-24 |
+| [Attention](https://github.com/ouxxyy/Attention) | ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析 | 2026-10-24 |
 <!-- projects:end -->
 
 ## 给 AI Agent 的话
