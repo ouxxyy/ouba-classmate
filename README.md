@@ -13,11 +13,11 @@
 
 | 你想做什么 | 去这里 |
 | --- | --- |
-| 梳理工作任务与 AI 替代风险自评 | [MBAI · 工作任务 AI 不可替代指数](https://github.com/ouxxyy/mbai) |
-| 筛选招聘信息（job search agent） | [Job Search · 求职岗位筛选](https://github.com/ouxxyy/job-search) |
-| 简历与 JD 匹配（resume matching） | [简历优化大师 · 证据匹配](https://github.com/ouxxyy/jd-resume-match) |
-| 中文语音模拟面试（AI mock interview） | [欧八面试陪练](https://github.com/ouxxyy/ai-interviewer) |
-| 入职前查公司（employer research） | [Sherlock Company · 公司证据调查](https://github.com/ouxxyy/sherlock-company) |
+| 筛选招聘信息（job search agent） | [AI岗位搜索大师](https://github.com/ouxxyy/job-search) |
+| 简历与 JD 匹配（resume matching） | [AI简历优化大师](https://github.com/ouxxyy/jd-resume-match) |
+| 中文语音模拟面试（AI mock interview） | [AI面试大师](https://github.com/ouxxyy/ai-interviewer) |
+| 入职前查公司（employer research） | [公司调查大师](https://github.com/ouxxyy/sherlock-company) |
+| 梳理工作任务与 AI 替代风险自评 | [AI转型大师](https://github.com/ouxxyy/mbai) |
 | AI 视频分镜与可灵／即梦提示词 | [Storyboard Scavenger](https://github.com/ouxxyy/storyboard-scavenger) |
 | 旅行照片画册（offline flipbook） | [重拍画册 · 离线翻页相册](https://github.com/ouxxyy/travel-art-album-skill) |
 | 研究 Mystery Method 思维模型 | [Mystery 认知框架 Skill](https://github.com/ouxxyy/mystery-skill) |
@@ -31,11 +31,11 @@
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
-| [mbai](https://github.com/ouxxyy/mbai) ★1 | 工作任务 AI 不可替代指数：任务分析、贡献证据与替代风险自评，非裁员预测 | 2026-10-24 |
-| [job-search](https://github.com/ouxxyy/job-search) | 求职岗位筛选 Agent Skill：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单 | 2026-10-24 |
-| [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | 简历与 JD 匹配及简历优化：证据引用、可复算评分、结构建议与离线 HTML 报告 | 2026-10-24 |
-| [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) ★3 | 中文语音 AI 面试陪练：基于 JD 与经历追问、引用原话点评、初答重答对比 | 2026-10-24 |
-| [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | 入职前公司证据调查：区分已证实、线索、冲突与未知，输出核实清单和离线 HTML 档案 | 2026-10-24 |
+| [job-search](https://github.com/ouxxyy/job-search) | AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单 | 2026-10-26 |
+| [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告 | 2026-10-26 |
+| [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) ★3 | AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比 | 2026-10-26 |
+| [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | 公司调查大师：入职前公司证据调查，区分已证实、线索、冲突与未知，输出核实清单与离线 HTML 档案 | 2026-10-26 |
+| [mbai](https://github.com/ouxxyy/mbai) ★1 | AI转型大师：工作任务 AI 不可替代指数，任务分析、贡献证据与替代风险自评，非裁员预测 | 2026-10-26 |
 
 ### AI Skill · 装进你的 Agent
 
@@ -59,7 +59,7 @@
 
 ## 怎么选择与使用
 
-- **准备跳槽**：用 Job Search 整理岗位，用简历优化大师检查 JD 证据，再用欧八面试陪练练习经历表达；接受 Offer 前可用 Sherlock Company 整理公司核实问题。
+- **准备跳槽**：用 AI岗位搜索大师整理岗位，用 AI简历优化大师检查 JD 证据，再用 AI面试大师练习经历表达；接受 Offer 前可用公司调查大师整理公司核实问题。想评估 AI 转型方向，用 AI转型大师梳理工作任务与替代风险。
 - **制作内容**：视频创意看 Storyboard Scavenger；旅行照片看重拍画册。生成分镜、编辑图片和生成视频是不同环节，按各项目要求准备宿主能力。
 - **回顾电脑工作**：Attention 读取 ActivityWatch 数据；姿势企鹅提供摄像头坐姿提醒。二者按需安装。
 

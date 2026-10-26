@@ -1,7 +1,122 @@
 {
-  "generated_at": "2026-10-26T00:35:11+00:00",
+  "generated_at": "2026-10-26T23:30:17+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "mbai",
+      "url": "https://github.com/ouxxyy/mbai",
+      "description": "AI转型大师：工作任务 AI 不可替代指数，任务分析、贡献证据与替代风险自评，非裁员预测",
+      "category": "career",
+      "language": "Python",
+      "stars": 1,
+      "updated_at": "2026-10-26T23:28:41Z",
+      "description_en": "Task-level AI assessment for career reflection",
+      "keywords": [
+        "AI转型大师",
+        "AI 替代风险自评",
+        "工作任务分析",
+        "职业规划",
+        "AI task assessment",
+        "career planning"
+      ],
+      "use_cases": [
+        "拆解工作任务中的自动化空间",
+        "梳理个人贡献和职业证据缺口"
+      ],
+      "order": 4
+    },
+    {
+      "name": "sherlock-company",
+      "url": "https://github.com/ouxxyy/sherlock-company",
+      "description": "公司调查大师：入职前公司证据调查，区分已证实、线索、冲突与未知，输出核实清单与离线 HTML 档案",
+      "category": "career",
+      "language": "HTML",
+      "stars": 1,
+      "updated_at": "2026-10-26T23:28:40Z",
+      "description_en": "Pre-offer employer research with evidence boundaries",
+      "keywords": [
+        "公司调查大师",
+        "入职前查公司",
+        "Offer 公司调查",
+        "公司证据调查",
+        "employer research",
+        "company research"
+      ],
+      "use_cases": [
+        "接受 Offer 前核查公司信息",
+        "整理冲突证据与待核验问题"
+      ],
+      "order": 3
+    },
+    {
+      "name": "ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "description": "AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比",
+      "category": "career",
+      "language": "TypeScript",
+      "stars": 3,
+      "updated_at": "2026-10-26T23:28:38Z",
+      "description_en": "Chinese voice AI mock interview practice",
+      "keywords": [
+        "AI面试大师",
+        "AI 面试官",
+        "中文语音模拟面试",
+        "面试陪练",
+        "AI mock interview",
+        "voice interview practice"
+      ],
+      "use_cases": [
+        "练习自我介绍与经历面试",
+        "通过原话点评和重答改进回答"
+      ],
+      "order": 2
+    },
+    {
+      "name": "jd-resume-match",
+      "url": "https://github.com/ouxxyy/jd-resume-match",
+      "description": "AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告",
+      "category": "career",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-10-26T23:28:36Z",
+      "description_en": "Evidence-based resume and job-description matching and review",
+      "keywords": [
+        "AI简历优化大师",
+        "简历 JD 匹配",
+        "简历优化",
+        "证据匹配",
+        "resume matching",
+        "resume review"
+      ],
+      "use_cases": [
+        "对照岗位要求查简历证据缺口",
+        "调整简历结构与经历表达"
+      ],
+      "order": 1
+    },
+    {
+      "name": "job-search",
+      "url": "https://github.com/ouxxyy/job-search",
+      "description": "AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单",
+      "category": "career",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-10-26T23:28:35Z",
+      "description_en": "Job search Agent Skill with source-backed job lists",
+      "keywords": [
+        "AI岗位搜索大师",
+        "求职岗位筛选",
+        "招聘信息整理",
+        "岗位清单",
+        "job search agent",
+        "job shortlist"
+      ],
+      "use_cases": [
+        "按岗位城市薪资筛选招聘信息",
+        "保存带来源证据的岗位清单"
+      ],
+      "order": 0
+    },
     {
       "name": "mystery-skill",
       "url": "https://github.com/ouxxyy/mystery-skill",
@@ -88,90 +203,6 @@
       ]
     },
     {
-      "name": "mbai",
-      "url": "https://github.com/ouxxyy/mbai",
-      "description": "工作任务 AI 不可替代指数：任务分析、贡献证据与替代风险自评，非裁员预测",
-      "category": "career",
-      "language": "Python",
-      "stars": 1,
-      "updated_at": "2026-10-24T13:13:45Z",
-      "description_en": "Task-level AI assessment for career reflection",
-      "keywords": [
-        "AI 替代风险自评",
-        "工作任务分析",
-        "职业规划",
-        "AI task assessment",
-        "career planning"
-      ],
-      "use_cases": [
-        "拆解工作任务中的自动化空间",
-        "梳理个人贡献和职业证据缺口"
-      ]
-    },
-    {
-      "name": "job-search",
-      "url": "https://github.com/ouxxyy/job-search",
-      "description": "求职岗位筛选 Agent Skill：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-10-24T13:13:41Z",
-      "description_en": "Job search Agent Skill with source-backed job lists",
-      "keywords": [
-        "求职岗位筛选",
-        "招聘信息整理",
-        "岗位清单",
-        "job search agent",
-        "job shortlist"
-      ],
-      "use_cases": [
-        "按岗位城市薪资筛选招聘信息",
-        "保存带来源证据的岗位清单"
-      ]
-    },
-    {
-      "name": "jd-resume-match",
-      "url": "https://github.com/ouxxyy/jd-resume-match",
-      "description": "简历与 JD 匹配及简历优化：证据引用、可复算评分、结构建议与离线 HTML 报告",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-10-24T13:13:39Z",
-      "description_en": "Evidence-based resume and job-description matching and review",
-      "keywords": [
-        "简历 JD 匹配",
-        "简历优化",
-        "证据匹配",
-        "resume matching",
-        "resume review"
-      ],
-      "use_cases": [
-        "对照岗位要求查简历证据缺口",
-        "调整简历结构与经历表达"
-      ]
-    },
-    {
-      "name": "ai-interviewer",
-      "url": "https://github.com/ouxxyy/ai-interviewer",
-      "description": "中文语音 AI 面试陪练：基于 JD 与经历追问、引用原话点评、初答重答对比",
-      "category": "career",
-      "language": "TypeScript",
-      "stars": 3,
-      "updated_at": "2026-10-24T13:13:35Z",
-      "description_en": "Chinese voice AI mock interview practice",
-      "keywords": [
-        "AI 面试官",
-        "中文语音模拟面试",
-        "面试陪练",
-        "AI mock interview",
-        "voice interview practice"
-      ],
-      "use_cases": [
-        "练习自我介绍与经历面试",
-        "通过原话点评和重答改进回答"
-      ]
-    },
-    {
       "name": "Attention",
       "url": "https://github.com/ouxxyy/Attention",
       "description": "ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析",
@@ -190,27 +221,6 @@
       "use_cases": [
         "查看一天的专注与分心模式",
         "分析任务切换和持续专注时段"
-      ]
-    },
-    {
-      "name": "sherlock-company",
-      "url": "https://github.com/ouxxyy/sherlock-company",
-      "description": "入职前公司证据调查：区分已证实、线索、冲突与未知，输出核实清单和离线 HTML 档案",
-      "category": "career",
-      "language": "HTML",
-      "stars": 1,
-      "updated_at": "2026-10-24T13:08:27Z",
-      "description_en": "Pre-offer employer research with evidence boundaries",
-      "keywords": [
-        "入职前查公司",
-        "Offer 公司调查",
-        "公司证据调查",
-        "employer research",
-        "company research"
-      ],
-      "use_cases": [
-        "接受 Offer 前核查公司信息",
-        "整理冲突证据与待核验问题"
       ]
     }
   ]

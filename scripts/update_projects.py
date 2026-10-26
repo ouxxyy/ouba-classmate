@@ -44,11 +44,13 @@ CATEGORY_LABELS = {
 }
 CATEGORY_ORDER = ["career", "skill", "app", "local", "more"]
 
-# 描述为各仓库 README/描述的中文摘编；stars 与更新时间每次从 API 实时刷新
+# 描述为各仓库 README/描述的中文摘编；stars 与更新时间每次从 API 实时刷新；
+# order 为分类内固定展示顺序（缺省时分类内按更新时间倒序）
 REPO_META = {'job-search': {'category': 'career',
-               'desc': '求职岗位筛选 Agent Skill：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单',
+               'order': 0,
+               'desc': 'AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单',
                'description_en': 'Job search Agent Skill with source-backed job lists',
-               'keywords': ['求职岗位筛选', '招聘信息整理', '岗位清单', 'job search agent', 'job shortlist'],
+               'keywords': ['AI岗位搜索大师', '求职岗位筛选', '招聘信息整理', '岗位清单', 'job search agent', 'job shortlist'],
                'use_cases': ['按岗位城市薪资筛选招聘信息', '保存带来源证据的岗位清单']},
  'storyboard-scavenger': {'category': 'skill',
                           'desc': 'AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜',
@@ -62,14 +64,16 @@ REPO_META = {'job-search': {'category': 'career',
                                        'Seedance'],
                           'use_cases': ['把创意拆成逐镜头提示词', '规划多个镜头的环境与运镜']},
  'jd-resume-match': {'category': 'career',
-                     'desc': '简历与 JD 匹配及简历优化：证据引用、可复算评分、结构建议与离线 HTML 报告',
+                     'order': 1,
+                     'desc': 'AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告',
                      'description_en': 'Evidence-based resume and job-description matching and review',
-                     'keywords': ['简历 JD 匹配', '简历优化', '证据匹配', 'resume matching', 'resume review'],
+                     'keywords': ['AI简历优化大师', '简历 JD 匹配', '简历优化', '证据匹配', 'resume matching', 'resume review'],
                      'use_cases': ['对照岗位要求查简历证据缺口', '调整简历结构与经历表达']},
  'mbai': {'category': 'career',
-          'desc': '工作任务 AI 不可替代指数：任务分析、贡献证据与替代风险自评，非裁员预测',
+          'order': 4,
+          'desc': 'AI转型大师：工作任务 AI 不可替代指数，任务分析、贡献证据与替代风险自评，非裁员预测',
           'description_en': 'Task-level AI assessment for career reflection',
-          'keywords': ['AI 替代风险自评', '工作任务分析', '职业规划', 'AI task assessment', 'career planning'],
+          'keywords': ['AI转型大师', 'AI 替代风险自评', '工作任务分析', '职业规划', 'AI task assessment', 'career planning'],
           'use_cases': ['拆解工作任务中的自动化空间', '梳理个人贡献和职业证据缺口']},
  'mystery-skill': {'category': 'skill',
                    'desc': 'Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习',
@@ -91,18 +95,21 @@ REPO_META = {'job-search': {'category': 'career',
                                          'offline flipbook'],
                             'use_cases': ['把旅行照片制作成艺术画册', '离线翻阅相册并用浏览器打印 PDF']},
  'ai-interviewer': {'category': 'career',
-                    'desc': '中文语音 AI 面试陪练：基于 JD 与经历追问、引用原话点评、初答重答对比',
+                    'order': 2,
+                    'desc': 'AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比',
                     'description_en': 'Chinese voice AI mock interview practice',
-                    'keywords': ['AI 面试官',
+                    'keywords': ['AI面试大师',
+                                 'AI 面试官',
                                  '中文语音模拟面试',
                                  '面试陪练',
                                  'AI mock interview',
                                  'voice interview practice'],
                     'use_cases': ['练习自我介绍与经历面试', '通过原话点评和重答改进回答']},
  'sherlock-company': {'category': 'career',
-                      'desc': '入职前公司证据调查：区分已证实、线索、冲突与未知，输出核实清单和离线 HTML 档案',
+                      'order': 3,
+                      'desc': '公司调查大师：入职前公司证据调查，区分已证实、线索、冲突与未知，输出核实清单与离线 HTML 档案',
                       'description_en': 'Pre-offer employer research with evidence boundaries',
-                      'keywords': ['入职前查公司', 'Offer 公司调查', '公司证据调查', 'employer research', 'company research'],
+                      'keywords': ['公司调查大师', '入职前查公司', 'Offer 公司调查', '公司证据调查', 'employer research', 'company research'],
                       'use_cases': ['接受 Offer 前核查公司信息', '整理冲突证据与待核验问题']},
  'Attention': {'category': 'local',
                'desc': 'ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析',
@@ -158,6 +165,7 @@ def render_readme_block(repos):
         if not items:
             continue
         items.sort(key=lambda r: r["updated_at"], reverse=True)
+        items.sort(key=lambda r: REPO_META.get(r["name"], {}).get("order", 10**9))
         lines.append(f"### {CATEGORY_LABELS[cat]}")
         lines.append("")
         lines.append("| 项目 | 它做什么 | 最近更新 |")
@@ -183,27 +191,32 @@ def replace_project_block(readme, repos):
     return readme[:start] + "\n" + render_readme_block(repos) + readme[end:]
 
 
+def _project_entry(r):
+    meta = REPO_META.get(r["name"], {})
+    entry = {
+        "name": r["name"],
+        "url": r["html_url"],
+        "description": meta.get("desc") or r["description"] or "",
+        "category": meta.get("category", "more"),
+        "language": r.get("language") or "",
+        "stars": r["stargazers_count"],
+        "updated_at": r["updated_at"],
+        "description_en": meta.get("description_en", ""),
+        "keywords": list(meta.get("keywords", [])),
+        "use_cases": list(meta.get("use_cases", [])),
+    }
+    if "order" in meta:
+        entry["order"] = meta["order"]
+    return entry
+
+
 def build_catalog(repos, generated_at=None):
     """Keep existing catalog fields and add task-oriented discovery information."""
     return {
         "generated_at": generated_at if generated_at is not None else _dt.datetime.now(
             _dt.timezone.utc).isoformat(timespec="seconds"),
         "owner": OWNER,
-        "projects": [
-            {
-                "name": r["name"],
-                "url": r["html_url"],
-                "description": REPO_META.get(r["name"], {}).get("desc") or r["description"] or "",
-                "category": REPO_META.get(r["name"], {}).get("category", "more"),
-                "language": r.get("language") or "",
-                "stars": r["stargazers_count"],
-                "updated_at": r["updated_at"],
-                "description_en": REPO_META.get(r["name"], {}).get("description_en", ""),
-                "keywords": list(REPO_META.get(r["name"], {}).get("keywords", [])),
-                "use_cases": list(REPO_META.get(r["name"], {}).get("use_cases", [])),
-            }
-            for r in repos
-        ],
+        "projects": [_project_entry(r) for r in repos],
     }
 
 
