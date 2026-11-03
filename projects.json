@@ -1,7 +1,29 @@
 {
-  "generated_at": "2026-11-02T01:42:37+00:00",
+  "generated_at": "2026-11-03T03:38:09+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "storyboard-scavenger",
+      "url": "https://github.com/ouxxyy/storyboard-scavenger",
+      "description": "AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜",
+      "category": "skill",
+      "language": "HTML",
+      "stars": 6,
+      "updated_at": "2026-11-02T03:35:13Z",
+      "description_en": "AI video storyboard and prompt-writing skill for Kling and Seedance",
+      "keywords": [
+        "AI 视频分镜",
+        "可灵提示词",
+        "即梦分镜",
+        "AI video storyboard",
+        "Kling",
+        "Seedance"
+      ],
+      "use_cases": [
+        "把创意拆成逐镜头提示词",
+        "规划多个镜头的环境与运镜"
+      ]
+    },
     {
       "name": "mbai",
       "url": "https://github.com/ouxxyy/mbai",
@@ -178,28 +200,6 @@
       "use_cases": [
         "把旅行照片制作成艺术画册",
         "离线翻阅相册并用浏览器打印 PDF"
-      ]
-    },
-    {
-      "name": "storyboard-scavenger",
-      "url": "https://github.com/ouxxyy/storyboard-scavenger",
-      "description": "AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜",
-      "category": "skill",
-      "language": "HTML",
-      "stars": 5,
-      "updated_at": "2026-10-24T13:13:53Z",
-      "description_en": "AI video storyboard and prompt-writing skill for Kling and Seedance",
-      "keywords": [
-        "AI 视频分镜",
-        "可灵提示词",
-        "即梦分镜",
-        "AI video storyboard",
-        "Kling",
-        "Seedance"
-      ],
-      "use_cases": [
-        "把创意拆成逐镜头提示词",
-        "规划多个镜头的环境与运镜"
       ]
     },
     {
