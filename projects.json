@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-11-03T03:38:09+00:00",
+  "generated_at": "2026-11-04T02:35:20+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "sherlock-company",
+      "url": "https://github.com/ouxxyy/sherlock-company",
+      "description": "公司调查大师：入职前公司证据调查，区分已证实、线索、冲突与未知，输出核实清单与离线 HTML 档案",
+      "category": "career",
+      "language": "HTML",
+      "stars": 1,
+      "updated_at": "2026-11-03T08:27:13Z",
+      "description_en": "Pre-offer employer research with evidence boundaries",
+      "keywords": [
+        "公司调查大师",
+        "入职前查公司",
+        "Offer 公司调查",
+        "公司证据调查",
+        "employer research",
+        "company research"
+      ],
+      "use_cases": [
+        "接受 Offer 前核查公司信息",
+        "整理冲突证据与待核验问题"
+      ],
+      "order": 3
+    },
     {
       "name": "storyboard-scavenger",
       "url": "https://github.com/ouxxyy/storyboard-scavenger",
@@ -46,29 +69,6 @@
         "梳理个人贡献和职业证据缺口"
       ],
       "order": 4
-    },
-    {
-      "name": "sherlock-company",
-      "url": "https://github.com/ouxxyy/sherlock-company",
-      "description": "公司调查大师：入职前公司证据调查，区分已证实、线索、冲突与未知，输出核实清单与离线 HTML 档案",
-      "category": "career",
-      "language": "HTML",
-      "stars": 1,
-      "updated_at": "2026-10-26T23:28:40Z",
-      "description_en": "Pre-offer employer research with evidence boundaries",
-      "keywords": [
-        "公司调查大师",
-        "入职前查公司",
-        "Offer 公司调查",
-        "公司证据调查",
-        "employer research",
-        "company research"
-      ],
-      "use_cases": [
-        "接受 Offer 前核查公司信息",
-        "整理冲突证据与待核验问题"
-      ],
-      "order": 3
     },
     {
       "name": "ai-interviewer",
