@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-11-06T04:57:48+00:00",
+  "generated_at": "2026-11-06T05:51:36+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "jd-resume-match",
+      "url": "https://github.com/ouxxyy/jd-resume-match",
+      "description": "AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告",
+      "category": "career",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-11-06T04:58:23Z",
+      "description_en": "Evidence-based resume and job-description matching and review",
+      "keywords": [
+        "AI简历优化大师",
+        "简历 JD 匹配",
+        "简历优化",
+        "证据匹配",
+        "resume matching",
+        "resume review"
+      ],
+      "use_cases": [
+        "对照岗位要求查简历证据缺口",
+        "调整简历结构与经历表达"
+      ],
+      "order": 1
+    },
     {
       "name": "Attention",
       "url": "https://github.com/ouxxyy/Attention",
@@ -176,29 +199,6 @@
         "通过原话点评和重答改进回答"
       ],
       "order": 2
-    },
-    {
-      "name": "jd-resume-match",
-      "url": "https://github.com/ouxxyy/jd-resume-match",
-      "description": "AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-11-06T04:49:15Z",
-      "description_en": "Evidence-based resume and job-description matching and review",
-      "keywords": [
-        "AI简历优化大师",
-        "简历 JD 匹配",
-        "简历优化",
-        "证据匹配",
-        "resume matching",
-        "resume review"
-      ],
-      "use_cases": [
-        "对照岗位要求查简历证据缺口",
-        "调整简历结构与经历表达"
-      ],
-      "order": 1
     },
     {
       "name": "job-search",
