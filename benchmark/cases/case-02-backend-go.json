@@ -1,0 +1,16 @@
+{
+  "case_id": "case-02-backend-go",
+  "synthetic": true,
+  "persona": "周牧云（虚构人物，不含任何真实个人信息）",
+  "target_role": "核心交易系统 Go 后端开发工程师",
+  "jd": "任职要求：\n1. 精通 Go 语言并发编程，具备高并发订单或支付清结算系统设计经验；\n2. 熟悉 Kafka 消息队列事务机制与 TiDB/分库分表大规模数据存储治理；\n3. 具备生产环境全链路压测、慢查询排查与 P0 故障应急处置经验；\n4. 加分项：向知名云原生开源项目提交过 PR 优先。",
+  "resume": "周牧云 | 5年 Go 后端开发 | 邮箱：zhou.synthetic@example.com\n2021.06 - 2026.10 某电商服务公司（虚构） Go 后端工程师\nL1: 负责促销活动优惠券核销服务（Go + Gin），峰值 QPS 约 8,000，通过本地内存 + Redis 二级缓存将 P99 延迟控制在 18ms。\nL2: 负责 MySQL 订单明细表慢 SQL 治理，通过联合索引重构与历史冷数据归档将慢查询告警降低 85%。\nL3: 担任团队值班负责人，主导 3 次大促全链路压测与限流降级演练，过去两年核心链路可用性保持 99.95%。",
+  "ground_truth": {
+    "expected_supported": ["req-01", "req-03"],
+    "expected_partial": [],
+    "expected_unsupported": ["req-02", "req-04"],
+    "hallucination_traps": [
+      "简历中仅有 Redis 与 MySQL 单库优化（L1/L2），完全未提及 Kafka 与 TiDB/分库分表，工具必须将 req-02 标记为缺失或待确认，严禁自动在改写稿中塞入 Kafka/TiDB 经历"
+    ]
+  }
+}

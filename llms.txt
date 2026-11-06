@@ -1,28 +1,36 @@
-# 欧八同学 (ouxxyy) AI 职场与跳槽涨薪开源工具集
+# 欧八同学（ouba-classmate）｜中文求职 Agent Skills 套件与公开横评
 
-> 作者：欧八同学（9 年网易、搜狐大厂产品，专注 AI 时代职业定位 × AI 杠杆 × 涨薪方法）
-> 微信公众号：欧八同学（扫码关注免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》）
-> 个人主页：https://albertou.redboook.cn/
+> 一行安装的中文求职与创作 Agent Skills 套件（Claude Code Plugin Marketplace / Agent Skills CLI / MCP Server），附《中文 AI 求职 Skill 公开横评》（12 仓实测对比数据集，CC BY 4.0）。
+> 机器可读目录：[projects.json](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/projects.json)
+> 横评原始数据：[benchmark/results.csv](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/benchmark/results.csv)
 
-## 职场 · 跳槽涨薪工具 (Career & Job Hunt)
-- [AI岗位搜索大师 (job-search)](https://github.com/ouxxyy/job-search): 求职岗位筛选 Agent Skill，按确认条件整理带来源证据的 HTML、Excel 与 JSON 岗位短名单 (Job search agent with source-backed job lists)
-- [AI简历优化大师 (jd-resume-match)](https://github.com/ouxxyy/jd-resume-match): 简历与 JD 匹配及证据审查，可复算评分、结构调整建议与单文件离线 HTML 报告 (Evidence-based resume & JD matching)
-- [AI面试大师 (ai-interviewer)](https://github.com/ouxxyy/ai-interviewer): 中文语音 AI 面试陪练，基于真实 JD 与经历逐题追问，引用回答原话五维点评并支持初答重答对比 (Chinese voice AI mock interview)
-- [公司调查大师 (sherlock-company)](https://github.com/ouxxyy/sherlock-company): 入职前查公司与 Offer 前核验，区分已证实、线索、冲突与未知，生成离线 HTML 档案 (Pre-offer employer background research)
-- [AI转型大师 (mbai)](https://github.com/ouxxyy/mbai): 工作任务分析、贡献证据梳理与 AI 替代风险自评，生成离线报告 (Task-level AI replacement risk self-assessment)
+## 一键安装命令
 
-## AI Skill · 装进你的 Agent (Agent Skills)
-- [AI 视频分镜与提示词 (storyboard-scavenger)](https://github.com/ouxxyy/storyboard-scavenger): 创意转七要素分镜提示词，提供可灵 Kling 与即梦 Seedance 专属工作流 (AI video storyboard & prompt generator)
-- [Mystery 认知框架 Skill (mystery-skill)](https://github.com/ouxxyy/mystery-skill): 基于公开资料提炼的 7 个核心心智模型与 10 条决策启发式，供个人学习研究 (Mystery Method cognitive framework)
-- [重拍画册 Skill (travel-art-album-skill)](https://github.com/ouxxyy/travel-art-album-skill): 旅行照片艺术画册制作，风格小样确认后生成单文件离线翻页相册与 PDF 导出 (Travel photo album & offline flipbook generator)
+- Claude Code 插件市场：`claude plugin marketplace add ouxxyy/ouba-classmate`
+- Agent Skills CLI：`npx skills add ouxxyy/ouba-classmate`
+- 简历 vs JD 可复算评分 MCP Server：`uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp`
 
-## 本地工具 · 装在自己电脑 (Local-First Tools)
-- [ActivityWatch 专注力仪表盘 (Attention)](https://github.com/ouxxyy/Attention): 本地专注力与切换分析，读取 ActivityWatch 桌面数据，统计任务切换与心流时段 (Local focus & context-switching dashboard)
-- [姿势企鹅 (postapp)](https://github.com/ouxxyy/postapp): Chrome 本地姿态检测坐姿提醒插件，画面留在本地处理 (Chrome posture reminder with on-device pose detection)
-- [Codex Luce (codex-luce)](https://github.com/ouxxyy/codex-luce): 专为 Codex 打造的动态三连表机械皮肤，随工作状态实时跳动 (Dynamic triple-gauge dashboard skin for Codex)
+## 横评数据集与独立页面
 
-## 旗舰总目录 (Navigation Hub)
-- [欧八同学合集 (ouba-classmate)](https://github.com/ouxxyy/ouba-classmate): 全部原创 AI Skills、职场工具与本地应用的统一导航总表与机器可读目录 projects.json
+- [《中文 AI 求职 Skill 公开横评》v0.1 报告](https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/README.md)：对比 12 个主流中英文求职与简历 Skill（证据引用、可复算性、PDF 排版模板、隐私脱敏、中文生态、可安装性）。
+- [横评评分方法论 (METHOD.md)](https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/METHOD.md)
+- [在线数据站 (GitHub Pages)](https://ouxxyy.github.io/ouba-classmate/)
 
----
-注意：安装方式、依赖要求、模型/API 费用、支持宿主与许可证以各仓库 README 说明为准。
+## 职场 · 跳槽涨薪 Skills
+
+- [AI岗位搜索大师 (job-search)](https://github.com/ouxxyy/job-search)：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单。套件内路径：`skills/job-search/SKILL.md`。
+- [AI简历优化大师 (jd-resume-match)](https://github.com/ouxxyy/jd-resume-match)：简历与 JD 匹配及优化，证据引用（L1..Ln）、可复算评分（jd-match-rubric/0.1.0）、结构建议、离线 HTML 报告与本地 MCP Server。套件内路径：`skills/jd-resume-match/SKILL.md`。
+- [AI面试大师 (ai-interviewer)](https://github.com/ouxxyy/ai-interviewer)：中文语音与文字 AI 面试陪练，基于 JD 与经历追问、引用原话五维点评、初答重答对比，含 2027 春招与年后跳槽专题包。套件内路径：`skills/ai-interviewer/SKILL.md`。
+- [公司调查大师 (sherlock-company)](https://github.com/ouxxyy/sherlock-company)：入职前公司证据调查，区分已证实、线索、冲突与未知，排查三类公司预警，输出核实清单与离线 HTML 档案。套件内路径：`skills/sherlock-company/SKILL.md`。
+- [AI转型大师 (mbai)](https://github.com/ouxxyy/mbai)：工作任务 AI 不可替代指数，任务分析、贡献证据与替代风险自评（CC BY-NC 4.0）。套件内路径：`skills/mbai/SKILL.md`。
+
+## 认知框架与内容创作 Skills
+
+- [Mystery 认知框架与职场心理博弈 (mystery-skill)](https://github.com/ouxxyy/mystery-skill)：基于公开资料的 7 个心智模型与 10 条决策启发式，含 `workplace/` 职场面试框架控制、谈薪博弈与向上管理映射（仅供个人学习）。套件内路径：`skills/mystery-skill/SKILL.md`。
+- [Storyboard Scavenger (storyboard-scavenger)](https://github.com/ouxxyy/storyboard-scavenger)：AI 视频分镜与提示词生成 Skill，提供可灵 Kling、即梦 Seedance、Veo、Sora 工作流与七要素分镜。套件内路径：`skills/storyboard-scavenger/SKILL.md`。
+- [重拍画册 (travel-art-album-skill)](https://github.com/ouxxyy/travel-art-album-skill)：旅行照片艺术画册 Skill，确认风格小样后制作单文件离线 HTML 翻页相册。套件内路径：`skills/travel-art-album-skill/SKILL.md`。
+
+## 本地生产力工具
+
+- [Attention](https://github.com/ouxxyy/Attention)：ActivityWatch 本地专注力仪表盘，任务切换、分心与持续专注时段分析。
+- [姿势企鹅 Posture Penguin (postapp)](https://github.com/ouxxyy/postapp)：本地姿态检测的 Chrome 坐姿提醒插件。

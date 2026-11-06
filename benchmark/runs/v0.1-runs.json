@@ -1,0 +1,326 @@
+{
+  "benchmark_version": "0.1.0",
+  "generated_at_utc": "2026-11-06T04:53:33+00:00",
+  "verified_date": "2026-11-06",
+  "synthetic_cases_evaluated": 3,
+  "repositories_evaluated": 12,
+  "case_runs": [
+    {
+      "case_id": "case-01-ai-pm",
+      "synthetic": true,
+      "target_role": "高级 AI Agent 产品经理",
+      "ground_truth": {
+        "expected_supported": [
+          "req-03"
+        ],
+        "expected_partial": [
+          "req-01",
+          "req-02"
+        ],
+        "expected_unsupported": [
+          "req-04"
+        ],
+        "hallucination_traps": [
+          "不得将 L2 的『参与内测、协助整理 150 条问答对』夸大为『独立负责企业级 AI Agent 规划与自动化评测平台搭建』",
+          "不得凭空编造简历中未出现的准确率提升百分比（如『将准确率从 60% 提升至 90%』）",
+          "不得在 JD 解析中加入原文不存在的『要求具备模型微调 Fine-tuning / RLHF 经验』"
+        ]
+      },
+      "deterministic_run_output": {
+        "rubric_version": "jd-match-rubric/0.1.0",
+        "scoring_status": "ok",
+        "score": 15,
+        "total_weight": 10.0,
+        "total_contribution": 1.5,
+        "formula": "floor(100 * 1.5 / 10 + 0.5) = 15",
+        "privacy_notice": "本工具在本地进程内完成证据比对与复算，不发起任何网络请求，不上传简历与 JD。",
+        "suite_url": "https://github.com/ouxxyy/ouba-classmate",
+        "requirements": [
+          {
+            "req_id": "req-01",
+            "requirement": "负责企业级 AI Agent 工作流产品的规划与跨团队推进，有大模型应用落地经验",
+            "importance": "core",
+            "weight": 3,
+            "status": "unsupported",
+            "coef": 0.0,
+            "contribution": 0.0,
+            "evidence": null
+          },
+          {
+            "req_id": "req-02",
+            "requirement": "搭建可复现的评测体系（黃金测试集与 Badcase 归因），持续提升复杂任务执行准确率",
+            "importance": "core",
+            "weight": 3,
+            "status": "unsupported",
+            "coef": 0.0,
+            "contribution": 0.0,
+            "evidence": null
+          },
+          {
+            "req_id": "req-03",
+            "requirement": "深入业务一线梳理高频痛点，输出清晰的 PRD 与交互原型",
+            "importance": "core",
+            "weight": 3,
+            "status": "partial",
+            "coef": 0.5,
+            "contribution": 1.5,
+            "evidence": {
+              "source_id": "src-resume-1",
+              "locator": "L3",
+              "quote": "L1: 负责工单流转模块的日常需求迭代与 PRD 撰写，协同 5 名研发按双周敏捷节奏交付。",
+              "matched_keywords": [
+                "prd"
+              ]
+            }
+          },
+          {
+            "req_id": "req-04",
+            "requirement": "加分项：有开源 AI Skill 或 MCP Server 工具开发经验优先",
+            "importance": "bonus",
+            "weight": 1,
+            "status": "unsupported",
+            "coef": 0.0,
+            "contribution": 0.0,
+            "evidence": null
+          }
+        ],
+        "evidence_gaps": [
+          {
+            "req_id": "req-01",
+            "requirement": "负责企业级 AI Agent 工作流产品的规划与跨团队推进，有大模型应用落地经验",
+            "status": "unsupported",
+            "missing_signals": "企业级、ai、agent、工作流产品、规划、跨团队"
+          },
+          {
+            "req_id": "req-02",
+            "requirement": "搭建可复现的评测体系（黃金测试集与 Badcase 归因），持续提升复杂任务执行准确率",
+            "status": "unsupported",
+            "missing_signals": "可复现、评测体系、黃金测试集、badcase、归因、持续提升复"
+          },
+          {
+            "req_id": "req-03",
+            "requirement": "深入业务一线梳理高频痛点，输出清晰的 PRD 与交互原型",
+            "status": "partial",
+            "missing_signals": "深入业务一、线梳理高频、输出清晰、交互原型"
+          },
+          {
+            "req_id": "req-04",
+            "requirement": "加分项：有开源 AI Skill 或 MCP Server 工具开发经验优先",
+            "status": "unsupported",
+            "missing_signals": "开源、ai、skill、mcp、server、工具开发"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "case-02-backend-go",
+      "synthetic": true,
+      "target_role": "核心交易系统 Go 后端开发工程师",
+      "ground_truth": {
+        "expected_supported": [
+          "req-01",
+          "req-03"
+        ],
+        "expected_partial": [],
+        "expected_unsupported": [
+          "req-02",
+          "req-04"
+        ],
+        "hallucination_traps": [
+          "简历中仅有 Redis 与 MySQL 单库优化（L1/L2），完全未提及 Kafka 与 TiDB/分库分表，工具必须将 req-02 标记为缺失或待确认，严禁自动在改写稿中塞入 Kafka/TiDB 经历"
+        ]
+      },
+      "deterministic_run_output": {
+        "rubric_version": "jd-match-rubric/0.1.0",
+        "scoring_status": "ok",
+        "score": 30,
+        "total_weight": 10.0,
+        "total_contribution": 3.0,
+        "formula": "floor(100 * 3 / 10 + 0.5) = 30",
+        "privacy_notice": "本工具在本地进程内完成证据比对与复算，不发起任何网络请求，不上传简历与 JD。",
+        "suite_url": "https://github.com/ouxxyy/ouba-classmate",
+        "requirements": [
+          {
+            "req_id": "req-01",
+            "requirement": "精通 Go 语言并发编程，具备高并发订单或支付清结算系统设计经验",
+            "importance": "core",
+            "weight": 3,
+            "status": "partial",
+            "coef": 0.5,
+            "contribution": 1.5,
+            "evidence": {
+              "source_id": "src-resume-1",
+              "locator": "L1",
+              "quote": "周牧云 | 5年 Go 后端开发 | 邮箱：zhou.synthetic@example.com",
+              "matched_keywords": [
+                "go"
+              ]
+            }
+          },
+          {
+            "req_id": "req-02",
+            "requirement": "熟悉 Kafka 消息队列事务机制与 TiDB/分库分表大规模数据存储治理",
+            "importance": "core",
+            "weight": 3,
+            "status": "unsupported",
+            "coef": 0.0,
+            "contribution": 0.0,
+            "evidence": null
+          },
+          {
+            "req_id": "req-03",
+            "requirement": "具备生产环境全链路压测、慢查询排查与 P0 故障应急处置经验",
+            "importance": "core",
+            "weight": 3,
+            "status": "partial",
+            "coef": 0.5,
+            "contribution": 1.5,
+            "evidence": {
+              "source_id": "src-resume-1",
+              "locator": "L5",
+              "quote": "L3: 担任团队值班负责人，主导 3 次大促全链路压测与限流降级演练，过去两年核心链路可用性保持 99.95%。",
+              "matched_keywords": [
+                "链路压测"
+              ]
+            }
+          },
+          {
+            "req_id": "req-04",
+            "requirement": "加分项：向知名云原生开源项目提交过 PR 优先",
+            "importance": "bonus",
+            "weight": 1,
+            "status": "unsupported",
+            "coef": 0.0,
+            "contribution": 0.0,
+            "evidence": null
+          }
+        ],
+        "evidence_gaps": [
+          {
+            "req_id": "req-01",
+            "requirement": "精通 Go 语言并发编程，具备高并发订单或支付清结算系统设计经验",
+            "status": "partial",
+            "missing_signals": "语言、发编程、发订单、支付清结算、系统设计"
+          },
+          {
+            "req_id": "req-02",
+            "requirement": "熟悉 Kafka 消息队列事务机制与 TiDB/分库分表大规模数据存储治理",
+            "status": "unsupported",
+            "missing_signals": "kafka、消息队列事、务机制、tidb、分库分表大、规模数据存"
+          },
+          {
+            "req_id": "req-03",
+            "requirement": "具备生产环境全链路压测、慢查询排查与 P0 故障应急处置经验",
+            "status": "partial",
+            "missing_signals": "生产环境全、慢查询排查、p0、故障应急处"
+          },
+          {
+            "req_id": "req-04",
+            "requirement": "加分项：向知名云原生开源项目提交过 PR 优先",
+            "status": "unsupported",
+            "missing_signals": "向知名云原、生开源项目、提交过、pr"
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "case-03-campus-ops",
+      "synthetic": true,
+      "target_role": "互联网内容运营专员（校招/应届）",
+      "ground_truth": {
+        "expected_supported": [
+          "req-01",
+          "req-02",
+          "req-03"
+        ],
+        "expected_partial": [],
+        "expected_unsupported": [
+          "req-04"
+        ],
+        "hallucination_traps": [
+          "L1 仅提到阅读破万、L2 提到收藏率高 1.8 倍，未提及商品购买转化率（GMV/ROI），工具不得虚构带货成交额"
+        ]
+      },
+      "deterministic_run_output": {
+        "rubric_version": "jd-match-rubric/0.1.0",
+        "scoring_status": "ok",
+        "score": 30,
+        "total_weight": 10.0,
+        "total_contribution": 3.0,
+        "formula": "floor(100 * 3 / 10 + 0.5) = 30",
+        "privacy_notice": "本工具在本地进程内完成证据比对与复算，不发起任何网络请求，不上传简历与 JD。",
+        "suite_url": "https://github.com/ouxxyy/ouba-classmate",
+        "requirements": [
+          {
+            "req_id": "req-01",
+            "requirement": "具备小红书、微信公众号或抖音图文/短视频内容策划与选题撰写能力",
+            "importance": "core",
+            "weight": 3,
+            "status": "supported",
+            "coef": 1.0,
+            "contribution": 3.0,
+            "evidence": {
+              "source_id": "src-resume-1",
+              "locator": "L3",
+              "quote": "L1: 负责品牌微信公众号与小红书日常图文排期，实习期间共独立撰写 24 篇推文，其中 2 篇校园话题笔记阅读量破万。",
+              "matched_keywords": [
+                "小红书",
+                "微信公众号"
+              ]
+            }
+          },
+          {
+            "req_id": "req-02",
+            "requirement": "对数据敏感，能通过完播率、点击率（CTR）和互动率复盘迭代选题方向",
+            "importance": "core",
+            "weight": 3,
+            "status": "unsupported",
+            "coef": 0.0,
+            "contribution": 0.0,
+            "evidence": null
+          },
+          {
+            "req_id": "req-03",
+            "requirement": "具备良好的跨团队沟通习惯，能配合设计师与活动运营按时交付专题物料",
+            "importance": "core",
+            "weight": 3,
+            "status": "unsupported",
+            "coef": 0.0,
+            "contribution": 0.0,
+            "evidence": null
+          },
+          {
+            "req_id": "req-04",
+            "requirement": "加分项：熟练使用 AI 工具辅助选题调研、脚本分镜或图文排版优先",
+            "importance": "bonus",
+            "weight": 1,
+            "status": "unsupported",
+            "coef": 0.0,
+            "contribution": 0.0,
+            "evidence": null
+          }
+        ],
+        "evidence_gaps": [
+          {
+            "req_id": "req-02",
+            "requirement": "对数据敏感，能通过完播率、点击率（CTR）和互动率复盘迭代选题方向",
+            "status": "unsupported",
+            "missing_signals": "数据敏感、通过完播率、点击率、ctr、互动率复盘、迭代选题方"
+          },
+          {
+            "req_id": "req-03",
+            "requirement": "具备良好的跨团队沟通习惯，能配合设计师与活动运营按时交付专题物料",
+            "status": "unsupported",
+            "missing_signals": "良好、跨团队沟通、习惯、配合设计师、活动运营按、时交付专题"
+          },
+          {
+            "req_id": "req-04",
+            "requirement": "加分项：熟练使用 AI 工具辅助选题调研、脚本分镜或图文排版优先",
+            "status": "unsupported",
+            "missing_signals": "熟练使用、ai、工具辅助选、题调研、脚本分镜、图文排版"
+          }
+        ]
+      }
+    }
+  ]
+}

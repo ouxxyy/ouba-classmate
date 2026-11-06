@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI面试大师（ai-interviewer）｜中文语音与文字经历面试陪练（原话引用五维点评）｜ouba-classmate 套件</title>
+  <meta name="description" content="基于目标岗位 JD 与个人真实经历进行自我介绍 + 三道经历题连环追问，每道题给出引用候选人原话的五维三档点评，并支持同一题重答对比。">
+  <link rel="canonical" href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer">
+  <meta property="og:title" content="AI面试大师（ai-interviewer）｜中文语音与文字经历面试陪练（原话引用五维点评）｜ouba-classmate 套件">
+  <meta property="og:description" content="基于目标岗位 JD 与个人真实经历进行自我介绍 + 三道经历题连环追问，每道题给出引用候选人原话的五维三档点评，并支持同一题重答对比。">
+  <meta property="og:url" content="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer">
+  <meta property="og:type" content="website">
+  <style>
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --accent: #0284c7;
+  --accent-dark: #0369a1;
+  --code-bg: #0f172a;
+  --code-fg: #f8fafc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+.container { max-width: 1080px; margin: 0 auto; padding: 24px 20px 64px; }
+header.nav {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header.nav .inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.brand { font-weight: 700; font-size: 1.05rem; color: var(--text); text-decoration: none; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 0.94rem; }
+.nav-links a:hover { color: var(--accent); }
+.btn-star {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-star:hover { background: var(--accent-dark); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+h1 { font-size: 1.85rem; margin: 0 0 12px; line-height: 1.3; }
+h2 { font-size: 1.35rem; margin: 28px 0 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+h3 { font-size: 1.1rem; margin: 18px 0 8px; }
+pre {
+  background: var(--code-bg);
+  color: var(--code-fg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 12px 0; }
+th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: #f1f5f9; font-weight: 600; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+}
+.badge-warn { background: #fef3c7; color: #92400e; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+</style>
+  
+</head>
+<body>
+  <header class="nav">
+    <div class="inner">
+      <a class="brand" href="https://ouxxyy.github.io/ouba-classmate/">欧八同学 · ouba-classmate 套件与公开横评</a>
+      <nav class="nav-links">
+        <a href="https://ouxxyy.github.io/ouba-classmate/">首页：中文求职 AI 工具怎么选</a>
+        <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">公开横评数据 (v0.1)</a>
+        <a href="https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark">原始 CSV / 用例</a>
+        <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ Star ouba-classmate 合集</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    
+        <div class="card">
+          <span class="badge">ouba-classmate 套件核心组件</span>
+          <h1>AI面试大师（ai-interviewer）｜中文语音与文字经历面试陪练（原话引用五维点评）</h1>
+          <p>基于目标岗位 JD 与个人真实经历进行自我介绍 + 三道经历题连环追问，每道题给出引用候选人原话的五维三档点评，并支持同一题重答对比。</p>
+          <p>
+            <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
+            &nbsp;·&nbsp;
+            <a href="https://github.com/ouxxyy/ai-interviewer">查看组件源码仓 (ai-interviewer)</a>
+            &nbsp;·&nbsp;
+            <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">查看 12 仓公开横评对比</a>
+          </p>
+        </div>
+
+        <h2>适用场景</h2>
+        <div class="card"><p>面试前实战演练：害怕面试官追问“你个人到底做了什么”“数据怎么算的”，需要带原话证据引用的复盘教练。</p></div>
+
+        <h2>通过 ouba-classmate 套件一行安装</h2>
+        <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
+claude plugin marketplace add ouxxyy/ouba-classmate
+npx skills add ouxxyy/ouba-classmate --skill ai-interviewer</code></pre>
+
+        <h2>核心特性与实测表现</h2>
+        <div class="card"><ul><li>提供免安装在线语音 Web 版（interview.redboook.cn）与纯文字 Claude Code / Codex Skill 双入口</li><li>严格遵循 rules@0.3.0：每条点评必须引用候选人回答原话，支持初答与重答直接对比</li><li>新增 seasonal/ 2027 春招与年后跳槽高频压力追问题库包</li></ul></div>
+
+        <h2>能力边界与诚实说明</h2>
+        <div class="card"><p>专注训练行为与经历面试，不提供算法白板题评测，也不预测真实招聘方录用概率。</p></div>
+        
+    <footer>
+      <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>
+    </footer>
+  </main>
+</body>
+</html>

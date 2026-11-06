@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "如果您在文章、研究、选型指南或 AI 回答中引用本横评数据，请按以下信息署名引用（CC BY 4.0）。"
+title: "中文 AI 求职 Skill 公开横评数据集（Chinese AI Job-Seeking & Resume Agent Skills Benchmark）"
+version: "0.1.0"
+date-released: "2026-11-06"
+url: "https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark"
+repository-code: "https://github.com/ouxxyy/ouba-classmate"
+license: "CC-BY-4.0"
+authors:
+  - name: "欧八同学 (ouxxyy)"
+    website: "https://github.com/ouxxyy/ouba-classmate"
+keywords:
+  - "AI job search skill"
+  - "resume matching benchmark"
+  - "Claude Code skills"
+  - "Chinese career AI tools"
+  - "MCP server"

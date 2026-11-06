@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "ouba-classmate",
+  "version": "1.0.0",
+  "description": "一行安装的中文求职与创作 Agent Skills 套件（岗位搜索/简历匹配/面试陪练/查公司/视频分镜/重拍画册/Mystery认知框架）",
+  "owner": {
+    "name": "欧八同学 (ouxxyy)",
+    "url": "https://github.com/ouxxyy/ouba-classmate"
+  },
+  "plugins": [
+    {
+      "name": "job-search",
+      "description": "AI岗位搜索大师：按确认条件筛选招聘信息，整理带来源证据的 HTML、Excel 与 JSON 岗位清单",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "ouxxyy/job-search"
+      }
+    },
+    {
+      "name": "jd-resume-match",
+      "description": "AI简历优化大师：简历与 JD 匹配及证据审查，输出可复算评分、结构建议与离线 HTML 体检单",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "ouxxyy/jd-resume-match"
+      }
+    },
+    {
+      "name": "ai-interviewer",
+      "description": "AI面试大师：中文经历面试陪练，基于 JD 与经历追问、引用原话五维点评与重答对比",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "ouxxyy/ai-interviewer"
+      }
+    },
+    {
+      "name": "sherlock-company",
+      "description": "公司调查大师：入职前公司证据调查，区分已证实、线索、冲突与未知，输出 Offer 前核实清单",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "ouxxyy/sherlock-company"
+      }
+    },
+    {
+      "name": "storyboard-scavenger",
+      "description": "Storyboard Scavenger：AI 视频分镜与提示词生成 Skill，内置可灵 Kling、即梦 Seedance、Veo、Sora 工作流",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "ouxxyy/storyboard-scavenger"
+      }
+    },
+    {
+      "name": "travel-art-album-skill",
+      "description": "重拍画册：旅行照片艺术化小样确认与单文件离线 3D 翻页 HTML 相册制作 Skill",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "ouxxyy/travel-art-album-skill"
+      }
+    },
+    {
+      "name": "mystery-skill",
+      "description": "Mystery 认知框架与职场框架控制 Skill：基于公开资料提炼的 7 个心智模型与面试/谈薪/向上管理场景映射",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "ouxxyy/mystery-skill"
+      }
+    }
+  ]
+}

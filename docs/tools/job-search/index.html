@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI岗位搜索大师（job-search）｜多平台招聘筛选与来源短名单 Skill｜ouba-classmate 套件</title>
+  <meta name="description" content="按确认条件筛选 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧招聘信息，生成带来源 URL 与核实依据的 HTML、Excel 与 JSON 投递短名单。">
+  <link rel="canonical" href="https://ouxxyy.github.io/ouba-classmate/tools/job-search">
+  <meta property="og:title" content="AI岗位搜索大师（job-search）｜多平台招聘筛选与来源短名单 Skill｜ouba-classmate 套件">
+  <meta property="og:description" content="按确认条件筛选 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧招聘信息，生成带来源 URL 与核实依据的 HTML、Excel 与 JSON 投递短名单。">
+  <meta property="og:url" content="https://ouxxyy.github.io/ouba-classmate/tools/job-search">
+  <meta property="og:type" content="website">
+  <style>
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --accent: #0284c7;
+  --accent-dark: #0369a1;
+  --code-bg: #0f172a;
+  --code-fg: #f8fafc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+.container { max-width: 1080px; margin: 0 auto; padding: 24px 20px 64px; }
+header.nav {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header.nav .inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.brand { font-weight: 700; font-size: 1.05rem; color: var(--text); text-decoration: none; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 0.94rem; }
+.nav-links a:hover { color: var(--accent); }
+.btn-star {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-star:hover { background: var(--accent-dark); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+h1 { font-size: 1.85rem; margin: 0 0 12px; line-height: 1.3; }
+h2 { font-size: 1.35rem; margin: 28px 0 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+h3 { font-size: 1.1rem; margin: 18px 0 8px; }
+pre {
+  background: var(--code-bg);
+  color: var(--code-fg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 12px 0; }
+th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: #f1f5f9; font-weight: 600; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+}
+.badge-warn { background: #fef3c7; color: #92400e; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+</style>
+  
+</head>
+<body>
+  <header class="nav">
+    <div class="inner">
+      <a class="brand" href="https://ouxxyy.github.io/ouba-classmate/">欧八同学 · ouba-classmate 套件与公开横评</a>
+      <nav class="nav-links">
+        <a href="https://ouxxyy.github.io/ouba-classmate/">首页：中文求职 AI 工具怎么选</a>
+        <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">公开横评数据 (v0.1)</a>
+        <a href="https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark">原始 CSV / 用例</a>
+        <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ Star ouba-classmate 合集</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    
+        <div class="card">
+          <span class="badge">ouba-classmate 套件核心组件</span>
+          <h1>AI岗位搜索大师（job-search）｜多平台招聘筛选与来源短名单 Skill</h1>
+          <p>按确认条件筛选 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧招聘信息，生成带来源 URL 与核实依据的 HTML、Excel 与 JSON 投递短名单。</p>
+          <p>
+            <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
+            &nbsp;·&nbsp;
+            <a href="https://github.com/ouxxyy/job-search">查看组件源码仓 (job-search)</a>
+            &nbsp;·&nbsp;
+            <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">查看 12 仓公开横评对比</a>
+          </p>
+        </div>
+
+        <h2>适用场景</h2>
+        <div class="card"><p>求职第一步：不想在 5 个招聘软件之间反复切换比对薪资与要求，需要一份可追溯来源链接的客观岗位清单。</p></div>
+
+        <h2>通过 ouba-classmate 套件一行安装</h2>
+        <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
+claude plugin marketplace add ouxxyy/ouba-classmate
+npx skills add ouxxyy/ouba-classmate --skill job-search</code></pre>
+
+        <h2>核心特性与实测表现</h2>
+        <div class="card"><ul><li>覆盖 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧 5 大主流中文招聘平台</li><li>支持自定义求职条件或从简历提取建议方向（经求职者确认后执行）</li><li>绝不自动代投或群发打招呼，所有岗位保留原始链接与筛选依据，含 98 项自动化测试</li></ul></div>
+
+        <h2>能力边界与诚实说明</h2>
+        <div class="card"><p>实时网页采集依赖用户本机已登录的浏览器会话（Tabbit）；不导出排版 PDF 简历。</p></div>
+        
+    <footer>
+      <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>
+    </footer>
+  </main>
+</body>
+</html>

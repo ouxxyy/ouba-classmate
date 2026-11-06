@@ -1,0 +1,271 @@
+{
+  "benchmark_version": "0.1.0",
+  "verified_date": "2026-11-06",
+  "source_note": "所有仓库 Star 数、更新时间与文件结构均于 2026-11-06 通过 GitHub REST API (gh api) 实测核验【API 已验证 11-06】",
+  "repositories": [
+    {
+      "repo": "Paramchoudhary/ResumeSkills",
+      "url": "https://github.com/Paramchoudhary/ResumeSkills",
+      "category": "简历与求职综合（英文对照）",
+      "stars_verified_1106": 3049,
+      "updated_at": "2026-11-06",
+      "is_self": false,
+      "skill_md_count": 22,
+      "script_count": 0,
+      "template_count": 0,
+      "has_tests": false,
+      "scores": {
+        "D1_evidence_citation": 1,
+        "D2_reproducibility": 0,
+        "D3_pdf_typesetting": 0,
+        "D4_privacy_protection": 1,
+        "D5_cn_ecosystem_fit": 0,
+        "D6_installability": 1
+      },
+      "strengths": "覆盖 20+ 细分求职子技能（ATS 优化、高管简历、LinkedIn 等），英文生态最成熟",
+      "limitations": "全部为纯 Markdown Prompt（0 个执行或校验脚本），无确定性算分，未针对中文求职平台适配"
+    },
+    {
+      "repo": "Claycui828/ASu-resume-skills",
+      "url": "https://github.com/Claycui828/ASu-resume-skills",
+      "category": "简历审计与排版生成",
+      "stars_verified_1106": 426,
+      "updated_at": "2026-11-06",
+      "is_self": false,
+      "skill_md_count": 2,
+      "script_count": 5,
+      "template_count": 6,
+      "has_tests": true,
+      "scores": {
+        "D1_evidence_citation": 2,
+        "D2_reproducibility": 1,
+        "D3_pdf_typesetting": 2,
+        "D4_privacy_protection": 1,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 2
+      },
+      "strengths": "中文简历赛道 Star 最高；兼具证据优先审计（asu-resume-audit-skill）与高密度技术履历 PDF 渲染，含单元测试",
+      "limitations": "聚焦技术岗位履历重构，未提供跨多 JD 的确定性数学评分公式或 MCP 接口"
+    },
+    {
+      "repo": "wangyafu/resume-skills",
+      "url": "https://github.com/wangyafu/resume-skills",
+      "category": "简历编写与 PDF 排版",
+      "stars_verified_1106": 232,
+      "updated_at": "2026-11-05",
+      "is_self": false,
+      "skill_md_count": 1,
+      "script_count": 3,
+      "template_count": 5,
+      "has_tests": false,
+      "scores": {
+        "D1_evidence_citation": 1,
+        "D2_reproducibility": 1,
+        "D3_pdf_typesetting": 2,
+        "D4_privacy_protection": 1,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 1
+      },
+      "strengths": "内置极简纯白/极客风尚/典雅酒红等中文 HTML/PDF 模板，带 PDF 页数检查脚本（pdf_page_count.py）",
+      "limitations": "以版式交付为核心，对 JD 逐条证据缺口的定量核验较弱"
+    },
+    {
+      "repo": "StoneLL1/resume-builder",
+      "url": "https://github.com/StoneLL1/resume-builder",
+      "category": "采访式简历写作与排版",
+      "stars_verified_1106": 127,
+      "updated_at": "2026-11-06",
+      "is_self": false,
+      "skill_md_count": 1,
+      "script_count": 6,
+      "template_count": 8,
+      "has_tests": false,
+      "scores": {
+        "D1_evidence_citation": 1,
+        "D2_reproducibility": 1,
+        "D3_pdf_typesetting": 2,
+        "D4_privacy_protection": 2,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 1
+      },
+      "strengths": "从采访挖掘到 RenderCV 多套专业模板（Harvard/Classic/千禧等）本地离线导出闭环完整",
+      "limitations": "本地环境与 RenderCV 依赖较重，不含独立 JD 匹配度可复算评分器"
+    },
+    {
+      "repo": "KevinYoung-Kw/vibe-resume-skill",
+      "url": "https://github.com/KevinYoung-Kw/vibe-resume-skill",
+      "category": "多模板 HTML/PDF 简历生成",
+      "stars_verified_1106": 101,
+      "updated_at": "2026-11-05",
+      "is_self": false,
+      "skill_md_count": 1,
+      "script_count": 4,
+      "template_count": 12,
+      "has_tests": false,
+      "scores": {
+        "D1_evidence_citation": 1,
+        "D2_reproducibility": 1,
+        "D3_pdf_typesetting": 2,
+        "D4_privacy_protection": 1,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 1
+      },
+      "strengths": "提供 12 套风格鲜明的可投递 HTML/PDF 模板（Bauhaus/Editorial/Code Poetry 等）与导出 QA 脚本",
+      "limitations": "侧重视觉排版生成，缺少严格的简历原文行号证据防幻觉校验"
+    },
+    {
+      "repo": "yicLionel/Easy-Job-Tutor",
+      "url": "https://github.com/yicLionel/Easy-Job-Tutor",
+      "category": "JD 分析与浏览器侧边栏辅导",
+      "stars_verified_1106": 66,
+      "updated_at": "2026-10-26",
+      "is_self": false,
+      "skill_md_count": 1,
+      "script_count": 8,
+      "template_count": 2,
+      "has_tests": false,
+      "scores": {
+        "D1_evidence_citation": 1,
+        "D2_reproducibility": 1,
+        "D3_pdf_typesetting": 0,
+        "D4_privacy_protection": 1,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 1
+      },
+      "strengths": "结合 Codex Skill 与 Chrome 扩展侧边栏，浏览招聘网页时可直接联动分析 JD",
+      "limitations": "评分与改写由模型直接生成，无确定性复算脚本与反幻觉门禁测试"
+    },
+    {
+      "repo": "u7-u7/developer-resume-writer",
+      "url": "https://github.com/u7-u7/developer-resume-writer",
+      "category": "研发简历证据提炼与脱敏",
+      "stars_verified_1106": 25,
+      "updated_at": "2026-10-30",
+      "is_self": false,
+      "skill_md_count": 1,
+      "script_count": 0,
+      "template_count": 0,
+      "has_tests": false,
+      "scores": {
+        "D1_evidence_citation": 2,
+        "D2_reproducibility": 0,
+        "D3_pdf_typesetting": 0,
+        "D4_privacy_protection": 2,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 1
+      },
+      "strengths": "针对研发岗位强调项目证据提炼与强制脱敏规则，反夸大意识强",
+      "limitations": "纯 Prompt 实现（0 脚本），脱敏与证据核查依赖 LLM 自觉，无代码级强校验"
+    },
+    {
+      "repo": "CJlovetypo/job-search-skill-pack",
+      "url": "https://github.com/CJlovetypo/job-search-skill-pack",
+      "category": "中文招聘主体与岗位检索",
+      "stars_verified_1106": 9,
+      "updated_at": "2026-11-03",
+      "is_self": false,
+      "skill_md_count": 2,
+      "script_count": 5,
+      "template_count": 0,
+      "has_tests": true,
+      "scores": {
+        "D1_evidence_citation": 1,
+        "D2_reproducibility": 2,
+        "D3_pdf_typesetting": 0,
+        "D4_privacy_protection": 2,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 2
+      },
+      "strengths": "内置 3000+ 中国招聘主体索引与 Node.js 检索脚本（job-radar），含自动化测试",
+      "limitations": "侧重招聘主体名录雷达，不负责简历匹配改写或 PDF 导出"
+    },
+    {
+      "repo": "ouxxyy/jd-resume-match",
+      "url": "https://github.com/ouxxyy/jd-resume-match",
+      "category": "简历 vs JD 可复算匹配与体检 [自家项目·利益相关]",
+      "stars_verified_1106": 0,
+      "updated_at": "2026-11-06",
+      "is_self": true,
+      "skill_md_count": 1,
+      "script_count": 10,
+      "template_count": 2,
+      "has_tests": true,
+      "scores": {
+        "D1_evidence_citation": 2,
+        "D2_reproducibility": 2,
+        "D3_pdf_typesetting": 0,
+        "D4_privacy_protection": 2,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 2
+      },
+      "strengths": "唯一提供确定性数学评分公式（jd-match-rubric/0.1.0）、行号证据强制校验、270 项单测与本地 MCP Server 的工具",
+      "limitations": "【公开短板】D3 得 0 分：只输出 HTML 体检单与改写方案，不直接导出可投递的精美排版 PDF 简历；中文 CID 字体 PDF 需转文本"
+    },
+    {
+      "repo": "ouxxyy/job-search",
+      "url": "https://github.com/ouxxyy/job-search",
+      "category": "多平台招聘筛选与证据短名单 [自家项目·利益相关]",
+      "stars_verified_1106": 0,
+      "updated_at": "2026-11-06",
+      "is_self": true,
+      "skill_md_count": 1,
+      "script_count": 8,
+      "template_count": 1,
+      "has_tests": true,
+      "scores": {
+        "D1_evidence_citation": 2,
+        "D2_reproducibility": 2,
+        "D3_pdf_typesetting": 0,
+        "D4_privacy_protection": 2,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 2
+      },
+      "strengths": "覆盖 BOSS直聘/猎聘/脉脉/智联/前程无忧，保留岗位来源 URL 与筛选依据，输出离线 HTML + Excel，含 98 项单测",
+      "limitations": "【公开短板】D3 得 0 分（非简历排版工具）；实时采集依赖本机已登录浏览器会话（Tabbit）"
+    },
+    {
+      "repo": "ouxxyy/ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "category": "中文经历面试追问与原话点评 [自家项目·利益相关]",
+      "stars_verified_1106": 3,
+      "updated_at": "2026-11-06",
+      "is_self": true,
+      "skill_md_count": 1,
+      "script_count": 12,
+      "template_count": 3,
+      "has_tests": true,
+      "scores": {
+        "D1_evidence_citation": 2,
+        "D2_reproducibility": 2,
+        "D3_pdf_typesetting": 0,
+        "D4_privacy_protection": 2,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 2
+      },
+      "strengths": "既有在线语音 Web 版又有纯文字 Skill，每条五维点评强制引用候选人原话并支持初答/重答对比",
+      "limitations": "【公开短板】D3 得 0 分；只训练行为/经历面试，不支持算法白板题或系统设计画图题"
+    },
+    {
+      "repo": "ouxxyy/sherlock-company",
+      "url": "https://github.com/ouxxyy/sherlock-company",
+      "category": "Offer 前公司证据调查 [自家项目·利益相关]",
+      "stars_verified_1106": 1,
+      "updated_at": "2026-11-06",
+      "is_self": true,
+      "skill_md_count": 1,
+      "script_count": 2,
+      "template_count": 2,
+      "has_tests": false,
+      "scores": {
+        "D1_evidence_citation": 2,
+        "D2_reproducibility": 1,
+        "D3_pdf_typesetting": 0,
+        "D4_privacy_protection": 2,
+        "D5_cn_ecosystem_fit": 2,
+        "D6_installability": 1
+      },
+      "strengths": "将网络信息严格区分为已证实/线索/冲突/未知四态，主动排查少于100人初创、感恩标语、居民楼办公三类预警",
+      "limitations": "【公开短板】D3 得 0 分；公开网络检索受目标公司信息透明度限制，未配备独立 Python 算分器"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+本目录（`benchmark/`）下的横评对比表格（`results.csv`）、评测方法论（`METHOD.md`）、仓库元数据快照（`repos.json`）与合成测试数据集（`cases/`）均采用 **CC BY 4.0（知识共享 署名 4.0 国际许可协议）** 开放授权。
+
+您可以自由地：
+- **共享** — 在任何媒介以任何形式复制、发行本数据集与对比表
+- **演绎** — 修改、转换或以本数据为基础进行二次创作（包括商业用途与 AI 搜索引擎引用）
+
+惟须遵守以下条件：
+- **署名（Attribution）** — 您必须给出适当的署名，附上指向本仓库主页（https://github.com/ouxxyy/ouba-classmate）或横评目录（https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark）的链接，同时标明是否对原始数据作出了修改。
+
+完整协议文本见：https://creativecommons.org/licenses/by/4.0/deed.zh-hans

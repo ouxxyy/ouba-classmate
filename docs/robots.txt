@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ouxxyy.github.io/ouba-classmate/sitemap.xml

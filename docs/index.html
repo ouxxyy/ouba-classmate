@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中文 AI 求职工具怎么选？ouba-classmate 套件与 12 仓公开横评数据</title>
+  <meta name="description" content="涵盖岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司调查的一键安装 Agent Skills 套件，附 12 个主流中英文求职 Skill 实测横评表。">
+  <link rel="canonical" href="https://ouxxyy.github.io/ouba-classmate/">
+  <meta property="og:title" content="中文 AI 求职工具怎么选？ouba-classmate 套件与 12 仓公开横评数据">
+  <meta property="og:description" content="涵盖岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司调查的一键安装 Agent Skills 套件，附 12 个主流中英文求职 Skill 实测横评表。">
+  <meta property="og:url" content="https://ouxxyy.github.io/ouba-classmate/">
+  <meta property="og:type" content="website">
+  <style>
+:root {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --accent: #0284c7;
+  --accent-dark: #0369a1;
+  --code-bg: #0f172a;
+  --code-fg: #f8fafc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+}
+.container { max-width: 1080px; margin: 0 auto; padding: 24px 20px 64px; }
+header.nav {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header.nav .inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.brand { font-weight: 700; font-size: 1.05rem; color: var(--text); text-decoration: none; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 0.94rem; }
+.nav-links a:hover { color: var(--accent); }
+.btn-star {
+  background: var(--accent);
+  color: #fff !important;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-star:hover { background: var(--accent-dark); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+h1 { font-size: 1.85rem; margin: 0 0 12px; line-height: 1.3; }
+h2 { font-size: 1.35rem; margin: 28px 0 12px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+h3 { font-size: 1.1rem; margin: 18px 0 8px; }
+pre {
+  background: var(--code-bg);
+  color: var(--code-fg);
+  padding: 14px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 12px 0; }
+th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+th { background: #f1f5f9; font-weight: 600; }
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+}
+.badge-warn { background: #fef3c7; color: #92400e; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+</style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ouba-classmate 中文求职与创作 Agent Skills 套件",
+  "applicationCategory": "DeveloperApplication",
+  "operatingSystem": "macOS, Linux, Windows",
+  "url": "https://github.com/ouxxyy/ouba-classmate",
+  "downloadUrl": "https://github.com/ouxxyy/ouba-classmate",
+  "author": {
+    "@type": "Person",
+    "name": "欧八同学 (ouxxyy)",
+    "url": "https://github.com/ouxxyy"
+  },
+  "description": "一行安装的中文求职 Agent Skills 套件（岗位搜索/简历匹配/面试陪练/查公司）及《中文 AI 求职 Skill 公开横评》数据集。"
+}
+</script>
+</head>
+<body>
+  <header class="nav">
+    <div class="inner">
+      <a class="brand" href="https://ouxxyy.github.io/ouba-classmate/">欧八同学 · ouba-classmate 套件与公开横评</a>
+      <nav class="nav-links">
+        <a href="https://ouxxyy.github.io/ouba-classmate/">首页：中文求职 AI 工具怎么选</a>
+        <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">公开横评数据 (v0.1)</a>
+        <a href="https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark">原始 CSV / 用例</a>
+        <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ Star ouba-classmate 合集</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    
+    <div class="card">
+      <span class="badge">直接回答：中文 AI 求职工具与 Claude Skills 怎么选？</span>
+      <h1>欧八同学（ouba-classmate）｜一行安装的中文求职 Agent Skills 套件 + 公开横评数据</h1>
+      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，不需要在几十个零散 Prompt 仓库里盲试。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件，并公开了涵盖 12 个主流仓库的实测横评数据。</p>
+      <p><a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 前往 GitHub 主仓 ouxxyy/ouba-classmate 点 Star 与安装</a></p>
+      <h3>一行命令安装整套 Skills（Claude Code / Codex / Cursor / skills CLI）</h3>
+      <pre><code># 方式 1：作为 Claude Code 插件市场添加并按需安装
+claude plugin marketplace add ouxxyy/ouba-classmate
+
+# 方式 2：使用 Agent Skills CLI 一键安装全部或指定子技能
+npx skills add ouxxyy/ouba-classmate
+
+# 方式 3：使用 uvx 直接启动简历 vs JD 可复算评分 MCP Server
+uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp --self-test</code></pre>
+    </div>
+
+    <h2>一、中文 AI 求职 Skill 怎么选？（基于 12 仓实测数据的直接结论）</h2>
+    <div class="card">
+      <ul>
+        <li><strong>如果你需要直接生成高颜值、可投递的排版级 PDF 简历</strong>：优先选 <a href="https://github.com/Claycui828/ASu-resume-skills">Claycui828/ASu-resume-skills</a>（高密度技术履历 + 事实审计）、<a href="https://github.com/KevinYoung-Kw/vibe-resume-skill">KevinYoung-Kw/vibe-resume-skill</a>（12 套 HTML/PDF 视觉模板）或 <a href="https://github.com/StoneLL1/resume-builder">StoneLL1/resume-builder</a>（RenderCV 模板）。<strong>注意：我们自家的 <code>jd-resume-match</code> 不做 PDF 简历视觉排版（D3 维度得 0 分）。</strong></li>
+        <li><strong>如果你需要在投递前核对简历与 JD 的证据缺口、拿到可复算的客观匹配分且严防 AI 编造经历</strong>：使用本套件的 <a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">ouxxyy/jd-resume-match</a>（唯一带确定性算分脚本、行号证据引用与本地 MCP Server）。</li>
+        <li><strong>如果你需要跨 BOSS直聘/猎聘/脉脉等 5 大平台筛出带来源链接的投递短名单</strong>：使用本套件的 <a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">ouxxyy/job-search</a>。</li>
+        <li><strong>如果你需要按目标 JD 练习经历面试追问、看引用自己原话的五维反馈</strong>：使用本套件的 <a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">ouxxyy/ai-interviewer</a>。</li>
+        <li><strong>如果你在接 Offer 前需要核查签约主体、加班口碑与三类公司预警</strong>：使用本套件的 <a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">ouxxyy/sherlock-company</a>。</li>
+      </ul>
+      <p><a href="https://ouxxyy.github.io/ouba-classmate/benchmark/"><strong>👉 查看完整 12 仓横评对比表、评测方法论与 CSV 原始数据下载</strong></a></p>
+    </div>
+
+    <h2>二、《中文 AI 求职 Skill 公开横评》v0.1 核心总表</h2>
+    
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>GitHub 仓库</th>
+            <th>赛道定位</th>
+            <th>Star (2026-11-06)</th>
+            <th>脚本 / 模板 / 单测</th>
+            <th>D1 证据引用</th>
+            <th>D2 可复算性</th>
+            <th>D3 PDF排版</th>
+            <th>D4 隐私脱敏</th>
+            <th>D5 中文生态</th>
+            <th>D6 可安装性</th>
+            <th>总分</th>
+            <th>实测优势与诚实局限</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td><a href="https://github.com/Claycui828/ASu-resume-skills"><strong>Claycui828/ASu-resume-skills</strong></a></td>
+              <td>简历审计与排版生成</td>
+              <td>426</td>
+              <td>5 / 6 / ✅</td>
+              <td>2</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td>2</td>
+              <td>2</td>
+              <td><strong>10 / 12</strong></td>
+              <td><strong>优势：</strong>中文简历赛道 Star 最高；兼具证据优先审计（asu-resume-audit-skill）与高密度技术履历 PDF 渲染，含单元测试<br><strong>局限：</strong>聚焦技术岗位履历重构，未提供跨多 JD 的确定性数学评分公式或 MCP 接口</td>
+            </tr><tr>
+              <td><a href="https://github.com/ouxxyy/ai-interviewer"><strong>ouxxyy/ai-interviewer</strong></a> <span class="badge badge-warn">自家·利益相关</span></td>
+              <td>中文经历面试追问与原话点评</td>
+              <td>3</td>
+              <td>12 / 3 / ✅</td>
+              <td>2</td>
+              <td>2</td>
+              <td>0</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td><strong>10 / 12</strong></td>
+              <td><strong>优势：</strong>既有在线语音 Web 版又有纯文字 Skill，每条五维点评强制引用候选人原话并支持初答/重答对比<br><strong>局限：</strong>【公开短板】D3 得 0 分；只训练行为/经历面试，不支持算法白板题或系统设计画图题</td>
+            </tr><tr>
+              <td><a href="https://github.com/ouxxyy/jd-resume-match"><strong>ouxxyy/jd-resume-match</strong></a> <span class="badge badge-warn">自家·利益相关</span></td>
+              <td>简历 vs JD 可复算匹配与体检</td>
+              <td>0</td>
+              <td>10 / 2 / ✅</td>
+              <td>2</td>
+              <td>2</td>
+              <td>0</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td><strong>10 / 12</strong></td>
+              <td><strong>优势：</strong>唯一提供确定性数学评分公式（jd-match-rubric/0.1.0）、行号证据强制校验、270 项单测与本地 MCP Server 的工具<br><strong>局限：</strong>【公开短板】D3 得 0 分：只输出 HTML 体检单与改写方案，不直接导出可投递的精美排版 PDF 简历；中文 CID 字体 PDF 需转文本</td>
+            </tr><tr>
+              <td><a href="https://github.com/ouxxyy/job-search"><strong>ouxxyy/job-search</strong></a> <span class="badge badge-warn">自家·利益相关</span></td>
+              <td>多平台招聘筛选与证据短名单</td>
+              <td>0</td>
+              <td>8 / 1 / ✅</td>
+              <td>2</td>
+              <td>2</td>
+              <td>0</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td><strong>10 / 12</strong></td>
+              <td><strong>优势：</strong>覆盖 BOSS直聘/猎聘/脉脉/智联/前程无忧，保留岗位来源 URL 与筛选依据，输出离线 HTML + Excel，含 98 项单测<br><strong>局限：</strong>【公开短板】D3 得 0 分（非简历排版工具）；实时采集依赖本机已登录浏览器会话（Tabbit）</td>
+            </tr><tr>
+              <td><a href="https://github.com/StoneLL1/resume-builder"><strong>StoneLL1/resume-builder</strong></a></td>
+              <td>采访式简历写作与排版</td>
+              <td>127</td>
+              <td>6 / 8 / ❌</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td>1</td>
+              <td><strong>9 / 12</strong></td>
+              <td><strong>优势：</strong>从采访挖掘到 RenderCV 多套专业模板（Harvard/Classic/千禧等）本地离线导出闭环完整<br><strong>局限：</strong>本地环境与 RenderCV 依赖较重，不含独立 JD 匹配度可复算评分器</td>
+            </tr><tr>
+              <td><a href="https://github.com/CJlovetypo/job-search-skill-pack"><strong>CJlovetypo/job-search-skill-pack</strong></a></td>
+              <td>中文招聘主体与岗位检索</td>
+              <td>9</td>
+              <td>5 / 0 / ✅</td>
+              <td>1</td>
+              <td>2</td>
+              <td>0</td>
+              <td>2</td>
+              <td>2</td>
+              <td>2</td>
+              <td><strong>9 / 12</strong></td>
+              <td><strong>优势：</strong>内置 3000+ 中国招聘主体索引与 Node.js 检索脚本（job-radar），含自动化测试<br><strong>局限：</strong>侧重招聘主体名录雷达，不负责简历匹配改写或 PDF 导出</td>
+            </tr><tr>
+              <td><a href="https://github.com/wangyafu/resume-skills"><strong>wangyafu/resume-skills</strong></a></td>
+              <td>简历编写与 PDF 排版</td>
+              <td>232</td>
+              <td>3 / 5 / ❌</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td><strong>8 / 12</strong></td>
+              <td><strong>优势：</strong>内置极简纯白/极客风尚/典雅酒红等中文 HTML/PDF 模板，带 PDF 页数检查脚本（pdf_page_count.py）<br><strong>局限：</strong>以版式交付为核心，对 JD 逐条证据缺口的定量核验较弱</td>
+            </tr><tr>
+              <td><a href="https://github.com/KevinYoung-Kw/vibe-resume-skill"><strong>KevinYoung-Kw/vibe-resume-skill</strong></a></td>
+              <td>多模板 HTML/PDF 简历生成</td>
+              <td>101</td>
+              <td>4 / 12 / ❌</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td><strong>8 / 12</strong></td>
+              <td><strong>优势：</strong>提供 12 套风格鲜明的可投递 HTML/PDF 模板（Bauhaus/Editorial/Code Poetry 等）与导出 QA 脚本<br><strong>局限：</strong>侧重视觉排版生成，缺少严格的简历原文行号证据防幻觉校验</td>
+            </tr><tr>
+              <td><a href="https://github.com/ouxxyy/sherlock-company"><strong>ouxxyy/sherlock-company</strong></a> <span class="badge badge-warn">自家·利益相关</span></td>
+              <td>Offer 前公司证据调查</td>
+              <td>1</td>
+              <td>2 / 2 / ❌</td>
+              <td>2</td>
+              <td>1</td>
+              <td>0</td>
+              <td>2</td>
+              <td>2</td>
+              <td>1</td>
+              <td><strong>8 / 12</strong></td>
+              <td><strong>优势：</strong>将网络信息严格区分为已证实/线索/冲突/未知四态，主动排查少于100人初创、感恩标语、居民楼办公三类预警<br><strong>局限：</strong>【公开短板】D3 得 0 分；公开网络检索受目标公司信息透明度限制，未配备独立 Python 算分器</td>
+            </tr><tr>
+              <td><a href="https://github.com/u7-u7/developer-resume-writer"><strong>u7-u7/developer-resume-writer</strong></a></td>
+              <td>研发简历证据提炼与脱敏</td>
+              <td>25</td>
+              <td>0 / 0 / ❌</td>
+              <td>2</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2</td>
+              <td>2</td>
+              <td>1</td>
+              <td><strong>7 / 12</strong></td>
+              <td><strong>优势：</strong>针对研发岗位强调项目证据提炼与强制脱敏规则，反夸大意识强<br><strong>局限：</strong>纯 Prompt 实现（0 脚本），脱敏与证据核查依赖 LLM 自觉，无代码级强校验</td>
+            </tr><tr>
+              <td><a href="https://github.com/yicLionel/Easy-Job-Tutor"><strong>yicLionel/Easy-Job-Tutor</strong></a></td>
+              <td>JD 分析与浏览器侧边栏辅导</td>
+              <td>66</td>
+              <td>8 / 2 / ❌</td>
+              <td>1</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td>2</td>
+              <td>1</td>
+              <td><strong>6 / 12</strong></td>
+              <td><strong>优势：</strong>结合 Codex Skill 与 Chrome 扩展侧边栏，浏览招聘网页时可直接联动分析 JD<br><strong>局限：</strong>评分与改写由模型直接生成，无确定性复算脚本与反幻觉门禁测试</td>
+            </tr><tr>
+              <td><a href="https://github.com/Paramchoudhary/ResumeSkills"><strong>Paramchoudhary/ResumeSkills</strong></a></td>
+              <td>简历与求职综合（英文对照）</td>
+              <td>3049</td>
+              <td>0 / 0 / ❌</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+              <td><strong>3 / 12</strong></td>
+              <td><strong>优势：</strong>覆盖 20+ 细分求职子技能（ATS 优化、高管简历、LinkedIn 等），英文生态最成熟<br><strong>局限：</strong>全部为纯 Markdown Prompt（0 个执行或校验脚本），无确定性算分，未针对中文求职平台适配</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+    
+
+    <h2>三、套件内 6 大核心工具详情</h2>
+    <div class="grid">
+      <div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">AI岗位搜索大师（job-search）｜多平台招聘筛选与来源短名单 Skill</a></h3>
+              <p>按确认条件筛选 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧招聘信息，生成带来源 URL 与核实依据的 HTML、Excel 与 JSON 投递短名单。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server</a></h3>
+              <p>对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">AI面试大师（ai-interviewer）｜中文语音与文字经历面试陪练（原话引用五维点评）</a></h3>
+              <p>基于目标岗位 JD 与个人真实经历进行自我介绍 + 三道经历题连环追问，每道题给出引用候选人原话的五维三档点评，并支持同一题重答对比。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">公司调查大师（sherlock-company）｜接 Offer 前公司证据四态核查与风险预警 Skill</a></h3>
+              <p>在决定面试或接受 Offer 前，将目标公司的公开信息与员工评价整理为「已证实 / 有线索 / 说法冲突 / 还不知道」四态档案，主动排查三类职场预警。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill</a></h3>
+              <p>把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">重拍画册（travel-art-album-skill）｜旅行照片艺术化与单文件离线 3D 翻页相册 Skill</a></h3>
+              <p>将 10–30 张旅行照片先生成 4 种风格小样供用户确认，再批量制作为典藏级单文件离线 3D 翻页 HTML 画册（支持直接打印导出 PDF）。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div>
+    </div>
+    
+    <footer>
+      <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+repo,category,is_self_project,stars_2026_11_06,updated_at,skill_md_count,script_count,template_count,has_tests,D1_evidence_citation,D2_reproducibility,D3_pdf_typesetting,D4_privacy_protection,D5_cn_ecosystem_fit,D6_installability,total_score_12,strengths,limitations
+Paramchoudhary/ResumeSkills,简历与求职综合（英文对照）,no,3049,2026-11-06,22,0,0,no,1,0,0,1,0,1,3,覆盖 20+ 细分求职子技能（ATS 优化、高管简历、LinkedIn 等），英文生态最成熟,全部为纯 Markdown Prompt（0 个执行或校验脚本），无确定性算分，未针对中文求职平台适配
+Claycui828/ASu-resume-skills,简历审计与排版生成,no,426,2026-11-06,2,5,6,yes,2,1,2,1,2,2,10,中文简历赛道 Star 最高；兼具证据优先审计（asu-resume-audit-skill）与高密度技术履历 PDF 渲染，含单元测试,聚焦技术岗位履历重构，未提供跨多 JD 的确定性数学评分公式或 MCP 接口
+wangyafu/resume-skills,简历编写与 PDF 排版,no,232,2026-11-05,1,3,5,no,1,1,2,1,2,1,8,内置极简纯白/极客风尚/典雅酒红等中文 HTML/PDF 模板，带 PDF 页数检查脚本（pdf_page_count.py）,以版式交付为核心，对 JD 逐条证据缺口的定量核验较弱
+StoneLL1/resume-builder,采访式简历写作与排版,no,127,2026-11-06,1,6,8,no,1,1,2,2,2,1,9,从采访挖掘到 RenderCV 多套专业模板（Harvard/Classic/千禧等）本地离线导出闭环完整,本地环境与 RenderCV 依赖较重，不含独立 JD 匹配度可复算评分器
+KevinYoung-Kw/vibe-resume-skill,多模板 HTML/PDF 简历生成,no,101,2026-11-05,1,4,12,no,1,1,2,1,2,1,8,提供 12 套风格鲜明的可投递 HTML/PDF 模板（Bauhaus/Editorial/Code Poetry 等）与导出 QA 脚本,侧重视觉排版生成，缺少严格的简历原文行号证据防幻觉校验
+yicLionel/Easy-Job-Tutor,JD 分析与浏览器侧边栏辅导,no,66,2026-10-26,1,8,2,no,1,1,0,1,2,1,6,结合 Codex Skill 与 Chrome 扩展侧边栏，浏览招聘网页时可直接联动分析 JD,评分与改写由模型直接生成，无确定性复算脚本与反幻觉门禁测试
+u7-u7/developer-resume-writer,研发简历证据提炼与脱敏,no,25,2026-10-30,1,0,0,no,2,0,0,2,2,1,7,针对研发岗位强调项目证据提炼与强制脱敏规则，反夸大意识强,纯 Prompt 实现（0 脚本），脱敏与证据核查依赖 LLM 自觉，无代码级强校验
+CJlovetypo/job-search-skill-pack,中文招聘主体与岗位检索,no,9,2026-11-03,2,5,0,yes,1,2,0,2,2,2,9,内置 3000+ 中国招聘主体索引与 Node.js 检索脚本（job-radar），含自动化测试,侧重招聘主体名录雷达，不负责简历匹配改写或 PDF 导出
+ouxxyy/jd-resume-match,简历 vs JD 可复算匹配与体检 [自家项目·利益相关],yes (COI disclosed),0,2026-11-06,1,10,2,yes,2,2,0,2,2,2,10,唯一提供确定性数学评分公式（jd-match-rubric/0.1.0）、行号证据强制校验、270 项单测与本地 MCP Server 的工具,【公开短板】D3 得 0 分：只输出 HTML 体检单与改写方案，不直接导出可投递的精美排版 PDF 简历；中文 CID 字体 PDF 需转文本
+ouxxyy/job-search,多平台招聘筛选与证据短名单 [自家项目·利益相关],yes (COI disclosed),0,2026-11-06,1,8,1,yes,2,2,0,2,2,2,10,覆盖 BOSS直聘/猎聘/脉脉/智联/前程无忧，保留岗位来源 URL 与筛选依据，输出离线 HTML + Excel，含 98 项单测,【公开短板】D3 得 0 分（非简历排版工具）；实时采集依赖本机已登录浏览器会话（Tabbit）
+ouxxyy/ai-interviewer,中文经历面试追问与原话点评 [自家项目·利益相关],yes (COI disclosed),3,2026-11-06,1,12,3,yes,2,2,0,2,2,2,10,既有在线语音 Web 版又有纯文字 Skill，每条五维点评强制引用候选人原话并支持初答/重答对比,【公开短板】D3 得 0 分；只训练行为/经历面试，不支持算法白板题或系统设计画图题
+ouxxyy/sherlock-company,Offer 前公司证据调查 [自家项目·利益相关],yes (COI disclosed),1,2026-11-06,1,2,2,no,2,1,0,2,2,1,8,将网络信息严格区分为已证实/线索/冲突/未知四态，主动排查少于100人初创、感恩标语、居民楼办公三类预警,【公开短板】D3 得 0 分；公开网络检索受目标公司信息透明度限制，未配备独立 Python 算分器
