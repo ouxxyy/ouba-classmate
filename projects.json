@@ -1,7 +1,28 @@
 {
-  "generated_at": "2026-11-05T02:40:46+00:00",
+  "generated_at": "2026-11-06T02:44:00+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "travel-art-album-skill",
+      "url": "https://github.com/ouxxyy/travel-art-album-skill",
+      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
+      "category": "skill",
+      "language": "JavaScript",
+      "stars": 2,
+      "updated_at": "2026-11-05T17:55:07Z",
+      "description_en": "Travel photo album and single-file offline HTML flipbook skill",
+      "keywords": [
+        "旅行照片画册",
+        "离线翻页相册",
+        "照片艺术化",
+        "travel photo album",
+        "offline flipbook"
+      ],
+      "use_cases": [
+        "把旅行照片制作成艺术画册",
+        "离线翻阅相册并用浏览器打印 PDF"
+      ]
+    },
     {
       "name": "sherlock-company",
       "url": "https://github.com/ouxxyy/sherlock-company",
@@ -179,27 +200,6 @@
       "use_cases": [
         "在电脑前设置坐姿提醒",
         "查看本地坐姿记录"
-      ]
-    },
-    {
-      "name": "travel-art-album-skill",
-      "url": "https://github.com/ouxxyy/travel-art-album-skill",
-      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
-      "category": "skill",
-      "language": "JavaScript",
-      "stars": 1,
-      "updated_at": "2026-10-24T13:13:56Z",
-      "description_en": "Travel photo album and single-file offline HTML flipbook skill",
-      "keywords": [
-        "旅行照片画册",
-        "离线翻页相册",
-        "照片艺术化",
-        "travel photo album",
-        "offline flipbook"
-      ],
-      "use_cases": [
-        "把旅行照片制作成艺术画册",
-        "离线翻阅相册并用浏览器打印 PDF"
       ]
     },
     {
