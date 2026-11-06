@@ -131,10 +131,14 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
   </header>
   <main class="container">
     
+    <div class="card" style="background: #f0f9ff; border-color: #bae6fd;">
+      <strong>🎁 扫码关注公众号「欧八同学」</strong>，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》→ <a href="https://github.com/ouxxyy/ouba-classmate#author"><strong>去 GitHub 主页底部扫码领取</strong></a>
+    </div>
+
     <div class="card">
       <span class="badge">直接回答：中文 AI 求职工具与 Claude Skills 怎么选？</span>
-      <h1>欧八同学（ouba-classmate）｜一行安装的中文求职 Agent Skills 套件 + 公开横评数据</h1>
-      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，不需要在几十个零散 Prompt 仓库里盲试。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件，并公开了涵盖 12 个主流仓库的实测横评数据。</p>
+      <h1>欧八同学（ouba-classmate）｜一行安装的中文求职与创作 Agent Skills 套件</h1>
+      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，不需要在几十个零散 Prompt 仓库里盲试。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件。</p>
       <p><a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 前往 GitHub 主仓 ouxxyy/ouba-classmate 点 Star 与安装</a></p>
       <h3>一行命令安装整套 Skills（Claude Code / Codex / Cursor / skills CLI）</h3>
       <pre><code># 方式 1：作为 Claude Code 插件市场添加并按需安装
@@ -147,7 +151,36 @@ npx skills add ouxxyy/ouba-classmate
 uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp --self-test</code></pre>
     </div>
 
-    <h2>一、中文 AI 求职 Skill 怎么选？（基于 12 仓实测数据的直接结论）</h2>
+    <h2>一、套件内 6 大核心工具详情</h2>
+    <div class="grid">
+      <div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">AI岗位搜索大师（job-search）｜多平台招聘筛选与来源短名单 Skill</a></h3>
+              <p>按确认条件筛选 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧招聘信息，生成带来源 URL 与核实依据的 HTML、Excel 与 JSON 投递短名单。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server</a></h3>
+              <p>对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">AI面试大师（ai-interviewer）｜中文语音与文字经历面试陪练（原话引用五维点评）</a></h3>
+              <p>基于目标岗位 JD 与个人真实经历进行自我介绍 + 三道经历题连环追问，每道题给出引用候选人原话的五维三档点评，并支持同一题重答对比。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">公司调查大师（sherlock-company）｜接 Offer 前公司证据四态核查与风险预警 Skill</a></h3>
+              <p>在决定面试或接受 Offer 前，将目标公司的公开信息与员工评价整理为「已证实 / 有线索 / 说法冲突 / 还不知道」四态档案，主动排查三类职场预警。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill</a></h3>
+              <p>把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div><div class="card">
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">重拍画册（travel-art-album-skill）｜旅行照片艺术化与单文件离线 3D 翻页相册 Skill</a></h3>
+              <p>将 10–30 张旅行照片先生成 4 种风格小样供用户确认，再批量制作为典藏级单文件离线 3D 翻页 HTML 画册（支持直接打印导出 PDF）。</p>
+              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
+            </div>
+    </div>
+
+    <h2>二、中文 AI 求职 Skill 怎么选？（基于 12 仓实测数据的直接结论）</h2>
     <div class="card">
       <ul>
         <li><strong>如果你需要直接生成高颜值、可投递的排版级 PDF 简历</strong>：优先选 <a href="https://github.com/Claycui828/ASu-resume-skills">Claycui828/ASu-resume-skills</a>（高密度技术履历 + 事实审计）、<a href="https://github.com/KevinYoung-Kw/vibe-resume-skill">KevinYoung-Kw/vibe-resume-skill</a>（12 套 HTML/PDF 视觉模板）或 <a href="https://github.com/StoneLL1/resume-builder">StoneLL1/resume-builder</a>（RenderCV 模板）。<strong>注意：我们自家的 <code>jd-resume-match</code> 不做 PDF 简历视觉排版（D3 维度得 0 分）。</strong></li>
@@ -159,7 +192,7 @@ uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-r
       <p><a href="https://ouxxyy.github.io/ouba-classmate/benchmark/"><strong>👉 查看完整 12 仓横评对比表、评测方法论与 CSV 原始数据下载</strong></a></p>
     </div>
 
-    <h2>二、《中文 AI 求职 Skill 公开横评》v0.1 核心总表</h2>
+    <h2>三、附：《中文 AI 求职 Skill 公开横评》v0.1 核心总表</h2>
     
     <div class="table-wrap">
       <table>
@@ -341,35 +374,6 @@ uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-r
       </table>
     </div>
     
-
-    <h2>三、套件内 6 大核心工具详情</h2>
-    <div class="grid">
-      <div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">AI岗位搜索大师（job-search）｜多平台招聘筛选与来源短名单 Skill</a></h3>
-              <p>按确认条件筛选 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧招聘信息，生成带来源 URL 与核实依据的 HTML、Excel 与 JSON 投递短名单。</p>
-              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
-            </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server</a></h3>
-              <p>对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。</p>
-              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
-            </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">AI面试大师（ai-interviewer）｜中文语音与文字经历面试陪练（原话引用五维点评）</a></h3>
-              <p>基于目标岗位 JD 与个人真实经历进行自我介绍 + 三道经历题连环追问，每道题给出引用候选人原话的五维三档点评，并支持同一题重答对比。</p>
-              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
-            </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">公司调查大师（sherlock-company）｜接 Offer 前公司证据四态核查与风险预警 Skill</a></h3>
-              <p>在决定面试或接受 Offer 前，将目标公司的公开信息与员工评价整理为「已证实 / 有线索 / 说法冲突 / 还不知道」四态档案，主动排查三类职场预警。</p>
-              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
-            </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill</a></h3>
-              <p>把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。</p>
-              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
-            </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">重拍画册（travel-art-album-skill）｜旅行照片艺术化与单文件离线 3D 翻页相册 Skill</a></h3>
-              <p>将 10–30 张旅行照片先生成 4 种风格小样供用户确认，再批量制作为典藏级单文件离线 3D 翻页 HTML 画册（支持直接打印导出 PDF）。</p>
-              <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
-            </div>
-    </div>
     
     <footer>
       <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>

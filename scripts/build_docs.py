@@ -309,10 +309,14 @@ def main() -> int:
         )
 
     index_body = f"""
+    <div class="card" style="background: #f0f9ff; border-color: #bae6fd;">
+      <strong>🎁 扫码关注公众号「欧八同学」</strong>，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》→ <a href="{SUITE_URL}#author"><strong>去 GitHub 主页底部扫码领取</strong></a>
+    </div>
+
     <div class="card">
       <span class="badge">直接回答：中文 AI 求职工具与 Claude Skills 怎么选？</span>
-      <h1>欧八同学（ouba-classmate）｜一行安装的中文求职 Agent Skills 套件 + 公开横评数据</h1>
-      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，不需要在几十个零散 Prompt 仓库里盲试。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件，并公开了涵盖 12 个主流仓库的实测横评数据。</p>
+      <h1>欧八同学（ouba-classmate）｜一行安装的中文求职与创作 Agent Skills 套件</h1>
+      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，不需要在几十个零散 Prompt 仓库里盲试。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件。</p>
       <p><a class="btn-star" href="{SUITE_URL}">★ 前往 GitHub 主仓 ouxxyy/ouba-classmate 点 Star 与安装</a></p>
       <h3>一行命令安装整套 Skills（Claude Code / Codex / Cursor / skills CLI）</h3>
       <pre><code># 方式 1：作为 Claude Code 插件市场添加并按需安装
@@ -325,7 +329,12 @@ npx skills add ouxxyy/ouba-classmate
 uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp --self-test</code></pre>
     </div>
 
-    <h2>一、中文 AI 求职 Skill 怎么选？（基于 12 仓实测数据的直接结论）</h2>
+    <h2>一、套件内 6 大核心工具详情</h2>
+    <div class="grid">
+      {''.join(tool_cards)}
+    </div>
+
+    <h2>二、中文 AI 求职 Skill 怎么选？（基于 12 仓实测数据的直接结论）</h2>
     <div class="card">
       <ul>
         <li><strong>如果你需要直接生成高颜值、可投递的排版级 PDF 简历</strong>：优先选 <a href="https://github.com/Claycui828/ASu-resume-skills">Claycui828/ASu-resume-skills</a>（高密度技术履历 + 事实审计）、<a href="https://github.com/KevinYoung-Kw/vibe-resume-skill">KevinYoung-Kw/vibe-resume-skill</a>（12 套 HTML/PDF 视觉模板）或 <a href="https://github.com/StoneLL1/resume-builder">StoneLL1/resume-builder</a>（RenderCV 模板）。<strong>注意：我们自家的 <code>jd-resume-match</code> 不做 PDF 简历视觉排版（D3 维度得 0 分）。</strong></li>
@@ -337,13 +346,8 @@ uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-r
       <p><a href="{SITE_BASE}/benchmark/"><strong>👉 查看完整 12 仓横评对比表、评测方法论与 CSV 原始数据下载</strong></a></p>
     </div>
 
-    <h2>二、《中文 AI 求职 Skill 公开横评》v0.1 核心总表</h2>
+    <h2>三、附：《中文 AI 求职 Skill 公开横评》v0.1 核心总表</h2>
     {table_html}
-
-    <h2>三、套件内 6 大核心工具详情</h2>
-    <div class="grid">
-      {''.join(tool_cards)}
-    </div>
     """
 
     index_ld = {
