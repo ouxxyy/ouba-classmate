@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-11-06T05:51:36+00:00",
+  "generated_at": "2026-11-07T02:12:51+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "job-search",
+      "url": "https://github.com/ouxxyy/job-search",
+      "description": "AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单",
+      "category": "career",
+      "language": "Python",
+      "stars": 1,
+      "updated_at": "2026-11-06T16:21:34Z",
+      "description_en": "Job search Agent Skill with source-backed job lists",
+      "keywords": [
+        "AI岗位搜索大师",
+        "求职岗位筛选",
+        "招聘信息整理",
+        "岗位清单",
+        "job search agent",
+        "job shortlist"
+      ],
+      "use_cases": [
+        "按岗位城市薪资筛选招聘信息",
+        "保存带来源证据的岗位清单"
+      ],
+      "order": 0
+    },
     {
       "name": "jd-resume-match",
       "url": "https://github.com/ouxxyy/jd-resume-match",
@@ -199,29 +222,6 @@
         "通过原话点评和重答改进回答"
       ],
       "order": 2
-    },
-    {
-      "name": "job-search",
-      "url": "https://github.com/ouxxyy/job-search",
-      "description": "AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-11-06T04:49:13Z",
-      "description_en": "Job search Agent Skill with source-backed job lists",
-      "keywords": [
-        "AI岗位搜索大师",
-        "求职岗位筛选",
-        "招聘信息整理",
-        "岗位清单",
-        "job search agent",
-        "job shortlist"
-      ],
-      "use_cases": [
-        "按岗位城市薪资筛选招聘信息",
-        "保存带来源证据的岗位清单"
-      ],
-      "order": 0
     }
   ]
 }
