@@ -49,7 +49,7 @@ uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-r
 | --- | --- | --- |
 | [job-search](https://github.com/ouxxyy/job-search) ★1 | AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单 | 2026-11-06 |
 | [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告 | 2026-11-06 |
-| [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) ★3 | AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比 | 2026-11-06 |
+| [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) ★4 | AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比 | 2026-11-10 |
 | [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | 公司调查大师：入职前公司证据调查，区分已证实、线索、冲突与未知，输出核实清单与离线 HTML 档案 | 2026-11-06 |
 | [mbai](https://github.com/ouxxyy/mbai) ★1 | AI转型大师：工作任务 AI 不可替代指数，任务分析、贡献证据与替代风险自评，非裁员预测 | 2026-11-06 |
 

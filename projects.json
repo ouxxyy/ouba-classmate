@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-11-10T04:15:40+00:00",
+  "generated_at": "2026-11-11T02:06:05+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "description": "AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比",
+      "category": "career",
+      "language": "TypeScript",
+      "stars": 4,
+      "updated_at": "2026-11-10T06:13:44Z",
+      "description_en": "Chinese voice AI mock interview practice",
+      "keywords": [
+        "AI面试大师",
+        "AI 面试官",
+        "中文语音模拟面试",
+        "面试陪练",
+        "AI mock interview",
+        "voice interview practice"
+      ],
+      "use_cases": [
+        "练习自我介绍与经历面试",
+        "通过原话点评和重答改进回答"
+      ],
+      "order": 2
+    },
     {
       "name": "job-search",
       "url": "https://github.com/ouxxyy/job-search",
@@ -199,29 +222,6 @@
         "整理冲突证据与待核验问题"
       ],
       "order": 3
-    },
-    {
-      "name": "ai-interviewer",
-      "url": "https://github.com/ouxxyy/ai-interviewer",
-      "description": "AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比",
-      "category": "career",
-      "language": "TypeScript",
-      "stars": 3,
-      "updated_at": "2026-11-06T04:49:18Z",
-      "description_en": "Chinese voice AI mock interview practice",
-      "keywords": [
-        "AI面试大师",
-        "AI 面试官",
-        "中文语音模拟面试",
-        "面试陪练",
-        "AI mock interview",
-        "voice interview practice"
-      ],
-      "use_cases": [
-        "练习自我介绍与经历面试",
-        "通过原话点评和重答改进回答"
-      ],
-      "order": 2
     }
   ]
 }
