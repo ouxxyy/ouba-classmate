@@ -32,9 +32,9 @@
 - [Storyboard Scavenger (storyboard-scavenger)](https://github.com/ouxxyy/storyboard-scavenger)：AI 视频分镜与提示词生成 Skill，提供可灵 Kling、即梦 Seedance、Veo、Sora 工作流与七要素分镜。套件内路径：`skills/storyboard-scavenger/SKILL.md`。
 - [重拍画册 (travel-art-album-skill)](https://github.com/ouxxyy/travel-art-album-skill)：旅行照片艺术画册 Skill，确认风格小样后制作单文件离线 HTML 翻页相册。套件内路径：`skills/travel-art-album-skill/SKILL.md`。
 
+- [Codex GIF Video](https://github.com/ouxxyy/codex-gif-video)：按动作描述或口播制作无字幕、无配乐的 GIF 素材，可选择长 GIF 或静音 MP4。请从独立仓库安装。
+
 ## 本地生产力工具
 
 - [Attention](https://github.com/ouxxyy/Attention)：ActivityWatch 本地专注力仪表盘，任务切换、分心与持续专注时段分析。
 - [姿势企鹅 Posture Penguin (postapp)](https://github.com/ouxxyy/postapp)：本地姿态检测的 Chrome 坐姿提醒插件。
-
-- Codex GIF Video: https://github.com/ouxxyy/codex-gif-video — AI Skill；按动作描述或口播制作无字幕、无配乐的 GIF 素材，可选择长 GIF 或静音 MP4。
