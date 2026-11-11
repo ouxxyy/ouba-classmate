@@ -14,7 +14,9 @@
 
 - [《中文 AI 求职 Skill 公开横评》v0.1 报告](https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/README.md)：对比 12 个主流中英文求职与简历 Skill（证据引用、可复算性、PDF 排版模板、隐私脱敏、中文生态、可安装性）。
 - [横评评分方法论 (METHOD.md)](https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/METHOD.md)
-- [在线数据站 (GitHub Pages)](https://ouxxyy.github.io/ouba-classmate/)
+- [HuggingFace 兼容数据集卡片 (DATASET_CARD.md)](https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/DATASET_CARD.md)
+- [🛡️ 2026 中文 AI 与互联网求职防身情报库 (radar/README.md)](https://github.com/ouxxyy/ouba-classmate/blob/main/radar/README.md)：涵盖经历面试连环追问 24 道母题、招聘 JD 15 大高频黑话解码表、接 Offer 前四态背调 18 问与 6 大岗位 AI 不可替代指数基准表。
+- [在线数据站与 30 秒 AI 职业战力诊断小票生成器 (GitHub Pages)](https://ouxxyy.github.io/ouba-classmate/)
 
 ## 职场 · 跳槽涨薪 Skills
 

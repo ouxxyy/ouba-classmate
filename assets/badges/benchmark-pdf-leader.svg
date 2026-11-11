@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="318" height="20" role="img" aria-label="Chinese AI Career Benchmark: PDF Leader D3 2/2">
+  <title>Chinese AI Career Benchmark: PDF Leader D3 2/2</title>
+  <linearGradient id="s" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <clipPath id="r">
+    <rect width="318" height="20" rx="3" fill="#fff"/>
+  </clipPath>
+  <g clip-path="url(#r)">
+    <rect width="184" height="20" fill="#0f172a"/>
+    <rect x="184" width="134" height="20" fill="#059669"/>
+    <rect width="318" height="20" fill="url(#s)"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+    <text aria-hidden="true" x="930" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="1740">🏅 Chinese AI Career Benchmark</text>
+    <text x="930" y="140" transform="scale(.1)" fill="#fff" textLength="1740">🏅 Chinese AI Career Benchmark</text>
+    <text aria-hidden="true" x="2500" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="1240">PDF Leader · D3 2/2</text>
+    <text x="2500" y="140" transform="scale(.1)" fill="#fff" font-weight="bold" textLength="1240">PDF Leader · D3 2/2</text>
+  </g>
+</svg>

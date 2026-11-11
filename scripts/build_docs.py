@@ -107,6 +107,51 @@ th { background: #f1f5f9; font-weight: 600; }
 .badge-warn { background: #fef3c7; color: #92400e; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
 footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+.radar-box {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #f8fafc;
+  border-radius: 12px;
+  padding: 26px;
+  margin-bottom: 24px;
+  border: 1px solid #334155;
+}
+.radar-box h2 { color: #38bdf8; border-bottom-color: #334155; margin-top: 0; }
+.radar-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 22px; align-items: start; }
+@media (max-width: 780px) { .radar-grid { grid-template-columns: 1fr; } }
+.radar-field { margin-bottom: 14px; }
+.radar-field label { display: block; font-size: 0.9rem; font-weight: 600; color: #cbd5e1; margin-bottom: 6px; }
+.radar-field select {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 0.92rem;
+}
+.receipt-card {
+  background: #fffbeb;
+  color: #0f172a;
+  border: 2px dashed #d97706;
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+.receipt-header { text-align: center; border-bottom: 1px dashed #cbd5e1; padding-bottom: 10px; margin-bottom: 12px; }
+.receipt-score { font-size: 1.9rem; font-weight: 800; color: #0284c7; margin: 4px 0; }
+.receipt-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.btn-action {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 14px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  background: #0284c7;
+  color: #fff;
+}
+.btn-action.secondary { background: #059669; }
+.btn-action:hover { opacity: 0.92; }
 """
 
 TOOLS_DETAIL = [
@@ -225,8 +270,9 @@ def layout(title: str, description: str, canonical_path: str, body_html: str, js
       <a class="brand" href="{SITE_BASE}/">欧八同学 · ouba-classmate 套件与公开横评</a>
       <nav class="nav-links">
         <a href="{SITE_BASE}/">首页：中文求职 AI 工具怎么选</a>
+        <a href="{SITE_BASE}/#career-radar">⚡ 30秒职业战力诊断</a>
         <a href="{SITE_BASE}/benchmark/">公开横评数据 (v0.1)</a>
-        <a href="{SUITE_URL}/tree/main/benchmark">原始 CSV / 用例</a>
+        <a href="{SUITE_URL}/blob/main/radar/README.md">🛡️ 求职防身情报库</a>
         <a class="btn-star" href="{SUITE_URL}">★ Star ouba-classmate 合集</a>
       </nav>
     </div>
@@ -329,6 +375,147 @@ npx skills add ouxxyy/ouba-classmate
 uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp --self-test</code></pre>
     </div>
 
+    <div class="radar-box" id="career-radar">
+      <h2>⚡ 30 秒互动速测：你的岗位 AI 不可替代指数 & 简历证据含金量体检机</h2>
+      <p style="color:#cbd5e1; margin-top:0;">基于本套件 <code>mbai</code>（工作任务不可替代模型）与 <code>jd-resume-match</code>（<code>jd-match-rubric/0.1.0</code> 确定性算分公式），零网络上传、纯浏览器本地计算，一键生成你的 <strong>2026 打工人 AI 职业战力诊断小票（Career Receipt）</strong>：</p>
+      <div class="radar-grid">
+        <div>
+          <div class="radar-field">
+            <label for="r-role">1. 你的当前/目标岗位赛道：</label>
+            <select id="r-role" onchange="updateReceipt()">
+              <option value="pm">产品经理 / AI Agent 产品经理</option>
+              <option value="swe">后端研发 / 架构 / 全栈工程</option>
+              <option value="data">数据分析 / 算法与数据工程</option>
+              <option value="growth">运营 / 增长 / 市场与商业化</option>
+              <option value="qa">测试工程 / 质量保障与 Eval</option>
+              <option value="creative">设计 / 视频分镜与视觉创意</option>
+            </select>
+          </div>
+          <div class="radar-field">
+            <label for="r-task">2. 你每周耗时最多的日常任务形态（决定 AI 替代风险）：</label>
+            <select id="r-task" onchange="updateReceipt()">
+              <option value="88">A. 定义复杂业务边界、建立评测集(Eval)、跨团队博弈与对结果担责 (+88)</option>
+              <option value="65" selected>B. 核心模块开发/方案设计为主，但仍有 40% 时间在写常规文档或跑固定流程 (+65)</option>
+              <option value="38">C. 大量时间在做传话筒写 PRD、常规 CRUD 样板代码、固定报表跑数或套模板 (+38)</option>
+              <option value="20">D. 高度重复的信息搬运、手工点页面回归、无明确个人决策权 (+20)</option>
+            </select>
+          </div>
+          <div class="radar-field">
+            <label for="r-resume">3. 你当前简历的项目经历写法（决定 JD 匹配分与防幻觉等级）：</label>
+            <select id="r-resume" onchange="updateReceipt()">
+              <option value="92">A. 严格绑定个人独立动作 + 改版前后基线分母 + 护栏代价指标 (+92)</option>
+              <option value="62" selected>B. 有结果数字（如提升30%），但主语常写“我们”，缺分母基线与对比口径 (+62)</option>
+              <option value="35">C. 偏岗位职责罗列（“负责XX系统维护、参与XX项目开发”），缺量化证据 (+35)</option>
+              <option value="25">D. 曾用通用大模型一键润色，里面有自己都没把握圆回来的夸大词 (+25)</option>
+            </select>
+          </div>
+          <div class="radar-field">
+            <label for="r-prep">4. 面对业务主管“连环追问细节”与 Offer 背调准备度：</label>
+            <select id="r-prep" onchange="updateReceipt()">
+              <option value="90">A. 已备好 24 道深挖母题反杀证据链，且接 Offer 前必查合同主体与四态风险 (+90)</option>
+              <option value="58" selected>B. 准备过常规自我介绍，但被追问“去掉队友哪块只有你做了才成立”容易卡壳 (+58)</option>
+              <option value="30">C. 裸面为主，较少核对招聘方主体、社保基数与试用期量化转正口径 (+30)</option>
+            </select>
+          </div>
+          <p style="font-size:0.85rem; color:#94a3b8; margin:8px 0 0;">
+            🛡️ 配套静态速查手册：<a href="{SUITE_URL}/blob/main/radar/README.md" style="color:#38bdf8; font-weight:600;">《2026 求职防身情报库：24道大厂深挖母题 × JD黑话解码 × 接Offer背调18问》→</a>
+          </p>
+        </div>
+        <div>
+          <div class="receipt-card" id="receipt-box">
+            <div class="receipt-header">
+              <div style="font-weight:700; font-size:0.95rem;">🧾 2026 AI 职业战力诊断小票</div>
+              <div style="font-size:0.75rem; color:#64748b;">Powered by github.com/ouxxyy/ouba-classmate</div>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:baseline;">
+              <span>综合防身与不可替代分：</span>
+              <span class="receipt-score" id="rc-total">62 / 100</span>
+            </div>
+            <div style="font-size:0.84rem; margin:6px 0;"><strong>段位判定：</strong><span id="rc-tier">B 级 · 转型跃迁临界区</span></div>
+            <div style="font-size:0.84rem; margin:6px 0;"><strong>面试必考母题预警：</strong><span id="rc-question">“去掉队友工作，哪个具体决策是只有你做了才成立的？基线分母是多少？”</span></div>
+            <div style="font-size:0.84rem; margin:6px 0;"><strong>优先装配武器：</strong><code id="rc-cmd" style="background:#fef3c7; color:#92400e; padding:2px 4px; border-radius:4px;">npx skills add ouxxyy/ouba-classmate</code></div>
+            <div class="receipt-actions">
+              <button type="button" class="btn-action" onclick="copyReceiptText()">📋 一键复制诊断战报</button>
+              <button type="button" class="btn-action secondary" onclick="downloadReceiptPng()">🖼️ 导出小票海报 (PNG)</button>
+              <a class="btn-action" style="background:#0f172a; text-decoration:none;" href="{SUITE_URL}">★ 去 GitHub 点 Star 防丢</a>
+            </div>
+            <div id="rc-toast" style="font-size:0.8rem; color:#059669; margin-top:8px; display:none; font-weight:600;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    const ROLE_MAP = {{
+      pm: {{ name: "产品经理 / AI PM", q: "“当时除了这个方案，备选方案 B 是什么？为什么用 Agent 而不是确定性规则？”", skill: "jd-resume-match + ai-interviewer" }},
+      swe: {{ name: "后端 / 架构 / 全栈工程", q: "“高并发或异常边界下最难的 20% 故障是谁定位的？单测与兜底门禁怎么做的？”", skill: "jd-resume-match-mcp + ai-interviewer" }},
+      data: {{ name: "数据分析 / 算法工程", q: "“转化率提升 35% 的改版前基线分母是多少？怎么剥离大促干扰证明因果？”", skill: "jd-resume-match + mbai" }},
+      growth: {{ name: "运营 / 增长 / 商业化", q: "“去掉买量预算自然增长，你个人搭建的可复用增长飞轮胜率是多少？”", skill: "job-search + sherlock-company" }},
+      qa: {{ name: "测试工程 / Eval 质量保障", q: "“面对大模型非确定性输出，你的回归评测集（Eval）和确定性算分脚本怎么设计的？”", skill: "jd-resume-match + ai-interviewer" }},
+      creative: {{ name: "设计 / 视频分镜与视觉创意", q: "“如何把零散脑洞变成可批量复现的七要素分镜管线，同时保住个人审美不可替代性？”", skill: "storyboard-scavenger + travel-art-album-skill" }}
+    }};
+    function updateReceipt() {{
+      const roleKey = document.getElementById('r-role').value;
+      const tScore = parseInt(document.getElementById('r-task').value, 10);
+      const rScore = parseInt(document.getElementById('r-resume').value, 10);
+      const pScore = parseInt(document.getElementById('r-prep').value, 10);
+      const total = Math.round(tScore * 0.4 + rScore * 0.35 + pScore * 0.25);
+      let tier = "B 级 · 转型跃迁临界区（建议补齐原文证据链）";
+      if (total >= 85) tier = "S 级 · 高护城河架构定义者（溢价谈薪区）";
+      else if (total >= 70) tier = "A 级 · AI 杠杆实干派（微调证据即可冲高薪）";
+      else if (total < 45) tier = "C 级 · 高危替代与面试穿帮预警（急需重塑简历与追问防御）";
+      const info = ROLE_MAP[roleKey] || ROLE_MAP.pm;
+      document.getElementById('rc-total').textContent = total + " / 100";
+      document.getElementById('rc-tier').textContent = tier;
+      document.getElementById('rc-question').textContent = info.q;
+      document.getElementById('rc-cmd').textContent = "npx skills add ouxxyy/ouba-classmate (" + info.skill + ")";
+    }}
+    function copyReceiptText() {{
+      const roleKey = document.getElementById('r-role').value;
+      const info = ROLE_MAP[roleKey] || ROLE_MAP.pm;
+      const total = document.getElementById('rc-total').textContent;
+      const tier = document.getElementById('rc-tier').textContent;
+      const text = "🧾【2026 打工人 AI 不可替代指数 & 简历含金量诊断小票】\\n" +
+        "▸ 赛道：" + info.name + "\\n" +
+        "▸ 综合防身得分：" + total + "（" + tier + "）\\n" +
+        "▸ 面试必考追问预警：" + info.q + "\\n" +
+        "▸ 30秒在线自测 & 12仓开源求职 Skill 横评：https://ouxxyy.github.io/ouba-classmate/#career-radar\\n" +
+        "▸ GitHub 开源套件（Star 收藏防丢）：https://github.com/ouxxyy/ouba-classmate";
+      navigator.clipboard.writeText(text).then(() => {{
+        const toast = document.getElementById('rc-toast');
+        toast.style.display = 'block';
+        toast.textContent = '✔ 已复制诊断战报！可直接粘贴到 V2EX / 群聊 / 笔记，别忘了给主仓点个 Star ★';
+      }});
+    }}
+    function downloadReceiptPng() {{
+      const canvas = document.createElement('canvas');
+      canvas.width = 720; canvas.height = 440;
+      const ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#0f172a'; ctx.fillRect(0, 0, 720, 440);
+      ctx.strokeStyle = '#38bdf8'; ctx.lineWidth = 3; ctx.strokeRect(18, 18, 684, 404);
+      ctx.fillStyle = '#38bdf8'; ctx.font = 'bold 24px sans-serif';
+      ctx.fillText('🧾 2026 AI 职业战力与简历含金量诊断小票', 40, 62);
+      ctx.fillStyle = '#f8fafc'; ctx.font = 'bold 44px monospace';
+      ctx.fillText('得分: ' + document.getElementById('rc-total').textContent, 40, 125);
+      ctx.fillStyle = '#fde047'; ctx.font = 'bold 20px sans-serif';
+      ctx.fillText('段位: ' + document.getElementById('rc-tier').textContent, 40, 170);
+      ctx.fillStyle = '#cbd5e1'; ctx.font = '16px sans-serif';
+      const q = document.getElementById('rc-question').textContent;
+      ctx.fillText('面试高频追问预警:', 40, 215);
+      ctx.fillStyle = '#ffffff'; ctx.fillText(q.slice(0, 38), 40, 245);
+      if (q.length > 38) ctx.fillText(q.slice(38), 40, 270);
+      ctx.fillStyle = '#94a3b8'; ctx.font = '15px monospace';
+      ctx.fillText('一键安装求职套件: npx skills add ouxxyy/ouba-classmate', 40, 325);
+      ctx.fillStyle = '#38bdf8'; ctx.font = 'bold 16px monospace';
+      ctx.fillText('★ GitHub 开源主仓: github.com/ouxxyy/ouba-classmate', 40, 365);
+      ctx.fillStyle = '#64748b'; ctx.font = '14px sans-serif';
+      ctx.fillText('含：岗位搜索 / 简历vsJD确定性算分MCP / 经历面试追问 / 查公司 / 12仓公开横评', 40, 395);
+      const link = document.createElement('a');
+      link.download = 'ouba-career-receipt-2026.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }}
+    </script>
+
     <h2>一、套件内 6 大核心工具详情</h2>
     <div class="grid">
       {''.join(tool_cards)}
@@ -411,6 +598,16 @@ uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-r
         <li><strong>D4 隐私保护与脱敏机制</strong>：0分=流向不明；1分=声明本地运行；2分=本地运行且内置 PII 脱敏扫描或显式数据告知页。</li>
         <li><strong>D5 中文求职生态适配度</strong>：0分=仅英文；1分=基础中文支持；2分=深度适配国内招聘平台、中文 JD 话术与中国职场追问。</li>
         <li><strong>D6 工程完备度与一键可安装性</strong>：0分=单文件无规范；1分=标准 SKILL.md；2分=标准 SKILL.md + 自动化单测 + 插件/MCP/CLI 入口。</li>
+      </ul>
+    </div>
+
+    <h2>四、🏅 上榜项目官方认证徽章（Badge 一键嵌入）</h2>
+    <div class="card">
+      <p>所有在《中文 AI 求职 Skill 公开横评》中完成实测核验或取得单项/总分领先的开源仓库，均可将以下 SVG 认证徽章免费嵌入各自仓库的 <code>README.md</code> 首屏：</p>
+      <ul>
+        <li><strong>总分第一梯队（≥ 9/12）认证徽章</strong>：<br><code>[![Chinese AI Career Benchmark Top Tier](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-top-tier.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
+        <li><strong>D3 PDF 简历排版满分（2/2）认证徽章</strong>：<br><code>[![Chinese AI Career Benchmark PDF Leader](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-pdf-leader.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
+        <li><strong>v0.1 实测数据集核验徽章</strong>：<br><code>[![Chinese AI Career Benchmark Verified](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-verified.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
       </ul>
     </div>
     """

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="20" role="img" aria-label="Agent Skills Suite: npx skills add ouxxyy/ouba-classmate">
+  <title>Agent Skills Suite: npx skills add ouxxyy/ouba-classmate</title>
+  <linearGradient id="s" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <clipPath id="r">
+    <rect width="320" height="20" rx="3" fill="#fff"/>
+  </clipPath>
+  <g clip-path="url(#r)">
+    <rect width="112" height="20" fill="#0f172a"/>
+    <rect x="112" width="208" height="20" fill="#d97706"/>
+    <rect width="320" height="20" fill="url(#s)"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110">
+    <text aria-hidden="true" x="570" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="1020">⚡ Agent Skills</text>
+    <text x="570" y="140" transform="scale(.1)" fill="#fff" textLength="1020">⚡ Agent Skills</text>
+    <text aria-hidden="true" x="2150" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="1980">npx skills add ouxxyy/ouba-classmate</text>
+    <text x="2150" y="140" transform="scale(.1)" fill="#fff" font-weight="bold" textLength="1980">npx skills add ouxxyy/ouba-classmate</text>
+  </g>
+</svg>

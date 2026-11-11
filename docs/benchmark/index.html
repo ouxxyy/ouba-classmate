@@ -98,6 +98,51 @@ th { background: #f1f5f9; font-weight: 600; }
 .badge-warn { background: #fef3c7; color: #92400e; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
 footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem; }
+.radar-box {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #f8fafc;
+  border-radius: 12px;
+  padding: 26px;
+  margin-bottom: 24px;
+  border: 1px solid #334155;
+}
+.radar-box h2 { color: #38bdf8; border-bottom-color: #334155; margin-top: 0; }
+.radar-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 22px; align-items: start; }
+@media (max-width: 780px) { .radar-grid { grid-template-columns: 1fr; } }
+.radar-field { margin-bottom: 14px; }
+.radar-field label { display: block; font-size: 0.9rem; font-weight: 600; color: #cbd5e1; margin-bottom: 6px; }
+.radar-field select {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 0.92rem;
+}
+.receipt-card {
+  background: #fffbeb;
+  color: #0f172a;
+  border: 2px dashed #d97706;
+  border-radius: 10px;
+  padding: 18px 20px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+.receipt-header { text-align: center; border-bottom: 1px dashed #cbd5e1; padding-bottom: 10px; margin-bottom: 12px; }
+.receipt-score { font-size: 1.9rem; font-weight: 800; color: #0284c7; margin: 4px 0; }
+.receipt-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.btn-action {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 14px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  background: #0284c7;
+  color: #fff;
+}
+.btn-action.secondary { background: #059669; }
+.btn-action:hover { opacity: 0.92; }
 </style>
   <script type="application/ld+json">
 {
@@ -130,8 +175,9 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
       <a class="brand" href="https://ouxxyy.github.io/ouba-classmate/">欧八同学 · ouba-classmate 套件与公开横评</a>
       <nav class="nav-links">
         <a href="https://ouxxyy.github.io/ouba-classmate/">首页：中文求职 AI 工具怎么选</a>
+        <a href="https://ouxxyy.github.io/ouba-classmate/#career-radar">⚡ 30秒职业战力诊断</a>
         <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">公开横评数据 (v0.1)</a>
-        <a href="https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark">原始 CSV / 用例</a>
+        <a href="https://github.com/ouxxyy/ouba-classmate/blob/main/radar/README.md">🛡️ 求职防身情报库</a>
         <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ Star ouba-classmate 合集</a>
       </nav>
     </div>
@@ -354,6 +400,16 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
         <li><strong>D4 隐私保护与脱敏机制</strong>：0分=流向不明；1分=声明本地运行；2分=本地运行且内置 PII 脱敏扫描或显式数据告知页。</li>
         <li><strong>D5 中文求职生态适配度</strong>：0分=仅英文；1分=基础中文支持；2分=深度适配国内招聘平台、中文 JD 话术与中国职场追问。</li>
         <li><strong>D6 工程完备度与一键可安装性</strong>：0分=单文件无规范；1分=标准 SKILL.md；2分=标准 SKILL.md + 自动化单测 + 插件/MCP/CLI 入口。</li>
+      </ul>
+    </div>
+
+    <h2>四、🏅 上榜项目官方认证徽章（Badge 一键嵌入）</h2>
+    <div class="card">
+      <p>所有在《中文 AI 求职 Skill 公开横评》中完成实测核验或取得单项/总分领先的开源仓库，均可将以下 SVG 认证徽章免费嵌入各自仓库的 <code>README.md</code> 首屏：</p>
+      <ul>
+        <li><strong>总分第一梯队（≥ 9/12）认证徽章</strong>：<br><code>[![Chinese AI Career Benchmark Top Tier](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-top-tier.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
+        <li><strong>D3 PDF 简历排版满分（2/2）认证徽章</strong>：<br><code>[![Chinese AI Career Benchmark PDF Leader](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-pdf-leader.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
+        <li><strong>v0.1 实测数据集核验徽章</strong>：<br><code>[![Chinese AI Career Benchmark Verified](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-verified.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
       </ul>
     </div>
     

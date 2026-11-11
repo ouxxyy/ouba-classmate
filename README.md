@@ -4,10 +4,17 @@
   <img src="assets/banner.png" alt="欧八同学项目合集总览：职业定位 × AI 杠杆 × 涨薪方法，10 个原创项目分三类">
 </p>
 
+<p align="center">
+  <a href="#install"><img src="assets/badges/suite-install.svg" alt="Agent Skills Suite Install"></a>
+  <a href="benchmark/README.md"><img src="assets/badges/benchmark-top-tier.svg" alt="Chinese AI Career Benchmark"></a>
+  <a href="https://ouxxyy.github.io/ouba-classmate/#career-radar"><img src="assets/badges/benchmark-verified.svg" alt="30秒在线职业战力与简历体检机"></a>
+</p>
+
 我是欧八同学，一个人在做 AI 产品。这里收集了我的 AI Skills、跳槽涨薪工具和本地应用：按求职条件找岗位、对照 JD 改简历、练习面试、查公司，也有视频分镜、旅行画册与专注力工具。先按用途选项目，或直接用下方一行命令安装整套 Skills。
 
 > [!TIP]
 > 🎁 扫码关注公众号「欧八同学」，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》→ [去扫码](#author)
+> 🛡️ **不用装代码也能直接防身**：👉 **[《2026 求职防身情报库：24道大厂深挖母题 × JD黑话解码 × 接Offer背调18问》(`radar/`)](radar/README.md)** ｜ **[⚡ 30秒在线速测：你的岗位 AI 不可替代指数 & 简历含金量诊断小票](https://ouxxyy.github.io/ouba-classmate/#career-radar)**（建议先点右上角 ★ Star 收藏防丢）
 
 <a id="install"></a>
 
@@ -39,6 +46,7 @@ uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-r
 | 旅行照片画册（offline flipbook） | [重拍画册 · 离线翻页相册](https://github.com/ouxxyy/travel-art-album-skill) | [`skills/travel-art-album-skill`](skills/travel-art-album-skill/SKILL.md) |
 | ActivityWatch 仪表盘与专注力分析 | [Attention · 本地仪表盘](https://github.com/ouxxyy/Attention) | 本地桌面 Web 应用 |
 | Chrome 坐姿提醒（posture reminder） | [姿势企鹅 Posture Penguin](https://github.com/ouxxyy/postapp) | Chrome 浏览器本地扩展 |
+| **【免安装收藏】24道面试深挖母题 + JD黑话解码 + 接Offer背调18问** | **[🛡️ 2026 求职防身情报库 (`radar/`)](radar/README.md)** | **[在线 30 秒生成职业诊断小票 →](https://ouxxyy.github.io/ouba-classmate/#career-radar)** |
 
 ## 项目全景
 

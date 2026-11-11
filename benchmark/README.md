@@ -64,3 +64,16 @@ python3 benchmark/scripts/run_benchmark.py
 
 ### 2. 被评仓库申诉与新仓库提交（被动开放通道）
 如果您是上述仓库的维护者，或希望将您的开源求职 Skill 纳入 `v0.2`（计划于 2026-12-10 发布，扩容至 20 个仓库），欢迎直接在 [Issues](https://github.com/ouxxyy/ouba-classmate/issues) 提交复测或收录申请。
+
+---
+
+## 四、🏅 上榜项目官方认证徽章（Badge 一键嵌入）
+
+所有在《中文 AI 求职 Skill 公开横评》中完成实测核验或取得单项/总分领先的开源仓库，均可将以下 SVG 认证徽章免费嵌入各自仓库的 `README.md` 首屏：
+
+| 徽章预览 | 适用上榜仓库 | 一键嵌入 Markdown 代码 |
+| :--- | :--- | :--- |
+| [![Top Tier](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-top-tier.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark) | 总分 **≥ 9/12** 的第一梯队仓库（如 `Claycui828/ASu-resume-skills`、`StoneLL1/resume-builder`、`CJlovetypo/job-search-skill-pack` 等） | `[![Chinese AI Career Benchmark Top Tier](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-top-tier.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)` |
+| [![PDF Leader](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-pdf-leader.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark) | **D3（可投递 PDF 简历排版模板）满分 2/2** 仓库（如 `Claycui828/ASu-resume-skills`、`wangyafu/resume-skills`、`StoneLL1/resume-builder`、`KevinYoung-Kw/vibe-resume-skill`） | `[![Chinese AI Career Benchmark PDF Leader](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-pdf-leader.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)` |
+| [![Verified](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-verified.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark) | 全部已纳入 `v0.1` 实测数据集并完成 API 核验的开源仓库 | `[![Chinese AI Career Benchmark Verified](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-verified.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)` |
+
