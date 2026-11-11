@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-11-11T02:58:16+00:00",
+  "generated_at": "2026-11-11T06:08:31+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "codex-gif-video",
+      "url": "https://github.com/ouxxyy/codex-gif-video",
+      "description": "把动作描述或口播做成无字幕、无配乐的长 GIF 或静音 MP4 素材",
+      "category": "skill",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-11-11T06:07:51Z",
+      "description_en": "Agent Skill for native animated GIF assets, long GIF exports and silent MP4 video",
+      "keywords": [
+        "GIF 视频素材",
+        "长 GIF",
+        "静音 MP4",
+        "人物一致性",
+        "animated GIF",
+        "silent video assets",
+        "Codex Skill"
+      ],
+      "use_cases": [
+        "按口播拆镜头生成动态素材",
+        "选择长 GIF 或静音 MP4 格式保存"
+      ]
+    },
     {
       "name": "ai-interviewer",
       "url": "https://github.com/ouxxyy/ai-interviewer",

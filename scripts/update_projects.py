@@ -46,7 +46,13 @@ CATEGORY_ORDER = ["career", "skill", "app", "local", "more"]
 
 # 描述为各仓库 README/描述的中文摘编；stars 与更新时间每次从 API 实时刷新；
 # order 为分类内固定展示顺序（缺省时分类内按更新时间倒序）
-REPO_META = {'job-search': {'category': 'career',
+REPO_META = { 'codex-gif-video': {
+    'category': 'skill',
+    'desc': '把动作描述或口播做成无字幕、无配乐的长 GIF 或静音 MP4 素材',
+    'description_en': 'Agent Skill for native animated GIF assets, long GIF exports and silent MP4 video',
+    'keywords': ['GIF 视频素材', '长 GIF', '静音 MP4', '人物一致性', 'animated GIF', 'silent video assets', 'Codex Skill'],
+    'use_cases': ['按口播拆镜头生成动态素材', '选择长 GIF 或静音 MP4 格式保存']},
+'job-search': {'category': 'career',
                'order': 0,
                'desc': 'AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单',
                'description_en': 'Job search Agent Skill with source-backed job lists',

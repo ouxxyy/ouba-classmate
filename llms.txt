@@ -36,3 +36,5 @@
 
 - [Attention](https://github.com/ouxxyy/Attention)：ActivityWatch 本地专注力仪表盘，任务切换、分心与持续专注时段分析。
 - [姿势企鹅 Posture Penguin (postapp)](https://github.com/ouxxyy/postapp)：本地姿态检测的 Chrome 坐姿提醒插件。
+
+- Codex GIF Video: https://github.com/ouxxyy/codex-gif-video — AI Skill；按动作描述或口播制作无字幕、无配乐的 GIF 素材，可选择长 GIF 或静音 MP4。
