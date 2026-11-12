@@ -69,8 +69,8 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
+| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★11 | Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习 | 2026-11-12 |
 | [codex-gif-video](https://github.com/ouxxyy/codex-gif-video) | 把动作描述或口播做成无字幕、无配乐的长 GIF 或静音 MP4 素材 | 2026-11-11 |
-| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★11 | Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习 | 2026-11-06 |
 | [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) ★2 | 旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册 | 2026-11-06 |
 | [storyboard-scavenger](https://github.com/ouxxyy/storyboard-scavenger) ★6 | AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜 | 2026-11-06 |
 

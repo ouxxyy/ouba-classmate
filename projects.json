@@ -1,7 +1,28 @@
 {
-  "generated_at": "2026-11-12T02:39:01+00:00",
+  "generated_at": "2026-11-12T03:15:48+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "mystery-skill",
+      "url": "https://github.com/ouxxyy/mystery-skill",
+      "description": "Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习",
+      "category": "skill",
+      "language": "",
+      "stars": 11,
+      "updated_at": "2026-11-12T02:42:18Z",
+      "description_en": "Mystery Method cognitive framework for personal study",
+      "keywords": [
+        "Mystery 思维模型",
+        "迷男方法分析",
+        "Mystery Method",
+        "Erik von Markovik",
+        "cognitive framework"
+      ],
+      "use_cases": [
+        "研究 Mystery 的认知框架",
+        "分析社交情境与决策边界"
+      ]
+    },
     {
       "name": "codex-gif-video",
       "url": "https://github.com/ouxxyy/codex-gif-video",
@@ -134,27 +155,6 @@
       "use_cases": [
         "在电脑前设置坐姿提醒",
         "查看本地坐姿记录"
-      ]
-    },
-    {
-      "name": "mystery-skill",
-      "url": "https://github.com/ouxxyy/mystery-skill",
-      "description": "Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习",
-      "category": "skill",
-      "language": "",
-      "stars": 11,
-      "updated_at": "2026-11-06T04:49:31Z",
-      "description_en": "Mystery Method cognitive framework for personal study",
-      "keywords": [
-        "Mystery 思维模型",
-        "迷男方法分析",
-        "Mystery Method",
-        "Erik von Markovik",
-        "cognitive framework"
-      ],
-      "use_cases": [
-        "研究 Mystery 的认知框架",
-        "分析社交情境与决策边界"
       ]
     },
     {
