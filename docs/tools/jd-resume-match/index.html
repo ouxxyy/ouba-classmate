@@ -180,7 +180,10 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
         <h2>通过 ouba-classmate 套件一行安装</h2>
         <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
 claude plugin marketplace add ouxxyy/ouba-classmate
-uvx --from &quot;git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp&quot; jd-resume-match-mcp</code></pre>
+uvx --from &quot;git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp&quot; jd-resume-match-mcp
+
+# 觉得有用？在终端 1 秒为开源主仓点亮一颗 Star
+gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
         <h2>核心特性与实测表现</h2>
         <div class="card"><ul><li>唯一提供确定性数学公式复算（floor(100 * Σ(w*c)/Σw + 0.5)）的中文简历匹配工具，270 项单测</li><li>每条判定强制绑定简历原文行号（L1..Ln），杜绝把“参与”改成“独立负责”的权限幻觉</li><li>内置零依赖 stdio MCP Server（io.github.ouxxyy/jd-resume-match），支持 Claude Desktop / Cursor / Claude Code 一键调用</li></ul></div>

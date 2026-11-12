@@ -372,7 +372,10 @@ claude plugin marketplace add ouxxyy/ouba-classmate
 npx skills add ouxxyy/ouba-classmate
 
 # 方式 3：使用 uvx 直接启动简历 vs JD 可复算评分 MCP Server
-uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp --self-test</code></pre>
+uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp --self-test
+
+# 方式 4：觉得有用？在终端 1 秒为开源主仓点亮一颗 Star（无需打开浏览器）
+gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
     </div>
 
     <div class="radar-box" id="career-radar">
@@ -669,7 +672,10 @@ uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-r
         <h2>通过 ouba-classmate 套件一行安装</h2>
         <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
 claude plugin marketplace add ouxxyy/ouba-classmate
-{html.escape(t['install_cmd'])}</code></pre>
+{html.escape(t['install_cmd'])}
+
+# 觉得有用？在终端 1 秒为开源主仓点亮一颗 Star
+gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
         <h2>核心特性与实测表现</h2>
         <div class="card"><ul>{hl_items}</ul></div>
