@@ -32,7 +32,7 @@
 - [Storyboard Scavenger (storyboard-scavenger)](https://github.com/ouxxyy/storyboard-scavenger)：AI 视频分镜与提示词生成 Skill，提供可灵 Kling、即梦 Seedance、Veo、Sora 工作流与七要素分镜。套件内路径：`skills/storyboard-scavenger/SKILL.md`。
 - [重拍画册 (travel-art-album-skill)](https://github.com/ouxxyy/travel-art-album-skill)：旅行照片艺术画册 Skill，确认风格小样后制作单文件离线 HTML 翻页相册。套件内路径：`skills/travel-art-album-skill/SKILL.md`。
 
-- [Codex GIF Video](https://github.com/ouxxyy/codex-gif-video)：通过 OpenAI GPT API 调用 GPT Image 2.6 原生 GIF 能力，按 69 种内置风格生成长 GIF 或静音 MP4（GIF 视频），适合 X 短视频动图、口播动画素材与儿童绘本读物。请从独立仓库安装。
+- [Codex GIF Video](https://github.com/ouxxyy/codex-gif-video)：通过 OpenAI GPT API 调用 GPT Image 2.6 原生 GIF 能力，按 69 种内置风格生成长 GIF 或静音 MP4（GIF 视频），适合 X 短视频动图、口播动画素材、儿童绘本读物，或作为 Hypit、Remotion 等热门 AI 视频剪辑 Skill 的上游动画素材源。请从独立仓库安装。
 
 ## 本地生产力工具
 
