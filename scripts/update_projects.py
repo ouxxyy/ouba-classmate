@@ -48,10 +48,10 @@ CATEGORY_ORDER = ["career", "skill", "app", "local", "more"]
 # order 为分类内固定展示顺序（缺省时分类内按更新时间倒序）
 REPO_META = { 'codex-gif-video': {
     'category': 'skill',
-    'desc': '把动作描述或口播做成无字幕、无配乐的长 GIF 或静音 MP4 素材',
-    'description_en': 'Agent Skill for native animated GIF assets, long GIF exports and silent MP4 video',
-    'keywords': ['GIF 视频素材', '长 GIF', '静音 MP4', '人物一致性', 'animated GIF', 'silent video assets', 'Codex Skill'],
-    'use_cases': ['按口播拆镜头生成动态素材', '选择长 GIF 或静音 MP4 格式保存']},
+    'desc': '调用 GPT Image 2.6 原生 GIF 能力，按 69 种内置风格生成长 GIF 或静音 MP4 视频素材（适合 X 短视频、口播动画、儿童绘本）',
+    'description_en': 'Agent Skill for generating native animated GIFs, concatenated long GIFs and silent MP4 video via OpenAI GPT Image 2.6 API across 69 built-in styles',
+    'keywords': ['GPT Image 2.6', '原生 GIF', 'GIF 视频素材', '长 GIF', '静音 MP4', '口播动画素材', '儿童绘本', 'X 短视频', '69 种风格', '人物一致性', 'animated GIF', 'Codex Skill'],
+    'use_cases': ['调用 GPT Image 2.6 生成 X 爆款长 GIF 短视频', '把口播稿做成无字幕 B-roll 动画素材或儿童绘本动图']},
 'job-search': {'category': 'career',
                'order': 0,
                'desc': 'AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单',

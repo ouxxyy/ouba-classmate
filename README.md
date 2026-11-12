@@ -46,7 +46,7 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate
 | 面试框架控制、谈薪博弈与向上管理 | [Mystery 认知框架与职场博弈](https://github.com/ouxxyy/mystery-skill) | [`skills/mystery-skill`](skills/mystery-skill/SKILL.md) · [职场专版 (`workplace/`)](https://github.com/ouxxyy/mystery-skill/tree/main/workplace) |
 | 梳理工作任务与 AI 替代风险自评 | [AI转型大师](https://github.com/ouxxyy/mbai) | [`skills/mbai`](skills/mbai/SKILL.md) |
 | AI 视频分镜与可灵／即梦／Veo／Sora 提示词 | [Storyboard Scavenger](https://github.com/ouxxyy/storyboard-scavenger) | [`skills/storyboard-scavenger`](skills/storyboard-scavenger/SKILL.md) · [多模型目录 (`models/`)](https://github.com/ouxxyy/storyboard-scavenger/tree/main/models) |
-| 无字幕 GIF / 视频素材（animated GIF / silent MP4） | [Codex GIF Video](https://github.com/ouxxyy/codex-gif-video) | [独立 Skill 安装与格式选择](https://github.com/ouxxyy/codex-gif-video#install) |
+| GPT Image 2.6 原生 GIF / 长 GIF / 口播与 X 短视频素材 | [Codex GIF Video](https://github.com/ouxxyy/codex-gif-video) | [69 种内置风格 · 独立 Skill 安装](https://github.com/ouxxyy/codex-gif-video#install) |
 | 旅行照片画册（offline flipbook） | [重拍画册 · 离线翻页相册](https://github.com/ouxxyy/travel-art-album-skill) | [`skills/travel-art-album-skill`](skills/travel-art-album-skill/SKILL.md) |
 | ActivityWatch 仪表盘与专注力分析 | [Attention · 本地仪表盘](https://github.com/ouxxyy/Attention) | 本地桌面 Web 应用 |
 | Chrome 坐姿提醒（posture reminder） | [姿势企鹅 Posture Penguin](https://github.com/ouxxyy/postapp) | Chrome 浏览器本地扩展 |
@@ -69,8 +69,8 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate
 
 | 项目 | 它做什么 | 最近更新 |
 | --- | --- | --- |
+| [codex-gif-video](https://github.com/ouxxyy/codex-gif-video) | 调用 GPT Image 2.6 原生 GIF 能力，按 69 种内置风格生成长 GIF 或静音 MP4 视频素材（适合 X 短视频、口播动画、儿童绘本） | 2026-11-12 |
 | [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★11 | Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习 | 2026-11-12 |
-| [codex-gif-video](https://github.com/ouxxyy/codex-gif-video) | 把动作描述或口播做成无字幕、无配乐的长 GIF 或静音 MP4 素材 | 2026-11-11 |
 | [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) ★2 | 旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册 | 2026-11-06 |
 | [storyboard-scavenger](https://github.com/ouxxyy/storyboard-scavenger) ★6 | AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜 | 2026-11-06 |
 
