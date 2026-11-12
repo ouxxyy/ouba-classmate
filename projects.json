@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T06:10:34+00:00",
+  "generated_at": "2026-11-12T02:39:01+00:00",
   "owner": "ouxxyy",
   "projects": [
     {
@@ -9,7 +9,7 @@
       "category": "skill",
       "language": "Python",
       "stars": 0,
-      "updated_at": "2026-11-11T06:07:51Z",
+      "updated_at": "2026-11-11T07:38:13Z",
       "description_en": "Agent Skill for native animated GIF assets, long GIF exports and silent MP4 video",
       "keywords": [
         "GIF 视频素材",
