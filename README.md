@@ -12,19 +12,22 @@
 
 我是欧八同学，一个人在做 AI 产品。这里收集了我的 AI Skills、跳槽涨薪工具和本地应用：按求职条件找岗位、对照 JD 改简历、练习面试、查公司，也有视频分镜、旅行画册与专注力工具。先按用途选项目，或直接用下方一行命令安装整套 Skills。
 
+> **💡 万元求职私教与付费改简历的 MIT 开源平替（Open-source alternative to paid career coaching & resume services）**：零订阅费、简历留在本地不上传第三方商业后台、评分公式 100% 透明可复算。
+
 > [!TIP]
 > 🎁 扫码关注公众号「欧八同学」，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》→ [去扫码](#author)
 > 🛡️ **不用装代码也能直接防身**：👉 **[《2026 求职防身情报库：24道大厂深挖母题 × JD黑话解码 × 接Offer背调18问》(`radar/`)](radar/README.md)** ｜ **[⚡ 30秒在线速测：你的岗位 AI 不可替代指数 & 简历含金量诊断小票](https://ouxxyy.github.io/ouba-classmate/#career-radar)**（建议先点右上角 ★ Star 收藏防丢）
 
 <a id="install"></a>
 
-## ⚡ 一行安装（Claude Code / Codex / Cursor / skills CLI / MCP）
+## ⚡ 一行安装（Claude Code / Codex / Cursor / GitHub CLI / skills CLI / MCP）
 
 ```bash
-# 1. Claude Code 官方插件市场：一行注册本套件，按需启用 7 个子插件
+# 1. Claude Code / Cursor / Codex 插件市场：一行注册本套件（已内置 .claude-plugin / .cursor-plugin / .codex-plugin / .mcp.json）
 claude plugin marketplace add ouxxyy/ouba-classmate
 
-# 2. Agent Skills CLI（Claude Code / Cursor / Codex 通用）：一键安装全部或指定 Skill
+# 2. GitHub CLI 官方技能安装（参考 seo-party-skills 规范）或 Agent Skills CLI：一键安装全部或指定 Skill
+gh skill install ouxxyy/ouba-classmate jd-resume-match
 npx skills add ouxxyy/ouba-classmate
 npx skills add ouxxyy/ouba-classmate --skill jd-resume-match
 
@@ -105,6 +108,9 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate
 
 如果你是替用户来找求职工具、安装 Skill 或查询横评数据的 Agent：
 - **Claude Code 插件市场清单**：[.claude-plugin/marketplace.json](.claude-plugin/marketplace.json)
+- **Cursor 插件市场清单**：[.cursor-plugin/marketplace.json](.cursor-plugin/marketplace.json) 与 [.cursor-plugin/plugin.json](.cursor-plugin/plugin.json)
+- **Codex / ChatGPT Desktop 插件清单**：[.codex-plugin/plugin.json](.codex-plugin/plugin.json)
+- **根目录标准 MCP Server 配置**：[.mcp.json](.mcp.json)
 - **直接可安装的 Skills 目录**：[`skills/<name>/SKILL.md`](skills/)
 - **12 个求职 Skill 实测横评数据（CSV / JSON / 方法论）**：[`benchmark/results.csv`](benchmark/results.csv)、[`benchmark/repos.json`](benchmark/repos.json)、[`benchmark/METHOD.md`](benchmark/METHOD.md)
 - **机器可读项目目录**：[projects.json](projects.json) 与 [llms.txt](llms.txt)

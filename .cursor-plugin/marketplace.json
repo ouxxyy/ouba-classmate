@@ -1,0 +1,17 @@
+{
+  "name": "ouba-classmate",
+  "owner": {
+    "name": "欧八同学 (ouxxyy)",
+    "url": "https://github.com/ouxxyy/ouba-classmate"
+  },
+  "metadata": {
+    "description": "万元求职私教与付费改简历的 MIT 开源平替：一行安装的中文求职与创作 Agent Skills 套件（岗位搜索/简历匹配MCP/模拟面试/公司背调/12仓公开横评）。"
+  },
+  "plugins": [
+    {
+      "name": "ouba-classmate",
+      "source": ".",
+      "description": "中文求职与创作 Agent Skills 套件：覆盖 5 平台招聘筛选、简历 vs JD 可复算匹配评分（内置本地 MCP Server）、中文经历面试追问、Offer 前公司四态证据背调与 AI 不可替代指数评估。"
+    }
+  ]
+}

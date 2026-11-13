@@ -1,4 +1,5 @@
 """Verification tests for growth assets: SVG badges, radar intelligence hub, dataset card, and interactive career receipt."""
+import json
 from pathlib import Path
 import unittest
 
@@ -42,6 +43,39 @@ class GrowthAssetsTests(unittest.TestCase):
         self.assertTrue(card.startswith("---\n"))
         self.assertIn("license: cc-by-4.0", card)
         self.assertIn("ouxxyy/ouba-classmate", card)
+
+    def test_openseo_inspired_upgrades_present(self):
+        # 1. 多宿主插件与 MCP 清单
+        claude_market = json.loads(
+            (ROOT / ".claude-plugin" / "marketplace.json").read_text(encoding="utf-8")
+        )
+        plugin_names = [p["name"] for p in claude_market["plugins"]]
+        self.assertEqual(len(plugin_names), 8)
+        self.assertIn("mbai", plugin_names)
+
+        for rel in (
+            ".cursor-plugin/marketplace.json",
+            ".cursor-plugin/plugin.json",
+            ".codex-plugin/plugin.json",
+            ".mcp.json",
+        ):
+            p = ROOT / rel
+            self.assertTrue(p.exists(), f"Missing {rel}")
+            data = json.loads(p.read_text(encoding="utf-8"))
+            self.assertIsInstance(data, dict)
+
+        # 2. docs/index.html 中的 GEO FAQPage、gh skill install 与本地水分检测器
+        html_files = list((ROOT / "docs").rglob("*.html"))
+        self.assertEqual(len(html_files), 8)
+        index_html = (ROOT / "docs" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("FAQPage", index_html)
+        self.assertIn('id="resume-evidence-checker"', index_html)
+        self.assertIn("checkResumeEvidence()", index_html)
+        self.assertIn("gh skill install", index_html)
+
+        # 3. benchmark 页按岗位人群选型矩阵
+        bench_html = (ROOT / "docs" / "benchmark" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("按岗位与求职阶段怎么选", bench_html)
 
 
 if __name__ == "__main__":

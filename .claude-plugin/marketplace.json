@@ -45,6 +45,15 @@
       }
     },
     {
+      "name": "mbai",
+      "description": "AI转型大师：MBAI 工作任务 AI 不可替代指数，任务拆解、贡献证据与替代风险自评",
+      "version": "1.0.0",
+      "source": {
+        "source": "github",
+        "repo": "ouxxyy/mbai"
+      }
+    },
+    {
       "name": "storyboard-scavenger",
       "description": "Storyboard Scavenger：AI 视频分镜与提示词生成 Skill，内置可灵 Kling、即梦 Seedance、Veo、Sora 工作流",
       "version": "1.0.0",

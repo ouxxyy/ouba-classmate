@@ -143,6 +143,43 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 }
 .btn-action.secondary { background: #059669; }
 .btn-action:hover { opacity: 0.92; }
+.evidence-checker {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px dashed #334155;
+}
+.evidence-checker textarea {
+  width: 100%;
+  min-height: 88px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  font-family: inherit;
+  resize: vertical;
+}
+.evidence-result {
+  margin-top: 12px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 0.88rem;
+}
+.ev-tag {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  margin: 2px 4px 2px 0;
+  font-weight: 600;
+}
+.ev-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
+.ev-tag.good { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
+.ev-tag.warn { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
 </style>
   <script type="application/ld+json">
 {
@@ -403,7 +440,49 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
       </ul>
     </div>
 
-    <h2>四、🏅 上榜项目官方认证徽章（Badge 一键嵌入）</h2>
+    <h2>四、按岗位与求职阶段怎么选？（求职人群选型矩阵）</h2>
+    <div class="card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>适用人群与阶段</th>
+              <th>核心求职痛点</th>
+              <th>推荐组合方案</th>
+              <th>快速上手入口</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>产品经理 / AI PM</strong></td>
+              <td>简历易写空话；压力面常被问方案 B 与 ROI 护栏</td>
+              <td><code>jd-resume-match</code> + <code>ai-interviewer</code> + <code>mystery-skill</code></td>
+              <td><code>npx skills add ouxxyy/ouba-classmate</code></td>
+            </tr>
+            <tr>
+              <td><strong>后端 / 架构 / 全栈研发</strong></td>
+              <td>只列技术栈缺个人定位；怕外包合同主体与隐形加班坑</td>
+              <td><code>jd-resume-match</code>（本地 MCP）+ <code>sherlock-company</code></td>
+              <td><code>uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp</code></td>
+            </tr>
+            <tr>
+              <td><strong>数据分析 / 算法工程</strong></td>
+              <td>容易被追问基线分母与因果归因；需评估岗位 AI 替代风险</td>
+              <td><code>jd-resume-match</code> + <code>mbai</code></td>
+              <td><a href="https://ouxxyy.github.io/ouba-classmate/#career-radar">30秒职业战力与证据检测 →</a></td>
+            </tr>
+            <tr>
+              <td><strong>应届生春招 / 跨行转岗</strong></td>
+              <td>不懂 JD 黑话；海投缺规划；需要真题模拟与高颜值 PDF</td>
+              <td><code>job-search</code> + <code>ai-interviewer</code>（<code>seasonal/</code>）+ <code>ASu-resume-skills</code></td>
+              <td><a href="https://github.com/ouxxyy/ouba-classmate/blob/main/radar/README.md">查看 2026 求职防身情报库 →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2>五、🏅 上榜项目官方认证徽章（Badge 一键嵌入）</h2>
     <div class="card">
       <p>所有在《中文 AI 求职 Skill 公开横评》中完成实测核验或取得单项/总分领先的开源仓库，均可将以下 SVG 认证徽章免费嵌入各自仓库的 <code>README.md</code> 首屏：</p>
       <ul>

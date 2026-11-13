@@ -1,0 +1,26 @@
+{
+  "name": "ouba-classmate",
+  "displayName": "欧八同学 · 中文求职与简历匹配 Agent Skills",
+  "version": "0.2.1",
+  "description": "万元求职私教与付费改简历的开源平替：跨平台岗位搜索、简历与 JD 可复算匹配（内置零依赖 MCP）、经历面试原话点评、Offer 前公司证据背调与 12 仓公开横评。",
+  "author": {
+    "name": "欧八同学 (ouxxyy)",
+    "url": "https://github.com/ouxxyy/ouba-classmate"
+  },
+  "homepage": "https://ouxxyy.github.io/ouba-classmate/",
+  "repository": "https://github.com/ouxxyy/ouba-classmate",
+  "license": "MIT",
+  "keywords": [
+    "resume-matcher",
+    "job-search",
+    "mock-interview",
+    "career-coach",
+    "chinese-job-market",
+    "claude-skills",
+    "mcp-server",
+    "jd-resume-match"
+  ],
+  "logo": "assets/banner.png",
+  "skills": "skills",
+  "mcpServers": ".mcp.json"
+}

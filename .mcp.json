@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "jd-resume-match": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp",
+        "jd-resume-match-mcp"
+      ]
+    }
+  }
+}

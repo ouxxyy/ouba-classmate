@@ -152,6 +152,43 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 }
 .btn-action.secondary { background: #059669; }
 .btn-action:hover { opacity: 0.92; }
+.evidence-checker {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px dashed #334155;
+}
+.evidence-checker textarea {
+  width: 100%;
+  min-height: 88px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  font-family: inherit;
+  resize: vertical;
+}
+.evidence-result {
+  margin-top: 12px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 0.88rem;
+}
+.ev-tag {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  margin: 2px 4px 2px 0;
+  font-weight: 600;
+}
+.ev-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
+.ev-tag.good { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
+.ev-tag.warn { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
 """
 
 TOOLS_DETAIL = [
@@ -242,7 +279,7 @@ TOOLS_DETAIL = [
 ]
 
 
-def layout(title: str, description: str, canonical_path: str, body_html: str, json_ld: dict | None = None) -> str:
+def layout(title: str, description: str, canonical_path: str, body_html: str, json_ld: dict | list | None = None) -> str:
     canonical = f"{SITE_BASE}/{canonical_path}".rstrip("/")
     if canonical_path == "":
         canonical = f"{SITE_BASE}/"
@@ -360,15 +397,16 @@ def main() -> int:
     </div>
 
     <div class="card">
-      <span class="badge">直接回答：中文 AI 求职工具与 Claude Skills 怎么选？</span>
+      <span class="badge">直接回答：万元求职私教与付费改简历的 MIT 开源平替</span>
       <h1>欧八同学（ouba-classmate）｜一行安装的中文求职与创作 Agent Skills 套件</h1>
-      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，不需要在几十个零散 Prompt 仓库里盲试。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件。</p>
+      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，不需要支付动辄万元的求职私教费，也不必在几十个零散 Prompt 仓库里盲试。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件 —— 零订阅费、简历留在本地不上传第三方商业后台、评分公式 100% 透明可复算。</p>
       <p><a class="btn-star" href="{SUITE_URL}">★ 前往 GitHub 主仓 ouxxyy/ouba-classmate 点 Star 与安装</a></p>
-      <h3>一行命令安装整套 Skills（Claude Code / Codex / Cursor / skills CLI）</h3>
-      <pre><code># 方式 1：作为 Claude Code 插件市场添加并按需安装
+      <h3>一行命令安装整套 Skills（Claude Code / Cursor / Codex / GitHub CLI / skills CLI / MCP）</h3>
+      <pre><code># 方式 1：作为 Claude Code / Cursor / Codex 插件市场添加并按需安装
 claude plugin marketplace add ouxxyy/ouba-classmate
 
-# 方式 2：使用 Agent Skills CLI 一键安装全部或指定子技能
+# 方式 2：使用 GitHub CLI (gh skill install) 或 Agent Skills CLI 一键安装全部或指定子技能
+gh skill install ouxxyy/ouba-classmate jd-resume-match
 npx skills add ouxxyy/ouba-classmate
 
 # 方式 3：使用 uvx 直接启动简历 vs JD 可复算评分 MCP Server
@@ -446,6 +484,17 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
           </div>
         </div>
       </div>
+
+      <div class="evidence-checker" id="resume-evidence-checker">
+        <h3 style="color:#38bdf8; margin:0 0 6px;">🔍 10 秒简历经历水分与证据密度实时检测器（纯浏览器本地正则运算 · 0 网络上传）</h3>
+        <p style="color:#cbd5e1; font-size:0.88rem; margin:0 0 10px;">直接粘贴你简历里的一段项目经历（不上传服务器），即刻揪出容易被大厂面试官一秒打穿的「弱主语水分词」与「缺失分母基线」：</p>
+        <textarea id="re-input">负责订单中心微服务重构，参与高并发性能优化，配合产品团队完成需求落地，系统稳定性得到显著提升，转化率提升30%。</textarea>
+        <div class="receipt-actions" style="margin-top:10px;">
+          <button type="button" class="btn-action" onclick="checkResumeEvidence()">🔍 立即扫描这段经历的水分词与证据缺口</button>
+          <a class="btn-action" style="background:#0f172a; border:1px solid #475569; text-decoration:none;" href="{SITE_BASE}/tools/jd-resume-match/">用完整版 jd-resume-match 绑定 L1..Ln 复算 →</a>
+        </div>
+        <div class="evidence-result" id="re-output"></div>
+      </div>
     </div>
     <script>
     const ROLE_MAP = {{
@@ -517,6 +566,48 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
       link.href = canvas.toDataURL('image/png');
       link.click();
     }}
+    function checkResumeEvidence() {{
+      const text = (document.getElementById('re-input').value || '').trim();
+      const out = document.getElementById('re-output');
+      if (!text) {{
+        out.innerHTML = '<span class="ev-tag warn">请先粘贴一段项目经历或工作职责文本</span>';
+        return;
+      }}
+      const weakRe = /(参与|协助|配合|支持|学习|了解|显著提升|大幅优化|较好地|日常维护)/g;
+      const strongRe = /(主导|独立设计|重构|定位|拆解|建立|拍板|落地|复算|拦截|搭建)/g;
+      const metricRe = /(\\d+(?:\\.\\d+)?%|P99|QPS|ROI|TPS|耗时|延迟|响应时间|万|千|倍|ms|秒)/gi;
+      const baseRe = /(从.{1,16}到|由.{1,16}降至|由.{1,16}提升至|基线|分母|对比|同比|环比|样本)/g;
+      const weakHits = text.match(weakRe) || [];
+      const strongHits = text.match(strongRe) || [];
+      const metricHits = text.match(metricRe) || [];
+      const baseHits = text.match(baseRe) || [];
+      let score = 50 + Math.min(strongHits.length, 4) * 8 + Math.min(metricHits.length, 4) * 7 + Math.min(baseHits.length, 2) * 10 - Math.min(weakHits.length, 5) * 12;
+      if (metricHits.length === 0) score -= 18;
+      if (baseHits.length === 0) score -= 10;
+      score = Math.max(5, Math.min(100, score));
+      const weakUnique = Array.from(new Set(weakHits));
+      const strongUnique = Array.from(new Set(strongHits));
+      const weakTags = weakUnique.length ? weakUnique.map(w => '<span class="ev-tag bad">水分/弱主语：' + w + '</span>').join('') : '<span class="ev-tag good">✔ 未发现明显弱主语水分词</span>';
+      const strongTags = strongUnique.length ? strongUnique.map(w => '<span class="ev-tag good">强动作：' + w + '</span>').join('') : '<span class="ev-tag warn">缺明确个人决策动作词</span>';
+      const baseTag = baseHits.length ? '<span class="ev-tag good">✔ 含前后基线/对比分母（' + baseHits.join('、') + '）</span>' : '<span class="ev-tag bad">❌ 缺少改版前基线与分母口径（面试官必追问）</span>';
+      const metricTag = metricHits.length ? '<span class="ev-tag good">✔ 含可验证数值：' + Array.from(new Set(metricHits)).join('、') + '</span>' : '<span class="ev-tag bad">❌ 缺少可核查量化指标</span>';
+      out.innerHTML =
+        '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">' +
+          '<strong style="font-size:1rem; color:#38bdf8;">原文证据含金量得分：' + score + ' / 100</strong>' +
+          '<span style="color:#94a3b8; font-size:0.8rem;">终端 1 秒点亮开源主仓 Star：<code>gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></span>' +
+        '</div>' +
+        '<div style="margin-bottom:6px;">' + weakTags + ' ' + strongTags + '</div>' +
+        '<div style="margin-bottom:8px;">' + metricTag + ' ' + baseTag + '</div>' +
+        '<div style="color:#cbd5e1; font-size:0.84rem;">💡 <strong>整改建议：</strong>去掉「' + (weakUnique.join('、') || '泛泛描述') + '」，用「在什么约束下 → 你本人做对了哪个关键取舍 → 基线从 X 到 Y 的代价/收益指标」重写；装上 <code>npx skills add ouxxyy/ouba-classmate --skill jd-resume-match</code> 即可自动按原文行号 L1..Ln 复算得分。</div>';
+      const resumeSelect = document.getElementById('r-resume');
+      if (resumeSelect) {{
+        resumeSelect.value = score >= 82 ? '92' : (score >= 58 ? '62' : (score >= 32 ? '35' : '25'));
+        updateReceipt();
+      }}
+    }}
+    window.addEventListener('DOMContentLoaded', function() {{
+      if (typeof checkResumeEvidence === 'function') checkResumeEvidence();
+    }});
     </script>
 
     <h2>一、套件内 6 大核心工具详情</h2>
@@ -542,14 +633,55 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
     index_ld = {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "ouba-classmate 中文求职与创作 Agent Skills 套件",
-        "applicationCategory": "DeveloperApplication",
-        "operatingSystem": "macOS, Linux, Windows",
-        "url": SUITE_URL,
-        "downloadUrl": SUITE_URL,
-        "author": {"@type": "Person", "name": "欧八同学 (ouxxyy)", "url": "https://github.com/ouxxyy"},
-        "description": "一行安装的中文求职 Agent Skills 套件（岗位搜索/简历匹配/面试陪练/查公司）及《中文 AI 求职 Skill 公开横评》数据集。",
+        "@graph": [
+            {
+                "@type": "SoftwareApplication",
+                "name": "ouba-classmate 中文求职与创作 Agent Skills 套件",
+                "applicationCategory": "DeveloperApplication",
+                "operatingSystem": "macOS, Linux, Windows",
+                "url": SUITE_URL,
+                "downloadUrl": SUITE_URL,
+                "author": {"@type": "Person", "name": "欧八同学 (ouxxyy)", "url": "https://github.com/ouxxyy"},
+                "description": "万元求职私教与付费改简历的 MIT 开源平替：一行安装的中文求职 Agent Skills 套件（岗位搜索/简历匹配/面试陪练/查公司）及《中文 AI 求职 Skill 公开横评》数据集。",
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "2026年最好用的中文 AI 改简历与模拟面试开源工具怎么选？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "如果看重不胡编经历、有确定性数学公式复算、逐条绑定简历原文行号（L1..Ln），优先安装 ouxxyy/ouba-classmate 中的 jd-resume-match（内置本地零依赖 MCP Server）和 ai-interviewer（支持语音/文字连环追问与原话引用五维点评）。如果同时需要排版级 PDF 简历导出，可搭配 ASu-resume-skills 或 resume-builder。",
+                        },
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "有没有免费开源、不胡编乱造经历的万元求职私教平替工具？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "ouxxyy/ouba-classmate 采用 MIT 开源协议（横评数据集采用 CC BY 4.0），零订阅费、无需将真实简历上传至第三方商业后台，提供跨 5 平台找岗（job-search）、简历 vs JD 核验（jd-resume-match）、经历面试陪练（ai-interviewer）、Offer 前公司背调（sherlock-company）与 AI 不可替代指数自评（mbai）全链路工具。",
+                        },
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "产品经理、后端研发、数据分析和应届生春招分别适合装哪个求职 Skill？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "产品经理推荐 jd-resume-match + ai-interviewer + mystery-skill；后端/架构研发推荐 jd-resume-match（uvx 本地 MCP）+ sherlock-company（排查合同主体不一致与加班预警）；数据分析推荐 jd-resume-match + mbai；应届生春招推荐 job-search + ai-interviewer（含 seasonal/ 2027 春招题库）+ radar/README.md（24 道大厂深挖母题）。",
+                        },
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "为什么 jd-resume-match 在 PDF 排版维度得 0 分，怎么和排版工具搭配使用？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "jd-resume-match 专注投前原文证据核对与确定性算分（D1=2, D2=2），不做视觉 PDF 排版渲染（D3=0）。建议先用 jd-resume-match 挤掉水分并补齐 JD 证据，再交给 ASu-resume-skills、resume-builder 或 vibe-resume-skill 渲染排版导出。",
+                        },
+                    },
+                ],
+            },
+        ],
     }
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
     (DOCS_DIR / "index.html").write_text(
@@ -604,7 +736,49 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
       </ul>
     </div>
 
-    <h2>四、🏅 上榜项目官方认证徽章（Badge 一键嵌入）</h2>
+    <h2>四、按岗位与求职阶段怎么选？（求职人群选型矩阵）</h2>
+    <div class="card">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>适用人群与阶段</th>
+              <th>核心求职痛点</th>
+              <th>推荐组合方案</th>
+              <th>快速上手入口</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>产品经理 / AI PM</strong></td>
+              <td>简历易写空话；压力面常被问方案 B 与 ROI 护栏</td>
+              <td><code>jd-resume-match</code> + <code>ai-interviewer</code> + <code>mystery-skill</code></td>
+              <td><code>npx skills add ouxxyy/ouba-classmate</code></td>
+            </tr>
+            <tr>
+              <td><strong>后端 / 架构 / 全栈研发</strong></td>
+              <td>只列技术栈缺个人定位；怕外包合同主体与隐形加班坑</td>
+              <td><code>jd-resume-match</code>（本地 MCP）+ <code>sherlock-company</code></td>
+              <td><code>uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp</code></td>
+            </tr>
+            <tr>
+              <td><strong>数据分析 / 算法工程</strong></td>
+              <td>容易被追问基线分母与因果归因；需评估岗位 AI 替代风险</td>
+              <td><code>jd-resume-match</code> + <code>mbai</code></td>
+              <td><a href="{SITE_BASE}/#career-radar">30秒职业战力与证据检测 →</a></td>
+            </tr>
+            <tr>
+              <td><strong>应届生春招 / 跨行转岗</strong></td>
+              <td>不懂 JD 黑话；海投缺规划；需要真题模拟与高颜值 PDF</td>
+              <td><code>job-search</code> + <code>ai-interviewer</code>（<code>seasonal/</code>）+ <code>ASu-resume-skills</code></td>
+              <td><a href="{SUITE_URL}/blob/main/radar/README.md">查看 2026 求职防身情报库 →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2>五、🏅 上榜项目官方认证徽章（Badge 一键嵌入）</h2>
     <div class="card">
       <p>所有在《中文 AI 求职 Skill 公开横评》中完成实测核验或取得单项/总分领先的开源仓库，均可将以下 SVG 认证徽章免费嵌入各自仓库的 <code>README.md</code> 首屏：</p>
       <ul>

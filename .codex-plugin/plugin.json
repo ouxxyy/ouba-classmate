@@ -1,0 +1,47 @@
+{
+  "name": "ouba-classmate",
+  "version": "0.2.1",
+  "description": "万元求职私教与付费改简历的开源平替：跨平台岗位搜索、简历与 JD 可复算匹配（内置零依赖 MCP）、经历面试追问与 Offer 前公司证据背调。",
+  "author": {
+    "name": "欧八同学 (ouxxyy)",
+    "url": "https://github.com/ouxxyy/ouba-classmate"
+  },
+  "homepage": "https://ouxxyy.github.io/ouba-classmate/",
+  "repository": "https://github.com/ouxxyy/ouba-classmate",
+  "license": "MIT",
+  "keywords": [
+    "resume-matcher",
+    "job-search",
+    "mock-interview",
+    "employer-research",
+    "ai-irreplaceability",
+    "chinese-career-skills",
+    "mcp-server"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "欧八同学 · 中文求职与创作套件",
+    "shortDescription": "万元求职私教与付费改简历的开源平替。",
+    "longDescription": "覆盖求职全链路的可复算 Agent Skills 套件：\n\n1. 跨 BOSS直聘/猎聘/脉脉等 5 平台生成带来源的岗位短名单（job-search）\n2. 绑定简历原文行号（L1..Ln）核查 JD 证据缺口并确定性复算匹配分（jd-resume-match MCP）\n3. 基于目标 JD 与个人经历进行连环追问与原话引用五维点评（ai-interviewer）\n4. 接 Offer 前排查合同主体不一致与三类风险预警（sherlock-company）\n5. 工作任务 AI 不可替代指数自评（mbai）",
+    "developerName": "欧八同学 (ouxxyy)",
+    "category": "Productivity",
+    "capabilities": [
+      "Resume vs JD Matching (MCP)",
+      "Multi-platform Job Search",
+      "Chinese Mock Interview",
+      "Pre-offer Employer Research"
+    ],
+    "websiteURL": "https://ouxxyy.github.io/ouba-classmate/",
+    "supportURL": "https://github.com/ouxxyy/ouba-classmate/issues",
+    "defaultPrompt": [
+      "使用 jd-resume-match 对照这份目标岗位 JD 检查我的简历原文证据缺口，并复算匹配分。",
+      "使用 job-search 帮我按城市、薪资和岗位方向整理一份带来源链接的投递短名单。",
+      "使用 ai-interviewer 针对我简历里的核心项目进行大厂压力追问，并引用我的原话给出五维点评。",
+      "使用 sherlock-company 帮我在接 Offer 前核查这家公司的签约主体、加班口碑与三类预警。",
+      "使用 mbai 拆解我的日常工作任务，计算我的工作任务 AI 不可替代指数并给出 7 天内可启动的求职作品建议。"
+    ],
+    "composerIcon": "./assets/banner.png",
+    "logo": "./assets/banner.png"
+  }
+}
