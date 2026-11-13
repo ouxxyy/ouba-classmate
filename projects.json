@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T03:51:50+00:00",
+  "generated_at": "2026-11-13T02:49:52+00:00",
   "owner": "ouxxyy",
   "projects": [
     {
@@ -9,7 +9,7 @@
       "category": "skill",
       "language": "Python",
       "stars": 0,
-      "updated_at": "2026-11-12T03:51:06Z",
+      "updated_at": "2026-11-12T04:16:39Z",
       "description_en": "Agent Skill for generating native animated GIFs, concatenated long GIFs and silent MP4 video via OpenAI GPT Image 2.6 API across 69 built-in styles; works with Hypit and Remotion",
       "keywords": [
         "GPT Image 2.6",
