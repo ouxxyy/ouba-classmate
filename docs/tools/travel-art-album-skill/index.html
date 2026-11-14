@@ -180,8 +180,120 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 .ev-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
 .ev-tag.good { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
 .ev-tag.warn { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
+.quotable-summary {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 14px 0 18px;
+}
+.quotable-kicker {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0369a1;
+  margin: 0 0 8px;
+}
+.quotable-summary ul { margin: 6px 0 0; padding-left: 20px; }
+details.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+details.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+}
+details.faq-item p { margin: 10px 0 0; color: var(--muted); }
+.sibling-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.sibling-nav a {
+  background: #f1f5f9;
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+}
+.sibling-nav a:hover { border-color: var(--accent); color: var(--accent); }
 </style>
-  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "重拍画册（travel-art-album-skill）｜旅行照片艺术化与单文件离线 3D 翻页相册 Skill",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS, Linux, Windows",
+      "url": "https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/",
+      "codeRepository": "https://github.com/ouxxyy/travel-art-album-skill",
+      "license": "https://opensource.org/license/mit",
+      "dateModified": "2026-11-14",
+      "description": "将 10–30 张旅行照片先生成 4 种风格小样供用户确认，再批量制作为典藏级单文件离线 3D 翻页 HTML 画册（支持直接打印导出 PDF）。",
+      "author": {
+        "@type": "Person",
+        "name": "欧八同学 (ouxxyy)",
+        "url": "https://github.com/ouxxyy"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "用 AI 重绘旅行照片会不会把人物脸部改歪或者覆盖掉我的原图？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "工具内置两大防线：一是原始照片目录严格只读不修改；二是强制执行“先看 4 种风格小样确认、再批量制作”门禁，你确认人脸辨识度和画风满意后才会继续。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "做出来的 3D 翻页画册需要搭服务器或者长期续费托管吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不需要。成品是一个零外部依赖的单文件离线 HTML 画册，发给朋友双击浏览器即可 3D 翻页阅读，也可直接打印导出为 PDF 实体印刷。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "任何只支持纯文字聊天的 AI 助手都能跑这个 Skill 吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不能。本 Skill 必须运行在具备本地图片读取与参考图编辑（image-to-image）能力的宿主中，工具本身明确禁止用纯文本生图冒充参考图重绘。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ouba-classmate 套件首页",
+          "item": "https://ouxxyy.github.io/ouba-classmate/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "重拍画册",
+          "item": "https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header class="nav">
@@ -199,8 +311,9 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件</span>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-14</span>
           <h1>重拍画册（travel-art-album-skill）｜旅行照片艺术化与单文件离线 3D 翻页相册 Skill</h1>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 10–30 张旅行照一键成册 · 4 种艺术风格先出小样门禁 · 单文件离线 3D 翻页 HTML · 开源 ¥0 · 更新于 2026-11-14</div><ul><li>小样门禁保人脸：先生成 4 种艺术风格小样供你确认（保留人物神态与构图），确认后再批量重绘，原图只读绝不损坏。</li><li>4 种典藏画风：支持厚涂微缩、等距治愈积木、纸艺旅行、编辑旅行摄影×水彩手绘，可整册统一或逐张混排。</li><li>诚实边界：依赖宿主具备本地图片读取与参考图编辑（image-to-image）能力，严禁在无图生图能力时用纯文本硬编冒充重绘。</li></ul></div>
           <p>将 10–30 张旅行照片先生成 4 种风格小样供用户确认，再批量制作为典藏级单文件离线 3D 翻页 HTML 画册（支持直接打印导出 PDF）。</p>
           <p>
             <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
@@ -213,6 +326,18 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 
         <h2>适用场景</h2>
         <div class="card"><p>旅行纪念与作品集：不想让旅行照片躺在相册吃灰，希望在保留人物辨识度的前提下做成可离线翻阅的精装艺术画册。</p></div>
+
+        <h2>细分岗位与长尾痛点速配矩阵</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>目标人群 × 具体痛点</th><th>本工具交付效果</th><th>推荐执行入口</th></tr>
+              </thead>
+              <tbody><tr><td><strong>家庭/情侣旅行纪念 × 想要独特画册质感但担心 AI 把人脸改得不像本人</strong></td><td>先用同张照片出 4 种风格小样预览五官辨识度，拍板后再跑批量生成</td><td><code>npx skills add ouxxyy/ouba-classmate --skill travel-art-album-skill</code></td></tr><tr><td><strong>准备送礼或离线传阅 × 不想依赖云端相册过期失效</strong></td><td>输出零外链依赖的单个 HTML 文件，自带 3D 翻页动效并支持浏览器打印导 PDF</td><td><code>全部原始照片只读不覆盖，安全留存本地</code></td></tr><tr><td><strong>设计师/摄影师作品集 × 希望保留照片展签说明与精装封面</strong></td><td>内置画廊展签排版模板，自动写入地点时间与拍摄故事</td><td><code>需要宿主环境已配置有效的 image-to-image 编辑工具</code></td></tr></tbody>
+            </table>
+          </div>
+        </div>
 
         <h2>通过 ouba-classmate 套件一行安装</h2>
         <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
@@ -227,6 +352,20 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
         <h2>能力边界与诚实说明</h2>
         <div class="card"><p>需要宿主具备本地图片读取与参考图编辑（image-to-image）能力，禁止用纯文本生图冒充参考图重绘。</p></div>
+
+        <h2>高频常见问题（FAQ）</h2>
+        <details class="faq-item"><summary>用 AI 重绘旅行照片会不会把人物脸部改歪或者覆盖掉我的原图？</summary><p>工具内置两大防线：一是原始照片目录严格只读不修改；二是强制执行“先看 4 种风格小样确认、再批量制作”门禁，你确认人脸辨识度和画风满意后才会继续。</p></details>
+<details class="faq-item"><summary>做出来的 3D 翻页画册需要搭服务器或者长期续费托管吗？</summary><p>不需要。成品是一个零外部依赖的单文件离线 HTML 画册，发给朋友双击浏览器即可 3D 翻页阅读，也可直接打印导出为 PDF 实体印刷。</p></details>
+<details class="faq-item"><summary>任何只支持纯文字聊天的 AI 助手都能跑这个 Skill 吗？</summary><p>不能。本 Skill 必须运行在具备本地图片读取与参考图编辑（image-to-image）能力的宿主中，工具本身明确禁止用纯文本生图冒充参考图重绘。</p></details>
+
+        <h2>套件兄弟组件与公开横评导航</h2>
+        <div class="card">
+          <div class="sibling-nav">
+            <a href="https://ouxxyy.github.io/ouba-classmate/">套件首页与 30 秒诊断</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">12 仓公开横评总表</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">AI岗位搜索大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">AI简历优化大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">AI面试大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">公司调查大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">Storyboard Scavenger</a>
+          </div>
+        </div>
         
     <footer>
       <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>

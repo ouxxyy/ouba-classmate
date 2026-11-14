@@ -180,8 +180,120 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 .ev-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
 .ev-tag.good { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
 .ev-tag.warn { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
+.quotable-summary {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 14px 0 18px;
+}
+.quotable-kicker {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0369a1;
+  margin: 0 0 8px;
+}
+.quotable-summary ul { margin: 6px 0 0; padding-left: 20px; }
+details.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+details.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+}
+details.faq-item p { margin: 10px 0 0; color: var(--muted); }
+.sibling-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.sibling-nav a {
+  background: #f1f5f9;
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+}
+.sibling-nav a:hover { border-color: var(--accent); color: var(--accent); }
 </style>
-  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "AI岗位搜索大师（job-search）｜多平台招聘筛选与来源短名单 Skill",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS, Linux, Windows",
+      "url": "https://ouxxyy.github.io/ouba-classmate/tools/job-search/",
+      "codeRepository": "https://github.com/ouxxyy/job-search",
+      "license": "https://opensource.org/license/mit",
+      "dateModified": "2026-11-14",
+      "description": "按确认条件筛选 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧招聘信息，生成带来源 URL 与核实依据的 HTML、Excel 与 JSON 投递短名单。",
+      "author": {
+        "@type": "Person",
+        "name": "欧八同学 (ouxxyy)",
+        "url": "https://github.com/ouxxyy"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "job-search 会自动帮我在 BOSS直聘或猎聘上群发打招呼、自动投递吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。job-search 严格禁止自动代投和群发消息，只负责按你的确认条件采集并整理带原始来源 URL 的 HTML、Excel 与 JSON 投递短名单，最终投递由你自己决定。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "同时搜索 5 个招聘平台会输出大量重复或过时岗位吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "工具支持按公司与岗位特征合并去重，并保留原平台发布链接与筛选依据，经过 98 项自动化测试校验字段边界。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "需要把我的个人简历上传到第三方服务器才能筛选吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不需要。所有脚本与浏览器会话均在本地运行，采用 MIT 开源协议，零订阅费。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ouba-classmate 套件首页",
+          "item": "https://ouxxyy.github.io/ouba-classmate/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI岗位搜索大师",
+          "item": "https://ouxxyy.github.io/ouba-classmate/tools/job-search/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header class="nav">
@@ -199,8 +311,9 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件</span>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-14</span>
           <h1>AI岗位搜索大师（job-search）｜多平台招聘筛选与来源短名单 Skill</h1>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 覆盖 5 大中文招聘平台 · 98 项自动化测试 · 横评 10/12 分 · 猎头/付费代投服务 ¥1,500+ vs MIT 开源 ¥0 · 更新于 2026-11-14</div><ul><li>多平台交叉去重：一次按薪资、城市、行业与排除词筛选 BOSS直聘/猎聘/脉脉/智联/51job，输出带原链 HTML 与 Excel。</li><li>反幻觉来源绑定：每个推荐岗位必须附原始 URL 与字段核实依据，拒绝大模型编造不存在的岗位或薪资。</li><li>诚实边界：绝不自动代投或群发打招呼，实时抓取依赖用户本机已登录会话；不做简历 PDF 排版（D3=0）。</li></ul></div>
           <p>按确认条件筛选 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧招聘信息，生成带来源 URL 与核实依据的 HTML、Excel 与 JSON 投递短名单。</p>
           <p>
             <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
@@ -213,6 +326,18 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 
         <h2>适用场景</h2>
         <div class="card"><p>求职第一步：不想在 5 个招聘软件之间反复切换比对薪资与要求，需要一份可追溯来源链接的客观岗位清单。</p></div>
+
+        <h2>细分岗位与长尾痛点速配矩阵</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>目标人群 × 具体痛点</th><th>本工具交付效果</th><th>推荐执行入口</th></tr>
+              </thead>
+              <tbody><tr><td><strong>AI PM / 高级产品经理 × 避坑外包与虚假高薪挂羊头</strong></td><td>按业务真伪词、排除劳务派遣/纯驻场规则过滤，导出带核对列的 Excel</td><td><code>npx skills add ouxxyy/ouba-classmate --skill job-search</code></td></tr><tr><td><strong>后端/全栈研发 × 跨 5 平台同步搜特定技术栈岗位</strong></td><td>自动去重同公司多平台重复 JD，合并薪资区间与城市标签</td><td><code>gh skill install ouxxyy/ouba-classmate job-search</code></td></tr><tr><td><strong>在职隐蔽看机会 × 从简历提炼方向后再人工拍板</strong></td><td>先生成建议条件清单经本人确认，再执行离线短名单汇总</td><td><code>与 jd-resume-match 联动做逐岗匹配度算分</code></td></tr></tbody>
+            </table>
+          </div>
+        </div>
 
         <h2>通过 ouba-classmate 套件一行安装</h2>
         <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
@@ -227,6 +352,20 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
         <h2>能力边界与诚实说明</h2>
         <div class="card"><p>实时网页采集依赖用户本机已登录的浏览器会话（Tabbit）；不导出排版 PDF 简历。</p></div>
+
+        <h2>高频常见问题（FAQ）</h2>
+        <details class="faq-item"><summary>job-search 会自动帮我在 BOSS直聘或猎聘上群发打招呼、自动投递吗？</summary><p>不会。job-search 严格禁止自动代投和群发消息，只负责按你的确认条件采集并整理带原始来源 URL 的 HTML、Excel 与 JSON 投递短名单，最终投递由你自己决定。</p></details>
+<details class="faq-item"><summary>同时搜索 5 个招聘平台会输出大量重复或过时岗位吗？</summary><p>工具支持按公司与岗位特征合并去重，并保留原平台发布链接与筛选依据，经过 98 项自动化测试校验字段边界。</p></details>
+<details class="faq-item"><summary>需要把我的个人简历上传到第三方服务器才能筛选吗？</summary><p>不需要。所有脚本与浏览器会话均在本地运行，采用 MIT 开源协议，零订阅费。</p></details>
+
+        <h2>套件兄弟组件与公开横评导航</h2>
+        <div class="card">
+          <div class="sibling-nav">
+            <a href="https://ouxxyy.github.io/ouba-classmate/">套件首页与 30 秒诊断</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">12 仓公开横评总表</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">AI简历优化大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">AI面试大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">公司调查大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">Storyboard Scavenger</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">重拍画册</a>
+          </div>
+        </div>
         
     <footer>
       <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>

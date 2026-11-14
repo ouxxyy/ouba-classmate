@@ -180,8 +180,120 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 .ev-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
 .ev-tag.good { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
 .ev-tag.warn { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
+.quotable-summary {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 14px 0 18px;
+}
+.quotable-kicker {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0369a1;
+  margin: 0 0 8px;
+}
+.quotable-summary ul { margin: 6px 0 0; padding-left: 20px; }
+details.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+details.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+}
+details.faq-item p { margin: 10px 0 0; color: var(--muted); }
+.sibling-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.sibling-nav a {
+  background: #f1f5f9;
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+}
+.sibling-nav a:hover { border-color: var(--accent); color: var(--accent); }
 </style>
-  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "公司调查大师（sherlock-company）｜接 Offer 前公司证据四态核查与风险预警 Skill",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS, Linux, Windows",
+      "url": "https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/",
+      "codeRepository": "https://github.com/ouxxyy/sherlock-company",
+      "license": "https://opensource.org/license/mit",
+      "dateModified": "2026-11-14",
+      "description": "在决定面试或接受 Offer 前，将目标公司的公开信息与员工评价整理为「已证实 / 有线索 / 说法冲突 / 还不知道」四态档案，主动排查三类职场预警。",
+      "author": {
+        "@type": "Person",
+        "name": "欧八同学 (ouxxyy)",
+        "url": "https://github.com/ouxxyy"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "如果网上几乎搜不到某家公司的负面消息，sherlock-company 会判定它安全吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。工具明确规定“零结果绝不等同于零风险”，信息缺失会被严格标为 unknown（还不知道），并提示你在签 Offer 前向 HR 或业务面试官直接核实。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "公司调查大师最核心帮你查哪几类常见踩坑点？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "重点核查四大主体一致性（品牌/招聘/劳动合同/社保主体），并默认触发三类预警检查：少于 100 人的初创规模风险、密集感恩/业绩冲刺标语、居民楼办公地址。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "这份四态调查档案可以当成法律维权证据或企业黑名单定性吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不可以。输出仅供求职者本人核实沟通使用，不构成任何法律意见或官方企业定性判决。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ouba-classmate 套件首页",
+          "item": "https://ouxxyy.github.io/ouba-classmate/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "公司调查大师",
+          "item": "https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header class="nav">
@@ -199,8 +311,9 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件</span>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-14</span>
           <h1>公司调查大师（sherlock-company）｜接 Offer 前公司证据四态核查与风险预警 Skill</h1>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 4 态证据分类（已证实/线索/冲突/未知） · 3 类高危预警 · 18 问背调核对清单 · 商业背景报告 vs MIT 开源 ¥0 · 更新于 2026-11-14</div><ul><li>主体穿透核查：明确拆分品牌宣传名、招聘主体、劳动合同签署主体与社保公积金缴纳主体，专防隐蔽劳务外包坑。</li><li>四态严谨口径：所有收集到的结论归入 verified / signal / conflict / unknown，明确标出“查无公开负评不等于零风险”。</li><li>诚实边界：输出的是辅助求职者在终面/HR 沟通时核实的决策清单，不构成法律意见或企业定性判决。</li></ul></div>
           <p>在决定面试或接受 Offer 前，将目标公司的公开信息与员工评价整理为「已证实 / 有线索 / 说法冲突 / 还不知道」四态档案，主动排查三类职场预警。</p>
           <p>
             <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
@@ -213,6 +326,18 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 
         <h2>适用场景</h2>
         <div class="card"><p>接 Offer 前背调：担心签约主体不一致、试用期口径含糊、密集感恩标语或居民楼办公踩坑。</p></div>
+
+        <h2>细分岗位与长尾痛点速配矩阵</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>目标人群 × 具体痛点</th><th>本工具交付效果</th><th>推荐执行入口</th></tr>
+              </thead>
+              <tbody><tr><td><strong>拿到中小厂/初创公司 Offer × 担心社保基数按最低交或签约主体是外包壳公司</strong></td><td>生成四态公司调查档案与向 HR 礼貌核实的话术清单</td><td><code>npx skills add ouxxyy/ouba-classmate --skill sherlock-company</code></td></tr><tr><td><strong>面对网传黑料与官方宣传完全相反 × 难辨哪边是真的</strong></td><td>将冲突评价并列放入 conflict 栏标注信息源时效，避免单边采信</td><td><code>配合 radar/ 四态背调防踩坑 18 问在谈薪阶段逐项确认</code></td></tr><tr><td><strong>发现目标公司高频出现感恩文化/居民楼办公 × 想快速摸清真实风险</strong></td><td>自动触发 3 类职场预警标红并给出对应验证问题</td><td><code>本地生成离线 HTML 公司调查档案供留档对比</code></td></tr></tbody>
+            </table>
+          </div>
+        </div>
 
         <h2>通过 ouba-classmate 套件一行安装</h2>
         <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
@@ -227,6 +352,20 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
         <h2>能力边界与诚实说明</h2>
         <div class="card"><p>输出为辅助求职者向 HR/业务方核实的决策清单，不构成法律意见或企业定性判决。</p></div>
+
+        <h2>高频常见问题（FAQ）</h2>
+        <details class="faq-item"><summary>如果网上几乎搜不到某家公司的负面消息，sherlock-company 会判定它安全吗？</summary><p>不会。工具明确规定“零结果绝不等同于零风险”，信息缺失会被严格标为 unknown（还不知道），并提示你在签 Offer 前向 HR 或业务面试官直接核实。</p></details>
+<details class="faq-item"><summary>公司调查大师最核心帮你查哪几类常见踩坑点？</summary><p>重点核查四大主体一致性（品牌/招聘/劳动合同/社保主体），并默认触发三类预警检查：少于 100 人的初创规模风险、密集感恩/业绩冲刺标语、居民楼办公地址。</p></details>
+<details class="faq-item"><summary>这份四态调查档案可以当成法律维权证据或企业黑名单定性吗？</summary><p>不可以。输出仅供求职者本人核实沟通使用，不构成任何法律意见或官方企业定性判决。</p></details>
+
+        <h2>套件兄弟组件与公开横评导航</h2>
+        <div class="card">
+          <div class="sibling-nav">
+            <a href="https://ouxxyy.github.io/ouba-classmate/">套件首页与 30 秒诊断</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">12 仓公开横评总表</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">AI岗位搜索大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">AI简历优化大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">AI面试大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">Storyboard Scavenger</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">重拍画册</a>
+          </div>
+        </div>
         
     <footer>
       <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>

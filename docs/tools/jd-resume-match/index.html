@@ -180,8 +180,120 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 .ev-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
 .ev-tag.good { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
 .ev-tag.warn { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
+.quotable-summary {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 14px 0 18px;
+}
+.quotable-kicker {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0369a1;
+  margin: 0 0 8px;
+}
+.quotable-summary ul { margin: 6px 0 0; padding-left: 20px; }
+details.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+details.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+}
+details.faq-item p { margin: 10px 0 0; color: var(--muted); }
+.sibling-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.sibling-nav a {
+  background: #f1f5f9;
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+}
+.sibling-nav a:hover { border-color: var(--accent); color: var(--accent); }
 </style>
-  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS, Linux, Windows",
+      "url": "https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/",
+      "codeRepository": "https://github.com/ouxxyy/jd-resume-match",
+      "license": "https://opensource.org/license/mit",
+      "dateModified": "2026-11-14",
+      "description": "对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。",
+      "author": {
+        "@type": "Person",
+        "name": "欧八同学 (ouxxyy)",
+        "url": "https://github.com/ouxxyy"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "为什么 jd-resume-match 在横评的 PDF 排版（D3）维度只有 0 分？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "因为本工具专注投前原文证据核对（D1=2）与确定性公式算分（D2=2），故意不做视觉 PDF 模板渲染。推荐先挤掉水分并补齐证据，再交给 ASu-resume-skills 或 StoneLL1/resume-builder 生成最终 PDF。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "直接把简历和 JD 发给 ChatGPT/Claude 改写，和用 jd-resume-match 有什么本质区别？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通用聊天大模型每次打分随机波动且容易脑补虚构数据；jd-resume-match 强制绑定原文行号 L1..Ln，由确定性 Python 脚本按 jd-match-rubric/0.1.0 公式复算得分，同输入结果 100% 一致。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "本地 MCP Server 运行会把我的 PDF/DOCX 简历传到外部服务器吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MCP Server（io.github.ouxxyy/jd-resume-match）以纯标准库在本地 stdio 运行，评分计算零网络请求；注意中文 CID 字体 PDF 建议先转为纯文本或 DOCX 以确保行号定位准确。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ouba-classmate 套件首页",
+          "item": "https://ouxxyy.github.io/ouba-classmate/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI简历优化大师",
+          "item": "https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header class="nav">
@@ -199,8 +311,9 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件</span>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-14</span>
           <h1>AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server</h1>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 270 项单测 · 横评 10/12 分（D1=2 证据引用, D2=2 可复算, D3=0 不排版） · 商业改简历 ¥800–¥3,000 vs MIT 开源 ¥0 · 更新于 2026-11-14</div><ul><li>可复算数学公式：用 jd-match-rubric/0.1.0 脚本算分（floor(100 * Σ(w*c)/Σw + 0.5)），同一份简历与 JD 多次运行必得同一分数。</li><li>原文行号防幻觉：每条匹配/缺口结论强制绑定简历原文行号（L1..Ln），禁止把“参与”改写成“独立负责”。</li><li>诚实短板披露：只出体检单与改写方案，不做视觉 PDF 排版（D3 得 0 分）；需排版导出请搭配 ASu-resume-skills 或 resume-builder。</li></ul></div>
           <p>对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。</p>
           <p>
             <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
@@ -213,6 +326,18 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 
         <h2>适用场景</h2>
         <div class="card"><p>投递前体检：想知道自己的简历在目标 JD 下面到底差哪几条证据，拒绝大模型凭空捏造项目数据。</p></div>
+
+        <h2>细分岗位与长尾痛点速配矩阵</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>目标人群 × 具体痛点</th><th>本工具交付效果</th><th>推荐执行入口</th></tr>
+              </thead>
+              <tbody><tr><td><strong>后端/架构师 × 简历堆砌技术名词但缺分母基线与压测证据</strong></td><td>逐条对照 JD 拆解原文行号缺口，标出缺改版前后指标与护栏代价的条目</td><td><code>uvx --from &quot;git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp&quot; jd-resume-match-mcp</code></td></tr><tr><td><strong>产品经理/转行 AI PM × 防止大模型直接“胡编 AI 项目数据”</strong></td><td>开启 Claim Ledger 行号锁，只能基于原有真实动作重组叙事，严禁造假</td><td><code>npx skills add ouxxyy/ouba-classmate --skill jd-resume-match</code></td></tr><tr><td><strong>投前需要兼顾高颜值排版导出 PDF × 不想在本地泄露隐私</strong></td><td>先用 jd-resume-match 在本地脱敏核对证据，再用 ASu-resume-skills / resume-builder 渲染 PDF</td><td><code>本地 stdio MCP Server 全程零第三方商业后台上传</code></td></tr></tbody>
+            </table>
+          </div>
+        </div>
 
         <h2>通过 ouba-classmate 套件一行安装</h2>
         <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
@@ -227,6 +352,20 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
         <h2>能力边界与诚实说明</h2>
         <div class="card"><p>【诚实边界】只输出诊断体检单与改写方案，不直接导出可投递的视觉排版 PDF 简历；中文 CID 字体 PDF 需转文本或 DOCX。</p></div>
+
+        <h2>高频常见问题（FAQ）</h2>
+        <details class="faq-item"><summary>为什么 jd-resume-match 在横评的 PDF 排版（D3）维度只有 0 分？</summary><p>因为本工具专注投前原文证据核对（D1=2）与确定性公式算分（D2=2），故意不做视觉 PDF 模板渲染。推荐先挤掉水分并补齐证据，再交给 ASu-resume-skills 或 StoneLL1/resume-builder 生成最终 PDF。</p></details>
+<details class="faq-item"><summary>直接把简历和 JD 发给 ChatGPT/Claude 改写，和用 jd-resume-match 有什么本质区别？</summary><p>通用聊天大模型每次打分随机波动且容易脑补虚构数据；jd-resume-match 强制绑定原文行号 L1..Ln，由确定性 Python 脚本按 jd-match-rubric/0.1.0 公式复算得分，同输入结果 100% 一致。</p></details>
+<details class="faq-item"><summary>本地 MCP Server 运行会把我的 PDF/DOCX 简历传到外部服务器吗？</summary><p>MCP Server（io.github.ouxxyy/jd-resume-match）以纯标准库在本地 stdio 运行，评分计算零网络请求；注意中文 CID 字体 PDF 建议先转为纯文本或 DOCX 以确保行号定位准确。</p></details>
+
+        <h2>套件兄弟组件与公开横评导航</h2>
+        <div class="card">
+          <div class="sibling-nav">
+            <a href="https://ouxxyy.github.io/ouba-classmate/">套件首页与 30 秒诊断</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">12 仓公开横评总表</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">AI岗位搜索大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">AI面试大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">公司调查大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">Storyboard Scavenger</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">重拍画册</a>
+          </div>
+        </div>
         
     <footer>
       <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>

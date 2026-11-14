@@ -180,8 +180,120 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 .ev-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
 .ev-tag.good { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
 .ev-tag.warn { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
+.quotable-summary {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 14px 0 18px;
+}
+.quotable-kicker {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0369a1;
+  margin: 0 0 8px;
+}
+.quotable-summary ul { margin: 6px 0 0; padding-left: 20px; }
+details.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+details.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+}
+details.faq-item p { margin: 10px 0 0; color: var(--muted); }
+.sibling-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.sibling-nav a {
+  background: #f1f5f9;
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+}
+.sibling-nav a:hover { border-color: var(--accent); color: var(--accent); }
 </style>
-  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS, Linux, Windows",
+      "url": "https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/",
+      "codeRepository": "https://github.com/ouxxyy/storyboard-scavenger",
+      "license": "https://opensource.org/license/mit",
+      "dateModified": "2026-11-14",
+      "description": "把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。",
+      "author": {
+        "@type": "Person",
+        "name": "欧八同学 (ouxxyy)",
+        "url": "https://github.com/ouxxyy"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "直接让通用大模型写 AI 视频提示词和用 Storyboard Scavenger 有什么区别？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通用模型常忽略运镜与物理反馈导致生成画面“漂移抽卡”；Storyboard Scavenger 强制用七要素结构和 38 种电影运镜字典组织镜头，并针对可灵、即梦 @素材、Veo 和 Sora 做方言隔离。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "安装这个 Skill 之后能直接帮我渲染出 MP4 视频吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不能。Storyboard Scavenger 生成的是结构化分镜表与多平台提示词，最终视频渲染需要将提示词提交到可灵、即梦、Veo 或 Sora 等视频平台完成。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如果我要做带具体角色/商品图一致性的即梦短片，它支持吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持。models/ 模块专门包含即梦 Seedance 2.0 工作流，可将参考图与音视频素材映射为标准的 @素材 引用指令。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ouba-classmate 套件首页",
+          "item": "https://ouxxyy.github.io/ouba-classmate/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Storyboard Scavenger",
+          "item": "https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header class="nav">
@@ -199,8 +311,9 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件</span>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-14</span>
           <h1>Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill</h1>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 7 要素单镜头结构 · 适配 4 大主流视频模型 · 38 种电影运镜字典 · MIT 开源 ¥0 · 更新于 2026-11-14</div><ul><li>七要素工业级分镜：每个镜头拆解「风格核心 + 视觉基调 + 色彩影调 + 景别机位 + 构图 + 运镜 + 物理反馈」，杜绝抽卡盲写。</li><li>多模型方言适配：models/ 目录分别适配可灵自然中文、即梦 Seedance 2.0 的 @素材 语法、Veo 音画同步与 Sora 时间轴。</li><li>诚实边界：专注生成结构化分镜脚本与平台专属提示词，不包含视频云端渲染算力，需复制到对应平台执行生成。</li></ul></div>
           <p>把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。</p>
           <p>
             <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
@@ -213,6 +326,18 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 
         <h2>适用场景</h2>
         <div class="card"><p>AI 视频创作：需要把一句话脑洞拆成景别、构图、38 种运镜技巧与多模态 @素材 引用的专业分镜表。</p></div>
+
+        <h2>细分岗位与长尾痛点速配矩阵</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>目标人群 × 具体痛点</th><th>本工具交付效果</th><th>推荐执行入口</th></tr>
+              </thead>
+              <tbody><tr><td><strong>即梦 Seedance 2.0 创作者 × 需精准控制多张参考图 @素材 衔接</strong></td><td>按 Seedance 专属工作流输出带 @引用语法与物理运动反馈的逐镜表格</td><td><code>npx skills add ouxxyy/ouba-classmate --skill storyboard-scavenger</code></td></tr><tr><td><strong>可灵 Kling / Veo 3 短片制作 × 画面总是构图平庸或运镜混乱</strong></td><td>从 38 种运镜字典匹配镜头情绪，强制补齐景别机位与光影色彩锚点</td><td><code>与 codex-gif-video 搭配生产无字幕视觉素材</code></td></tr><tr><td><strong>自媒体口播/产品发布片 × 只有一个产品链接和 60 秒配乐节奏</strong></td><td>把音频节拍点切分成逐秒分镜脚本，降低跨模型返工率</td><td><code>参考仓库内实战分镜案例集微调风格核心词</code></td></tr></tbody>
+            </table>
+          </div>
+        </div>
 
         <h2>通过 ouba-classmate 套件一行安装</h2>
         <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
@@ -227,6 +352,20 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
         <h2>能力边界与诚实说明</h2>
         <div class="card"><p>本工具生成结构化分镜脚本与提示词，视频渲染需在可灵、即梦、Veo 等视频生成平台执行。</p></div>
+
+        <h2>高频常见问题（FAQ）</h2>
+        <details class="faq-item"><summary>直接让通用大模型写 AI 视频提示词和用 Storyboard Scavenger 有什么区别？</summary><p>通用模型常忽略运镜与物理反馈导致生成画面“漂移抽卡”；Storyboard Scavenger 强制用七要素结构和 38 种电影运镜字典组织镜头，并针对可灵、即梦 @素材、Veo 和 Sora 做方言隔离。</p></details>
+<details class="faq-item"><summary>安装这个 Skill 之后能直接帮我渲染出 MP4 视频吗？</summary><p>不能。Storyboard Scavenger 生成的是结构化分镜表与多平台提示词，最终视频渲染需要将提示词提交到可灵、即梦、Veo 或 Sora 等视频平台完成。</p></details>
+<details class="faq-item"><summary>如果我要做带具体角色/商品图一致性的即梦短片，它支持吗？</summary><p>支持。models/ 模块专门包含即梦 Seedance 2.0 工作流，可将参考图与音视频素材映射为标准的 @素材 引用指令。</p></details>
+
+        <h2>套件兄弟组件与公开横评导航</h2>
+        <div class="card">
+          <div class="sibling-nav">
+            <a href="https://ouxxyy.github.io/ouba-classmate/">套件首页与 30 秒诊断</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">12 仓公开横评总表</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">AI岗位搜索大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">AI简历优化大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">AI面试大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">公司调查大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">重拍画册</a>
+          </div>
+        </div>
         
     <footer>
       <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>

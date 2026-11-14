@@ -180,8 +180,120 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 .ev-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
 .ev-tag.good { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
 .ev-tag.warn { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
+.quotable-summary {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 14px 0 18px;
+}
+.quotable-kicker {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0369a1;
+  margin: 0 0 8px;
+}
+.quotable-summary ul { margin: 6px 0 0; padding-left: 20px; }
+details.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+details.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+}
+details.faq-item p { margin: 10px 0 0; color: var(--muted); }
+.sibling-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.sibling-nav a {
+  background: #f1f5f9;
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+}
+.sibling-nav a:hover { border-color: var(--accent); color: var(--accent); }
 </style>
-  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "AI面试大师（ai-interviewer）｜中文语音与文字经历面试陪练（原话引用五维点评）",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "macOS, Linux, Windows",
+      "url": "https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/",
+      "codeRepository": "https://github.com/ouxxyy/ai-interviewer",
+      "license": "https://opensource.org/license/mit",
+      "dateModified": "2026-11-14",
+      "description": "基于目标岗位 JD 与个人真实经历进行自我介绍 + 三道经历题连环追问，每道题给出引用候选人原话的五维三档点评，并支持同一题重答对比。",
+      "author": {
+        "@type": "Person",
+        "name": "欧八同学 (ouxxyy)",
+        "url": "https://github.com/ouxxyy"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "在线网页版（interview.redboook.cn）和本地 Skill 版本有什么区别，需要付费吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "代码全部 MIT 开源免费，平台不收取使用费。在线语音版需要用户自备阿里云百炼 API Key（模型调用费由本人账号直接向云厂商结算），本地纯文字版可直接运行在 Claude Code / Codex 等宿主中。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AI 面试陪练会不会只给“很好、继续加油”这类敷衍评价？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。ai-interviewer 严格遵循 rules@0.3.0 规范，每条五维点评都必须逐句引用候选人回答原话作为依据，指出具体缺口，并支持对同一道题进行重答对比。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "它能刷 LeetCode 算法题或预测我能不能拿到 Offer 吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不能。ai-interviewer 专注自我介绍与项目经历深挖追问，不提供算法白板题评测，也不会给出虚假的录用概率预测。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ouba-classmate 套件首页",
+          "item": "https://ouxxyy.github.io/ouba-classmate/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI面试大师",
+          "item": "https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
   <header class="nav">
@@ -199,8 +311,9 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件</span>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-14</span>
           <h1>AI面试大师（ai-interviewer）｜中文语音与文字经历面试陪练（原话引用五维点评）</h1>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 横评 10/12 分 · 自我介绍 + 3 道经历深挖题 · 原话引用 5 维 3 档点评 · 1 对 1 模拟面试私教 ¥500+/时 vs MIT 开源 ¥0 · 更新于 2026-11-14</div><ul><li>双入口可用：提供免安装在线语音站（interview.redboook.cn，需自带百炼 Key）及 Claude Code / Codex 纯文字 Skill。</li><li>rules@0.3.0 原话点评：拒绝空泛鼓励，每条点评必须引用你刚才回答的原话，并支持同一题“初答 vs 重答”直接对比。</li><li>诚实边界：专注行为面与项目经历连环追问，不提供算法白板判题，也不预测招聘方真实录用概率。</li></ul></div>
           <p>基于目标岗位 JD 与个人真实经历进行自我介绍 + 三道经历题连环追问，每道题给出引用候选人原话的五维三档点评，并支持同一题重答对比。</p>
           <p>
             <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
@@ -213,6 +326,18 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 
         <h2>适用场景</h2>
         <div class="card"><p>面试前实战演练：害怕面试官追问“你个人到底做了什么”“数据怎么算的”，需要带原话证据引用的复盘教练。</p></div>
+
+        <h2>细分岗位与长尾痛点速配矩阵</h2>
+        <div class="card">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>目标人群 × 具体痛点</th><th>本工具交付效果</th><th>推荐执行入口</th></tr>
+              </thead>
+              <tbody><tr><td><strong>AI PM / B2B 产品经理 × 被主管连环追问“为什么不用规则要用 Agent”</strong></td><td>依据目标 JD 与真实项目经历生成 3 轮深挖追问，定位逻辑断层并给重答建议</td><td><code>访问 interview.redboook.cn/roles/ai-pm.html 或安装 Skill</code></td></tr><tr><td><strong>后端开发 / 数据分析 × 回答总是只讲背景不讲个人动作与基线</strong></td><td>五维三档点评强制核对“个人边界、量化基线、备选方案”，引用原话逐句打分</td><td><code>npx skills add ouxxyy/ouba-classmate --skill ai-interviewer</code></td></tr><tr><td><strong>2027 应届生春招 / 跳槽突发通知 × 昨晚收到面试明天就面</strong></td><td>直接调用 seasonal/ 春招与跳槽压力题库进行 15 分钟快速重答对比训练</td><td><code>搭配 radar/ 24 道大厂深挖母题提前准备证据链</code></td></tr></tbody>
+            </table>
+          </div>
+        </div>
 
         <h2>通过 ouba-classmate 套件一行安装</h2>
         <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
@@ -227,6 +352,20 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
         <h2>能力边界与诚实说明</h2>
         <div class="card"><p>专注训练行为与经历面试，不提供算法白板题评测，也不预测真实招聘方录用概率。</p></div>
+
+        <h2>高频常见问题（FAQ）</h2>
+        <details class="faq-item"><summary>在线网页版（interview.redboook.cn）和本地 Skill 版本有什么区别，需要付费吗？</summary><p>代码全部 MIT 开源免费，平台不收取使用费。在线语音版需要用户自备阿里云百炼 API Key（模型调用费由本人账号直接向云厂商结算），本地纯文字版可直接运行在 Claude Code / Codex 等宿主中。</p></details>
+<details class="faq-item"><summary>AI 面试陪练会不会只给“很好、继续加油”这类敷衍评价？</summary><p>不会。ai-interviewer 严格遵循 rules@0.3.0 规范，每条五维点评都必须逐句引用候选人回答原话作为依据，指出具体缺口，并支持对同一道题进行重答对比。</p></details>
+<details class="faq-item"><summary>它能刷 LeetCode 算法题或预测我能不能拿到 Offer 吗？</summary><p>不能。ai-interviewer 专注自我介绍与项目经历深挖追问，不提供算法白板题评测，也不会给出虚假的录用概率预测。</p></details>
+
+        <h2>套件兄弟组件与公开横评导航</h2>
+        <div class="card">
+          <div class="sibling-nav">
+            <a href="https://ouxxyy.github.io/ouba-classmate/">套件首页与 30 秒诊断</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">12 仓公开横评总表</a>
+            <a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">AI岗位搜索大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">AI简历优化大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">公司调查大师</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">Storyboard Scavenger</a><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">重拍画册</a>
+          </div>
+        </div>
         
     <footer>
       <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>

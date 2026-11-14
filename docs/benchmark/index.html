@@ -180,27 +180,104 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
 .ev-tag.bad { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
 .ev-tag.good { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.4); }
 .ev-tag.warn { background: rgba(245, 158, 11, 0.2); color: #fcd34d; border: 1px solid rgba(245, 158, 11, 0.4); }
+.quotable-summary {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin: 14px 0 18px;
+}
+.quotable-kicker {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0369a1;
+  margin: 0 0 8px;
+}
+.quotable-summary ul { margin: 6px 0 0; padding-left: 20px; }
+details.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+details.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+}
+details.faq-item p { margin: 10px 0 0; color: var(--muted); }
+.sibling-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+.sibling-nav a {
+  background: #f1f5f9;
+  color: var(--text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  border: 1px solid var(--border);
+}
+.sibling-nav a:hover { border-color: var(--accent); color: var(--accent); }
 </style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Dataset",
-  "name": "中文 AI 求职 Skill 公开横评数据集 (v0.1)",
-  "description": "12 个主流中英文 AI 求职与简历 Agent Skills 在证据引用、可复算性、PDF 排版、隐私保护、中文生态与可安装性六个维度的实测对比数据。",
-  "url": "https://ouxxyy.github.io/ouba-classmate/benchmark/",
-  "sameAs": "https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark",
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "dateModified": "2026-11-06",
-  "creator": {
-    "@type": "Person",
-    "name": "欧八同学 (ouxxyy)",
-    "url": "https://github.com/ouxxyy/ouba-classmate"
-  },
-  "distribution": [
+  "@graph": [
     {
-      "@type": "DataDownload",
-      "encodingFormat": "text/csv",
-      "contentUrl": "https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/benchmark/results.csv"
+      "@type": "Dataset",
+      "name": "中文 AI 求职 Skill 公开横评数据集 (v0.1)",
+      "description": "12 个主流中英文 AI 求职与简历 Agent Skills 在证据引用、可复算性、PDF 排版、隐私保护、中文生态与可安装性六个维度的实测对比数据。",
+      "url": "https://ouxxyy.github.io/ouba-classmate/benchmark/",
+      "sameAs": "https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "dateModified": "2026-11-14",
+      "creator": {
+        "@type": "Person",
+        "name": "欧八同学 (ouxxyy)",
+        "url": "https://github.com/ouxxyy/ouba-classmate"
+      },
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/benchmark/results.csv"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "既然有自家项目参加《中文 AI 求职 Skill 公开横评》，如何保证评测公平可核验？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "横评仓库开源了全部 3 组虚构合成测试简历/JD（benchmark/cases/）、完整六维评分标准（METHOD.md）与原始 CSV 数据，并由作者主动公开自家 4 款工具在 D3 PDF 排版维度得 0 分的短板，且支持任何仓库作者提 Issue 申诉复测。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "为什么只测试 12 个求职 Skill，不同岗位买方到底怎么按分数抄作业？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "这 12 个仓库于 2026-11-06 通过 GitHub API 实测筛选覆盖中文与英文主流高星简历/求职项目。想直接导高颜值 PDF 选 ASu-resume-skills 或 resume-builder；想在投前查漏补缺防止简历注水且做本地 MCP 算分，选 jd-resume-match + ai-interviewer。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "横评数据可以免费引用到公众号、博客或 AI 工具推荐文章中吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。benchmark/ 下的数据集采用 CC BY 4.0 协议开放共享，欢迎引用与二次可视化，只需保留指向 github.com/ouxxyy/ouba-classmate 的署名链接。"
+          }
+        }
+      ]
     }
   ]
 }
@@ -222,8 +299,9 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
   <main class="container">
     
     <div class="card">
-      <span class="badge">Dataset · CC BY 4.0 · 更新日期：2026-11-06</span>
+      <span class="badge">Dataset · CC BY 4.0 · API 采样：2026-11-06 · 更新日期：2026-11-14</span>
       <h1>《中文 AI 求职 Skill 公开横评》v0.1 数据集与可复现报告</h1>
+      <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 12 个仓库实测 · 6 维 12 分制 · 3 组虚构合成用例 · 采样基准 2026-11-06 / 页面更新 2026-11-14</div><ul><li>第 1 梯队（≥9/12 分）：Claycui828/ASu-resume-skills（10 分，排版首选）、ouxxyy/jd-resume-match（10 分，可复算算分首选）、job-search（10 分）、ai-interviewer（10 分）、StoneLL1/resume-builder（9 分）。</li><li>核心差异：自家工具强在 D1 原文行号证据引用（2/2）与 D2 确定性公式复算（2/2）；外部竞品强在 D3 视觉 PDF 简历导出（2/2）。</li><li>利益相关与短板披露：自家 4 仓均在 D3 PDF 排版维度得 0 分，且 jd-resume-match 不支持中文 CID 字体 PDF 直接解码。</li></ul></div>
       <p>本页面提供 GitHub 上 12 个主流中英文求职与简历类 Agent Skills 的结构化实测对比数据。所有仓库元数据（Star 数、脚本数、模板数、单测状态）均于 <strong>2026-11-06 通过 GitHub REST API 实测核验</strong>，并基于 3 组 100% 虚构合成简历与 JD 完成证据引用与可复算性验证。</p>
       <p>
         <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ Star ouba-classmate 合集仓库</a>
@@ -491,6 +569,11 @@ footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--border
         <li><strong>v0.1 实测数据集核验徽章</strong>：<br><code>[![Chinese AI Career Benchmark Verified](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-verified.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
       </ul>
     </div>
+
+    <h2>六、横评口径与选型高频长尾问答（FAQ）</h2>
+    <details class="faq-item"><summary>既然有自家项目参加《中文 AI 求职 Skill 公开横评》，如何保证评测公平可核验？</summary><p>横评仓库开源了全部 3 组虚构合成测试简历/JD（benchmark/cases/）、完整六维评分标准（METHOD.md）与原始 CSV 数据，并由作者主动公开自家 4 款工具在 D3 PDF 排版维度得 0 分的短板，且支持任何仓库作者提 Issue 申诉复测。</p></details>
+<details class="faq-item"><summary>为什么只测试 12 个求职 Skill，不同岗位买方到底怎么按分数抄作业？</summary><p>这 12 个仓库于 2026-11-06 通过 GitHub API 实测筛选覆盖中文与英文主流高星简历/求职项目。想直接导高颜值 PDF 选 ASu-resume-skills 或 resume-builder；想在投前查漏补缺防止简历注水且做本地 MCP 算分，选 jd-resume-match + ai-interviewer。</p></details>
+<details class="faq-item"><summary>横评数据可以免费引用到公众号、博客或 AI 工具推荐文章中吗？</summary><p>可以。benchmark/ 下的数据集采用 CC BY 4.0 协议开放共享，欢迎引用与二次可视化，只需保留指向 github.com/ouxxyy/ouba-classmate 的署名链接。</p></details>
     
     <footer>
       <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>
