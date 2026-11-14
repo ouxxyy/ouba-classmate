@@ -174,11 +174,14 @@ def render_readme_block(repos):
         items.sort(key=lambda r: REPO_META.get(r["name"], {}).get("order", 10**9))
         lines.append(f"### {CATEGORY_LABELS[cat]}")
         lines.append("")
-        lines.append("| 项目 | 它做什么 | 最近更新 |")
+        lines.append("| 项目 · Repo | 它做什么 · What it does | 最近更新 · Updated |")
         lines.append("| --- | --- | --- |")
         for repo in items:
             meta = REPO_META.get(repo["name"], {})
             desc = meta.get("desc") or repo["description"] or "—"
+            desc_en = (meta.get("description_en") or "").strip()
+            if desc_en:
+                desc = f"{desc}<br><sub>{desc_en}</sub>"
             name_cell = f'[{repo["name"]}]({repo["html_url"]})'
             if repo["stargazers_count"]:
                 name_cell += f' ★{repo["stargazers_count"]}'

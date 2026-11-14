@@ -1,7 +1,7 @@
-# 欧八同学｜AI Skills 与跳槽涨薪工具合集
+# 欧八同学｜AI Skills 与跳槽涨薪工具合集 · ouba-classmate
 
 <p align="center">
-  <img src="assets/banner.png" alt="欧八同学项目合集总览：职业定位 × AI 杠杆 × 涨薪方法，11 个原创项目分三类">
+  <a href="#install"><img src="assets/banner-suite.svg" width="100%" alt="欧八同学项目合集总览：职业定位 × AI 杠杆 × 涨薪方法，11 个原创项目分三类"></a>
 </p>
 
 <p align="center">
@@ -11,6 +11,8 @@
 </p>
 
 我是欧八同学，一个人在做 AI 产品。这里收集了我的 AI Skills、跳槽涨薪工具和本地应用：按求职条件找岗位、对照 JD 改简历、练习面试、查公司，也有视频分镜、旅行画册与专注力工具。先按用途选项目，或直接用下方一行命令安装整套 Skills。
+
+<sub>Open-source collection of AI Agent Skills, career-growth & job-search tools, and local productivity apps by <b>Albert Ou (欧八同学)</b> — Positioning × AI Leverage × Salary Growth.</sub>
 
 > **💡 万元求职私教与付费改简历的 MIT 开源平替（Open-source alternative to paid career coaching & resume services）**：零订阅费、简历留在本地不上传第三方商业后台、评分公式 100% 透明可复算。
 
@@ -46,6 +48,106 @@ uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-r
 gh api -X PUT /user/starred/ouxxyy/ouba-classmate
 ```
 
+## 核心代表作动态画廊 · Featured Highlights
+
+> 一行一个核心开源项目，纯动态演示 + 中英双语定位，无冗余小图标。
+
+### 01 · AI 简历优化与 JD 匹配体检 · `jd-resume-match`
+
+<p>
+  <a href="https://github.com/ouxxyy/jd-resume-match"><img src="assets/card-resume.svg" width="100%" alt="jd-resume-match — 确定性 JD 匹配公式与原文行号证据链审计"></a>
+</p>
+
+**对照真实 JD 做确定性公式算分、原文行号（L1..Ln）证据锁定与去水分审计，附带本地 stdio MCP Server（270 项单测；不做视觉 PDF 排版）。**  
+<sub>Deterministic `jd-match-rubric` scorer, line-cited anti-hallucination resume audit (`L1..Ln`), and local stdio MCP server with 270 tests (score-and-evidence only, no PDF visual layout).</sub>
+
+<p>
+  <a href="https://github.com/ouxxyy/jd-resume-match"><img src="https://img.shields.io/badge/REPO-jd--resume--match-1f6feb?style=for-the-badge" alt="jd-resume-match Repo"></a>
+  <a href="skills/jd-resume-match/SKILL.md"><img src="https://img.shields.io/badge/SKILL-Install_&_Prompt-0969da?style=for-the-badge" alt="SKILL.md"></a>
+  <a href="benchmark/README.md"><img src="https://img.shields.io/badge/BENCHMARK-Top_Tier_10%2F12-238636?style=for-the-badge" alt="Benchmark 10/12"></a>
+</p>
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+### 02 · 中文大厂语音与文字追问模拟面试官 · `ai-interviewer`
+
+<p>
+  <a href="https://github.com/ouxxyy/ai-interviewer"><img src="assets/card-interviewer.svg" width="100%" alt="ai-interviewer — 原话深度追问 + 54 页大厂复盘报告"></a>
+</p>
+
+**贴上简历与 JD，AI 面试官全程基于你的原话深挖项目细节，支持中文语音实时连麦与 54 页结构化复盘报告。**  
+<sub>Mock interviewer with real-time Chinese voice Q&A, contextual follow-ups anchored to your resume claims, and multi-page structured debrief reports.</sub>
+
+<p>
+  <a href="https://github.com/ouxxyy/ai-interviewer"><img src="https://img.shields.io/badge/REPO-ai--interviewer-8957e5?style=for-the-badge" alt="ai-interviewer Repo"></a>
+  <a href="https://interview.redboook.cn/"><img src="https://img.shields.io/badge/LIVE_DEMO-interview.redboook.cn-238636?style=for-the-badge" alt="Live Demo"></a>
+  <a href="skills/ai-interviewer/SKILL.md"><img src="https://img.shields.io/badge/SKILL-SKILL.md-1f6feb?style=for-the-badge" alt="SKILL.md"></a>
+</p>
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+### 03 · 跨 5 平台多条件实时岗位筛选 · `job-search`
+
+<p>
+  <a href="https://github.com/ouxxyy/job-search"><img src="assets/card-job-search.svg" width="100%" alt="job-search — 5 平台实时去重抓取与岗位短名单"></a>
+</p>
+
+**用一句话描述目标城市、薪资带与公司阶段，自动并行扫描 5 个招聘平台并按匹配度去重整理高含金量投递短名单。**  
+<sub>Natural-language job radar that searches across 5 platforms, deduplicates listings, and outputs a clean ranked shortlist with application links.</sub>
+
+<p>
+  <a href="https://github.com/ouxxyy/job-search"><img src="https://img.shields.io/badge/REPO-job--search-1f6feb?style=for-the-badge" alt="job-search Repo"></a>
+  <a href="skills/job-search/SKILL.md"><img src="https://img.shields.io/badge/SKILL-SKILL.md-238636?style=for-the-badge" alt="SKILL.md"></a>
+</p>
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+### 04 · 接 Offer 前四态公司与团队背调 · `sherlock-company`
+
+<p>
+  <a href="https://github.com/ouxxyy/sherlock-company"><img src="assets/card-sherlock.svg" width="100%" alt="sherlock-company — 四态证据分级公司调查报告"></a>
+</p>
+
+**接 Offer 前先给公司做一轮福尔摩斯式体检，把公开来源事实、交叉核验结论与未核实疑点分层写成“接不接 Offer”的依据。**  
+<sub>Pre-offer company due diligence dossier grading every claim across four evidence states before you commit to your next career move.</sub>
+
+<p>
+  <a href="https://github.com/ouxxyy/sherlock-company"><img src="https://img.shields.io/badge/REPO-sherlock--company-d29922?style=for-the-badge" alt="sherlock-company Repo"></a>
+  <a href="skills/sherlock-company/SKILL.md"><img src="https://img.shields.io/badge/SKILL-SKILL.md-1f6feb?style=for-the-badge" alt="SKILL.md"></a>
+</p>
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+### 05 · 为个人建 4 核 AI 智囊团 Skill · `mbai`
+
+<p>
+  <a href="https://github.com/ouxxyy/mbai"><img src="assets/card-mbai.svg" width="100%" alt="mbai — 四角色圆桌对齐：CEO、产品、技术、财务"></a>
+</p>
+
+**在决定项目方向或重大选择前，同时召唤 4 个立场所代表的独立智囊视角对齐真问题、算清账本与执行风险（CC BY-NC 4.0）。**  
+<sub>Personal AI advisory board aligning CEO, Product, Engineering, and Finance lenses for high-stakes founder & product decisions.</sub>
+
+<p>
+  <a href="https://github.com/ouxxyy/mbai"><img src="https://img.shields.io/badge/REPO-mbai-a371f7?style=for-the-badge" alt="mbai Repo"></a>
+  <a href="skills/mbai/SKILL.md"><img src="https://img.shields.io/badge/SKILL-SKILL.md-1f6feb?style=for-the-badge" alt="SKILL.md"></a>
+</p>
+
+<img src="assets/divider.svg" width="100%" alt="">
+
+### 06 · 零浏览器依赖原生演示 GIF 与短视频引擎 · `codex-gif-video`
+
+<p>
+  <a href="https://github.com/ouxxyy/codex-gif-video"><img src="assets/card-gif.svg" width="100%" alt="codex-gif-video — 14 种风格演示 GIF 与 MP4 一键出片"></a>
+</p>
+
+**纯本地 Node / Pillow 驱动、无需启动 Playwright 与无头浏览器，一句话生成 14 种科技/动效风格高清展示 GIF 与带配音 MP4。**  
+<sub>Zero-browser headless-free demo GIF & narrated MP4 generator with 14 visual presets for README launches and social demos.</sub>
+
+<p>
+  <a href="https://github.com/ouxxyy/codex-gif-video"><img src="https://img.shields.io/badge/REPO-codex--gif--video-238636?style=for-the-badge" alt="codex-gif-video Repo"></a>
+  <a href="https://github.com/ouxxyy/codex-gif-video#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"><img src="https://img.shields.io/badge/STYLES-14_Presets-1f6feb?style=for-the-badge" alt="14 Presets"></a>
+</p>
+
 ## 按需求找
 
 | 你想做什么 | 去这里 | 套件内直接安装 / 入口 |
@@ -68,29 +170,29 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate
 <!-- projects:start -->
 ### 职场 · 跳槽涨薪
 
-| 项目 | 它做什么 | 最近更新 |
+| 项目 · Repo | 它做什么 · What it does | 最近更新 · Updated |
 | --- | --- | --- |
-| [job-search](https://github.com/ouxxyy/job-search) ★1 | AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单 | 2026-11-12 |
-| [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告 | 2026-11-12 |
-| [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) ★4 | AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比 | 2026-11-12 |
-| [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | 公司调查大师：入职前公司证据调查，区分已证实、线索、冲突与未知，输出核实清单与离线 HTML 档案 | 2026-11-12 |
-| [mbai](https://github.com/ouxxyy/mbai) ★1 | AI转型大师：工作任务 AI 不可替代指数，任务分析、贡献证据与替代风险自评，非裁员预测 | 2026-11-12 |
+| [job-search](https://github.com/ouxxyy/job-search) ★1 | AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单<br><sub>Job search Agent Skill with source-backed job lists</sub> | 2026-11-12 |
+| [jd-resume-match](https://github.com/ouxxyy/jd-resume-match) | AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告<br><sub>Evidence-based resume and job-description matching and review</sub> | 2026-11-12 |
+| [ai-interviewer](https://github.com/ouxxyy/ai-interviewer) ★4 | AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比<br><sub>Chinese voice AI mock interview practice</sub> | 2026-11-12 |
+| [sherlock-company](https://github.com/ouxxyy/sherlock-company) ★1 | 公司调查大师：入职前公司证据调查，区分已证实、线索、冲突与未知，输出核实清单与离线 HTML 档案<br><sub>Pre-offer employer research with evidence boundaries</sub> | 2026-11-12 |
+| [mbai](https://github.com/ouxxyy/mbai) ★1 | AI转型大师：工作任务 AI 不可替代指数，任务分析、贡献证据与替代风险自评，非裁员预测<br><sub>Task-level AI assessment for career reflection</sub> | 2026-11-12 |
 
 ### AI Skill · 装进你的 Agent
 
-| 项目 | 它做什么 | 最近更新 |
+| 项目 · Repo | 它做什么 · What it does | 最近更新 · Updated |
 | --- | --- | --- |
-| [codex-gif-video](https://github.com/ouxxyy/codex-gif-video) | 调用 GPT Image 2.6 原生 GIF 能力，按 69 种内置风格生成长 GIF 或静音 MP4（适合 X 短视频、口播动画、绘本及搭配 Hypit 等剪辑 Skill） | 2026-11-12 |
-| [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) ★2 | 旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册 | 2026-11-12 |
-| [storyboard-scavenger](https://github.com/ouxxyy/storyboard-scavenger) ★6 | AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜 | 2026-11-12 |
-| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★11 | Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习 | 2026-11-12 |
+| [codex-gif-video](https://github.com/ouxxyy/codex-gif-video) | 调用 GPT Image 2.6 原生 GIF 能力，按 69 种内置风格生成长 GIF 或静音 MP4（适合 X 短视频、口播动画、绘本及搭配 Hypit 等剪辑 Skill）<br><sub>Agent Skill for generating native animated GIFs, concatenated long GIFs and silent MP4 video via OpenAI GPT Image 2.6 API across 69 built-in styles; works with Hypit and Remotion</sub> | 2026-11-12 |
+| [travel-art-album-skill](https://github.com/ouxxyy/travel-art-album-skill) ★2 | 旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册<br><sub>Travel photo album and single-file offline HTML flipbook skill</sub> | 2026-11-12 |
+| [storyboard-scavenger](https://github.com/ouxxyy/storyboard-scavenger) ★6 | AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜<br><sub>AI video storyboard and prompt-writing skill for Kling and Seedance</sub> | 2026-11-12 |
+| [mystery-skill](https://github.com/ouxxyy/mystery-skill) ★11 | Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习<br><sub>Mystery Method cognitive framework for personal study</sub> | 2026-11-12 |
 
 ### 本地工具 · 装在自己电脑
 
-| 项目 | 它做什么 | 最近更新 |
+| 项目 · Repo | 它做什么 · What it does | 最近更新 · Updated |
 | --- | --- | --- |
-| [Attention](https://github.com/ouxxyy/Attention) | ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析 | 2026-11-06 |
-| [postapp](https://github.com/ouxxyy/postapp) | 姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件 | 2026-11-06 |
+| [Attention](https://github.com/ouxxyy/Attention) | ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析<br><sub>Local ActivityWatch dashboard for focus and context switching</sub> | 2026-11-06 |
+| [postapp](https://github.com/ouxxyy/postapp) | 姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件<br><sub>Chrome posture reminder extension with on-device pose detection</sub> | 2026-11-06 |
 <!-- projects:end -->
 
 ## 怎么选择与使用
@@ -173,3 +275,7 @@ Installable Chinese Career & Creative Agent Skills Suite by 欧八同学 (ouxxyy
 ## 许可
 
 本仓库索引与同步脚本采用 MIT 许可；`benchmark/` 横评数据集采用 CC BY 4.0 许可；各子项目的许可证见各自仓库。
+
+<p align="center">
+  <a href="https://github.com/ouxxyy"><img src="assets/footer.svg" width="100%" alt="欧八同学 · ouxxyy — Positioning × AI Leverage × Salary Growth"></a>
+</p>
