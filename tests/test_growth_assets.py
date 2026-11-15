@@ -99,7 +99,7 @@ class GrowthAssetsTests(unittest.TestCase):
             self.assertIn('class="quotable-summary"', text, f"Missing quotable-summary in {p}")
             self.assertIn("<details", text, f"Missing <details> interactive block in {p}")
             self.assertIn("application/ld+json", text, f"Missing JSON-LD in {p}")
-            self.assertIn("2026-11-14", text, f"Missing fresh build date in {p}")
+            self.assertIn(build_docs.BUILD_DATE, text, f"Missing fresh build date in {p}")
             build_docs.check_guardrails(str(p), text)
 
         # 2. robots.txt 显式放行 AI 搜索/实时阅读 Bot 与 Bingbot
