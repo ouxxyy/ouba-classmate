@@ -238,17 +238,21 @@ def main():
 
     with open(README_PATH, encoding="utf-8") as f:
         readme = f.read()
-    try:
+    new_readme = None
+    if readme.count(START_MARK) == 1 and readme.count(END_MARK) == 1:
         new_readme = replace_project_block(readme, repos)
-    except ValueError as error:
-        sys.exit(str(error))
+    else:
+        # 首屏已改为手工维护的「按需求找」表格时，跳过 README 生成区块，仅刷新 projects.json
+        print("README.md 未包含 projects 生成区块标记，跳过 README 更新，仅刷新 projects.json")
     catalog = build_catalog(repos)
-    with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(new_readme)
+    if new_readme is not None:
+        with open(README_PATH, "w", encoding="utf-8") as f:
+            f.write(new_readme)
     with open(JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(catalog, f, ensure_ascii=False, indent=2)
         f.write("\n")
-    print(f"README block + projects.json updated ({len(repos)} projects)")
+    print(f"projects.json updated ({len(repos)} projects)"
+          + (", README block refreshed" if new_readme is not None else ""))
 
 
 if __name__ == "__main__":
