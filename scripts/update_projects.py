@@ -240,7 +240,11 @@ def main():
         readme = f.read()
     new_readme = None
     if readme.count(START_MARK) == 1 and readme.count(END_MARK) == 1:
-        new_readme = replace_project_block(readme, repos)
+        try:
+            new_readme = replace_project_block(readme, repos)
+        except ValueError as error:
+            # 标记存在但错乱时拒绝改写 README，仍刷新 projects.json
+            print(f"⚠️ README projects 标记异常，跳过 README 更新，仅刷新 projects.json：{error}")
     else:
         # 首屏已改为手工维护的「按需求找」表格时，跳过 README 生成区块，仅刷新 projects.json
         print("README.md 未包含 projects 生成区块标记，跳过 README 更新，仅刷新 projects.json")

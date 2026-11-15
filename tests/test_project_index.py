@@ -56,14 +56,16 @@ class ProjectIndexTests(unittest.TestCase):
             self.assertEqual(out["description_en"],"new tool")
             self.assertEqual(out["keywords"],["new tool"])
             self.assertEqual(out["use_cases"],["new task"])
-    def test_main_does_not_write_on_invalid_readme(self):
-        with tempfile.TemporaryDirectory() as tmp:
-            readme=Path(tmp)/"README.md"; catalog=Path(tmp)/"projects.json"
-            readme.write_text("no markers");catalog.write_text("original catalog")
-            with patch.object(index,"README_PATH",str(readme)),patch.object(index,"JSON_PATH",str(catalog)),patch.object(index,"fetch_repos",return_value=self.repos()):
-                with self.assertRaises(SystemExit): index.main()
-            self.assertEqual(readme.read_text(),"no markers")
-            self.assertEqual(catalog.read_text(),"original catalog")
+    def test_main_skips_readme_and_refreshes_catalog_without_markers(self):
+        for body in ["no markers",index.END_MARK+index.START_MARK,index.START_MARK+index.START_MARK+index.END_MARK]:
+            with self.subTest(body=body),tempfile.TemporaryDirectory() as tmp:
+                readme=Path(tmp)/"README.md"; catalog=Path(tmp)/"projects.json"
+                readme.write_text(body);catalog.write_text("original catalog")
+                with patch.object(index,"README_PATH",str(readme)),patch.object(index,"JSON_PATH",str(catalog)),patch.object(index,"fetch_repos",return_value=self.repos()):
+                    index.main()
+                self.assertEqual(readme.read_text(),body)
+                data=json.loads(catalog.read_text())
+                self.assertEqual([p["name"] for p in data["projects"]],["storyboard-scavenger","new-example"])
 if __name__=="__main__":
     unittest.main()
 
