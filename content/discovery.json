@@ -1,0 +1,254 @@
+{
+  "ouba-classmate": {
+    "zh": "中文求职 Agent Skills：岗位搜索、简历优化与 AI 模拟面试",
+    "en": "Chinese career agent skills for job search, resume matching and interview prep",
+    "description": "中文求职 Agent Skills｜Job search, resume matching & interview prep for Claude Code / Codex。岗位搜索、简历优化、中文模拟面试、入职前查公司；含公开代码横评与视频创作工具。",
+    "keywords": [
+      "求职 skill",
+      "Claude 简历优化",
+      "中文 AI 模拟面试",
+      "job search skills",
+      "resume matching",
+      "interview prep"
+    ],
+    "topics": [
+      "resume",
+      "interview-prep"
+    ],
+    "question": "想用 Claude Code 或 Codex 找岗位、改简历、练中文面试，有哪些工具？",
+    "answer": "按任务选择岗位搜索、简历与 JD 证据匹配、中文经历面试和公司调查工具；合集同时提供公开视频与本地效率项目入口。",
+    "start": "[按需求找](#按需求找) · [安装 Skills](#install) · [直接练面试](https://interview.redboook.cn/) · [横评方法与数据](benchmark/README.md)",
+    "boundary": "各子项目许可证及依赖分别查看；宿主或云模型可能收费。横评是公开仓库材料审计，不能当作录用效果或完整运行质量排名。"
+  },
+  "job-search": {
+    "zh": "中文 AI 求职岗位搜索与招聘信息筛选",
+    "en": "Chinese job search agent and source-backed job hunting shortlist",
+    "description": "中文岗位搜索与求职筛选（job search agent / job hunting）：按岗位、城市、薪资与时效整理 HTML、Excel、JSON 招聘清单，保留来源与待核实项；不自动投递。",
+    "keywords": [
+      "中文求职工具",
+      "AI 找工作",
+      "招聘信息筛选",
+      "BOSS 直聘岗位筛选",
+      "job hunting",
+      "job shortlist"
+    ],
+    "topics": [
+      "job-search-tools",
+      "job-listings"
+    ],
+    "question": "怎样按城市、薪资和发布日期筛选招聘岗位？",
+    "answer": "先确认求职条件，再通过可访问的招聘来源整理 HTML、Excel、JSON 岗位清单，保留来源、日期依据和待核实项。",
+    "start": "[安装与首次搜索](#quick-start) · [查看输入输出示例](#quick-example)",
+    "boundary": "发布时间与刷新时间分开记录；登录、验证码和平台访问限制可能影响覆盖，未核实岗位不充作有效短名单，不代投或联系 HR。"
+  },
+  "jd-resume-match": {
+    "zh": "Claude 简历优化与中文 JD 匹配",
+    "en": "Evidence-based resume optimization and job-description matching",
+    "description": "中文简历优化与 JD 匹配（resume optimization / resume matching）：原文证据引用、可复算评分、经历结构建议、岗位打招呼语与离线 HTML 报告；含本地 MCP。非 ATS 官方评分，不做 PDF 排版。",
+    "keywords": [
+      "Claude 简历优化",
+      "简历优化 skill",
+      "中文 JD 匹配",
+      "简历证据审查",
+      "resume optimization",
+      "resume review"
+    ],
+    "topics": [
+      "career-tools",
+      "job-application-prep"
+    ],
+    "question": "怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？",
+    "answer": "输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。",
+    "start": "[安装 Skill / MCP](#quick-start) · [看合成案例](examples/README.md)",
+    "boundary": "分数衡量规则下的证据覆盖，不是 ATS 官方评分或录用概率；不做视觉 PDF 排版，不凭空补数字。"
+  },
+  "ai-interviewer": {
+    "zh": "中文语音 AI 面试陪练与模拟面试",
+    "en": "Chinese voice mock interview and interview preparation",
+    "description": "中文语音 AI 面试陪练（Chinese voice mock interview / interview prep）：自我介绍与经历追问、原话引用点评、初答重答对比。可在线使用或自托管，需自带百炼 API Key。",
+    "keywords": [
+      "AI 面试陪练",
+      "AI 模拟面试中文",
+      "中文语音面试",
+      "产品经理模拟面试",
+      "interview prep",
+      "Chinese mock interview"
+    ],
+    "topics": [
+      "interview-prep",
+      "voice-interview"
+    ],
+    "question": "有能用中文语音练自我介绍和项目经历的 AI 模拟面试工具吗？",
+    "answer": "欧八面试陪练结合岗位 JD 与真实经历，训练自我介绍和三道经历题，提供引用回答原话的五维点评及重答对比。",
+    "start": "[在线 AI 面试陪练](https://interview.redboook.cn/) · [岗位练习](https://interview.redboook.cn/roles/) · [本地运行 / Skill](#quick-start)",
+    "boundary": "平台工具不收取使用费；百炼模型调用费用由用户承担。材料与音频会发送至配置的模型，不预测录用结果。"
+  },
+  "sherlock-company": {
+    "zh": "入职前查公司与 Offer 公司背景调查",
+    "en": "Pre-offer employer research and company due diligence",
+    "description": "入职前查公司与 Offer 核验（employer research / company due diligence）：按公开来源区分已证实、线索、冲突与未知，输出核实清单和离线 HTML 档案。",
+    "keywords": [
+      "入职前查公司",
+      "Offer 背景调查",
+      "公司员工评价核实",
+      "求职公司调查",
+      "employer research",
+      "pre-offer due diligence"
+    ],
+    "topics": [
+      "company-due-diligence",
+      "career"
+    ],
+    "question": "接 Offer 前，怎么查公司并分清事实和员工评价？",
+    "answer": "输入目标公司和岗位信息，汇总公开来源，分开记录已证实、线索、冲突和未知，生成下一步核实清单。",
+    "start": "[安装与公司调查示例](#quick-start) · [查看输入输出](#quick-example)",
+    "boundary": "证据不足保留未知；公开线索不是违法认定，也不能替代劳动合同核实和当面沟通。"
+  },
+  "mbai": {
+    "zh": "工作任务 AI 替代风险自评与职业转型",
+    "en": "Task-level AI automation risk self-assessment for career planning",
+    "description": "MBAI 工作任务 AI 不可替代指数：AI 替代风险自评与职业转型（AI task assessment / career planning），拆解自动化空间、个人贡献和证据缺口；非裁员预测，CC BY-NC 4.0。",
+    "keywords": [
+      "工作任务 AI 不可替代指数",
+      "AI 替代风险自评",
+      "AI 职业转型",
+      "个人贡献证据",
+      "AI automation risk",
+      "career planning"
+    ],
+    "topics": [
+      "ai-literacy",
+      "task-analysis"
+    ],
+    "question": "怎么判断自己的哪些工作适合用 AI，哪些贡献仍要自己负责？",
+    "answer": "输入工作任务、简历或工作总结，拆解自动化空间、个人贡献与证据缺口，形成解释性自评和行动建议。",
+    "start": "[两种使用方式](#quick-start) · [工作任务示例](#quick-example)",
+    "boundary": "正式指标为“工作任务 AI 不可替代指数”，用于职业反思；不是裁员预测或就业概率。采用 CC BY-NC 4.0，限非商业使用。"
+  },
+  "storyboard-scavenger": {
+    "zh": "AI 视频分镜与可灵、即梦提示词生成",
+    "en": "AI video storyboard and prompts for Kling, Seedance, Veo and Sora",
+    "description": "AI 视频分镜与提示词 Skill（AI video storyboard / video prompts）：把创意、参考图或音乐想法拆为七要素分镜，提供可灵 Kling、即梦 Seedance、Veo、Sora 工作流。",
+    "keywords": [
+      "AI 视频分镜",
+      "可灵 Kling 提示词",
+      "即梦 Seedance 分镜",
+      "Veo 视频提示词",
+      "Sora 分镜",
+      "AI storyboard prompts"
+    ],
+    "topics": [
+      "veo",
+      "sora"
+    ],
+    "question": "怎样把一个视频创意拆成可灵、即梦或 Veo 可用的分镜提示词？",
+    "answer": "先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。",
+    "start": "[安装 Skill](#quick-start) · [平台工作流](models/) · [分镜案例](examples/example-prompts.md)",
+    "boundary": "主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。"
+  },
+  "codex-gif-video": {
+    "zh": "AI 动图生成与静音 MP4 视频素材",
+    "en": "Animated GIF generator and silent MP4 video assets for agents",
+    "description": "AI 动图与静音视频素材 Skill（animated GIF generator / silent MP4）：通过 OpenAI GPT Image 2.6 生成短 GIF、长 GIF 和动画素材，69 种风格，可配合 Hypit / Remotion；需可用模型权限。",
+    "keywords": [
+      "AI 动图生成",
+      "长 GIF 生成",
+      "静音 MP4 素材",
+      "口播 B-roll 动画",
+      "animated GIF generator",
+      "silent video assets"
+    ],
+    "topics": [
+      "gif-generator",
+      "animation"
+    ],
+    "question": "如何为口播、绘本或 X 内容生成长 GIF 和无声动画素材？",
+    "answer": "从分镜或动作描述生成原生 GIF，再按需要拼接长 GIF 或导出静音 MP4；仓库提供 69 种风格和示例画廊。",
+    "start": "[安装与 API 要求](#install) · [风格与动图示例](#demo) · [剪辑工具衔接](#ecosystem)",
+    "boundary": "需具备对应模型权限，API 可能收费；MP4 是静音素材，人物一致性和全部风格的效果不作保证。"
+  },
+  "travel-art-album-skill": {
+    "zh": "旅行照片艺术画册与离线 HTML 翻页相册",
+    "en": "Travel photo art album and offline HTML flipbook",
+    "description": "旅行照片艺术画册（travel photo album / offline HTML flipbook）：10–30 张照片先确认风格小样，再生成单文件离线翻页相册，可浏览器打印 PDF；艺术化阶段依赖图像模型。",
+    "keywords": [
+      "旅行照片艺术画册",
+      "离线 HTML 翻页相册",
+      "照片转水彩画册",
+      "旅行画册 PDF",
+      "travel photo album",
+      "offline HTML flipbook"
+    ],
+    "topics": [
+      "digital-scrapbook",
+      "photo-book"
+    ],
+    "question": "怎样把旅行照片做成能离线翻页、打印 PDF 的艺术画册？",
+    "answer": "先清点 10–30 张照片、确认艺术风格小样，再制作单文件 HTML 翻页相册；成品支持离线阅读和浏览器打印。",
+    "start": "[安装与制作流程](#quick-start) · [输入与小样示例](#quick-example)",
+    "boundary": "原图只读，确认小样后才批量处理；成品离线不代表艺术化生成离线，图像模型可能产生费用。"
+  },
+  "Attention": {
+    "zh": "ActivityWatch 本地专注力分析与任务切换仪表盘",
+    "en": "Local ActivityWatch focus analytics and context-switching dashboard",
+    "description": "ActivityWatch 本地专注力分析（focus analytics / context switching dashboard）：查看任务切换、分心来源、持续专注时段与近 7 天趋势，数据留在本机。",
+    "keywords": [
+      "ActivityWatch 中文仪表盘",
+      "本地专注力分析",
+      "任务切换统计",
+      "电脑时间管理",
+      "focus analytics",
+      "context switching dashboard"
+    ],
+    "topics": [
+      "focus-analytics",
+      "personal-analytics"
+    ],
+    "question": "ActivityWatch 记录了电脑活动，怎么看一天的任务切换与专注时间？",
+    "answer": "读取本机活动记录，按你定义的主要任务分类，展示切换计数、分心来源、持续专注时段与近 7 天趋势。",
+    "start": "[运行 ActivityWatch 与仪表盘](#quick-start) · [分类设置示例](#quick-example)",
+    "boundary": "需先运行 ActivityWatch 并配置分类规则；行为分数不是心理或医学诊断。"
+  },
+  "postapp": {
+    "zh": "Chrome 坐姿提醒与本地姿态检测插件",
+    "en": "Chrome posture reminder with on-device pose detection",
+    "description": "姿势企鹅 Posture Penguin：Chrome 坐姿提醒（posture reminder / on-device pose detection），摄像头画面在浏览器本地处理，提醒调整坐姿；需从源码构建安装。",
+    "keywords": [
+      "Chrome 坐姿提醒插件",
+      "本地姿态检测",
+      "摄像头坐姿提醒",
+      "姿势企鹅",
+      "posture reminder extension",
+      "on-device pose detection"
+    ],
+    "topics": [
+      "movenet",
+      "browser-extension"
+    ],
+    "question": "有没有摄像头画面不上传的 Chrome 坐姿提醒插件？",
+    "answer": "姿势企鹅在浏览器本地用姿态检测处理摄像头画面，以企鹅动画和音效提醒调整坐姿，记录保存在浏览器中。",
+    "start": "[从源码构建并安装扩展](#quick-start) · [使用示例](#quick-example)",
+    "boundary": "当前需自行构建加载，未上架 Chrome Web Store；提醒不等于医学诊断、治疗或健康效果证明。"
+  },
+  "mystery-skill": {
+    "zh": "Mystery 思维模型与职场沟通框架学习",
+    "en": "Mystery Method mental models and workplace communication study",
+    "description": "Mystery Method 思维模型 Skill：基于公开资料学习认知框架、面试沟通与谈薪边界（mental models / workplace communication）。个人非商业研究，保留伦理限制，不保证社交或求职效果。",
+    "keywords": [
+      "Mystery 思维模型",
+      "职场沟通框架",
+      "面试压力应对",
+      "谈薪沟通边界",
+      "mental models",
+      "workplace communication"
+    ],
+    "topics": [
+      "workplace-communication",
+      "negotiation"
+    ],
+    "question": "怎样用思维模型分析面试压力、谈薪和向上沟通？",
+    "answer": "从公开文献整理认知模型与决策启发式，并提供面试框架、谈薪和向上管理的学习材料。",
+    "start": "[加载 Skill](#quick-start) · [职场场景材料](workplace/)",
+    "boundary": "仅供个人非商业学习，不代表官方认证；保留伦理限制，尊重自主选择，不将影响技巧当作操控他人的工具。"
+  }
+}

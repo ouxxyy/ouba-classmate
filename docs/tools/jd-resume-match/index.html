@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server｜ouba-classmate 套件</title>
-  <meta name="description" content="对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。">
-  <link rel="canonical" href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match">
-  <meta property="og:title" content="AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server｜ouba-classmate 套件">
-  <meta property="og:description" content="对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。">
-  <meta property="og:url" content="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match">
+  <title>Claude 简历优化与中文 JD 匹配｜jd-resume-match｜ouba-classmate 套件</title>
+  <meta name="description" content="输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。">
+  <link rel="canonical" href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">
+  <meta property="og:title" content="Claude 简历优化与中文 JD 匹配｜jd-resume-match｜ouba-classmate 套件">
+  <meta property="og:description" content="输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。">
+  <meta property="og:url" content="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">
   <meta property="og:type" content="website">
   <style>
 :root {
@@ -231,14 +231,14 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server",
+      "name": "Claude 简历优化与中文 JD 匹配｜jd-resume-match",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "macOS, Linux, Windows",
       "url": "https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/",
       "codeRepository": "https://github.com/ouxxyy/jd-resume-match",
       "license": "https://opensource.org/license/mit",
-      "dateModified": "2026-11-15",
-      "description": "对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。",
+      "dateModified": "2026-11-16",
+      "description": "输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。",
       "author": {
         "@type": "Person",
         "name": "欧八同学 (ouxxyy)",
@@ -250,26 +250,18 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "为什么 jd-resume-match 在横评的 PDF 排版（D3）维度只有 0 分？",
+          "name": "怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "因为本工具专注投前原文证据核对（D1=2）与确定性公式算分（D2=2），故意不做视觉 PDF 模板渲染。推荐先挤掉水分并补齐证据，再交给 ASu-resume-skills 或 StoneLL1/resume-builder 生成最终 PDF。"
+            "text": "输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。"
           }
         },
         {
           "@type": "Question",
-          "name": "直接把简历和 JD 发给 ChatGPT/Claude 改写，和用 jd-resume-match 有什么本质区别？",
+          "name": "开始使用前需要了解哪些限制？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "通用聊天大模型每次打分随机波动且容易脑补虚构数据；jd-resume-match 强制绑定原文行号 L1..Ln，由确定性 Python 脚本按 jd-match-rubric/0.1.0 公式复算得分，同输入结果 100% 一致。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "本地 MCP Server 运行会把我的 PDF/DOCX 简历传到外部服务器吗？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "MCP Server（io.github.ouxxyy/jd-resume-match）以纯标准库在本地 stdio 运行，评分计算零网络请求；注意中文 CID 字体 PDF 建议先转为纯文本或 DOCX 以确保行号定位准确。"
+            "text": "分数衡量规则下的证据覆盖，不是 ATS 官方评分或录用概率；不做视觉 PDF 排版，不凭空补数字。"
           }
         }
       ]
@@ -303,6 +295,7 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
         <a href="https://ouxxyy.github.io/ouba-classmate/">首页：中文求职 AI 工具怎么选</a>
         <a href="https://ouxxyy.github.io/ouba-classmate/#career-radar">⚡ 30秒职业战力诊断</a>
         <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">公开横评数据 (v0.1)</a>
+        <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/#english">English comparison</a>
         <a href="https://github.com/ouxxyy/ouba-classmate/blob/main/radar/README.md">🛡️ 求职防身情报库</a>
         <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ Star ouba-classmate 合集</a>
       </nav>
@@ -311,10 +304,10 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-15</span>
-          <h1>AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server</h1>
-          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 270 项单测 · 横评 10/12 分（D1=2 证据引用, D2=2 可复算, D3=0 不排版） · 商业改简历 ¥800–¥3,000 vs MIT 开源 ¥0 · 更新于 2026-11-15</div><ul><li>可复算数学公式：用 jd-match-rubric/0.1.0 脚本算分（floor(100 * Σ(w*c)/Σw + 0.5)），同一份简历与 JD 多次运行必得同一分数。</li><li>原文行号防幻觉：每条匹配/缺口结论强制绑定简历原文行号（L1..Ln），禁止把“参与”改写成“独立负责”。</li><li>诚实短板披露：只出体检单与改写方案，不做视觉 PDF 排版（D3 得 0 分）；需排版导出请搭配 ASu-resume-skills 或 resume-builder。</li></ul></div>
-          <p>对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。</p>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-16</span>
+          <h1>Claude 简历优化与中文 JD 匹配｜jd-resume-match</h1>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 用途与边界核对：2026-11-16</div><ul><li>输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。</li><li>Evidence-based resume optimization and job-description matching</li><li>分数衡量规则下的证据覆盖，不是 ATS 官方评分或录用概率；不做视觉 PDF 排版，不凭空补数字。</li></ul></div>
+          <p>输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。</p>
           <p>
             <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
             &nbsp;·&nbsp;
@@ -325,7 +318,7 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
         </div>
 
         <h2>适用场景</h2>
-        <div class="card"><p>投递前体检：想知道自己的简历在目标 JD 下面到底差哪几条证据，拒绝大模型凭空捏造项目数据。</p></div>
+        <div class="card"><p>怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？</p></div>
 
         <h2>细分岗位与长尾痛点速配矩阵</h2>
         <div class="card">
@@ -347,16 +340,15 @@ uvx --from &quot;git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp&
 # 觉得有用？在终端 1 秒为开源主仓点亮一颗 Star
 gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
-        <h2>核心特性与实测表现</h2>
-        <div class="card"><ul><li>唯一提供确定性数学公式复算（floor(100 * Σ(w*c)/Σw + 0.5)）的中文简历匹配工具，270 项单测</li><li>每条判定强制绑定简历原文行号（L1..Ln），杜绝把“参与”改成“独立负责”的权限幻觉</li><li>内置零依赖 stdio MCP Server（io.github.ouxxyy/jd-resume-match），支持 Claude Desktop / Cursor / Claude Code 一键调用</li></ul></div>
+        <h2>核心用途与使用条件</h2>
+        <div class="card"><ul><li>输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。</li><li>Evidence-based resume optimization and job-description matching</li><li>分数衡量规则下的证据覆盖，不是 ATS 官方评分或录用概率；不做视觉 PDF 排版，不凭空补数字。</li></ul></div>
 
         <h2>能力边界与诚实说明</h2>
-        <div class="card"><p>【诚实边界】只输出诊断体检单与改写方案，不直接导出可投递的视觉排版 PDF 简历；中文 CID 字体 PDF 需转文本或 DOCX。</p></div>
+        <div class="card"><p>分数衡量规则下的证据覆盖，不是 ATS 官方评分或录用概率；不做视觉 PDF 排版，不凭空补数字。</p></div>
 
         <h2>高频常见问题（FAQ）</h2>
-        <details class="faq-item"><summary>为什么 jd-resume-match 在横评的 PDF 排版（D3）维度只有 0 分？</summary><p>因为本工具专注投前原文证据核对（D1=2）与确定性公式算分（D2=2），故意不做视觉 PDF 模板渲染。推荐先挤掉水分并补齐证据，再交给 ASu-resume-skills 或 StoneLL1/resume-builder 生成最终 PDF。</p></details>
-<details class="faq-item"><summary>直接把简历和 JD 发给 ChatGPT/Claude 改写，和用 jd-resume-match 有什么本质区别？</summary><p>通用聊天大模型每次打分随机波动且容易脑补虚构数据；jd-resume-match 强制绑定原文行号 L1..Ln，由确定性 Python 脚本按 jd-match-rubric/0.1.0 公式复算得分，同输入结果 100% 一致。</p></details>
-<details class="faq-item"><summary>本地 MCP Server 运行会把我的 PDF/DOCX 简历传到外部服务器吗？</summary><p>MCP Server（io.github.ouxxyy/jd-resume-match）以纯标准库在本地 stdio 运行，评分计算零网络请求；注意中文 CID 字体 PDF 建议先转为纯文本或 DOCX 以确保行号定位准确。</p></details>
+        <details class="faq-item"><summary>怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？</summary><p>输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。</p></details>
+<details class="faq-item"><summary>开始使用前需要了解哪些限制？</summary><p>分数衡量规则下的证据覆盖，不是 ATS 官方评分或录用概率；不做视觉 PDF 排版，不凭空补数字。</p></details>
 
         <h2>套件兄弟组件与公开横评导航</h2>
         <div class="card">

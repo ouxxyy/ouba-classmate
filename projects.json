@@ -1,75 +1,115 @@
 {
-  "generated_at": "2026-11-16T02:20:10+00:00",
+  "generated_at": "2026-11-16T16:10:01+00:00",
   "owner": "ouxxyy",
   "projects": [
     {
-      "name": "ai-interviewer",
-      "url": "https://github.com/ouxxyy/ai-interviewer",
-      "description": "AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比",
-      "category": "career",
+      "name": "mystery-skill",
+      "url": "https://github.com/ouxxyy/mystery-skill",
+      "description": "Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习",
+      "category": "skill",
+      "language": "",
+      "stars": 11,
+      "updated_at": "2026-11-16T16:07:13Z",
+      "description_en": "Mystery Method mental models and workplace communication study",
+      "keywords": [
+        "Mystery 思维模型",
+        "迷男方法分析",
+        "Mystery Method",
+        "Erik von Markovik",
+        "cognitive framework",
+        "职场沟通框架",
+        "面试压力应对",
+        "谈薪沟通边界",
+        "mental models",
+        "workplace communication"
+      ],
+      "use_cases": [
+        "研究 Mystery 的认知框架",
+        "分析社交情境与决策边界",
+        "怎样用思维模型分析面试压力、谈薪和向上沟通？"
+      ]
+    },
+    {
+      "name": "postapp",
+      "url": "https://github.com/ouxxyy/postapp",
+      "description": "姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件",
+      "category": "local",
       "language": "TypeScript",
-      "stars": 4,
-      "updated_at": "2026-11-15T14:52:53Z",
-      "description_en": "Chinese voice AI mock interview practice",
-      "keywords": [
-        "AI面试大师",
-        "AI 面试官",
-        "中文语音模拟面试",
-        "面试陪练",
-        "AI mock interview",
-        "voice interview practice"
-      ],
-      "use_cases": [
-        "练习自我介绍与经历面试",
-        "通过原话点评和重答改进回答"
-      ],
-      "order": 2
-    },
-    {
-      "name": "mbai",
-      "url": "https://github.com/ouxxyy/mbai",
-      "description": "AI转型大师：工作任务 AI 不可替代指数，任务分析、贡献证据与替代风险自评，非裁员预测",
-      "category": "career",
-      "language": "Python",
-      "stars": 1,
-      "updated_at": "2026-11-15T14:52:52Z",
-      "description_en": "Task-level AI assessment for career reflection",
-      "keywords": [
-        "AI转型大师",
-        "AI 替代风险自评",
-        "工作任务分析",
-        "职业规划",
-        "AI task assessment",
-        "career planning"
-      ],
-      "use_cases": [
-        "拆解工作任务中的自动化空间",
-        "梳理个人贡献和职业证据缺口"
-      ],
-      "order": 4
-    },
-    {
-      "name": "jd-resume-match",
-      "url": "https://github.com/ouxxyy/jd-resume-match",
-      "description": "AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告",
-      "category": "career",
-      "language": "Python",
       "stars": 0,
-      "updated_at": "2026-11-15T14:52:51Z",
-      "description_en": "Evidence-based resume and job-description matching and review",
+      "updated_at": "2026-11-16T16:07:09Z",
+      "description_en": "Chrome posture reminder with on-device pose detection",
       "keywords": [
-        "AI简历优化大师",
-        "简历 JD 匹配",
-        "简历优化",
-        "证据匹配",
-        "resume matching",
-        "resume review"
+        "Chrome 坐姿提醒",
+        "姿势企鹅",
+        "Posture Penguin",
+        "posture reminder",
+        "Chrome extension",
+        "Chrome 坐姿提醒插件",
+        "本地姿态检测",
+        "摄像头坐姿提醒",
+        "posture reminder extension",
+        "on-device pose detection"
       ],
       "use_cases": [
-        "对照岗位要求查简历证据缺口",
-        "调整简历结构与经历表达"
+        "在电脑前设置坐姿提醒",
+        "查看本地坐姿记录",
+        "有没有摄像头画面不上传的 Chrome 坐姿提醒插件？"
+      ]
+    },
+    {
+      "name": "Attention",
+      "url": "https://github.com/ouxxyy/Attention",
+      "description": "ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析",
+      "category": "local",
+      "language": "TypeScript",
+      "stars": 0,
+      "updated_at": "2026-11-16T16:07:05Z",
+      "description_en": "Local ActivityWatch focus analytics and context-switching dashboard",
+      "keywords": [
+        "ActivityWatch 仪表盘",
+        "专注力分析",
+        "任务切换",
+        "ActivityWatch dashboard",
+        "context switching",
+        "ActivityWatch 中文仪表盘",
+        "本地专注力分析",
+        "任务切换统计",
+        "电脑时间管理",
+        "focus analytics",
+        "context switching dashboard"
       ],
-      "order": 1
+      "use_cases": [
+        "查看一天的专注与分心模式",
+        "分析任务切换和持续专注时段",
+        "ActivityWatch 记录了电脑活动，怎么看一天的任务切换与专注时间？"
+      ]
+    },
+    {
+      "name": "travel-art-album-skill",
+      "url": "https://github.com/ouxxyy/travel-art-album-skill",
+      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
+      "category": "skill",
+      "language": "JavaScript",
+      "stars": 2,
+      "updated_at": "2026-11-16T16:07:01Z",
+      "description_en": "Travel photo art album and offline HTML flipbook",
+      "keywords": [
+        "旅行照片画册",
+        "离线翻页相册",
+        "照片艺术化",
+        "travel photo album",
+        "offline flipbook",
+        "旅行照片艺术画册",
+        "离线 HTML 翻页相册",
+        "照片转水彩画册",
+        "旅行画册 PDF",
+        "offline HTML flipbook"
+      ],
+      "use_cases": [
+        "把旅行照片制作成艺术画册",
+        "离线翻阅相册并用浏览器打印 PDF",
+        "怎样把旅行照片做成能离线翻页、打印 PDF 的艺术画册？"
+      ]
     },
     {
       "name": "codex-gif-video",
@@ -78,8 +118,8 @@
       "category": "skill",
       "language": "Python",
       "stars": 0,
-      "updated_at": "2026-11-12T04:16:39Z",
-      "description_en": "Agent Skill for generating native animated GIFs, concatenated long GIFs and silent MP4 video via OpenAI GPT Image 2.6 API across 69 built-in styles; works with Hypit and Remotion",
+      "updated_at": "2026-11-16T16:06:57Z",
+      "description_en": "Animated GIF generator and silent MP4 video assets for agents",
       "keywords": [
         "GPT Image 2.6",
         "原生 GIF",
@@ -93,32 +133,18 @@
         "Hypit 素材",
         "人物一致性",
         "animated GIF",
-        "Codex Skill"
+        "Codex Skill",
+        "AI 动图生成",
+        "长 GIF 生成",
+        "静音 MP4 素材",
+        "口播 B-roll 动画",
+        "animated GIF generator",
+        "silent video assets"
       ],
       "use_cases": [
         "调用 GPT Image 2.6 生成 X 爆款长 GIF 短视频、口播 B-roll 与儿童绘本动图",
-        "为 Hypit、Remotion、Lemo-Opuscar 等热门 AI 剪辑 Skill 提供无字幕原生动画素材"
-      ]
-    },
-    {
-      "name": "travel-art-album-skill",
-      "url": "https://github.com/ouxxyy/travel-art-album-skill",
-      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
-      "category": "skill",
-      "language": "JavaScript",
-      "stars": 2,
-      "updated_at": "2026-11-12T03:42:22Z",
-      "description_en": "Travel photo album and single-file offline HTML flipbook skill",
-      "keywords": [
-        "旅行照片画册",
-        "离线翻页相册",
-        "照片艺术化",
-        "travel photo album",
-        "offline flipbook"
-      ],
-      "use_cases": [
-        "把旅行照片制作成艺术画册",
-        "离线翻阅相册并用浏览器打印 PDF"
+        "为 Hypit、Remotion、Lemo-Opuscar 等热门 AI 剪辑 Skill 提供无字幕原生动画素材",
+        "如何为口播、绘本或 X 内容生成长 GIF 和无声动画素材？"
       ]
     },
     {
@@ -128,20 +154,54 @@
       "category": "skill",
       "language": "HTML",
       "stars": 6,
-      "updated_at": "2026-11-12T03:42:21Z",
-      "description_en": "AI video storyboard and prompt-writing skill for Kling and Seedance",
+      "updated_at": "2026-11-16T16:06:53Z",
+      "description_en": "AI video storyboard and prompts for Kling, Seedance, Veo and Sora",
       "keywords": [
         "AI 视频分镜",
         "可灵提示词",
         "即梦分镜",
         "AI video storyboard",
         "Kling",
-        "Seedance"
+        "Seedance",
+        "可灵 Kling 提示词",
+        "即梦 Seedance 分镜",
+        "Veo 视频提示词",
+        "Sora 分镜",
+        "AI storyboard prompts"
       ],
       "use_cases": [
         "把创意拆成逐镜头提示词",
-        "规划多个镜头的环境与运镜"
+        "规划多个镜头的环境与运镜",
+        "怎样把一个视频创意拆成可灵、即梦或 Veo 可用的分镜提示词？"
       ]
+    },
+    {
+      "name": "mbai",
+      "url": "https://github.com/ouxxyy/mbai",
+      "description": "AI转型大师：工作任务 AI 不可替代指数，任务分析、贡献证据与替代风险自评，非裁员预测",
+      "category": "career",
+      "language": "Python",
+      "stars": 1,
+      "updated_at": "2026-11-16T16:06:49Z",
+      "description_en": "Task-level AI automation risk self-assessment for career planning",
+      "keywords": [
+        "AI转型大师",
+        "AI 替代风险自评",
+        "工作任务分析",
+        "职业规划",
+        "AI task assessment",
+        "career planning",
+        "工作任务 AI 不可替代指数",
+        "AI 职业转型",
+        "个人贡献证据",
+        "AI automation risk"
+      ],
+      "use_cases": [
+        "拆解工作任务中的自动化空间",
+        "梳理个人贡献和职业证据缺口",
+        "怎么判断自己的哪些工作适合用 AI，哪些贡献仍要自己负责？"
+      ],
+      "order": 4
     },
     {
       "name": "sherlock-company",
@@ -150,21 +210,85 @@
       "category": "career",
       "language": "HTML",
       "stars": 1,
-      "updated_at": "2026-11-12T03:42:09Z",
-      "description_en": "Pre-offer employer research with evidence boundaries",
+      "updated_at": "2026-11-16T16:06:45Z",
+      "description_en": "Pre-offer employer research and company due diligence",
       "keywords": [
         "公司调查大师",
         "入职前查公司",
         "Offer 公司调查",
         "公司证据调查",
         "employer research",
-        "company research"
+        "company research",
+        "Offer 背景调查",
+        "公司员工评价核实",
+        "求职公司调查",
+        "pre-offer due diligence"
       ],
       "use_cases": [
         "接受 Offer 前核查公司信息",
-        "整理冲突证据与待核验问题"
+        "整理冲突证据与待核验问题",
+        "接 Offer 前，怎么查公司并分清事实和员工评价？"
       ],
       "order": 3
+    },
+    {
+      "name": "ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "description": "AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比",
+      "category": "career",
+      "language": "TypeScript",
+      "stars": 4,
+      "updated_at": "2026-11-16T16:06:40Z",
+      "description_en": "Chinese voice mock interview and interview preparation",
+      "keywords": [
+        "AI面试大师",
+        "AI 面试官",
+        "中文语音模拟面试",
+        "面试陪练",
+        "AI mock interview",
+        "voice interview practice",
+        "AI 面试陪练",
+        "AI 模拟面试中文",
+        "中文语音面试",
+        "产品经理模拟面试",
+        "interview prep",
+        "Chinese mock interview"
+      ],
+      "use_cases": [
+        "练习自我介绍与经历面试",
+        "通过原话点评和重答改进回答",
+        "有能用中文语音练自我介绍和项目经历的 AI 模拟面试工具吗？"
+      ],
+      "order": 2
+    },
+    {
+      "name": "jd-resume-match",
+      "url": "https://github.com/ouxxyy/jd-resume-match",
+      "description": "AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告",
+      "category": "career",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-11-16T16:06:36Z",
+      "description_en": "Evidence-based resume optimization and job-description matching",
+      "keywords": [
+        "AI简历优化大师",
+        "简历 JD 匹配",
+        "简历优化",
+        "证据匹配",
+        "resume matching",
+        "resume review",
+        "Claude 简历优化",
+        "简历优化 skill",
+        "中文 JD 匹配",
+        "简历证据审查",
+        "resume optimization"
+      ],
+      "use_cases": [
+        "对照岗位要求查简历证据缺口",
+        "调整简历结构与经历表达",
+        "怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？"
+      ],
+      "order": 1
     },
     {
       "name": "job-search",
@@ -173,84 +297,27 @@
       "category": "career",
       "language": "Python",
       "stars": 1,
-      "updated_at": "2026-11-12T03:42:08Z",
-      "description_en": "Job search Agent Skill with source-backed job lists",
+      "updated_at": "2026-11-16T16:06:32Z",
+      "description_en": "Chinese job search agent and source-backed job hunting shortlist",
       "keywords": [
         "AI岗位搜索大师",
         "求职岗位筛选",
         "招聘信息整理",
         "岗位清单",
         "job search agent",
-        "job shortlist"
+        "job shortlist",
+        "中文求职工具",
+        "AI 找工作",
+        "招聘信息筛选",
+        "BOSS 直聘岗位筛选",
+        "job hunting"
       ],
       "use_cases": [
         "按岗位城市薪资筛选招聘信息",
-        "保存带来源证据的岗位清单"
+        "保存带来源证据的岗位清单",
+        "怎样按城市、薪资和发布日期筛选招聘岗位？"
       ],
       "order": 0
-    },
-    {
-      "name": "mystery-skill",
-      "url": "https://github.com/ouxxyy/mystery-skill",
-      "description": "Mystery Method 认知框架 Skill：基于公开资料的思维模型与决策启发式，供个人学习",
-      "category": "skill",
-      "language": "",
-      "stars": 11,
-      "updated_at": "2026-11-12T02:42:18Z",
-      "description_en": "Mystery Method cognitive framework for personal study",
-      "keywords": [
-        "Mystery 思维模型",
-        "迷男方法分析",
-        "Mystery Method",
-        "Erik von Markovik",
-        "cognitive framework"
-      ],
-      "use_cases": [
-        "研究 Mystery 的认知框架",
-        "分析社交情境与决策边界"
-      ]
-    },
-    {
-      "name": "Attention",
-      "url": "https://github.com/ouxxyy/Attention",
-      "description": "ActivityWatch 本地专注力仪表盘：任务切换、分心与持续专注时段分析",
-      "category": "local",
-      "language": "TypeScript",
-      "stars": 0,
-      "updated_at": "2026-11-06T04:49:38Z",
-      "description_en": "Local ActivityWatch dashboard for focus and context switching",
-      "keywords": [
-        "ActivityWatch 仪表盘",
-        "专注力分析",
-        "任务切换",
-        "ActivityWatch dashboard",
-        "context switching"
-      ],
-      "use_cases": [
-        "查看一天的专注与分心模式",
-        "分析任务切换和持续专注时段"
-      ]
-    },
-    {
-      "name": "postapp",
-      "url": "https://github.com/ouxxyy/postapp",
-      "description": "姿势企鹅 Posture Penguin：本地姿态检测的 Chrome 坐姿提醒插件",
-      "category": "local",
-      "language": "TypeScript",
-      "stars": 0,
-      "updated_at": "2026-11-06T04:49:35Z",
-      "description_en": "Chrome posture reminder extension with on-device pose detection",
-      "keywords": [
-        "Chrome 坐姿提醒",
-        "姿势企鹅",
-        "Posture Penguin",
-        "posture reminder",
-        "Chrome extension"
-      ],
-      "use_cases": [
-        "在电脑前设置坐姿提醒",
-        "查看本地坐姿记录"
-      ]
     }
   ]
 }

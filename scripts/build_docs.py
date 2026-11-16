@@ -19,7 +19,7 @@ BENCH_JSON = ROOT / "benchmark" / "repos.json"
 SITE_BASE = "https://ouxxyy.github.io/ouba-classmate"
 SUITE_URL = "https://github.com/ouxxyy/ouba-classmate"
 INDEXNOW_KEY = "ouba20261106indexnowkey8f9a2b4c"
-BUILD_DATE = "2026-11-15"
+BUILD_DATE = "2026-11-16"
 BENCH_SAMPLE_DATE = "2026-11-06"
 FORBIDDEN_OVERCLAIMS = (
     "100%包过",
@@ -255,7 +255,7 @@ def check_guardrails(page_slug: str, html_text: str) -> None:
     if 'class="quotable-summary"' not in html_text:
         raise ValueError(f"[{page_slug}] 缺少首屏 30 秒可引用块 (.quotable-summary)")
     if "<details" not in html_text:
-        raise ValueError(f"[{page_slug}] 缺少 <details> 折叠问答块（用于承接 AI 访客高展开偏好）")
+        raise ValueError(f"[{page_slug}] 缺少 <details> 折叠问答块")
     if not re.search(r"(边界|局限|不做|不提供|不构成|短板|D3)", html_text):
         raise ValueError(f"[{page_slug}] 缺少诚实能力边界/短板披露")
     if not re.search(r"\d+", html_text):
@@ -310,14 +310,14 @@ TOOLS_DETAIL = [
         "repo_url": "https://github.com/ouxxyy/jd-resume-match",
         "scenario": "投递前体检：想知道自己的简历在目标 JD 下面到底差哪几条证据，拒绝大模型凭空捏造项目数据。",
         "install_cmd": 'uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp',
-        "quotable_stats": f"270 项单测 · 横评 10/12 分（D1=2 证据引用, D2=2 可复算, D3=0 不排版） · 商业改简历 ¥800–¥3,000 vs MIT 开源 ¥0 · 更新于 {BUILD_DATE}",
+        "quotable_stats": f"自动化测试 · 横评 10/12 分（D1=2 证据引用, D2=2 可复算, D3=0 不排版） · 商业改简历 ¥800–¥3,000 vs MIT 开源 ¥0 · 更新于 {BUILD_DATE}",
         "essentials_30s": [
             "可复算数学公式：用 jd-match-rubric/0.1.0 脚本算分（floor(100 * Σ(w*c)/Σw + 0.5)），同一份简历与 JD 多次运行必得同一分数。",
             "原文行号防幻觉：每条匹配/缺口结论强制绑定简历原文行号（L1..Ln），禁止把“参与”改写成“独立负责”。",
             "诚实短板披露：只出体检单与改写方案，不做视觉 PDF 排版（D3 得 0 分）；需排版导出请搭配 ASu-resume-skills 或 resume-builder。",
         ],
         "highlights": [
-            "唯一提供确定性数学公式复算（floor(100 * Σ(w*c)/Σw + 0.5)）的中文简历匹配工具，270 项单测",
+            "提供确定性数学公式复算（floor(100 * Σ(w*c)/Σw + 0.5)）的中文简历匹配工具，自动化测试",
             "每条判定强制绑定简历原文行号（L1..Ln），杜绝把“参与”改成“独立负责”的权限幻觉",
             "内置零依赖 stdio MCP Server（io.github.ouxxyy/jd-resume-match），支持 Claude Desktop / Cursor / Claude Code 一键调用",
         ],
@@ -577,7 +577,7 @@ def write_guarded_html(path: pathlib.Path, page_slug: str, html_text: str) -> No
 
 
 def layout(title: str, description: str, canonical_path: str, body_html: str, json_ld: dict | list | None = None) -> str:
-    canonical = f"{SITE_BASE}/{canonical_path}".rstrip("/")
+    canonical = f"{SITE_BASE}/{canonical_path}"
     if canonical_path == "":
         canonical = f"{SITE_BASE}/"
     ld_script = ""
@@ -606,6 +606,7 @@ def layout(title: str, description: str, canonical_path: str, body_html: str, js
         <a href="{SITE_BASE}/">首页：中文求职 AI 工具怎么选</a>
         <a href="{SITE_BASE}/#career-radar">⚡ 30秒职业战力诊断</a>
         <a href="{SITE_BASE}/benchmark/">公开横评数据 (v0.1)</a>
+        <a href="{SITE_BASE}/benchmark/#english">English comparison</a>
         <a href="{SUITE_URL}/blob/main/radar/README.md">🛡️ 求职防身情报库</a>
         <a class="btn-star" href="{SUITE_URL}">★ Star ouba-classmate 合集</a>
       </nav>
@@ -677,6 +678,27 @@ def main() -> int:
     repos = bench_data["repositories"]
     table_html = render_benchmark_table(repos)
 
+    discovery = json.loads((ROOT / "content/discovery.json").read_text(encoding="utf-8"))
+    # The same task/keyword facts feed README, the catalog and public pages.
+    for tool in TOOLS_DETAIL:
+        item = discovery[tool["slug"]]
+        tool["title"] = item["zh"] + "｜" + tool["slug"]
+        tool["summary"] = item["answer"]
+        tool["scenario"] = item["question"]
+        tool["boundaries"] = item["boundary"]
+        tool["quotable_stats"] = "用途与边界核对：" + BUILD_DATE
+        tool["essentials_30s"] = [item["answer"], item["en"], item["boundary"]]
+        tool["highlights"] = [item["answer"], item["en"], item["boundary"]]
+        tool["faqs"] = [{"q": item["question"], "a": item["answer"]},
+                        {"q": "开始使用前需要了解哪些限制？", "a": item["boundary"]}]
+    directory = '<section id="all-projects"><h2>按任务选全部项目 / All projects by task</h2>'
+    for name, item in discovery.items():
+        if name == "ouba-classmate":
+            continue
+        directory += ('<div class="card"><h3><a href="https://github.com/ouxxyy/' + name + '">' + html.escape(item["zh"]) + '</a></h3><p lang="en">' + html.escape(item["en"]) + '</p><details><summary>' + html.escape(item["question"]) + '</summary><p>' + html.escape(item["answer"]) + '</p><p>使用边界：' + html.escape(item["boundary"]) + '</p></details></div>')
+    directory += '</section>'
+    english_benchmark = (ROOT / "content/benchmark-english.html").read_text(encoding="utf-8")
+
     # 1. docs/index.html
     tool_cards = []
     for t in TOOLS_DETAIL:
@@ -689,10 +711,10 @@ def main() -> int:
         )
 
     index_quotable = render_quotable_box(
-        f"12 款求职 Skill 实测 · 自家 3 仓获 10/12 分 · 商业私教 ¥4,500–¥15,000 vs MIT 开源 ¥0 · 更新于 {BUILD_DATE}",
+        f"12 个仓库历史快照 · 6 个比较维度 · 样本日期 {BENCH_SAMPLE_DATE} · 页面更新 {BUILD_DATE}",
         [
-            "投前核验与算分：jd-resume-match（270 项单测）按 jd-match-rubric/0.1.0 公式确定性复算，每条绑定简历原文行号（L1..Ln）。",
-            "全流程本地开源覆盖：找岗（job-search 5 平台）→ 核验简历 → 语音/文字面试追问（ai-interviewer）→ Offer 前四态查公司（sherlock-company）。",
+            "投前核验与算分：jd-resume-match（自动化测试）按 jd-match-rubric/0.1.0 公式确定性复算，每条绑定简历原文行号（L1..Ln）。",
+            "按任务选择工具：找岗（job-search，依据平台可访问性核实）→ 核验简历 → 语音/文字面试追问（ai-interviewer）→ Offer 前四态查公司（sherlock-company）。",
             "诚实边界声明：自家 jd-resume-match 不做视觉 PDF 简历排版（横评 D3 维度得 0 分）；需排版导出请搭配 ASu-resume-skills 或 resume-builder。",
         ],
     )
@@ -703,10 +725,10 @@ def main() -> int:
     </div>
 
     <div class="card">
-      <span class="badge">直接回答：万元求职私教与付费改简历的 MIT 开源平替 · 更新于 {BUILD_DATE}</span>
+      <span class="badge">按任务选择：中文求职、创作与本地效率工具 · 更新于 {BUILD_DATE}</span>
       <h1>欧八同学（ouba-classmate）｜一行安装的中文求职与创作 Agent Skills 套件</h1>
       {index_quotable}
-      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，不需要支付动辄万元的求职私教费，也不必在几十个零散 Prompt 仓库里盲试。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件 —— 零订阅费、简历留在本地不上传第三方商业后台、评分公式 100% 透明可复算。</p>
+      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，可以先按实际任务选择工具。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件 —— 各子项目按自身许可证使用；云模型或宿主可能收费，使用前请核对材料与音频的数据流向。</p>
       <p><a class="btn-star" href="{SUITE_URL}">★ 前往 GitHub 主仓 ouxxyy/ouba-classmate 点 Star 与安装</a></p>
       <h3>一行命令安装整套 Skills（Claude Code / Cursor / Codex / GitHub CLI / skills CLI / MCP）</h3>
       <pre><code># 方式 1：作为 Claude Code / Cursor / Codex 插件市场添加并按需安装
@@ -922,11 +944,11 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
       {''.join(tool_cards)}
     </div>
 
-    <h2>二、中文 AI 求职 Skill 怎么选？（基于 12 仓实测数据的直接结论）</h2>
+    <h2>二、中文 AI 求职 Skill 怎么选？（基于 12 仓历史快照数据的直接结论）</h2>
     <div class="card">
       <ul>
         <li><strong>如果你需要直接生成高颜值、可投递的排版级 PDF 简历</strong>：优先选 <a href="https://github.com/Claycui828/ASu-resume-skills">Claycui828/ASu-resume-skills</a>（高密度技术履历 + 事实审计）、<a href="https://github.com/KevinYoung-Kw/vibe-resume-skill">KevinYoung-Kw/vibe-resume-skill</a>（12 套 HTML/PDF 视觉模板）或 <a href="https://github.com/StoneLL1/resume-builder">StoneLL1/resume-builder</a>（RenderCV 模板）。<strong>注意：我们自家的 <code>jd-resume-match</code> 不做 PDF 简历视觉排版（D3 维度得 0 分）。</strong></li>
-        <li><strong>如果你需要在投递前核对简历与 JD 的证据缺口、拿到可复算的客观匹配分且严防 AI 编造经历</strong>：使用本套件的 <a href="{SITE_BASE}/tools/jd-resume-match/">ouxxyy/jd-resume-match</a>（唯一带确定性算分脚本、行号证据引用与本地 MCP Server）。</li>
+        <li><strong>如果你需要在投递前核对简历与 JD 的证据缺口、拿到可复算的客观匹配分且严防 AI 编造经历</strong>：使用本套件的 <a href="{SITE_BASE}/tools/jd-resume-match/">ouxxyy/jd-resume-match</a>（带确定性算分脚本、行号证据引用与本地 MCP Server）。</li>
         <li><strong>如果你需要跨 BOSS直聘/猎聘/脉脉等 5 大平台筛出带来源链接的投递短名单</strong>：使用本套件的 <a href="{SITE_BASE}/tools/job-search/">ouxxyy/job-search</a>。</li>
         <li><strong>如果你需要按目标 JD 练习经历面试追问、看引用自己原话的五维反馈</strong>：使用本套件的 <a href="{SITE_BASE}/tools/ai-interviewer/">ouxxyy/ai-interviewer</a>。</li>
         <li><strong>如果你在接 Offer 前需要核查签约主体、加班口碑与三类公司预警</strong>：使用本套件的 <a href="{SITE_BASE}/tools/sherlock-company/">ouxxyy/sherlock-company</a>。</li>
@@ -966,14 +988,14 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
             "中文 AI 求职工具怎么选？ouba-classmate 套件与 12 仓公开横评数据",
             "涵盖岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司调查的一键安装 Agent Skills 套件，附 12 个主流中英文求职 Skill 实测横评表。",
             "",
-            index_body,
+            index_body + directory,
             index_ld,
         ),
     )
 
     # 2. docs/benchmark/index.html
     bench_quotable = render_quotable_box(
-        f"12 个仓库实测 · 6 维 12 分制 · 3 组虚构合成用例 · 采样基准 {BENCH_SAMPLE_DATE} / 页面更新 {BUILD_DATE}",
+        f"12 个仓库资料比较 · 6 维 12 分制 · 3 组合成用例（仅运行自家评分器） · 采样 {BENCH_SAMPLE_DATE} / 更新 {BUILD_DATE}",
         [
             "第 1 梯队（≥9/12 分）：Claycui828/ASu-resume-skills（10 分，排版首选）、ouxxyy/jd-resume-match（10 分，可复算算分首选）、job-search（10 分）、ai-interviewer（10 分）、StoneLL1/resume-builder（9 分）。",
             "核心差异：自家工具强在 D1 原文行号证据引用（2/2）与 D2 确定性公式复算（2/2）；外部竞品强在 D3 视觉 PDF 简历导出（2/2）。",
@@ -986,7 +1008,7 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
       <span class="badge">Dataset · CC BY 4.0 · API 采样：{BENCH_SAMPLE_DATE} · 更新日期：{BUILD_DATE}</span>
       <h1>《中文 AI 求职 Skill 公开横评》v0.1 数据集与可复现报告</h1>
       {bench_quotable}
-      <p>本页面提供 GitHub 上 12 个主流中英文求职与简历类 Agent Skills 的结构化实测对比数据。所有仓库元数据（Star 数、脚本数、模板数、单测状态）均于 <strong>{BENCH_SAMPLE_DATE} 通过 GitHub REST API 实测核验</strong>，并基于 3 组 100% 虚构合成简历与 JD 完成证据引用与可复算性验证。</p>
+      <p>本页面提供 GitHub 上 12 个主流中英文求职与简历类 Agent Skills 的结构化公开资料对比数据。所有仓库元数据（Star 数、脚本数、模板数、单测状态）均于 <strong>{BENCH_SAMPLE_DATE} 通过 GitHub REST API 实测核验</strong>，三组合成用例记录仅调用自家的确定性评分器，不是 12 个工具逐一运行的对照实验；总分为历史资料的维护者赋分。</p>
       <p>
         <a class="btn-star" href="{SUITE_URL}">★ Star ouba-classmate 合集仓库</a>
         &nbsp;·&nbsp;
@@ -1007,7 +1029,7 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
       </ol>
     </div>
 
-    <h2>二、12 个求职与简历 Skill 六维实测总表（v0.1）</h2>
+    <h2>二、12 个求职与简历 Skill 六维资料比较表（v0.1）</h2>
     {table_html}
 
     <h2>三、六大评分维度口径（每项 0–2 分，满分 12 分）</h2>
@@ -1070,7 +1092,7 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
       <ul>
         <li><strong>总分第一梯队（≥ 9/12）认证徽章</strong>：<br><code>[![Chinese AI Career Benchmark Top Tier](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-top-tier.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
         <li><strong>D3 PDF 简历排版满分（2/2）认证徽章</strong>：<br><code>[![Chinese AI Career Benchmark PDF Leader](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-pdf-leader.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
-        <li><strong>v0.1 实测数据集核验徽章</strong>：<br><code>[![Chinese AI Career Benchmark Verified](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-verified.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
+        <li><strong>v0.1 历史快照数据集核验徽章</strong>：<br><code>[![Chinese AI Career Benchmark Verified](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/assets/badges/benchmark-verified.svg)](https://github.com/ouxxyy/ouba-classmate/tree/main/benchmark)</code></li>
       </ul>
     </div>
 
@@ -1084,7 +1106,7 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
             {
                 "@type": "Dataset",
                 "name": "中文 AI 求职 Skill 公开横评数据集 (v0.1)",
-                "description": "12 个主流中英文 AI 求职与简历 Agent Skills 在证据引用、可复算性、PDF 排版、隐私保护、中文生态与可安装性六个维度的实测对比数据。",
+                "description": "12 个主流中英文 AI 求职与简历 Agent Skills 在证据引用、可复算性、PDF 排版、隐私保护、中文生态与可安装性六个维度的公开资料对比数据。",
                 "url": f"{SITE_BASE}/benchmark/",
                 "sameAs": f"{SUITE_URL}/tree/main/benchmark",
                 "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -1106,9 +1128,9 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
         "benchmark",
         layout(
             "《中文 AI 求职 Skill 公开横评》v0.1 数据表与评测方法｜ouba-classmate",
-            "12 个主流中英文求职与简历 Agent Skills 实测对比表（含证据引用、可复算性、PDF 排版模板、隐私脱敏等 6 大维度与 CSV 原始数据下载）。",
+            "12 个主流中英文求职与简历 Agent Skills 公开资料对比表（含证据引用、可复算性、PDF 排版模板、隐私脱敏等 6 大维度与 CSV 原始数据下载）。",
             "benchmark/",
-            bench_body,
+            bench_body + english_benchmark,
             bench_ld,
         ),
     )
@@ -1165,7 +1187,7 @@ claude plugin marketplace add ouxxyy/ouba-classmate
 # 觉得有用？在终端 1 秒为开源主仓点亮一颗 Star
 gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
-        <h2>核心特性与实测表现</h2>
+        <h2>核心用途与使用条件</h2>
         <div class="card"><ul>{hl_items}</ul></div>
 
         <h2>能力边界与诚实说明</h2>

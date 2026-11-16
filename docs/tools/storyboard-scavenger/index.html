@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill｜ouba-classmate 套件</title>
-  <meta name="description" content="把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。">
-  <link rel="canonical" href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger">
-  <meta property="og:title" content="Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill｜ouba-classmate 套件">
-  <meta property="og:description" content="把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。">
-  <meta property="og:url" content="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger">
+  <title>AI 视频分镜与可灵、即梦提示词生成｜storyboard-scavenger｜ouba-classmate 套件</title>
+  <meta name="description" content="先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。">
+  <link rel="canonical" href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">
+  <meta property="og:title" content="AI 视频分镜与可灵、即梦提示词生成｜storyboard-scavenger｜ouba-classmate 套件">
+  <meta property="og:description" content="先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。">
+  <meta property="og:url" content="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">
   <meta property="og:type" content="website">
   <style>
 :root {
@@ -231,14 +231,14 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
   "@graph": [
     {
       "@type": "SoftwareApplication",
-      "name": "Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill",
+      "name": "AI 视频分镜与可灵、即梦提示词生成｜storyboard-scavenger",
       "applicationCategory": "DeveloperApplication",
       "operatingSystem": "macOS, Linux, Windows",
       "url": "https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/",
       "codeRepository": "https://github.com/ouxxyy/storyboard-scavenger",
       "license": "https://opensource.org/license/mit",
-      "dateModified": "2026-11-15",
-      "description": "把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。",
+      "dateModified": "2026-11-16",
+      "description": "先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。",
       "author": {
         "@type": "Person",
         "name": "欧八同学 (ouxxyy)",
@@ -250,26 +250,18 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "直接让通用大模型写 AI 视频提示词和用 Storyboard Scavenger 有什么区别？",
+          "name": "怎样把一个视频创意拆成可灵、即梦或 Veo 可用的分镜提示词？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "通用模型常忽略运镜与物理反馈导致生成画面“漂移抽卡”；Storyboard Scavenger 强制用七要素结构和 38 种电影运镜字典组织镜头，并针对可灵、即梦 @素材、Veo 和 Sora 做方言隔离。"
+            "text": "先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。"
           }
         },
         {
           "@type": "Question",
-          "name": "安装这个 Skill 之后能直接帮我渲染出 MP4 视频吗？",
+          "name": "开始使用前需要了解哪些限制？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "不能。Storyboard Scavenger 生成的是结构化分镜表与多平台提示词，最终视频渲染需要将提示词提交到可灵、即梦、Veo 或 Sora 等视频平台完成。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "如果我要做带具体角色/商品图一致性的即梦短片，它支持吗？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "支持。models/ 模块专门包含即梦 Seedance 2.0 工作流，可将参考图与音视频素材映射为标准的 @素材 引用指令。"
+            "text": "主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。"
           }
         }
       ]
@@ -303,6 +295,7 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
         <a href="https://ouxxyy.github.io/ouba-classmate/">首页：中文求职 AI 工具怎么选</a>
         <a href="https://ouxxyy.github.io/ouba-classmate/#career-radar">⚡ 30秒职业战力诊断</a>
         <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">公开横评数据 (v0.1)</a>
+        <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/#english">English comparison</a>
         <a href="https://github.com/ouxxyy/ouba-classmate/blob/main/radar/README.md">🛡️ 求职防身情报库</a>
         <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ Star ouba-classmate 合集</a>
       </nav>
@@ -311,10 +304,10 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-15</span>
-          <h1>Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill</h1>
-          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 7 要素单镜头结构 · 适配 4 大主流视频模型 · 38 种电影运镜字典 · MIT 开源 ¥0 · 更新于 2026-11-15</div><ul><li>七要素工业级分镜：每个镜头拆解「风格核心 + 视觉基调 + 色彩影调 + 景别机位 + 构图 + 运镜 + 物理反馈」，杜绝抽卡盲写。</li><li>多模型方言适配：models/ 目录分别适配可灵自然中文、即梦 Seedance 2.0 的 @素材 语法、Veo 音画同步与 Sora 时间轴。</li><li>诚实边界：专注生成结构化分镜脚本与平台专属提示词，不包含视频云端渲染算力，需复制到对应平台执行生成。</li></ul></div>
-          <p>把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。</p>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-16</span>
+          <h1>AI 视频分镜与可灵、即梦提示词生成｜storyboard-scavenger</h1>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 用途与边界核对：2026-11-16</div><ul><li>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</li><li>AI video storyboard and prompts for Kling, Seedance, Veo and Sora</li><li>主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。</li></ul></div>
+          <p>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</p>
           <p>
             <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
             &nbsp;·&nbsp;
@@ -325,7 +318,7 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
         </div>
 
         <h2>适用场景</h2>
-        <div class="card"><p>AI 视频创作：需要把一句话脑洞拆成景别、构图、38 种运镜技巧与多模态 @素材 引用的专业分镜表。</p></div>
+        <div class="card"><p>怎样把一个视频创意拆成可灵、即梦或 Veo 可用的分镜提示词？</p></div>
 
         <h2>细分岗位与长尾痛点速配矩阵</h2>
         <div class="card">
@@ -347,16 +340,15 @@ npx skills add ouxxyy/ouba-classmate --skill storyboard-scavenger
 # 觉得有用？在终端 1 秒为开源主仓点亮一颗 Star
 gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
-        <h2>核心特性与实测表现</h2>
-        <div class="card"><ul><li>独创七要素单镜头结构：风格核心 + 视觉基调 + 色彩影调 + 景别机位 + 构图 + 运镜 + 物理反馈</li><li>内置 models/ 模块化目录，分别适配可灵自然中文、即梦 @素材 语法、Veo 音画同步与 Sora 时间轴</li><li>附带 38 种电影运镜技巧字典与实战分镜案例集</li></ul></div>
+        <h2>核心用途与使用条件</h2>
+        <div class="card"><ul><li>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</li><li>AI video storyboard and prompts for Kling, Seedance, Veo and Sora</li><li>主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。</li></ul></div>
 
         <h2>能力边界与诚实说明</h2>
-        <div class="card"><p>本工具生成结构化分镜脚本与提示词，视频渲染需在可灵、即梦、Veo 等视频生成平台执行。</p></div>
+        <div class="card"><p>主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。</p></div>
 
         <h2>高频常见问题（FAQ）</h2>
-        <details class="faq-item"><summary>直接让通用大模型写 AI 视频提示词和用 Storyboard Scavenger 有什么区别？</summary><p>通用模型常忽略运镜与物理反馈导致生成画面“漂移抽卡”；Storyboard Scavenger 强制用七要素结构和 38 种电影运镜字典组织镜头，并针对可灵、即梦 @素材、Veo 和 Sora 做方言隔离。</p></details>
-<details class="faq-item"><summary>安装这个 Skill 之后能直接帮我渲染出 MP4 视频吗？</summary><p>不能。Storyboard Scavenger 生成的是结构化分镜表与多平台提示词，最终视频渲染需要将提示词提交到可灵、即梦、Veo 或 Sora 等视频平台完成。</p></details>
-<details class="faq-item"><summary>如果我要做带具体角色/商品图一致性的即梦短片，它支持吗？</summary><p>支持。models/ 模块专门包含即梦 Seedance 2.0 工作流，可将参考图与音视频素材映射为标准的 @素材 引用指令。</p></details>
+        <details class="faq-item"><summary>怎样把一个视频创意拆成可灵、即梦或 Veo 可用的分镜提示词？</summary><p>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</p></details>
+<details class="faq-item"><summary>开始使用前需要了解哪些限制？</summary><p>主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。</p></details>
 
         <h2>套件兄弟组件与公开横评导航</h2>
         <div class="card">

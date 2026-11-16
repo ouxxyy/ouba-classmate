@@ -1,5 +1,18 @@
 # 欧八同学｜AI Skills 与跳槽涨薪工具合集 · ouba-classmate
 
+<!-- discovery:start -->
+## 中文求职 Agent Skills：岗位搜索、简历优化与 AI 模拟面试
+
+**想用 Claude Code 或 Codex 找岗位、改简历、练中文面试，有哪些工具？** 按任务选择岗位搜索、简历与 JD 证据匹配、中文经历面试和公司调查工具；合集同时提供公开视频与本地效率项目入口。
+
+Chinese career agent skills for job search, resume matching and interview prep.
+
+**开始使用：** [按需求找](#按需求找) · [安装 Skills](#install) · [直接练面试](https://interview.redboook.cn/) · [横评方法与数据](benchmark/README.md)。
+
+**使用边界：** 各子项目许可证及依赖分别查看；宿主或云模型可能收费。横评是公开仓库材料审计，不能当作录用效果或完整运行质量排名。
+
+<!-- discovery:end -->
+
 <p align="center">
   <a href="#install"><img src="assets/banner-suite.svg" width="100%" alt="欧八同学项目合集总览：职业定位 × AI 杠杆 × 涨薪方法，11 个原创项目分三类"></a>
 </p>
@@ -14,7 +27,7 @@
 
 <sub>Open-source collection of AI Agent Skills, career-growth & job-search tools, and local productivity apps by <b>Albert Ou (欧八同学)</b> — Positioning × AI Leverage × Salary Growth.</sub>
 
-> **💡 万元求职私教与付费改简历的 MIT 开源平替（Open-source alternative to paid career coaching & resume services）**：12 款主流求职 Skill 实测横评第 1 梯队（10/12 分）· 商业私教中位价 ¥4,500–¥15,000 vs 本套件 MIT 开源 ¥0 · 简历留本地不上传第三方后台 · 评分公式 100% 透明可复算。
+> **选型依据：** [12 个求职工具的公开代码与文档横评](benchmark/README.md)提供评分规则与数据；它不是全部工具的端到端使用评测。工具源码的许可、模型费用及数据流向以各子项目说明为准。
 
 > [!TIP]
 > 🎁 扫码关注公众号「欧八同学」，免费领取 AI 案例与 Skill《大厂产品AI经验编程 200 套》→ [去扫码](#author)
@@ -36,6 +49,18 @@
 | ActivityWatch 仪表盘与专注力分析 | [Attention · 本地仪表盘](https://github.com/ouxxyy/Attention) | 本地桌面 Web 应用 |
 | Chrome 坐姿提醒（posture reminder） | [姿势企鹅 Posture Penguin](https://github.com/ouxxyy/postapp) | Chrome 浏览器本地扩展 |
 | **【免安装收藏】24道面试深挖母题 + JD黑话解码 + 接Offer背调18问** | **[🛡️ 2026 求职防身情报库 (`radar/`)](radar/README.md)** | **[在线 30 秒生成职业诊断小票 →](https://ouxxyy.github.io/ouba-classmate/#career-radar)** |
+
+<!-- complementary:start -->
+## Claude 求职 Skills 与完整求职框架怎样搭配？
+
+| 相关项目 | 当前公开定位（2026-11-16 核对） | 本合集可衔接的任务 |
+| --- | --- | --- |
+| [career-ops](https://github.com/career-ops-hq/career-ops) | 本地岗位评估、简历与申请准备；已有简体中文 README | 简历原文证据核对、中文语音面试、入职前查公司 |
+| [ai-job-search](https://github.com/ai-job-search-dev/ai-job-search) | 基于 Claude Code 的求职流程，核心不限定语言和国家，招聘门户由社区扩展 | 按当前任务单独选用岗位清单、简历匹配和经历复盘 |
+| [Offer Toolkit](https://github.com/yanliudesign/offer-toolkit-skill) | 找岗、JD、简历模板、双语行为故事、Offer 比较与谈薪 | 需要原话引用点评或确定性证据分时使用对应子工具 |
+
+以上是基于各项目 README 的用途说明，未做本轮端到端性能横评，也不代表合作或背书。[查看英文选型说明与历史数据](benchmark/README.en.md)。
+<!-- complementary:end -->
 
 ## 核心代表作动态画廊 · Featured Highlights
 
@@ -61,10 +86,10 @@
 ### 02 · 中文大厂语音与文字追问模拟面试官 · `ai-interviewer`
 
 <p>
-  <a href="https://github.com/ouxxyy/ai-interviewer"><img src="assets/card-interviewer.svg" width="100%" alt="ai-interviewer — 原话深度追问 + 54 页大厂复盘报告"></a>
+  <a href="https://github.com/ouxxyy/ai-interviewer"><img src="assets/card-interviewer.svg" width="100%" alt="ai-interviewer — 原话深度追问与五维复盘对比"></a>
 </p>
 
-**贴上简历与 JD，AI 面试官全程基于你的原话深挖项目细节，支持中文语音实时连麦与 54 页结构化复盘报告。**  
+**贴上简历与 JD，AI 面试官全程基于你的原话深挖项目细节，支持中文语音实时连麦、五维原话点评与初答重答对比。**<br>
 <sub>Mock interviewer with real-time Chinese voice Q&A, contextual follow-ups anchored to your resume claims, and multi-page structured debrief reports.</sub>
 
 <p>
@@ -75,14 +100,14 @@
 
 <img src="assets/divider.svg" width="100%" alt="">
 
-### 03 · 跨 5 平台多条件实时岗位筛选 · `job-search`
+### 03 · 多来源、多条件求职岗位筛选 · `job-search`
 
 <p>
   <a href="https://github.com/ouxxyy/job-search"><img src="assets/card-job-search.svg" width="100%" alt="job-search — 5 平台实时去重抓取与岗位短名单"></a>
 </p>
 
-**用一句话描述目标城市、薪资带与公司阶段，自动并行扫描 5 个招聘平台并按匹配度去重整理高含金量投递短名单。**  
-<sub>Natural-language job radar that searches across 5 platforms, deduplicates listings, and outputs a clean ranked shortlist with application links.</sub>
+**用一句话描述目标城市、薪资带与公司阶段，按确认条件查询可访问的招聘来源，去重整理带来源和待核实项的投递短名单。**<br>
+<sub>Job search agent that checks accessible sources, deduplicates listings, and separates verified openings from items awaiting verification.</sub>
 
 <p>
   <a href="https://github.com/ouxxyy/job-search"><img src="https://img.shields.io/badge/REPO-job--search-1f6feb?style=for-the-badge" alt="job-search Repo"></a>

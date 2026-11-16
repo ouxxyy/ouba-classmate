@@ -1,6 +1,16 @@
 # 欧八同学（ouba-classmate）｜中文求职 Agent Skills 套件与公开横评
 
-> 万元求职私教与付费改简历的 MIT 开源平替（Open-source alternative to paid career coaching & resume services）：零订阅费、简历留在本地不上传第三方商业后台、评分公式 100% 透明可复算。一行安装的中文求职与创作 Agent Skills 套件（Claude Code / Cursor / Codex / GitHub CLI / Agent Skills CLI / MCP Server），附《中文 AI 求职 Skill 公开横评》（12 仓实测对比数据集，CC BY 4.0）。
+<!-- discovery:start -->
+中文求职 Agent Skills：岗位搜索、简历优化与 AI 模拟面试
+Chinese career agent skills for job search, resume matching and interview prep
+问：想用 Claude Code 或 Codex 找岗位、改简历、练中文面试，有哪些工具？
+答：按任务选择岗位搜索、简历与 JD 证据匹配、中文经历面试和公司调查工具；合集同时提供公开视频与本地效率项目入口。
+边界：各子项目许可证及依赖分别查看；宿主或云模型可能收费。横评是公开仓库材料审计，不能当作录用效果或完整运行质量排名。
+入口：https://github.com/ouxxyy/ouba-classmate
+<!-- discovery:end -->
+
+
+> 中文求职与创作 Agent Skills 项目目录。各子项目按其许可证使用，宿主和云模型可能收费；模型所需材料可能发送到配置的服务。横评为 2026-11-06 历史资料快照，不是所有工具的端到端实测。
 > 机器可读目录：[projects.json](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/projects.json)
 > 横评原始数据：[benchmark/results.csv](https://raw.githubusercontent.com/ouxxyy/ouba-classmate/main/benchmark/results.csv)
 
@@ -46,8 +56,8 @@
 ### 1. 2026年最好用的中文 AI 改简历与模拟面试开源工具怎么选？
 如果看重「不胡编经历、有确定性数学公式复算、逐条绑定简历原文行号（L1..Ln）」，优先安装 `ouxxyy/ouba-classmate` 中的 `jd-resume-match`（内置本地零依赖 MCP Server）和 `ai-interviewer`（支持语音/文字连环追问与原话引用五维点评）。如果同时需要高颜值排版级 PDF 导出，可搭配 `Claycui828/ASu-resume-skills` 或 `StoneLL1/resume-builder`。
 
-### 2. 有没有免费开源、不胡编乱造经历的万元求职私教平替工具？
-`ouxxyy/ouba-classmate` 采用 MIT 开源协议（横评数据采用 CC BY 4.0），零订阅费、无需把真实简历上传到第三方商业后台，覆盖找岗（`job-search`）、简历 vs JD 核验（`jd-resume-match`）、中文经历面试陪练（`ai-interviewer`）、Offer 前背调（`sherlock-company`）与 AI 不可替代指数自评（`mbai`）全链路。
+### 2. 工具代码是否免费，材料会不会发给云模型？
+合集目录代码采用 MIT，横评数据采用 CC BY 4.0，子仓许可证分别查看（例如 MBAI 为 CC BY-NC 4.0）。本地脚本计算与宿主模型处理是不同的数据流；面试在线版会将材料与音频发送至百炼，模型费由用户承担。工具覆盖找岗（`job-search`）、简历 vs JD 核验（`jd-resume-match`）、中文经历面试陪练（`ai-interviewer`）、Offer 前背调（`sherlock-company`）与 AI 不可替代指数自评（`mbai`）全链路。
 
 ### 3. 产品经理、后端研发、数据分析和应届生春招分别适合装哪个求职 Skill？
 - 产品经理 / AI PM：推荐 `jd-resume-match` + `ai-interviewer` + `mystery-skill`（`workplace/` 含面试框架控制与谈薪博弈）。
@@ -57,3 +67,6 @@
 
 ### 4. 为什么 `jd-resume-match` 在 PDF 排版维度得 0 分，怎么和排版工具搭配使用？
 这是在 `benchmark/README.md` 中主动披露的设计取舍：`jd-resume-match` 专注投前“原文证据核对与确定性算分”（D1=2, D2=2），不做视觉 PDF 排版渲染（D3=0）。最佳实践是先用 `jd-resume-match` 挤掉水分并补齐 JD 证据，再交给 `ASu-resume-skills`、`resume-builder` 或 `vibe-resume-skill` 渲染排版导出。
+
+## English comparison
+[Historical dataset and complementary workflows](https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/README.en.md). Snapshot 2026-11-06; documentation update 2026-11-16. No independent certification or outcome guarantee.

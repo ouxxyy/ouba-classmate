@@ -236,7 +236,7 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
       "operatingSystem": "macOS, Linux, Windows",
       "url": "https://github.com/ouxxyy/ouba-classmate",
       "downloadUrl": "https://github.com/ouxxyy/ouba-classmate",
-      "dateModified": "2026-11-15",
+      "dateModified": "2026-11-16",
       "author": {
         "@type": "Person",
         "name": "欧八同学 (ouxxyy)",
@@ -293,6 +293,7 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
         <a href="https://ouxxyy.github.io/ouba-classmate/">首页：中文求职 AI 工具怎么选</a>
         <a href="https://ouxxyy.github.io/ouba-classmate/#career-radar">⚡ 30秒职业战力诊断</a>
         <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/">公开横评数据 (v0.1)</a>
+        <a href="https://ouxxyy.github.io/ouba-classmate/benchmark/#english">English comparison</a>
         <a href="https://github.com/ouxxyy/ouba-classmate/blob/main/radar/README.md">🛡️ 求职防身情报库</a>
         <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ Star ouba-classmate 合集</a>
       </nav>
@@ -305,10 +306,10 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
     </div>
 
     <div class="card">
-      <span class="badge">直接回答：万元求职私教与付费改简历的 MIT 开源平替 · 更新于 2026-11-15</span>
+      <span class="badge">按任务选择：中文求职、创作与本地效率工具 · 更新于 2026-11-16</span>
       <h1>欧八同学（ouba-classmate）｜一行安装的中文求职与创作 Agent Skills 套件</h1>
-      <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 12 款求职 Skill 实测 · 自家 3 仓获 10/12 分 · 商业私教 ¥4,500–¥15,000 vs MIT 开源 ¥0 · 更新于 2026-11-15</div><ul><li>投前核验与算分：jd-resume-match（270 项单测）按 jd-match-rubric/0.1.0 公式确定性复算，每条绑定简历原文行号（L1..Ln）。</li><li>全流程本地开源覆盖：找岗（job-search 5 平台）→ 核验简历 → 语音/文字面试追问（ai-interviewer）→ Offer 前四态查公司（sherlock-company）。</li><li>诚实边界声明：自家 jd-resume-match 不做视觉 PDF 简历排版（横评 D3 维度得 0 分）；需排版导出请搭配 ASu-resume-skills 或 resume-builder。</li></ul></div>
-      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，不需要支付动辄万元的求职私教费，也不必在几十个零散 Prompt 仓库里盲试。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件 —— 零订阅费、简历留在本地不上传第三方商业后台、评分公式 100% 透明可复算。</p>
+      <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 12 个仓库历史快照 · 6 个比较维度 · 样本日期 2026-11-06 · 页面更新 2026-11-16</div><ul><li>投前核验与算分：jd-resume-match（自动化测试）按 jd-match-rubric/0.1.0 公式确定性复算，每条绑定简历原文行号（L1..Ln）。</li><li>按任务选择工具：找岗（job-search，依据平台可访问性核实）→ 核验简历 → 语音/文字面试追问（ai-interviewer）→ Offer 前四态查公司（sherlock-company）。</li><li>诚实边界声明：自家 jd-resume-match 不做视觉 PDF 简历排版（横评 D3 维度得 0 分）；需排版导出请搭配 ASu-resume-skills 或 resume-builder。</li></ul></div>
+      <p>如果你正在找工作、改简历、准备面试或核查 Offer 公司，可以先按实际任务选择工具。我们将 <strong>岗位搜索、简历与 JD 可复算匹配、中文经历面试追问、Offer 前公司证据调查、视频分镜与旅行画册</strong> 打包为可一键安装的 <code>ouxxyy/ouba-classmate</code> 套件 —— 各子项目按自身许可证使用；云模型或宿主可能收费，使用前请核对材料与音频的数据流向。</p>
       <p><a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 前往 GitHub 主仓 ouxxyy/ouba-classmate 点 Star 与安装</a></p>
       <h3>一行命令安装整套 Skills（Claude Code / Cursor / Codex / GitHub CLI / skills CLI / MCP）</h3>
       <pre><code># 方式 1：作为 Claude Code / Cursor / Codex 插件市场添加并按需安装
@@ -522,37 +523,37 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
     <h2>一、套件内 6 大核心工具详情</h2>
     <div class="grid">
       <div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">AI岗位搜索大师（job-search）｜多平台招聘筛选与来源短名单 Skill</a></h3>
-              <p>按确认条件筛选 BOSS直聘、猎聘、脉脉、智联招聘、前程无忧招聘信息，生成带来源 URL 与核实依据的 HTML、Excel 与 JSON 投递短名单。</p>
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">中文 AI 求职岗位搜索与招聘信息筛选｜job-search</a></h3>
+              <p>先确认求职条件，再通过可访问的招聘来源整理 HTML、Excel、JSON 岗位清单，保留来源、日期依据和待核实项。</p>
               <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
             </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">AI简历优化大师（jd-resume-match）｜可复算评分、原文行号证据引用与 MCP Server</a></h3>
-              <p>对照目标岗位 JD 逐条审查简历原文证据（L1..Ln），由确定性脚本按 jd-match-rubric/0.1.0 公式复算匹配分，输出结构改写方案与自包含 HTML 体检单。</p>
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">Claude 简历优化与中文 JD 匹配｜jd-resume-match</a></h3>
+              <p>输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。</p>
               <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
             </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">AI面试大师（ai-interviewer）｜中文语音与文字经历面试陪练（原话引用五维点评）</a></h3>
-              <p>基于目标岗位 JD 与个人真实经历进行自我介绍 + 三道经历题连环追问，每道题给出引用候选人原话的五维三档点评，并支持同一题重答对比。</p>
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">中文语音 AI 面试陪练与模拟面试｜ai-interviewer</a></h3>
+              <p>欧八面试陪练结合岗位 JD 与真实经历，训练自我介绍和三道经历题，提供引用回答原话的五维点评及重答对比。</p>
               <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
             </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">公司调查大师（sherlock-company）｜接 Offer 前公司证据四态核查与风险预警 Skill</a></h3>
-              <p>在决定面试或接受 Offer 前，将目标公司的公开信息与员工评价整理为「已证实 / 有线索 / 说法冲突 / 还不知道」四态档案，主动排查三类职场预警。</p>
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">入职前查公司与 Offer 公司背景调查｜sherlock-company</a></h3>
+              <p>输入目标公司和岗位信息，汇总公开来源，分开记录已证实、线索、冲突和未知，生成下一步核实清单。</p>
               <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
             </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">Storyboard Scavenger｜可灵 Kling / 即梦 Seedance / Veo / Sora 七要素视频分镜 Skill</a></h3>
-              <p>把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。</p>
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">AI 视频分镜与可灵、即梦提示词生成｜storyboard-scavenger</a></h3>
+              <p>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</p>
               <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
             </div><div class="card">
-              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">重拍画册（travel-art-album-skill）｜旅行照片艺术化与单文件离线 3D 翻页相册 Skill</a></h3>
-              <p>将 10–30 张旅行照片先生成 4 种风格小样供用户确认，再批量制作为典藏级单文件离线 3D 翻页 HTML 画册（支持直接打印导出 PDF）。</p>
+              <h3><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">旅行照片艺术画册与离线 HTML 翻页相册｜travel-art-album-skill</a></h3>
+              <p>先清点 10–30 张照片、确认艺术风格小样，再制作单文件 HTML 翻页相册；成品支持离线阅读和浏览器打印。</p>
               <p><a href="https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/">查看详情与安装命令 →</a> ｜ <a href="https://github.com/ouxxyy/ouba-classmate">在合集主仓点 Star ★</a></p>
             </div>
     </div>
 
-    <h2>二、中文 AI 求职 Skill 怎么选？（基于 12 仓实测数据的直接结论）</h2>
+    <h2>二、中文 AI 求职 Skill 怎么选？（基于 12 仓历史快照数据的直接结论）</h2>
     <div class="card">
       <ul>
         <li><strong>如果你需要直接生成高颜值、可投递的排版级 PDF 简历</strong>：优先选 <a href="https://github.com/Claycui828/ASu-resume-skills">Claycui828/ASu-resume-skills</a>（高密度技术履历 + 事实审计）、<a href="https://github.com/KevinYoung-Kw/vibe-resume-skill">KevinYoung-Kw/vibe-resume-skill</a>（12 套 HTML/PDF 视觉模板）或 <a href="https://github.com/StoneLL1/resume-builder">StoneLL1/resume-builder</a>（RenderCV 模板）。<strong>注意：我们自家的 <code>jd-resume-match</code> 不做 PDF 简历视觉排版（D3 维度得 0 分）。</strong></li>
-        <li><strong>如果你需要在投递前核对简历与 JD 的证据缺口、拿到可复算的客观匹配分且严防 AI 编造经历</strong>：使用本套件的 <a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">ouxxyy/jd-resume-match</a>（唯一带确定性算分脚本、行号证据引用与本地 MCP Server）。</li>
+        <li><strong>如果你需要在投递前核对简历与 JD 的证据缺口、拿到可复算的客观匹配分且严防 AI 编造经历</strong>：使用本套件的 <a href="https://ouxxyy.github.io/ouba-classmate/tools/jd-resume-match/">ouxxyy/jd-resume-match</a>（带确定性算分脚本、行号证据引用与本地 MCP Server）。</li>
         <li><strong>如果你需要跨 BOSS直聘/猎聘/脉脉等 5 大平台筛出带来源链接的投递短名单</strong>：使用本套件的 <a href="https://ouxxyy.github.io/ouba-classmate/tools/job-search/">ouxxyy/job-search</a>。</li>
         <li><strong>如果你需要按目标 JD 练习经历面试追问、看引用自己原话的五维反馈</strong>：使用本套件的 <a href="https://ouxxyy.github.io/ouba-classmate/tools/ai-interviewer/">ouxxyy/ai-interviewer</a>。</li>
         <li><strong>如果你在接 Offer 前需要核查签约主体、加班口碑与三类公司预警</strong>：使用本套件的 <a href="https://ouxxyy.github.io/ouba-classmate/tools/sherlock-company/">ouxxyy/sherlock-company</a>。</li>
@@ -748,7 +749,7 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 <details class="faq-item"><summary>有没有免费开源、不胡编乱造经历的万元求职私教平替工具？</summary><p>ouxxyy/ouba-classmate 采用 MIT 开源协议（横评数据集采用 CC BY 4.0），零订阅费、无需将真实简历上传至第三方商业后台，提供跨 5 平台找岗（job-search）、简历 vs JD 核验（jd-resume-match）、经历面试陪练（ai-interviewer）、Offer 前公司背调（sherlock-company）与 AI 不可替代指数自评（mbai）全链路工具。</p></details>
 <details class="faq-item"><summary>产品经理、后端研发、数据分析和应届生春招分别适合装哪个求职 Skill？</summary><p>产品经理推荐 jd-resume-match + ai-interviewer + mystery-skill；后端/架构研发推荐 jd-resume-match（uvx 本地 MCP）+ sherlock-company（排查合同主体不一致与加班预警）；数据分析推荐 jd-resume-match + mbai；应届生春招推荐 job-search + ai-interviewer（含 seasonal/ 2027 春招题库）+ radar/README.md（24 道大厂深挖母题）。</p></details>
 <details class="faq-item"><summary>为什么 jd-resume-match 在 PDF 排版维度得 0 分，怎么和排版工具搭配使用？</summary><p>jd-resume-match 专注投前原文证据核对与确定性算分（D1=2, D2=2），不做视觉 PDF 排版渲染（D3=0）。建议先用 jd-resume-match 挤掉水分并补齐 JD 证据，再交给 ASu-resume-skills、resume-builder 或 vibe-resume-skill 渲染排版导出。</p></details>
-    
+    <section id="all-projects"><h2>按任务选全部项目 / All projects by task</h2><div class="card"><h3><a href="https://github.com/ouxxyy/job-search">中文 AI 求职岗位搜索与招聘信息筛选</a></h3><p lang="en">Chinese job search agent and source-backed job hunting shortlist</p><details><summary>怎样按城市、薪资和发布日期筛选招聘岗位？</summary><p>先确认求职条件，再通过可访问的招聘来源整理 HTML、Excel、JSON 岗位清单，保留来源、日期依据和待核实项。</p><p>使用边界：发布时间与刷新时间分开记录；登录、验证码和平台访问限制可能影响覆盖，未核实岗位不充作有效短名单，不代投或联系 HR。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/jd-resume-match">Claude 简历优化与中文 JD 匹配</a></h3><p lang="en">Evidence-based resume optimization and job-description matching</p><details><summary>怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？</summary><p>输入真实简历和岗位 JD，按原文行号核对证据、复算匹配分，输出结构调整、经历改写建议和岗位打招呼语。</p><p>使用边界：分数衡量规则下的证据覆盖，不是 ATS 官方评分或录用概率；不做视觉 PDF 排版，不凭空补数字。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/ai-interviewer">中文语音 AI 面试陪练与模拟面试</a></h3><p lang="en">Chinese voice mock interview and interview preparation</p><details><summary>有能用中文语音练自我介绍和项目经历的 AI 模拟面试工具吗？</summary><p>欧八面试陪练结合岗位 JD 与真实经历，训练自我介绍和三道经历题，提供引用回答原话的五维点评及重答对比。</p><p>使用边界：平台工具不收取使用费；百炼模型调用费用由用户承担。材料与音频会发送至配置的模型，不预测录用结果。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/sherlock-company">入职前查公司与 Offer 公司背景调查</a></h3><p lang="en">Pre-offer employer research and company due diligence</p><details><summary>接 Offer 前，怎么查公司并分清事实和员工评价？</summary><p>输入目标公司和岗位信息，汇总公开来源，分开记录已证实、线索、冲突和未知，生成下一步核实清单。</p><p>使用边界：证据不足保留未知；公开线索不是违法认定，也不能替代劳动合同核实和当面沟通。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/mbai">工作任务 AI 替代风险自评与职业转型</a></h3><p lang="en">Task-level AI automation risk self-assessment for career planning</p><details><summary>怎么判断自己的哪些工作适合用 AI，哪些贡献仍要自己负责？</summary><p>输入工作任务、简历或工作总结，拆解自动化空间、个人贡献与证据缺口，形成解释性自评和行动建议。</p><p>使用边界：正式指标为“工作任务 AI 不可替代指数”，用于职业反思；不是裁员预测或就业概率。采用 CC BY-NC 4.0，限非商业使用。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/storyboard-scavenger">AI 视频分镜与可灵、即梦提示词生成</a></h3><p lang="en">AI video storyboard and prompts for Kling, Seedance, Veo and Sora</p><details><summary>怎样把一个视频创意拆成可灵、即梦或 Veo 可用的分镜提示词？</summary><p>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</p><p>使用边界：主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/codex-gif-video">AI 动图生成与静音 MP4 视频素材</a></h3><p lang="en">Animated GIF generator and silent MP4 video assets for agents</p><details><summary>如何为口播、绘本或 X 内容生成长 GIF 和无声动画素材？</summary><p>从分镜或动作描述生成原生 GIF，再按需要拼接长 GIF 或导出静音 MP4；仓库提供 69 种风格和示例画廊。</p><p>使用边界：需具备对应模型权限，API 可能收费；MP4 是静音素材，人物一致性和全部风格的效果不作保证。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/travel-art-album-skill">旅行照片艺术画册与离线 HTML 翻页相册</a></h3><p lang="en">Travel photo art album and offline HTML flipbook</p><details><summary>怎样把旅行照片做成能离线翻页、打印 PDF 的艺术画册？</summary><p>先清点 10–30 张照片、确认艺术风格小样，再制作单文件 HTML 翻页相册；成品支持离线阅读和浏览器打印。</p><p>使用边界：原图只读，确认小样后才批量处理；成品离线不代表艺术化生成离线，图像模型可能产生费用。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/Attention">ActivityWatch 本地专注力分析与任务切换仪表盘</a></h3><p lang="en">Local ActivityWatch focus analytics and context-switching dashboard</p><details><summary>ActivityWatch 记录了电脑活动，怎么看一天的任务切换与专注时间？</summary><p>读取本机活动记录，按你定义的主要任务分类，展示切换计数、分心来源、持续专注时段与近 7 天趋势。</p><p>使用边界：需先运行 ActivityWatch 并配置分类规则；行为分数不是心理或医学诊断。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/postapp">Chrome 坐姿提醒与本地姿态检测插件</a></h3><p lang="en">Chrome posture reminder with on-device pose detection</p><details><summary>有没有摄像头画面不上传的 Chrome 坐姿提醒插件？</summary><p>姿势企鹅在浏览器本地用姿态检测处理摄像头画面，以企鹅动画和音效提醒调整坐姿，记录保存在浏览器中。</p><p>使用边界：当前需自行构建加载，未上架 Chrome Web Store；提醒不等于医学诊断、治疗或健康效果证明。</p></details></div><div class="card"><h3><a href="https://github.com/ouxxyy/mystery-skill">Mystery 思维模型与职场沟通框架学习</a></h3><p lang="en">Mystery Method mental models and workplace communication study</p><details><summary>怎样用思维模型分析面试压力、谈薪和向上沟通？</summary><p>从公开文献整理认知模型与决策启发式，并提供面试框架、谈薪和向上管理的学习材料。</p><p>使用边界：仅供个人非商业学习，不代表官方认证；保留伦理限制，尊重自主选择，不将影响技巧当作操控他人的工具。</p></details></div></section>
     <footer>
       <p>数据许可：<a href="https://github.com/ouxxyy/ouba-classmate/blob/main/benchmark/LICENSE-data">CC BY 4.0</a>（欢迎引用，请保留指向 <a href="https://github.com/ouxxyy/ouba-classmate">github.com/ouxxyy/ouba-classmate</a> 的署名链接）｜代码许可：MIT（子仓库以各自 LICENSE 为准）。</p>
     </footer>
