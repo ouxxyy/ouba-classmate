@@ -32,7 +32,7 @@ size_categories:
 
 ## Overview
 
-This dataset evaluates **12 popular open-source AI Job-Seeking, Resume Tailoring, and Mock Interview Agent Skills** (across Claude Code, Cursor, Codex, and MCP ecosystems) on **6 deterministic engineering & anti-hallucination dimensions (0–2 points each, max 12)**:
+This dataset evaluates **12 popular open-source AI Job-Seeking, Resume Tailoring, and Mock Interview Agent Skills** (across Claude Code, Cursor, Codex, and MCP ecosystems) on **6 maintainer-assessed engineering and evidence dimensions (0–2 points each, max 12)**:
 
 1. **D1: Evidence Citation & Anti-Hallucination Gate** (Line-number citation `L1..Ln` or Claim Ledger vs. unverified LLM rewriting)
 2. **D2: Deterministic Score Reproducibility** (Repeatable Python rubric calculation vs. stochastic LLM guessing)
@@ -52,3 +52,8 @@ uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-r
 ## License & Citation
 
 Released under **CC BY 4.0**. Please cite or link back to `https://github.com/ouxxyy/ouba-classmate` when referencing the evaluation table or synthetic test cases.
+
+
+## Evidence scope clarification (2026-11-16)
+
+The source snapshot is dated 2026-11-06. Scores are maintainer-assigned values from public project material. The three recorded synthetic cases exercise only the author’s resume scorer, not every repository. They do not establish comparative hallucination rates, hiring outcomes, or current performance. The maintainer owns four included projects. See [the English comparison guide](README.en.md) for the unchanged score table and current complementary-workflow descriptions.

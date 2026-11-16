@@ -1,6 +1,8 @@
 # 《中文 AI 求职 Skill 公开横评》评测方法论（METHOD v0.1）
 
-> **先公开标准，再跑数据**：本文件定义 `ouba-classmate/benchmark` 的样本收录规则、6 大客观评测维度、合成测试数据集规范与利益冲突披露原则。任何人均可通过 `python3 benchmark/scripts/run_benchmark.py` 复现核验。
+> 口径澄清（2026-11-16）：[English guide](README.en.md) 与本页均区分历史资料赋分、API 元数据和自家评分器运行；原始样本日期为 2026-11-06，本轮未重新执行外部工具。
+
+> **先公开标准，再跑数据**：本文件定义 `ouba-classmate/benchmark` 的样本收录规则、6 个资料比较维度、合成测试数据集规范与利益冲突披露原则。生成脚本可复现 CSV 汇总，并在评分器可用时运行自家合成案例；不自动核验全部外部仓库或重算它们的资料评分。
 
 ---
 
@@ -16,7 +18,7 @@
 
 ## 2. 六大评测维度与计分口径（每项 0–2 分，满分 12 分）
 
-为避免“用主观印象给竞品打低分”，所有维度均采用**仓库源码树可核验特征 + 3 组合成案例实测输出**的双重客观标准：
+以下维度用于维护者依据公开源码与文档进行资料赋分。三组合成案例只运行自家评分器，并不构成所有工具的统一实测。赋分包含判断与范围选择，不是确定性的第三方认证：
 
 | 维度代码 | 维度名称 | 0 分标准 | 1 分标准 | 2 分标准 |
 | --- | --- | --- | --- | --- |
@@ -43,4 +45,4 @@
 
 1. **利益冲突声明**：本横评由 `ouxxyy/ouba-classmate` 维护者（欧八同学）发起并维护。表中标记 `[自家项目·利益相关]` 的 4 个仓库（`jd-resume-match`、`job-search`、`ai-interviewer`、`sherlock-company`）均为作者本人开发。
 2. **显式公开自家短板**：我们在维度设计中专门纳入了 **D3（可投递 PDF 简历排版与视觉模板）**——在这项求职者高频刚需上，自家的 `jd-resume-match` 等全部 4 个项目得分均为 **0 分**（明显输给 `KevinYoung-Kw/vibe-resume-skill`、`StoneLL1/resume-builder`、`Claycui828/ASu-resume-skills` 与 `wangyafu/resume-skills`）。此外，`jd-resume-match` 对中文 CID 字体 PDF 不做内置解码（需转文本或 DOCX）。
-3. **无条件申诉与复测**：任何被收录仓库的维护者或第三方读者，如认为某项打分与最新代码不符，只需在 [`ouxxyy/ouba-classmate/issues`](https://github.com/ouxxyy/ouba-classmate/issues) 提交 Issue 并附上 commit 链接，我们将在 72 小时内重跑脚本并更新 `results.csv`。
+3. **无条件申诉与复测**：任何被收录仓库的维护者或第三方读者，如认为某项打分与最新代码不符，只需在 [`ouxxyy/ouba-classmate/issues`](https://github.com/ouxxyy/ouba-classmate/issues) 提交 Issue 并附上 commit 链接，维护者将核对提供的证据；是否复测和更新以实际工作记录为准，不承诺固定处理时限。
