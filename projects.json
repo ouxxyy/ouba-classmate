@@ -1,7 +1,102 @@
 {
-  "generated_at": "2026-11-16T16:14:07+00:00",
+  "generated_at": "2026-11-17T03:30:36+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "codex-gif-video",
+      "url": "https://github.com/ouxxyy/codex-gif-video",
+      "description": "调用 GPT Image 2.6 原生 GIF 能力，按 69 种内置风格生成长 GIF 或静音 MP4（适合 X 短视频、口播动画、绘本及搭配 Hypit 等剪辑 Skill）",
+      "category": "skill",
+      "language": "Python",
+      "stars": 0,
+      "updated_at": "2026-11-17T03:27:50Z",
+      "description_en": "Animated GIF generator and silent MP4 video assets for agents",
+      "keywords": [
+        "GPT Image 2.6",
+        "原生 GIF",
+        "GIF 视频素材",
+        "长 GIF",
+        "静音 MP4",
+        "口播动画素材",
+        "儿童绘本",
+        "X 短视频",
+        "69 种风格",
+        "Hypit 素材",
+        "人物一致性",
+        "animated GIF",
+        "Codex Skill",
+        "AI 动图生成",
+        "长 GIF 生成",
+        "静音 MP4 素材",
+        "口播 B-roll 动画",
+        "animated GIF generator",
+        "silent video assets"
+      ],
+      "use_cases": [
+        "调用 GPT Image 2.6 生成 X 爆款长 GIF 短视频、口播 B-roll 与儿童绘本动图",
+        "为 Hypit、Remotion、Lemo-Opuscar 等热门 AI 剪辑 Skill 提供无字幕原生动画素材",
+        "如何为口播、绘本或 X 内容生成长 GIF 和无声动画素材？"
+      ]
+    },
+    {
+      "name": "ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "description": "AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比",
+      "category": "career",
+      "language": "TypeScript",
+      "stars": 4,
+      "updated_at": "2026-11-17T03:27:49Z",
+      "description_en": "Chinese voice mock interview and interview preparation",
+      "keywords": [
+        "AI面试大师",
+        "AI 面试官",
+        "中文语音模拟面试",
+        "面试陪练",
+        "AI mock interview",
+        "voice interview practice",
+        "AI 面试陪练",
+        "AI 模拟面试中文",
+        "中文语音面试",
+        "产品经理模拟面试",
+        "interview prep",
+        "Chinese mock interview"
+      ],
+      "use_cases": [
+        "练习自我介绍与经历面试",
+        "通过原话点评和重答改进回答",
+        "有能用中文语音练自我介绍和项目经历的 AI 模拟面试工具吗？"
+      ],
+      "order": 2
+    },
+    {
+      "name": "job-search",
+      "url": "https://github.com/ouxxyy/job-search",
+      "description": "AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单",
+      "category": "career",
+      "language": "Python",
+      "stars": 1,
+      "updated_at": "2026-11-17T03:27:48Z",
+      "description_en": "Chinese job search agent and source-backed job hunting shortlist",
+      "keywords": [
+        "AI岗位搜索大师",
+        "求职岗位筛选",
+        "招聘信息整理",
+        "岗位清单",
+        "job search agent",
+        "job shortlist",
+        "中文求职工具",
+        "AI 找工作",
+        "招聘信息筛选",
+        "BOSS 直聘岗位筛选",
+        "job hunting"
+      ],
+      "use_cases": [
+        "按岗位城市薪资筛选招聘信息",
+        "保存带来源证据的岗位清单",
+        "怎样按城市、薪资和发布日期筛选招聘岗位？"
+      ],
+      "order": 0
+    },
     {
       "name": "mystery-skill",
       "url": "https://github.com/ouxxyy/mystery-skill",
@@ -112,42 +207,6 @@
       ]
     },
     {
-      "name": "codex-gif-video",
-      "url": "https://github.com/ouxxyy/codex-gif-video",
-      "description": "调用 GPT Image 2.6 原生 GIF 能力，按 69 种内置风格生成长 GIF 或静音 MP4（适合 X 短视频、口播动画、绘本及搭配 Hypit 等剪辑 Skill）",
-      "category": "skill",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-11-16T16:06:57Z",
-      "description_en": "Animated GIF generator and silent MP4 video assets for agents",
-      "keywords": [
-        "GPT Image 2.6",
-        "原生 GIF",
-        "GIF 视频素材",
-        "长 GIF",
-        "静音 MP4",
-        "口播动画素材",
-        "儿童绘本",
-        "X 短视频",
-        "69 种风格",
-        "Hypit 素材",
-        "人物一致性",
-        "animated GIF",
-        "Codex Skill",
-        "AI 动图生成",
-        "长 GIF 生成",
-        "静音 MP4 素材",
-        "口播 B-roll 动画",
-        "animated GIF generator",
-        "silent video assets"
-      ],
-      "use_cases": [
-        "调用 GPT Image 2.6 生成 X 爆款长 GIF 短视频、口播 B-roll 与儿童绘本动图",
-        "为 Hypit、Remotion、Lemo-Opuscar 等热门 AI 剪辑 Skill 提供无字幕原生动画素材",
-        "如何为口播、绘本或 X 内容生成长 GIF 和无声动画素材？"
-      ]
-    },
-    {
       "name": "storyboard-scavenger",
       "url": "https://github.com/ouxxyy/storyboard-scavenger",
       "description": "AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜",
@@ -232,36 +291,6 @@
       "order": 3
     },
     {
-      "name": "ai-interviewer",
-      "url": "https://github.com/ouxxyy/ai-interviewer",
-      "description": "AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比",
-      "category": "career",
-      "language": "TypeScript",
-      "stars": 4,
-      "updated_at": "2026-11-16T16:06:40Z",
-      "description_en": "Chinese voice mock interview and interview preparation",
-      "keywords": [
-        "AI面试大师",
-        "AI 面试官",
-        "中文语音模拟面试",
-        "面试陪练",
-        "AI mock interview",
-        "voice interview practice",
-        "AI 面试陪练",
-        "AI 模拟面试中文",
-        "中文语音面试",
-        "产品经理模拟面试",
-        "interview prep",
-        "Chinese mock interview"
-      ],
-      "use_cases": [
-        "练习自我介绍与经历面试",
-        "通过原话点评和重答改进回答",
-        "有能用中文语音练自我介绍和项目经历的 AI 模拟面试工具吗？"
-      ],
-      "order": 2
-    },
-    {
       "name": "jd-resume-match",
       "url": "https://github.com/ouxxyy/jd-resume-match",
       "description": "AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告",
@@ -289,35 +318,6 @@
         "怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？"
       ],
       "order": 1
-    },
-    {
-      "name": "job-search",
-      "url": "https://github.com/ouxxyy/job-search",
-      "description": "AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单",
-      "category": "career",
-      "language": "Python",
-      "stars": 1,
-      "updated_at": "2026-11-16T16:06:32Z",
-      "description_en": "Chinese job search agent and source-backed job hunting shortlist",
-      "keywords": [
-        "AI岗位搜索大师",
-        "求职岗位筛选",
-        "招聘信息整理",
-        "岗位清单",
-        "job search agent",
-        "job shortlist",
-        "中文求职工具",
-        "AI 找工作",
-        "招聘信息筛选",
-        "BOSS 直聘岗位筛选",
-        "job hunting"
-      ],
-      "use_cases": [
-        "按岗位城市薪资筛选招聘信息",
-        "保存带来源证据的岗位清单",
-        "怎样按城市、薪资和发布日期筛选招聘岗位？"
-      ],
-      "order": 0
     }
   ]
 }

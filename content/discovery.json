@@ -13,7 +13,8 @@
     ],
     "topics": [
       "resume",
-      "interview-prep"
+      "interview-prep",
+      "career"
     ],
     "question": "想用 Claude Code 或 Codex 找岗位、改简历、练中文面试，有哪些工具？",
     "answer": "按任务选择岗位搜索、简历与 JD 证据匹配、中文经历面试和公司调查工具；合集同时提供公开视频与本地效率项目入口。",
@@ -34,7 +35,8 @@
     ],
     "topics": [
       "job-search-tools",
-      "job-listings"
+      "job-listings",
+      "career"
     ],
     "question": "怎样按城市、薪资和发布日期筛选招聘岗位？",
     "answer": "先确认求职条件，再通过可访问的招聘来源整理 HTML、Excel、JSON 岗位清单，保留来源、日期依据和待核实项。",

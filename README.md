@@ -81,7 +81,7 @@ Chinese career agent skills for job search, resume matching and interview prep.
   <a href="benchmark/README.md"><img src="https://img.shields.io/badge/BENCHMARK-Top_Tier_10%2F12-238636?style=for-the-badge" alt="Benchmark 10/12"></a>
 </p>
 
-<img src="assets/divider.svg" width="100%" alt="">
+<img src="assets/divider.svg" width="100%" alt="section divider">
 
 ### 02 · 中文大厂语音与文字追问模拟面试官 · `ai-interviewer`
 
@@ -98,7 +98,7 @@ Chinese career agent skills for job search, resume matching and interview prep.
   <a href="skills/ai-interviewer/SKILL.md"><img src="https://img.shields.io/badge/SKILL-SKILL.md-1f6feb?style=for-the-badge" alt="SKILL.md"></a>
 </p>
 
-<img src="assets/divider.svg" width="100%" alt="">
+<img src="assets/divider.svg" width="100%" alt="section divider">
 
 ### 03 · 多来源、多条件求职岗位筛选 · `job-search`
 
@@ -114,7 +114,7 @@ Chinese career agent skills for job search, resume matching and interview prep.
   <a href="skills/job-search/SKILL.md"><img src="https://img.shields.io/badge/SKILL-SKILL.md-238636?style=for-the-badge" alt="SKILL.md"></a>
 </p>
 
-<img src="assets/divider.svg" width="100%" alt="">
+<img src="assets/divider.svg" width="100%" alt="section divider">
 
 ### 04 · 接 Offer 前四态公司与团队背调 · `sherlock-company`
 
@@ -130,7 +130,7 @@ Chinese career agent skills for job search, resume matching and interview prep.
   <a href="skills/sherlock-company/SKILL.md"><img src="https://img.shields.io/badge/SKILL-SKILL.md-1f6feb?style=for-the-badge" alt="SKILL.md"></a>
 </p>
 
-<img src="assets/divider.svg" width="100%" alt="">
+<img src="assets/divider.svg" width="100%" alt="section divider">
 
 ### 05 · 为个人建 4 核 AI 智囊团 Skill · `mbai`
 
@@ -146,7 +146,7 @@ Chinese career agent skills for job search, resume matching and interview prep.
   <a href="skills/mbai/SKILL.md"><img src="https://img.shields.io/badge/SKILL-SKILL.md-1f6feb?style=for-the-badge" alt="SKILL.md"></a>
 </p>
 
-<img src="assets/divider.svg" width="100%" alt="">
+<img src="assets/divider.svg" width="100%" alt="section divider">
 
 ### 06 · 零浏览器依赖原生演示 GIF 与短视频引擎 · `codex-gif-video`
 

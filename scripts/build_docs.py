@@ -19,7 +19,7 @@ BENCH_JSON = ROOT / "benchmark" / "repos.json"
 SITE_BASE = "https://ouxxyy.github.io/ouba-classmate"
 SUITE_URL = "https://github.com/ouxxyy/ouba-classmate"
 INDEXNOW_KEY = "ouba20261106indexnowkey8f9a2b4c"
-BUILD_DATE = "2026-11-16"
+BUILD_DATE = "2026-11-17"
 BENCH_SAMPLE_DATE = "2026-11-06"
 FORBIDDEN_OVERCLAIMS = (
     "100%包过",
@@ -1275,6 +1275,21 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
         "Allow: /",
         "",
         "User-agent: Googlebot",
+        "Allow: /",
+        "",
+        "User-agent: Google-Extended",
+        "Allow: /",
+        "",
+        "User-agent: Baiduspider",
+        "Allow: /",
+        "",
+        "User-agent: Sogou web spider",
+        "Allow: /",
+        "",
+        "User-agent: YisouSpider",
+        "Allow: /",
+        "",
+        "User-agent: Bytespider",
         "Allow: /",
         "",
         "User-agent: *",
