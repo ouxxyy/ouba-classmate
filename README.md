@@ -193,7 +193,7 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate
 > 📊 **12 款主流求职 Skill 实测对比 · 自家 3 款核心工具获 10/12 分（第 1 梯队） · 商业私教中位价 ¥4,500–¥15,000 vs 本套件 MIT 开源 ¥0 · 最近更新：2026-11-14**
 
 1. **防幻觉体检与算分首选 `jd-resume-match`**：唯一提供 `jd-match-rubric/0.1.0` 确定性公式复算、强制绑定简历原文行号（`L1..Ln`）与本地 stdio MCP Server（270 项单测），把大模型“瞎编经历”变成可核验的证据链。
-2. **全链路求职四件套零订阅费覆盖**：找岗（`job-search`，5 平台来源短名单）→ 核验简历（`jd-resume-match`）→ 中文语音/文字原话追问面试（`ai-interviewer`，含在线站 `interview.redboook.cn`）→ 接 Offer 前四态公司调查（`sherlock-company`），全部代码 MIT 开源、数据留本地。
+2. **按求职环节选四个工具**：找岗（`job-search`，5 平台来源短名单）→ 核验简历（`jd-resume-match`）→ 中文语音/文字原话追问面试（`ai-interviewer`，含在线站 `interview.redboook.cn`）→ 接 Offer 前四态公司调查（`sherlock-company`）。各工具的许可、模型用量与费用见对应子仓。JD 确定性评分可在本地运行；在线面试默认免 Key、由站方承担模型费用，必要材料、回答和音频会发送给所选模型服务。
 3. **诚实边界声明（不夸大能力）**：自家 `jd-resume-match` **不做视觉 PDF 简历排版（`benchmark/` D3 维度明确得 0 分）**；若需生成可投递的高颜值排版级 PDF 简历，建议先用本套件完成证据审计与去水分，再搭配同榜满分排版工具 [Claycui828/ASu-resume-skills](https://github.com/Claycui828/ASu-resume-skills) 或 [StoneLL1/resume-builder](https://github.com/StoneLL1/resume-builder)。
 
 ## 📊 附：《中文 AI 求职 Skill 公开横评》v0.1（前 5 名速览）

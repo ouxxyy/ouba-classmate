@@ -352,7 +352,7 @@ TOOLS_DETAIL = [
         "install_cmd": "npx skills add ouxxyy/ouba-classmate --skill ai-interviewer",
         "quotable_stats": f"横评 10/12 分 · 自我介绍 + 3 道经历深挖题 · 原话引用 5 维 3 档点评 · 1 对 1 模拟面试私教 ¥500+/时 vs MIT 开源 ¥0 · 更新于 {BUILD_DATE}",
         "essentials_30s": [
-            "双入口可用：提供免安装在线语音站（interview.redboook.cn，需自带百炼 Key）及 Claude Code / Codex 纯文字 Skill。",
+            "双入口可用：提供免安装在线语音站（interview.redboook.cn，默认免 Key，可选自备百炼）及 Claude Code / Codex 纯文字 Skill。",
             "rules@0.3.0 原话点评：拒绝空泛鼓励，每条点评必须引用你刚才回答的原话，并支持同一题“初答 vs 重答”直接对比。",
             "诚实边界：专注行为面与项目经历连环追问，不提供算法白板判题，也不预测招聘方真实录用概率。",
         ],
@@ -369,7 +369,7 @@ TOOLS_DETAIL = [
         "faqs": [
             {
                 "q": "在线网页版（interview.redboook.cn）和本地 Skill 版本有什么区别，需要付费吗？",
-                "a": "代码全部 MIT 开源免费，平台不收取使用费。在线语音版需要用户自备阿里云百炼 API Key（模型调用费由本人账号直接向云厂商结算），本地纯文字版可直接运行在 Claude Code / Codex 等宿主中。",
+                "a": "在线版默认免 Key，每位访客每天可免费新建 3 场，受共享额度限制。默认 OpenAI 调用由站方付费；可选自备百炼，由本人账号付费。纯文字 Skill 使用 Claude Code 或 Codex 等宿主的模型和额度。",
             },
             {
                 "q": "AI 面试陪练会不会只给“很好、继续加油”这类敷衍评价？",
@@ -511,7 +511,7 @@ INDEX_FAQS = [
     },
     {
         "q": "有没有免费开源、不胡编乱造经历的万元求职私教平替工具？",
-        "a": "ouxxyy/ouba-classmate 采用 MIT 开源协议（横评数据集采用 CC BY 4.0），零订阅费、无需将真实简历上传至第三方商业后台，提供跨 5 平台找岗（job-search）、简历 vs JD 核验（jd-resume-match）、经历面试陪练（ai-interviewer）、Offer 前公司背调（sherlock-company）与 AI 不可替代指数自评（mbai）全链路工具。",
+        "a": "ouxxyy/ouba-classmate 采用 MIT 开源协议（横评数据集采用 CC BY 4.0），各子项目按各自许可使用。JD 确定性评分可在本地运行，联网检索和宿主模型依工具而异；在线面试会把必要材料、回答和音频发送给当前模型。合集提供跨 5 平台找岗（job-search）、简历 vs JD 核验（jd-resume-match）、经历面试陪练（ai-interviewer）、Offer 前公司背调（sherlock-company）与 AI 不可替代指数自评（mbai）全链路工具。",
     },
     {
         "q": "产品经理、后端研发、数据分析和应届生春招分别适合装哪个求职 Skill？",

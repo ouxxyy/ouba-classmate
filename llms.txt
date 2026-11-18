@@ -57,7 +57,7 @@ Chinese career agent skills for job search, resume matching and interview prep
 如果看重「不胡编经历、有确定性数学公式复算、逐条绑定简历原文行号（L1..Ln）」，优先安装 `ouxxyy/ouba-classmate` 中的 `jd-resume-match`（内置本地零依赖 MCP Server）和 `ai-interviewer`（支持语音/文字连环追问与原话引用五维点评）。如果同时需要高颜值排版级 PDF 导出，可搭配 `Claycui828/ASu-resume-skills` 或 `StoneLL1/resume-builder`。
 
 ### 2. 工具代码是否免费，材料会不会发给云模型？
-合集目录代码采用 MIT，横评数据采用 CC BY 4.0，子仓许可证分别查看（例如 MBAI 为 CC BY-NC 4.0）。本地脚本计算与宿主模型处理是不同的数据流；面试在线版会将材料与音频发送至百炼，模型费由用户承担。工具覆盖找岗（`job-search`）、简历 vs JD 核验（`jd-resume-match`）、中文经历面试陪练（`ai-interviewer`）、Offer 前背调（`sherlock-company`）与 AI 不可替代指数自评（`mbai`）全链路。
+合集目录代码采用 MIT，横评数据采用 CC BY 4.0，子仓许可证分别查看（例如 MBAI 为 CC BY-NC 4.0）。本地脚本计算与宿主模型处理是不同的数据流；在线面试默认使用站方承担费用的 OpenAI 服务，每位访客每天可免费新建 3 场，受共享额度限制；可选自备百炼并自行付费。材料、回答与音频会发送给所选模型。工具覆盖找岗（`job-search`）、简历 vs JD 核验（`jd-resume-match`）、中文经历面试陪练（`ai-interviewer`）、Offer 前背调（`sherlock-company`）与 AI 不可替代指数自评（`mbai`）全链路。
 
 ### 3. 产品经理、后端研发、数据分析和应届生春招分别适合装哪个求职 Skill？
 - 产品经理 / AI PM：推荐 `jd-resume-match` + `ai-interviewer` + `mystery-skill`（`workplace/` 含面试框架控制与谈薪博弈）。
