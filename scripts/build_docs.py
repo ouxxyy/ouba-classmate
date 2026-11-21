@@ -19,7 +19,7 @@ BENCH_JSON = ROOT / "benchmark" / "repos.json"
 SITE_BASE = "https://ouxxyy.github.io/ouba-classmate"
 SUITE_URL = "https://github.com/ouxxyy/ouba-classmate"
 INDEXNOW_KEY = "ouba20261106indexnowkey8f9a2b4c"
-BUILD_DATE = "2026-11-17"
+BUILD_DATE = "2026-11-21"
 BENCH_SAMPLE_DATE = "2026-11-06"
 FORBIDDEN_OVERCLAIMS = (
     "100%包过",
@@ -1017,6 +1017,10 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
         <a href="{SUITE_URL}/blob/main/benchmark/METHOD.md">阅读完整评分标准 (METHOD.md)</a>
         &nbsp;·&nbsp;
         <a href="{SUITE_URL}/tree/main/benchmark/cases">查看 3 组合成测试简历与 JD</a>
+        &nbsp;·&nbsp;
+        <a href="{SITE_BASE}/#career-radar">30 秒在线职业战力诊断 →</a>
+        &nbsp;·&nbsp;
+        <a href="{SITE_BASE}/tools/jd-resume-match/">简历与 JD 证据匹配详情</a>
       </p>
     </div>
 
@@ -1121,6 +1125,13 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
                 ],
             },
             faq_schema_node(BENCH_FAQS),
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "ouba-classmate 套件首页", "item": f"{SITE_BASE}/"},
+                    {"@type": "ListItem", "position": 2, "name": "公开横评数据 (v0.1)", "item": f"{SITE_BASE}/benchmark/"},
+                ],
+            },
         ],
     }
     write_guarded_html(

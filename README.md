@@ -89,8 +89,8 @@ Chinese career agent skills for job search, resume matching and interview prep.
   <a href="https://github.com/ouxxyy/ai-interviewer"><img src="assets/card-interviewer.svg" width="100%" alt="ai-interviewer — 原话深度追问与五维复盘对比"></a>
 </p>
 
-**贴上简历与 JD，AI 面试官全程基于你的原话深挖项目细节，支持中文语音实时连麦、五维原话点评与初答重答对比。**<br>
-<sub>Mock interviewer with real-time Chinese voice Q&A, contextual follow-ups anchored to your resume claims, and multi-page structured debrief reports.</sub>
+**贴上简历与 JD，AI 面试官全程基于你的原话深挖项目细节，支持中文语音实时连麦、五维原话点评与初答重答对比（在线版默认免费、无需 API Key，每访客每天 3 场；可选自备百炼）。**<br>
+<sub>Mock interviewer with real-time Chinese voice Q&A (free hosted access, no API key required), contextual follow-ups anchored to your resume claims, and multi-page structured debrief reports.</sub>
 
 <p>
   <a href="https://github.com/ouxxyy/ai-interviewer"><img src="https://img.shields.io/badge/REPO-ai--interviewer-8957e5?style=for-the-badge" alt="ai-interviewer Repo"></a>
@@ -148,18 +148,18 @@ Chinese career agent skills for job search, resume matching and interview prep.
 
 <img src="assets/divider.svg" width="100%" alt="section divider">
 
-### 06 · 零浏览器依赖原生演示 GIF 与短视频引擎 · `codex-gif-video`
+### 06 · 调用 GPT Image 2.6 原生 GIF 与静音 MP4 引擎 · `codex-gif-video`
 
 <p>
-  <a href="https://github.com/ouxxyy/codex-gif-video"><img src="assets/card-gif.svg" width="100%" alt="codex-gif-video — 14 种风格演示 GIF 与 MP4 一键出片"></a>
+  <a href="https://github.com/ouxxyy/codex-gif-video"><img src="assets/card-gif.svg" width="100%" alt="codex-gif-video — 调用 GPT Image 2.6 按 69 种风格生成长 GIF 与静音 MP4 素材"></a>
 </p>
 
-**纯本地 Node / Pillow 驱动、无需启动 Playwright 与无头浏览器，一句话生成 14 种科技/动效风格高清展示 GIF 与带配音 MP4。**  
-<sub>Zero-browser headless-free demo GIF & narrated MP4 generator with 14 visual presets for README launches and social demos.</sub>
+**调用 GPT Image 2.6 原生 GIF 能力、无需启动无头浏览器，按 69 种内置风格生成长 GIF 或静音 MP4（适合 X 短视频、口播 B-roll、绘本及搭配 Hypit / Remotion 等剪辑 Skill）。**<br>
+<sub>Native GPT Image 2.6 animated GIF & silent MP4 asset generator across 69 visual styles for X posts, talking-head B-roll, and Hypit/Remotion workflows.</sub>
 
 <p>
   <a href="https://github.com/ouxxyy/codex-gif-video"><img src="https://img.shields.io/badge/REPO-codex--gif--video-238636?style=for-the-badge" alt="codex-gif-video Repo"></a>
-  <a href="https://github.com/ouxxyy/codex-gif-video#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B"><img src="https://img.shields.io/badge/STYLES-14_Presets-1f6feb?style=for-the-badge" alt="14 Presets"></a>
+  <a href="https://github.com/ouxxyy/codex-gif-video#install"><img src="https://img.shields.io/badge/STYLES-69_Built--in-1f6feb?style=for-the-badge" alt="69 Built-in Styles"></a>
 </p>
 
 ## 怎么选择与使用
@@ -215,7 +215,8 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate
 - **Claude Code 插件市场清单**：[.claude-plugin/marketplace.json](.claude-plugin/marketplace.json)
 - **Cursor 插件市场清单**：[.cursor-plugin/marketplace.json](.cursor-plugin/marketplace.json) 与 [.cursor-plugin/plugin.json](.cursor-plugin/plugin.json)
 - **Codex / ChatGPT Desktop 插件清单**：[.codex-plugin/plugin.json](.codex-plugin/plugin.json)
-- **根目录标准 MCP Server 配置**：[.mcp.json](.mcp.json)
+- **Gemini CLI 扩展清单**：[gemini-extension.json](gemini-extension.json)
+- **根目录标准 MCP Server 与注册表清单**：[.mcp.json](.mcp.json)、[glama.json](glama.json)、[server.json](server.json)
 - **直接可安装的 Skills 目录**：[`skills/<name>/SKILL.md`](skills/)
 - **12 个求职 Skill 实测横评数据（CSV / JSON / 方法论）**：[`benchmark/results.csv`](benchmark/results.csv)、[`benchmark/repos.json`](benchmark/repos.json)、[`benchmark/METHOD.md`](benchmark/METHOD.md)
 - **机器可读项目目录**：[projects.json](projects.json) 与 [llms.txt](llms.txt)

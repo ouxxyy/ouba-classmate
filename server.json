@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.json",
+  "name": "io.github.ouxxyy/ouba-classmate",
+  "description": "Deterministic resume-vs-JD evidence matcher and Chinese career skills suite (local stdio MCP).",
+  "repository": {
+    "url": "https://github.com/ouxxyy/ouba-classmate",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "jd-resume-match-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

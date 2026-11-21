@@ -1,0 +1,15 @@
+{
+  "name": "ouba-classmate",
+  "version": "1.0.0",
+  "description": "Chinese career agent skills suite (job search, resume matching, voice mock interview, pre-offer research) and creative workflow skills, with deterministic resume-vs-JD MCP.",
+  "mcpServers": {
+    "jd-resume-match": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp",
+        "jd-resume-match-mcp"
+      ]
+    }
+  }
+}
