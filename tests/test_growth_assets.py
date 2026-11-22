@@ -102,10 +102,13 @@ class GrowthAssetsTests(unittest.TestCase):
             self.assertIn(build_docs.BUILD_DATE, text, f"Missing fresh build date in {p}")
             build_docs.check_guardrails(str(p), text)
 
-        # 2. robots.txt 显式放行 AI 搜索/实时阅读 Bot 与 Bingbot
+        # 2. robots.txt 显式放行 AI 搜索/实时阅读 Bot 与 Bingbot，并同步部署 docs/llms.txt
         robots = (ROOT / "docs" / "robots.txt").read_text(encoding="utf-8")
         for bot in ("OAI-SearchBot", "ChatGPT-User", "Bingbot"):
             self.assertIn(bot, robots)
+        docs_llms = ROOT / "docs" / "llms.txt"
+        self.assertTrue(docs_llms.is_file(), "Missing docs/llms.txt for GitHub Pages")
+        self.assertGreater(len(docs_llms.read_text(encoding="utf-8").strip()), 100)
 
         # 3. 诚实护栏能拦截夸大承诺
         bad_html = '<div class="quotable-summary">10</div><details><summary>Q</summary><p>100%包过，边界</p></details>'

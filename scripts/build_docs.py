@@ -19,7 +19,7 @@ BENCH_JSON = ROOT / "benchmark" / "repos.json"
 SITE_BASE = "https://ouxxyy.github.io/ouba-classmate"
 SUITE_URL = "https://github.com/ouxxyy/ouba-classmate"
 INDEXNOW_KEY = "ouba20261106indexnowkey8f9a2b4c"
-BUILD_DATE = "2026-11-21"
+BUILD_DATE = "2026-11-22"
 BENCH_SAMPLE_DATE = "2026-11-06"
 FORBIDDEN_OVERCLAIMS = (
     "100%包过",
@@ -1310,6 +1310,9 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
         "",
     ]
     (DOCS_DIR / "robots.txt").write_text("\n".join(robots_lines), encoding="utf-8")
+    root_llms = ROOT / "llms.txt"
+    if root_llms.is_file():
+        (DOCS_DIR / "llms.txt").write_text(root_llms.read_text(encoding="utf-8"), encoding="utf-8")
     (DOCS_DIR / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY + "\n", encoding="utf-8")
     (DOCS_DIR / ".nojekyll").write_text("", encoding="utf-8")
 

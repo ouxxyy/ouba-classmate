@@ -89,8 +89,8 @@ Chinese career agent skills for job search, resume matching and interview prep.
   <a href="https://github.com/ouxxyy/ai-interviewer"><img src="assets/card-interviewer.svg" width="100%" alt="ai-interviewer — 原话深度追问与五维复盘对比"></a>
 </p>
 
-**贴上简历与 JD，AI 面试官全程基于你的原话深挖项目细节，支持中文语音实时连麦、五维原话点评与初答重答对比（在线版默认免费、无需 API Key，每访客每天 3 场；可选自备百炼）。**<br>
-<sub>Mock interviewer with real-time Chinese voice Q&A (free hosted access, no API key required), contextual follow-ups anchored to your resume claims, and multi-page structured debrief reports.</sub>
+**贴上简历与 JD，AI 面试官全程基于你的原话深挖项目细节，支持中文语音作答、五维原话点评与初答重答对比。免费模式下，点“说完了”后系统会转写这段回答（在线版默认免费、无需 API Key，每访客每天 3 场；可选自备百炼）。**<br>
+<sub>Mock interviewer with Chinese voice practice (free hosted access, no API key required; answers are transcribed after you finish speaking and tap “说完了”), contextual follow-ups anchored to your resume claims, and multi-page structured debrief reports.</sub>
 
 <p>
   <a href="https://github.com/ouxxyy/ai-interviewer"><img src="https://img.shields.io/badge/REPO-ai--interviewer-8957e5?style=for-the-badge" alt="ai-interviewer Repo"></a>
