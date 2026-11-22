@@ -1,7 +1,63 @@
 {
-  "generated_at": "2026-11-21T03:22:43+00:00",
+  "generated_at": "2026-11-22T02:31:35+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "travel-art-album-skill",
+      "url": "https://github.com/ouxxyy/travel-art-album-skill",
+      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
+      "category": "skill",
+      "language": "JavaScript",
+      "stars": 3,
+      "updated_at": "2026-11-21T11:39:07Z",
+      "description_en": "Travel photo art album and offline HTML flipbook",
+      "keywords": [
+        "旅行照片画册",
+        "离线翻页相册",
+        "照片艺术化",
+        "travel photo album",
+        "offline flipbook",
+        "旅行照片艺术画册",
+        "离线 HTML 翻页相册",
+        "照片转水彩画册",
+        "旅行画册 PDF",
+        "offline HTML flipbook"
+      ],
+      "use_cases": [
+        "把旅行照片制作成艺术画册",
+        "离线翻阅相册并用浏览器打印 PDF",
+        "怎样把旅行照片做成能离线翻页、打印 PDF 的艺术画册？"
+      ]
+    },
+    {
+      "name": "jd-resume-match",
+      "url": "https://github.com/ouxxyy/jd-resume-match",
+      "description": "AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告",
+      "category": "career",
+      "language": "Python",
+      "stars": 1,
+      "updated_at": "2026-11-21T11:39:00Z",
+      "description_en": "Evidence-based resume optimization and job-description matching",
+      "keywords": [
+        "AI简历优化大师",
+        "简历 JD 匹配",
+        "简历优化",
+        "证据匹配",
+        "resume matching",
+        "resume review",
+        "Claude 简历优化",
+        "简历优化 skill",
+        "中文 JD 匹配",
+        "简历证据审查",
+        "resume optimization"
+      ],
+      "use_cases": [
+        "对照岗位要求查简历证据缺口",
+        "调整简历结构与经历表达",
+        "怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？"
+      ],
+      "order": 1
+    },
     {
       "name": "ai-interviewer",
       "url": "https://github.com/ouxxyy/ai-interviewer",
@@ -180,33 +236,6 @@
       ]
     },
     {
-      "name": "travel-art-album-skill",
-      "url": "https://github.com/ouxxyy/travel-art-album-skill",
-      "description": "旅行照片艺术画册 Skill：确认风格小样后制作单文件离线 HTML 翻页相册",
-      "category": "skill",
-      "language": "JavaScript",
-      "stars": 2,
-      "updated_at": "2026-11-16T16:07:01Z",
-      "description_en": "Travel photo art album and offline HTML flipbook",
-      "keywords": [
-        "旅行照片画册",
-        "离线翻页相册",
-        "照片艺术化",
-        "travel photo album",
-        "offline flipbook",
-        "旅行照片艺术画册",
-        "离线 HTML 翻页相册",
-        "照片转水彩画册",
-        "旅行画册 PDF",
-        "offline HTML flipbook"
-      ],
-      "use_cases": [
-        "把旅行照片制作成艺术画册",
-        "离线翻阅相册并用浏览器打印 PDF",
-        "怎样把旅行照片做成能离线翻页、打印 PDF 的艺术画册？"
-      ]
-    },
-    {
       "name": "storyboard-scavenger",
       "url": "https://github.com/ouxxyy/storyboard-scavenger",
       "description": "AI 视频分镜与提示词生成 Skill：提供可灵 Kling／即梦 Seedance 工作流与七要素分镜",
@@ -289,35 +318,6 @@
         "接 Offer 前，怎么查公司并分清事实和员工评价？"
       ],
       "order": 3
-    },
-    {
-      "name": "jd-resume-match",
-      "url": "https://github.com/ouxxyy/jd-resume-match",
-      "description": "AI简历优化大师：简历与 JD 匹配及优化，证据引用、可复算评分、结构建议与离线 HTML 报告",
-      "category": "career",
-      "language": "Python",
-      "stars": 0,
-      "updated_at": "2026-11-16T16:06:36Z",
-      "description_en": "Evidence-based resume optimization and job-description matching",
-      "keywords": [
-        "AI简历优化大师",
-        "简历 JD 匹配",
-        "简历优化",
-        "证据匹配",
-        "resume matching",
-        "resume review",
-        "Claude 简历优化",
-        "简历优化 skill",
-        "中文 JD 匹配",
-        "简历证据审查",
-        "resume optimization"
-      ],
-      "use_cases": [
-        "对照岗位要求查简历证据缺口",
-        "调整简历结构与经历表达",
-        "怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？"
-      ],
-      "order": 1
     }
   ]
 }
