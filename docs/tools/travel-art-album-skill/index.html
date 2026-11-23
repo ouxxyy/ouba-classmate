@@ -237,7 +237,7 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
       "url": "https://ouxxyy.github.io/ouba-classmate/tools/travel-art-album-skill/",
       "codeRepository": "https://github.com/ouxxyy/travel-art-album-skill",
       "license": "https://opensource.org/license/mit",
-      "dateModified": "2026-11-22",
+      "dateModified": "2026-11-23",
       "description": "先清点 10–30 张照片、确认艺术风格小样，再制作单文件 HTML 翻页相册；成品支持离线阅读和浏览器打印。",
       "author": {
         "@type": "Person",
@@ -304,12 +304,11 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-22</span>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-23</span>
           <h1>旅行照片艺术画册与离线 HTML 翻页相册｜travel-art-album-skill</h1>
-          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 用途与边界核对：2026-11-22</div><ul><li>先清点 10–30 张照片、确认艺术风格小样，再制作单文件 HTML 翻页相册；成品支持离线阅读和浏览器打印。</li><li>Travel photo art album and offline HTML flipbook</li><li>原图只读，确认小样后才批量处理；成品离线不代表艺术化生成离线，图像模型可能产生费用。</li></ul></div>
-          <p>先清点 10–30 张照片、确认艺术风格小样，再制作单文件 HTML 翻页相册；成品支持离线阅读和浏览器打印。</p>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 用途与边界</div><ul><li>先清点 10–30 张照片、确认艺术风格小样，再制作单文件 HTML 翻页相册；成品支持离线阅读和浏览器打印。</li><li>Travel photo art album and offline HTML flipbook</li><li>原图只读，确认小样后才批量处理；成品离线不代表艺术化生成离线，图像模型可能产生费用。</li></ul></div>
           <p>
-            <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
+            <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">查看合集与其他安装方式</a>
             &nbsp;·&nbsp;
             <a href="https://github.com/ouxxyy/travel-art-album-skill">查看组件源码仓 (travel-art-album-skill)</a>
             &nbsp;·&nbsp;
@@ -327,21 +326,14 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
               <thead>
                 <tr><th>目标人群 × 具体痛点</th><th>本工具交付效果</th><th>推荐执行入口</th></tr>
               </thead>
-              <tbody><tr><td><strong>家庭/情侣旅行纪念 × 想要独特画册质感但担心 AI 把人脸改得不像本人</strong></td><td>先用同张照片出 4 种风格小样预览五官辨识度，拍板后再跑批量生成</td><td><code>npx skills add ouxxyy/ouba-classmate --skill travel-art-album-skill</code></td></tr><tr><td><strong>准备送礼或离线传阅 × 不想依赖云端相册过期失效</strong></td><td>输出零外链依赖的单个 HTML 文件，自带 3D 翻页动效并支持浏览器打印导 PDF</td><td><code>全部原始照片只读不覆盖，安全留存本地</code></td></tr><tr><td><strong>设计师/摄影师作品集 × 希望保留照片展签说明与精装封面</strong></td><td>内置画廊展签排版模板，自动写入地点时间与拍摄故事</td><td><code>需要宿主环境已配置有效的 image-to-image 编辑工具</code></td></tr></tbody>
+              <tbody><tr><td><strong>家庭/情侣旅行纪念 × 想要独特画册质感但担心 AI 把人脸改得不像本人</strong></td><td>先用同张照片出 4 种风格小样预览五官辨识度，拍板后再跑批量生成</td><td><code>npx skills add ouxxyy/ouba-classmate --skill travel-art-album</code></td></tr><tr><td><strong>准备送礼或离线传阅 × 不想依赖云端相册过期失效</strong></td><td>输出零外链依赖的单个 HTML 文件，自带 3D 翻页动效并支持浏览器打印导 PDF</td><td><code>全部原始照片只读不覆盖，安全留存本地</code></td></tr><tr><td><strong>设计师/摄影师作品集 × 希望保留照片展签说明与精装封面</strong></td><td>内置画廊展签排版模板，自动写入地点时间与拍摄故事</td><td><code>需要宿主环境已配置有效的 image-to-image 编辑工具</code></td></tr></tbody>
             </table>
           </div>
         </div>
 
-        <h2>通过 ouba-classmate 套件一行安装</h2>
-        <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
-claude plugin marketplace add ouxxyy/ouba-classmate
-npx skills add ouxxyy/ouba-classmate --skill travel-art-album-skill
-
-# 觉得有用？在终端 1 秒为开源主仓点亮一颗 Star
-gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
-
-        <h2>核心用途与使用条件</h2>
-        <div class="card"><ul><li>先清点 10–30 张照片、确认艺术风格小样，再制作单文件 HTML 翻页相册；成品支持离线阅读和浏览器打印。</li><li>Travel photo art album and offline HTML flipbook</li><li>原图只读，确认小样后才批量处理；成品离线不代表艺术化生成离线，图像模型可能产生费用。</li></ul></div>
+        <h2>安装与首次使用</h2>
+        <pre><code>npx skills add ouxxyy/ouba-classmate --skill travel-art-album</code></pre>
+        <p><a href="https://github.com/ouxxyy/travel-art-album-skill#quick-start">打开项目的使用说明与示例</a></p>
 
         <h2>能力边界与诚实说明</h2>
         <div class="card"><p>原图只读，确认小样后才批量处理；成品离线不代表艺术化生成离线，图像模型可能产生费用。</p></div>

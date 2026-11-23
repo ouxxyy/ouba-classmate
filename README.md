@@ -5,9 +5,9 @@
 
 **想用 Claude Code 或 Codex 找岗位、改简历、练中文面试，有哪些工具？** 按任务选择岗位搜索、简历与 JD 证据匹配、中文经历面试和公司调查工具；合集同时提供公开视频与本地效率项目入口。
 
-Chinese career agent skills for job search, resume matching and interview prep.
+Chinese career agent skills for finding open roles, comparing a résumé with a job description, and practising interview answers.
 
-**开始使用：** [按需求找](#按需求找) · [安装 Skills](#install) · [直接练面试](https://interview.redboook.cn/) · [横评方法与数据](benchmark/README.md)。
+**选一个入口开始。** 想马上开口练习，可直接打开[中文语音面试](https://interview.redboook.cn/)。手头已经有目标 JD，可以先看[简历匹配的合成案例与报告](https://github.com/ouxxyy/jd-resume-match/blob/main/examples/README.md)。想把工具装进自己的 Agent，先看[安装命令](#install)或[按需求选项目](#按需求找)。
 
 **使用边界：** 各子项目许可证及依赖分别查看；宿主或云模型可能收费。横评是公开仓库材料审计，不能当作录用效果或完整运行质量排名。
 
@@ -72,8 +72,8 @@ Chinese career agent skills for job search, resume matching and interview prep.
   <a href="https://github.com/ouxxyy/jd-resume-match"><img src="assets/card-resume.svg" width="100%" alt="jd-resume-match — 确定性 JD 匹配公式与原文行号证据链审计"></a>
 </p>
 
-**对照真实 JD 做确定性公式算分、原文行号（L1..Ln）证据锁定与去水分审计，附带本地 stdio MCP Server（270 项单测；不做视觉 PDF 排版）。**  
-<sub>Deterministic `jd-match-rubric` scorer, line-cited anti-hallucination resume audit (`L1..Ln`), and local stdio MCP server with 270 tests (score-and-evidence only, no PDF visual layout).</sub>
+**对照真实 JD 做确定性公式算分、原文行号（L1..Ln）证据锁定与去水分审计，附带本地 stdio MCP Server（不做视觉 PDF 排版）。**<br>
+<sub>Deterministic `jd-match-rubric` scorer, line-cited anti-hallucination resume audit (`L1..Ln`), and local stdio MCP server for score-and-evidence checks (no visual PDF layout).</sub>
 
 <p>
   <a href="https://github.com/ouxxyy/jd-resume-match"><img src="https://img.shields.io/badge/REPO-jd--resume--match-1f6feb?style=for-the-badge" alt="jd-resume-match Repo"></a>
@@ -173,20 +173,20 @@ Chinese career agent skills for job search, resume matching and interview prep.
 ## ⚡ 一行安装（Claude Code / Codex / Cursor / GitHub CLI / skills CLI / MCP）
 
 ```bash
-# 1. Claude Code / Cursor / Codex 插件市场：一行注册本套件（已内置 .claude-plugin / .cursor-plugin / .codex-plugin / .mcp.json）
+# 1. 在 Claude Code 注册合集插件市场
 claude plugin marketplace add ouxxyy/ouba-classmate
 
-# 2. GitHub CLI 官方技能安装（参考 seo-party-skills 规范）或 Agent Skills CLI：一键安装全部或指定 Skill
+# 2. 在下列命令中选择一种；--list 可先显示可选名称
 gh skill install ouxxyy/ouba-classmate jd-resume-match
-npx skills add ouxxyy/ouba-classmate
+npx skills add ouxxyy/ouba-classmate --list
 npx skills add ouxxyy/ouba-classmate --skill jd-resume-match
 
 # 3. MCP Server（零依赖本地运行，按 jd-match-rubric/0.1.0 公式确定性复算简历 vs JD 分数）
 uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp --self-test
 
-# 4. 觉得有用？在终端用 1 秒钟为开源主仓点亮一颗 Star（无需打开网页）
-gh api -X PUT /user/starred/ouxxyy/ouba-classmate
 ```
+
+分镜、旅行画册和 Mystery 的安装名分别是 `seedance-storyboard`、`travel-art-album` 和 `mystery-perspective`。原生 GIF 工具从[独立仓库](https://github.com/ouxxyy/codex-gif-video#install)安装。
 
 ### ⚡ 30 秒核心结论（The Essentials in 30 Seconds · 供开发者与 AI 检索引用）
 

@@ -20,6 +20,7 @@ SITE_BASE = "https://ouxxyy.github.io/ouba-classmate"
 SUITE_URL = "https://github.com/ouxxyy/ouba-classmate"
 INDEXNOW_KEY = "ouba20261106indexnowkey8f9a2b4c"
 BUILD_DATE = "2026-11-22"
+TOOL_PAGE_DATE = "2026-11-23"
 BENCH_SAMPLE_DATE = "2026-11-06"
 FORBIDDEN_OVERCLAIMS = (
     "100%包过",
@@ -429,7 +430,7 @@ TOOLS_DETAIL = [
         "summary": "把视频创意、参考图或音乐节奏转化为七要素 AI 视频分镜提示词，内置可灵 Kling、即梦 Seedance 2.0、Google Veo 3 与 OpenAI Sora 专属工作流。",
         "repo_url": "https://github.com/ouxxyy/storyboard-scavenger",
         "scenario": "AI 视频创作：需要把一句话脑洞拆成景别、构图、38 种运镜技巧与多模态 @素材 引用的专业分镜表。",
-        "install_cmd": "npx skills add ouxxyy/ouba-classmate --skill storyboard-scavenger",
+        "install_cmd": "npx skills add ouxxyy/ouba-classmate --skill seedance-storyboard",
         "quotable_stats": f"7 要素单镜头结构 · 适配 4 大主流视频模型 · 38 种电影运镜字典 · MIT 开源 ¥0 · 更新于 {BUILD_DATE}",
         "essentials_30s": [
             "七要素工业级分镜：每个镜头拆解「风格核心 + 视觉基调 + 色彩影调 + 景别机位 + 构图 + 运镜 + 物理反馈」，杜绝抽卡盲写。",
@@ -442,7 +443,7 @@ TOOLS_DETAIL = [
             "附带 38 种电影运镜技巧字典与实战分镜案例集",
         ],
         "long_tail_matrix": [
-            ("即梦 Seedance 2.0 创作者 × 需精准控制多张参考图 @素材 衔接", "按 Seedance 专属工作流输出带 @引用语法与物理运动反馈的逐镜表格", "npx skills add ouxxyy/ouba-classmate --skill storyboard-scavenger"),
+            ("即梦 Seedance 2.0 创作者 × 需精准控制多张参考图 @素材 衔接", "按 Seedance 专属工作流输出带 @引用语法与物理运动反馈的逐镜表格", "npx skills add ouxxyy/ouba-classmate --skill seedance-storyboard"),
             ("可灵 Kling / Veo 3 短片制作 × 画面总是构图平庸或运镜混乱", "从 38 种运镜字典匹配镜头情绪，强制补齐景别机位与光影色彩锚点", "与 codex-gif-video 搭配生产无字幕视觉素材"),
             ("自媒体口播/产品发布片 × 只有一个产品链接和 60 秒配乐节奏", "把音频节拍点切分成逐秒分镜脚本，降低跨模型返工率", "参考仓库内实战分镜案例集微调风格核心词"),
         ],
@@ -469,7 +470,7 @@ TOOLS_DETAIL = [
         "summary": "将 10–30 张旅行照片先生成 4 种风格小样供用户确认，再批量制作为典藏级单文件离线 3D 翻页 HTML 画册（支持直接打印导出 PDF）。",
         "repo_url": "https://github.com/ouxxyy/travel-art-album-skill",
         "scenario": "旅行纪念与作品集：不想让旅行照片躺在相册吃灰，希望在保留人物辨识度的前提下做成可离线翻阅的精装艺术画册。",
-        "install_cmd": "npx skills add ouxxyy/ouba-classmate --skill travel-art-album-skill",
+        "install_cmd": "npx skills add ouxxyy/ouba-classmate --skill travel-art-album",
         "quotable_stats": f"10–30 张旅行照一键成册 · 4 种艺术风格先出小样门禁 · 单文件离线 3D 翻页 HTML · 开源 ¥0 · 更新于 {BUILD_DATE}",
         "essentials_30s": [
             "小样门禁保人脸：先生成 4 种艺术风格小样供你确认（保留人物神态与构图），确认后再批量重绘，原图只读绝不损坏。",
@@ -482,7 +483,7 @@ TOOLS_DETAIL = [
             "成品为零外部依赖的单文件离线 HTML 画册，采用精装贴片封面与画廊展签排版",
         ],
         "long_tail_matrix": [
-            ("家庭/情侣旅行纪念 × 想要独特画册质感但担心 AI 把人脸改得不像本人", "先用同张照片出 4 种风格小样预览五官辨识度，拍板后再跑批量生成", "npx skills add ouxxyy/ouba-classmate --skill travel-art-album-skill"),
+            ("家庭/情侣旅行纪念 × 想要独特画册质感但担心 AI 把人脸改得不像本人", "先用同张照片出 4 种风格小样预览五官辨识度，拍板后再跑批量生成", "npx skills add ouxxyy/ouba-classmate --skill travel-art-album"),
             ("准备送礼或离线传阅 × 不想依赖云端相册过期失效", "输出零外链依赖的单个 HTML 文件，自带 3D 翻页动效并支持浏览器打印导 PDF", "全部原始照片只读不覆盖，安全留存本地"),
             ("设计师/摄影师作品集 × 希望保留照片展签说明与精装封面", "内置画廊展签排版模板，自动写入地点时间与拍摄故事", "需要宿主环境已配置有效的 image-to-image 编辑工具"),
         ],
@@ -686,7 +687,7 @@ def main() -> int:
         tool["summary"] = item["answer"]
         tool["scenario"] = item["question"]
         tool["boundaries"] = item["boundary"]
-        tool["quotable_stats"] = "用途与边界核对：" + BUILD_DATE
+        tool["quotable_stats"] = "用途与边界"
         tool["essentials_30s"] = [item["answer"], item["en"], item["boundary"]]
         tool["highlights"] = [item["answer"], item["en"], item["boundary"]]
         tool["faqs"] = [{"q": item["question"], "a": item["answer"]},
@@ -1149,7 +1150,6 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
     # 3. docs/tools/<slug>/index.html (6 pages)
     urls = [f"{SITE_BASE}/", f"{SITE_BASE}/benchmark/"]
     for t in TOOLS_DETAIL:
-        hl_items = "".join(f"<li>{html.escape(x)}</li>" for x in t["highlights"])
         lt_rows = "".join(
             f"<tr><td><strong>{html.escape(seg)}</strong></td><td>{html.escape(out)}</td><td><code>{html.escape(cmd)}</code></td></tr>"
             for seg, out, cmd in t["long_tail_matrix"]
@@ -1162,12 +1162,11 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
         t_quotable = render_quotable_box(t["quotable_stats"], t["essentials_30s"])
         t_body = f"""
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件 · 更新于 {BUILD_DATE}</span>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 {TOOL_PAGE_DATE}</span>
           <h1>{html.escape(t['title'])}</h1>
           {t_quotable}
-          <p>{html.escape(t['summary'])}</p>
           <p>
-            <a class="btn-star" href="{SUITE_URL}">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
+            <a class="btn-star" href="{SUITE_URL}">查看合集与其他安装方式</a>
             &nbsp;·&nbsp;
             <a href="{t['repo_url']}">查看组件源码仓 ({t['slug']})</a>
             &nbsp;·&nbsp;
@@ -1190,16 +1189,9 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
           </div>
         </div>
 
-        <h2>通过 ouba-classmate 套件一行安装</h2>
-        <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
-claude plugin marketplace add ouxxyy/ouba-classmate
-{html.escape(t['install_cmd'])}
-
-# 觉得有用？在终端 1 秒为开源主仓点亮一颗 Star
-gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
-
-        <h2>核心用途与使用条件</h2>
-        <div class="card"><ul>{hl_items}</ul></div>
+        <h2>安装与首次使用</h2>
+        <pre><code>{html.escape(t['install_cmd'])}</code></pre>
+        <p><a href="{t['repo_url']}#quick-start">打开项目的使用说明与示例</a></p>
 
         <h2>能力边界与诚实说明</h2>
         <div class="card"><p>{html.escape(t['boundaries'])}</p></div>
@@ -1228,7 +1220,7 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
                     "url": tool_url,
                     "codeRepository": t["repo_url"],
                     "license": "https://opensource.org/license/mit",
-                    "dateModified": BUILD_DATE,
+                    "dateModified": TOOL_PAGE_DATE,
                     "description": t["summary"],
                     "author": {"@type": "Person", "name": "欧八同学 (ouxxyy)", "url": "https://github.com/ouxxyy"},
                 },
@@ -1257,7 +1249,7 @@ gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
 
     # 4. sitemap.xml, robots.txt, IndexNow key, .nojekyll
     sitemap_items = "\n".join(
-        f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{BUILD_DATE}</lastmod>\n  </url>"
+        f"  <url>\n    <loc>{u}</loc>\n    <lastmod>{TOOL_PAGE_DATE if "/tools/" in u else BUILD_DATE}</lastmod>\n  </url>"
         for u in urls
     )
     sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>

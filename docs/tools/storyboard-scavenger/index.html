@@ -237,7 +237,7 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
       "url": "https://ouxxyy.github.io/ouba-classmate/tools/storyboard-scavenger/",
       "codeRepository": "https://github.com/ouxxyy/storyboard-scavenger",
       "license": "https://opensource.org/license/mit",
-      "dateModified": "2026-11-22",
+      "dateModified": "2026-11-23",
       "description": "先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。",
       "author": {
         "@type": "Person",
@@ -304,12 +304,11 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
   <main class="container">
     
         <div class="card">
-          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-22</span>
+          <span class="badge">ouba-classmate 套件核心组件 · 更新于 2026-11-23</span>
           <h1>AI 视频分镜与可灵、即梦提示词生成｜storyboard-scavenger</h1>
-          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 用途与边界核对：2026-11-22</div><ul><li>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</li><li>AI video storyboard and prompts for Kling, Seedance, Veo and Sora</li><li>主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。</li></ul></div>
-          <p>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</p>
+          <div class="quotable-summary"><div class="quotable-kicker">⚡ 30 秒核心结论 · 用途与边界</div><ul><li>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</li><li>AI video storyboard and prompts for Kling, Seedance, Veo and Sora</li><li>主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。</li></ul></div>
           <p>
-            <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">★ 在 ouba-classmate 合集主仓点 Star 并一键安装</a>
+            <a class="btn-star" href="https://github.com/ouxxyy/ouba-classmate">查看合集与其他安装方式</a>
             &nbsp;·&nbsp;
             <a href="https://github.com/ouxxyy/storyboard-scavenger">查看组件源码仓 (storyboard-scavenger)</a>
             &nbsp;·&nbsp;
@@ -327,21 +326,14 @@ details.faq-item p { margin: 10px 0 0; color: var(--muted); }
               <thead>
                 <tr><th>目标人群 × 具体痛点</th><th>本工具交付效果</th><th>推荐执行入口</th></tr>
               </thead>
-              <tbody><tr><td><strong>即梦 Seedance 2.0 创作者 × 需精准控制多张参考图 @素材 衔接</strong></td><td>按 Seedance 专属工作流输出带 @引用语法与物理运动反馈的逐镜表格</td><td><code>npx skills add ouxxyy/ouba-classmate --skill storyboard-scavenger</code></td></tr><tr><td><strong>可灵 Kling / Veo 3 短片制作 × 画面总是构图平庸或运镜混乱</strong></td><td>从 38 种运镜字典匹配镜头情绪，强制补齐景别机位与光影色彩锚点</td><td><code>与 codex-gif-video 搭配生产无字幕视觉素材</code></td></tr><tr><td><strong>自媒体口播/产品发布片 × 只有一个产品链接和 60 秒配乐节奏</strong></td><td>把音频节拍点切分成逐秒分镜脚本，降低跨模型返工率</td><td><code>参考仓库内实战分镜案例集微调风格核心词</code></td></tr></tbody>
+              <tbody><tr><td><strong>即梦 Seedance 2.0 创作者 × 需精准控制多张参考图 @素材 衔接</strong></td><td>按 Seedance 专属工作流输出带 @引用语法与物理运动反馈的逐镜表格</td><td><code>npx skills add ouxxyy/ouba-classmate --skill seedance-storyboard</code></td></tr><tr><td><strong>可灵 Kling / Veo 3 短片制作 × 画面总是构图平庸或运镜混乱</strong></td><td>从 38 种运镜字典匹配镜头情绪，强制补齐景别机位与光影色彩锚点</td><td><code>与 codex-gif-video 搭配生产无字幕视觉素材</code></td></tr><tr><td><strong>自媒体口播/产品发布片 × 只有一个产品链接和 60 秒配乐节奏</strong></td><td>把音频节拍点切分成逐秒分镜脚本，降低跨模型返工率</td><td><code>参考仓库内实战分镜案例集微调风格核心词</code></td></tr></tbody>
             </table>
           </div>
         </div>
 
-        <h2>通过 ouba-classmate 套件一行安装</h2>
-        <pre><code># 推荐：添加合集插件市场或直接安装指定 Skill
-claude plugin marketplace add ouxxyy/ouba-classmate
-npx skills add ouxxyy/ouba-classmate --skill storyboard-scavenger
-
-# 觉得有用？在终端 1 秒为开源主仓点亮一颗 Star
-gh api -X PUT /user/starred/ouxxyy/ouba-classmate</code></pre>
-
-        <h2>核心用途与使用条件</h2>
-        <div class="card"><ul><li>先建立环境与角色锚点，再按风格、影调、景别、构图、运镜等七要素组织逐镜头提示词，按所选平台适配。</li><li>AI video storyboard and prompts for Kling, Seedance, Veo and Sora</li><li>主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。</li></ul></div>
+        <h2>安装与首次使用</h2>
+        <pre><code>npx skills add ouxxyy/ouba-classmate --skill seedance-storyboard</code></pre>
+        <p><a href="https://github.com/ouxxyy/storyboard-scavenger#quick-start">打开项目的使用说明与示例</a></p>
 
         <h2>能力边界与诚实说明</h2>
         <div class="card"><p>主要交付分镜与提示词；视频生成平台的可用性、费用和最终画面效果需另行确认。</p></div>

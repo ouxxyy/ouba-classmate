@@ -19,7 +19,7 @@ Chinese career agent skills for job search, resume matching and interview prep
 - Claude Code 插件市场：`claude plugin marketplace add ouxxyy/ouba-classmate`（清单：`.claude-plugin/marketplace.json`，含 `mbai` 在内 8 个插件）
 - Cursor / Codex / ChatGPT Desktop / Gemini CLI / MCP 注册表清单：`.cursor-plugin/marketplace.json`、`.cursor-plugin/plugin.json`、`.codex-plugin/plugin.json`、`gemini-extension.json`、`.mcp.json`、`glama.json`、`server.json`
 - GitHub CLI 官方技能安装：`gh skill install ouxxyy/ouba-classmate jd-resume-match`
-- Agent Skills CLI：`npx skills add ouxxyy/ouba-classmate`
+- Agent Skills CLI：`npx skills add ouxxyy/ouba-classmate --list` 列出 8 个可选 Skill。按任务安装时使用列出的名称；旅行画册为 travel-art-album，分镜为 seedance-storyboard，Mystery 为 mystery-perspective。
 - 简历 vs JD 可复算评分 MCP Server：`uvx --from "git+https://github.com/ouxxyy/jd-resume-match#subdirectory=mcp" jd-resume-match-mcp`
 
 ## 横评数据集与独立页面
