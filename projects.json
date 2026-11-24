@@ -1,7 +1,36 @@
 {
-  "generated_at": "2026-11-23T15:31:07+00:00",
+  "generated_at": "2026-11-24T06:16:37+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "job-search",
+      "url": "https://github.com/ouxxyy/job-search",
+      "description": "AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单",
+      "category": "career",
+      "language": "Python",
+      "stars": 3,
+      "updated_at": "2026-11-24T03:46:07Z",
+      "description_en": "Chinese job search agent and source-backed job hunting shortlist",
+      "keywords": [
+        "AI岗位搜索大师",
+        "求职岗位筛选",
+        "招聘信息整理",
+        "岗位清单",
+        "job search agent",
+        "job shortlist",
+        "中文求职工具",
+        "AI 找工作",
+        "招聘信息筛选",
+        "BOSS 直聘岗位筛选",
+        "job hunting"
+      ],
+      "use_cases": [
+        "按岗位城市薪资筛选招聘信息",
+        "保存带来源证据的岗位清单",
+        "怎样按城市、薪资和发布日期筛选招聘岗位？"
+      ],
+      "order": 0
+    },
     {
       "name": "travel-art-album-skill",
       "url": "https://github.com/ouxxyy/travel-art-album-skill",
@@ -87,35 +116,6 @@
         "有能用中文语音练自我介绍和项目经历的 AI 模拟面试工具吗？"
       ],
       "order": 2
-    },
-    {
-      "name": "job-search",
-      "url": "https://github.com/ouxxyy/job-search",
-      "description": "AI岗位搜索大师：按确认条件整理带来源的 HTML、Excel 与 JSON 岗位清单",
-      "category": "career",
-      "language": "Python",
-      "stars": 2,
-      "updated_at": "2026-11-19T03:37:05Z",
-      "description_en": "Chinese job search agent and source-backed job hunting shortlist",
-      "keywords": [
-        "AI岗位搜索大师",
-        "求职岗位筛选",
-        "招聘信息整理",
-        "岗位清单",
-        "job search agent",
-        "job shortlist",
-        "中文求职工具",
-        "AI 找工作",
-        "招聘信息筛选",
-        "BOSS 直聘岗位筛选",
-        "job hunting"
-      ],
-      "use_cases": [
-        "按岗位城市薪资筛选招聘信息",
-        "保存带来源证据的岗位清单",
-        "怎样按城市、薪资和发布日期筛选招聘岗位？"
-      ],
-      "order": 0
     },
     {
       "name": "codex-gif-video",
