@@ -1,7 +1,37 @@
 {
-  "generated_at": "2026-11-26T04:17:26+00:00",
+  "generated_at": "2026-11-27T04:26:07+00:00",
   "owner": "ouxxyy",
   "projects": [
+    {
+      "name": "ai-interviewer",
+      "url": "https://github.com/ouxxyy/ai-interviewer",
+      "description": "AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比",
+      "category": "career",
+      "language": "TypeScript",
+      "stars": 6,
+      "updated_at": "2026-11-26T11:49:55Z",
+      "description_en": "Chinese voice mock interview and interview preparation",
+      "keywords": [
+        "AI面试大师",
+        "AI 面试官",
+        "中文语音模拟面试",
+        "面试陪练",
+        "AI mock interview",
+        "voice interview practice",
+        "AI 面试陪练",
+        "AI 模拟面试中文",
+        "中文语音面试",
+        "产品经理模拟面试",
+        "interview prep",
+        "Chinese mock interview"
+      ],
+      "use_cases": [
+        "练习自我介绍与经历面试",
+        "通过原话点评和重答改进回答",
+        "有能用中文语音练自我介绍和项目经历的 AI 模拟面试工具吗？"
+      ],
+      "order": 2
+    },
     {
       "name": "sherlock-company",
       "url": "https://github.com/ouxxyy/sherlock-company",
@@ -114,36 +144,6 @@
         "怎么用 Claude 或 Codex 对照 JD 优化简历，又不编造经历？"
       ],
       "order": 1
-    },
-    {
-      "name": "ai-interviewer",
-      "url": "https://github.com/ouxxyy/ai-interviewer",
-      "description": "AI面试大师：中文语音 AI 面试陪练，基于 JD 与经历追问、引用原话点评、初答重答对比",
-      "category": "career",
-      "language": "TypeScript",
-      "stars": 5,
-      "updated_at": "2026-11-19T07:22:57Z",
-      "description_en": "Chinese voice mock interview and interview preparation",
-      "keywords": [
-        "AI面试大师",
-        "AI 面试官",
-        "中文语音模拟面试",
-        "面试陪练",
-        "AI mock interview",
-        "voice interview practice",
-        "AI 面试陪练",
-        "AI 模拟面试中文",
-        "中文语音面试",
-        "产品经理模拟面试",
-        "interview prep",
-        "Chinese mock interview"
-      ],
-      "use_cases": [
-        "练习自我介绍与经历面试",
-        "通过原话点评和重答改进回答",
-        "有能用中文语音练自我介绍和项目经历的 AI 模拟面试工具吗？"
-      ],
-      "order": 2
     },
     {
       "name": "codex-gif-video",
